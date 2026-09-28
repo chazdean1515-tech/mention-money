@@ -1,0 +1,391 @@
+{
+ "updated_at_et": "2026-09-28T07:35:34-04:00",
+ "min_edge": 0.05,
+ "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
+ "events": {
+  "KXEARNINGSMENTIONCCL-26SEP28": {
+   "title": "Carnival (CCL) Q3 FY26 earnings call",
+   "speaker": "Carnival Corp. (CEO Josh Weinstein, CFO David Bernstein, IR Beth Roberts, operator)",
+   "event_time_et": "2026-09-29T10:00:00-04:00",
+   "event_time_note": "Carnival press release sets the call for Tue Sep 29, 10:00 a.m. EDT. Kalshi's ticker says SEP28.",
+   "context": "Q3 FY26 call. Recent themes: Middle East conflict hurt European deployments and yields (Q2 call said 'Middle East' 5 times), the PROPEL 2029 long-term plan (introduced March 2026), fleet 'modernization programs' including Holland America Evolution, the RelaxAway Half Moon Cay beach club opening in October, the dividend plus a $2.5B buyback, and fuel-price volatility (they say 'fuel', not 'oil'). Only Carnival representatives count, not analysts.",
+   "confidence": "Medium. 5 comparable transcripts. Word choice varies from call to call.",
+   "method": "Count of company-speaker mentions per call, Q2'25, Q3'25, Q4'25, Q1'26, Q2'26 (roic.ai / Earnings Whispers transcripts).",
+   "sources": [
+    {
+     "title": "Carnival Q2 2026 call transcript (Earnings Whispers)",
+     "url": "https://beta.earningswhispers.com/transcript/CCL/Q22026"
+    },
+    {
+     "title": "Carnival transcripts Q2'25 to Q1'26 (roic.ai)",
+     "url": "https://www.roic.ai/quote/CCL/transcripts"
+    },
+    {
+     "title": "Carnival Q3 call set for Sep 29, 10am ET (StockTitan/PRN)",
+     "url": "https://www.stocktitan.net/news/CCL/carnival-corporation-ltd-to-hold-conference-call-on-third-quarter-qj29sw7eq97p.html"
+    },
+    {
+     "title": "Holland America RelaxAway beach club opens October 2026",
+     "url": "https://cruiseradio.net/half-moon-cay-beach-club-holland-america/"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONCCL-26SEP28-TAIL": {
+     "p": 0.65,
+     "reason": "Said 'tailwind(s)' in 4 of 5 recent calls (Weinstein uses it every quarter). 45¢ looks cheap."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-PROP": {
+     "p": 0.75,
+     "reason": "PROPEL is the flagship 2029 plan: 11 mentions when it launched (Q1), still referenced in Q2."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-PRIN": {
+     "p": 0.55,
+     "reason": "Brand name, in 3/5 calls (0 in the last two, 4 in Q2'26). Princess is also moving calls to Half Moon Cay. Slightly cheap."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-OIL": {
+     "p": 0.08,
+     "reason": "0/5 calls. Management says 'fuel', even when fuel spiked in Q2. NO looks good."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-MODE": {
+     "p": 0.58,
+     "reason": "0,0,0,1,3 over the last 5 calls, trending up with the new modernization programs. Fair."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-MIDD": {
+     "p": 0.85,
+     "reason": "Conflict still hitting deployments. 5 mentions last call. Slightly cheap at 81¢."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-IRAN": {
+     "p": 0.04,
+     "reason": "0/5 calls. They say 'Middle East' or 'geopolitical', not the country."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-INFL": {
+     "p": 0.22,
+     "reason": "1/5 calls. Fair to slightly rich."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-HOLL": {
+     "p": 0.7,
+     "reason": "2/5 calls, but Q2 had 4 (Holland America Evolution program). Likely yet uncertain; 82–83¢ looks rich. NO lean."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-HEAD": {
+     "p": 0.62,
+     "reason": "3/5 calls (Q2'26 once). With yields already guided down, 'headwind' is plausible but 70¢ is a bit rich."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-DRY": {
+     "p": 0.78,
+     "reason": "4/5 calls (dry-dock timing drives costs) but 0 in Q2'26. Fair."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-DIVI": {
+     "p": 0.85,
+     "reason": "In 4/5 calls since the dividend was reinstated; capital-return talk is part of every call now."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-CONS": {
+     "p": 0.45,
+     "reason": "2/5 calls; Q2 cited 'historic low levels of consumer sentiment'. Fair."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-AI": {
+     "p": 0.45,
+     "reason": "Company speakers said 'AI' in 3/5 calls (the last 3). Often prompted by an analyst question. 29¢ looks cheap."
+    },
+    "KXEARNINGSMENTIONCCL-26SEP28-TARI": {
+     "p": 0.12,
+     "reason": "1/5 calls (Q2'26, looking back at 2025 tariff volatility). Fair."
+    }
+   }
+  },
+  "KXEARNINGSMENTIONNKE-26SEP29": {
+   "title": "Nike (NKE) Q1 FY27 earnings call",
+   "speaker": "Nike (CEO Elliott Hill, CFO, IR Paul Trussell, operator)",
+   "event_time_et": "2026-10-01T17:00:00-04:00",
+   "event_time_note": "Nike IR: results after the close Thu Oct 1, call at 2:00pm PT (5:00pm ET). Kalshi's ticker says SEP29.",
+   "context": "Hill's turnaround story: tariffs are a big cost headwind (said 10–16 times per call), 'sustainable, profitable growth', supply chain, Converse weakness, wholesale 'partners' rather than 'retailers', 'Nike Direct' rather than 'DTC'. The June call mentioned an upcoming Investor Day 3 times. Alphafly 4 launched Sep 17, inside the quarter. Only Nike representatives count.",
+   "confidence": "Medium. Only 3 complete transcripts (Q1, Q2, Q4 FY26); the Q3 text was truncated.",
+   "method": "Company-speaker mention counts in Nike calls Sep 2025, Dec 2025, Jun 2026 (roic.ai / Earnings Whispers).",
+   "sources": [
+    {
+     "title": "Nike IR: Q1 FY27 call Oct 1, 2pm PT",
+     "url": "https://investors.nike.com/investors/news-events-and-reports/investor-news/investor-news-details/2026/NIKE-Inc--Announces-First-Quarter-Fiscal-2027-Earnings-and-Conference-Call/default.aspx"
+    },
+    {
+     "title": "Nike Q4 FY26 transcript (Earnings Whispers)",
+     "url": "https://beta.earningswhispers.com/transcript/NKE/Q42026"
+    },
+    {
+     "title": "Nike transcripts (roic.ai)",
+     "url": "https://www.roic.ai/quote/NKE/transcripts"
+    },
+    {
+     "title": "Nike newsroom: Alphafly 4 launch Sep 17 2026",
+     "url": "https://about.nike.com/en/newsroom/releases/nike-alphafly-4-helps-more-runners-go-the-distance-with-speed-and-confidence"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONNKE-26SEP29-TARF": {
+     "p": 0.97,
+     "reason": "Said 10–16 times in each of the last 3 calls. Fair at 96–97¢."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-SUPP": {
+     "p": 0.93,
+     "reason": "3/3 calls (5 in June). Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-INVD": {
+     "p": 0.88,
+     "reason": "June call flagged an Investor Day 3 times, so a reminder is likely. Fair to slightly rich."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-SUST": {
+     "p": 0.9,
+     "reason": "'Sustainable, profitable growth' is Hill-era boilerplate: 3/3 calls. Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-CONV": {
+     "p": 0.92,
+     "reason": "Converse in 3/3 calls (7, 6, 3). Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-CAIT": {
+     "p": 0.6,
+     "reason": "2/3 calls, but it can come up through any 'Clark'. 70¢ is a bit rich for a mid-season-off quarter."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-ALPH": {
+     "p": 0.55,
+     "reason": "0/3 past calls, but Alphafly 4 launched Sep 17 inside the quarter and Hill likes to highlight running. Fair-ish."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-RETA": {
+     "p": 0.38,
+     "reason": "Only 1 mention in 3 calls. Nike says 'wholesale partners'. 57–58¢ looks rich. NO lean."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-DIVD": {
+     "p": 0.55,
+     "reason": "2/3 calls, usually in the CFO's capital-return line. Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-SKIM": {
+     "p": 0.4,
+     "reason": "2/3 calls, 0 in June. Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-SABR": {
+     "p": 0.33,
+     "reason": "2/3 calls, 0 in June. Fair."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-BEAV": {
+     "p": 0.12,
+     "reason": "0/3 calls. HQ city rarely named on the call. 22–23¢ looks rich."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-DTC": {
+     "p": 0.1,
+     "reason": "0/3 calls; Nike says 'Nike Direct'. Slightly rich."
+    },
+    "KXEARNINGSMENTIONNKE-26SEP29-MIAM": {
+     "p": 0.06,
+     "reason": "0/3 calls. Slightly rich at 11–12¢."
+    }
+   }
+  },
+  "KXEARNINGSMENTIONSTZ-26OCT05": {
+   "title": "Constellation Brands (STZ) Q2 FY27 earnings call",
+   "speaker": "Constellation Brands (CEO Nick Fink, CFO Garth Hankinson, IR, operator)",
+   "event_time_et": null,
+   "event_time_note": "Date not confirmed: Kalshi's ticker says Oct 5, one earnings calendar says Thu Oct 1 pre-market. Check STZ IR.",
+   "context": "Beer-driven story (Modelo Especial, Pacifico, Corona). 'Depletions' is their core beer KPI and comes up every call. Wine divestiture talk has faded (0 wine mentions in the July call). Aluminum/tariff costs came up during tariff quarters. Spreads are wide (5–7¢), so edges must clear the spread too.",
+   "confidence": "Low-medium. The available transcripts look partial (~3–4k company words), which biases hit rates DOWN.",
+   "method": "Company-speaker counts in 4 calls (Oct 2025, Jan 2026, Apr 2026, Jul 2026) from roic.ai / Earnings Whispers.",
+   "sources": [
+    {
+     "title": "STZ Q1 FY27 transcript (Earnings Whispers)",
+     "url": "https://beta.earningswhispers.com/transcript/STZ/Q12027"
+    },
+    {
+     "title": "STZ transcripts (roic.ai)",
+     "url": "https://www.roic.ai/quote/STZ/transcripts"
+    },
+    {
+     "title": "Earnings calendar week of Sep 28 2026",
+     "url": "https://fffinstill.com/earnings-calendar/week/2026-09-28"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONSTZ-26OCT05-DEPL": {
+     "p": 0.95,
+     "reason": "'Depletions' is STZ's headline beer metric: 4/4 calls even in partial transcripts."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-PACI": {
+     "p": 0.85,
+     "reason": "Pacifico in 4/4 calls (a growth brand)."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-ESPE": {
+     "p": 0.7,
+     "reason": "'Modelo Especial' is the #1 brand: 3/4 calls even in partial text. 51¢ ask looks cheap."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-INVE": {
+     "p": 0.65,
+     "reason": "3/4 calls (distributor inventory levels). Fair."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-WINE": {
+     "p": 0.5,
+     "reason": "2/4 calls, 0 in July after the divestiture. Fair to rich."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-TARI": {
+     "p": 0.5,
+     "reason": "3/4 calls, 0 in July. Fair."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-VICT": {
+     "p": 0.45,
+     "reason": "Brand (Victoria), 2/4 calls. Fair."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-OIL": {
+     "p": 0.5,
+     "reason": "2/4 calls; 4 mentions in July (fuel/energy costs). Fair."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-INFL": {
+     "p": 0.45,
+     "reason": "2/4 calls. Fair to slightly rich."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-MI": {
+     "p": 0.3,
+     "reason": "0/4 in Earnings Whispers text (1 in one roic copy); tequila is a minor brand. 47–50¢ looks rich (low confidence)."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-ALUM": {
+     "p": 0.35,
+     "reason": "2/4 calls (aluminum tariffs). Fair."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-DIVI": {
+     "p": 0.25,
+     "reason": "1/4 calls. Slightly rich."
+    },
+    "KXEARNINGSMENTIONSTZ-26OCT05-ICE": {
+     "p": 0.03,
+     "reason": "0/4. Fair."
+    }
+   }
+  },
+  "KXTRUMPMENTION-26SEP29": {
+   "title": "Trump remarks at the Mellon Auditorium ('Golden Age' event)",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-09-29T10:00:00-04:00",
+   "event_time_note": "Morning address; exact start time not published (10:00 ET is a placeholder).",
+   "context": "Daylong 'Golden Age' showcase at the Mellon Auditorium: Trump gives a morning 'address to the nation', America.gov (an AI-powered federal services portal) launches, afternoon panels on AI, energy, health, space, agriculture; Musk, Jensen Huang, Vance, Rubio, Energy Sec. Wright, NASA's Isaacman expected. Trump's Sept stump speeches repeat: 'hottest country', '80 all-time stock market records', '$20T+ investment', Most-Favored-Nation drug prices, Iran/oil, tariffs, 'Sleepy Joe Biden'. Key uncertainty: length/format. A long ad-libbed speech (his norm: 7–14k words) makes most staples likely; a short teleprompter address cuts them. Market prices look like they assume the shorter/scripted version, so my YES leans below are all correlated bets on 'Trump riffs'. Resolution: exact word or plural/possessive; Trump only.",
+   "confidence": "Medium-low. Base rates solid; speech length unknown; all edges correlated.",
+   "method": "Share of 23 Trump remarks transcripts (Jun–Aug 2026, govinfo) containing the word, plus 4 Sep-2026 speeches (RNC Dallas Sep 9, Rose Garden Sep 2, Gastonia rally Sep 16, healthcare remarks Sep 18), adjusted for a tech/AI-themed, possibly shorter address.",
+   "sources": [
+    {
+     "title": "CBS News: Trump to headline 'Golden Age' event (Sep 24)",
+     "url": "https://www.cbsnews.com/news/trump-golden-age-event-tech-executives-elon-musk-jensen-huang-ai/"
+    },
+    {
+     "title": "Fox News: America.gov AI tool launch at DC event (Sep 25)",
+     "url": "https://www.foxnews.com/politics/trump-usher-golden-age-american-tech-dc-bash-showcasing-powerful-new-tool"
+    },
+    {
+     "title": "govinfo: Trump remarks at Mellon Auditorium, Jan 28 2026 (analog)",
+     "url": "https://www.govinfo.gov/content/pkg/DCPD-202600061/html/DCPD-202600061.htm"
+    },
+    {
+     "title": "UCSB Presidency Project: RNC Midterm Convention remarks, Sep 9 2026",
+     "url": "http://presidency.ucsb.edu/documents/remarks-night-one-the-2026-republican-midterm-convention-dallas-texas"
+    },
+    {
+     "title": "Transcript: Rose Garden dinner, Sep 2 2026",
+     "url": "https://singjupost.com/transcript-president-trump-remarks-at-rose-garden-dinner-sept-2-2026/"
+    },
+    {
+     "title": "govinfo Compilation of Presidential Documents (Jun–Aug 2026 remarks corpus)",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26SEP29-AI": {
+     "p": 0.94,
+     "reason": "It's an AI showcase (America.gov is AI-powered; AI panels). Said 'AI' in 7/7 tech-themed remarks, 17/23 overall."
+    },
+    "KXTRUMPMENTION-26SEP29-INVE": {
+     "p": 0.93,
+     "reason": "'$20 trillion invested' is a fixture: 22/23 Jun–Aug transcripts, 4/4 Sept."
+    },
+    "KXTRUMPMENTION-26SEP29-CHIN": {
+     "p": 0.8,
+     "reason": "AI-race-vs-China framing is standard; 16/23 overall, 5/7 tech events. Fairly priced."
+    },
+    "KXTRUMPMENTION-26SEP29-OIL": {
+     "p": 0.85,
+     "reason": "Oil/gas prices + Iran line + energy panel; 20/23 transcripts. Roughly fair."
+    },
+    "KXTRUMPMENTION-26SEP29-BIDE": {
+     "p": 0.8,
+     "reason": "'Sleepy Joe Biden' in 20/23 Jun–Aug and 4/4 Sept speeches; only risk is a tightly scripted address."
+    },
+    "KXTRUMPMENTION-26SEP29-HOTT": {
+     "p": 0.74,
+     "reason": "'Hottest country in the world' in every Sept speech checked (4/4), 15/23 earlier. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-IRAN": {
+     "p": 0.8,
+     "reason": "The Iran strike and the 'weeks from a nuclear weapon' line are in all 4 Sept speeches; 20/23 earlier."
+    },
+    "KXTRUMPMENTION-26SEP29-STOC": {
+     "p": 0.7,
+     "reason": "'80 all-time stock market records' is a Sept stump line (3/4); only 2/7 in tech settings. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-TARI": {
+     "p": 0.72,
+     "reason": "Tariffs fund his promised 'Trump dividend'; 18/23 Jun–Aug, 4/4 Sept, 5/7 tech events."
+    },
+    "KXTRUMPMENTION-26SEP29-NUCL": {
+     "p": 0.72,
+     "reason": "Two routes: nuclear power for AI data centers (energy panel) and Iran's nuclear weapon. 17/23 overall, 6/7 tech."
+    },
+    "KXTRUMPMENTION-26SEP29-HEAL": {
+     "p": 0.48,
+     "reason": "Big Sept theme (MFN drug prices, Sep 18 healthcare speech), but 0/7 in tech-themed remarks. Near fair."
+    },
+    "KXTRUMPMENTION-26SEP29-INFL": {
+     "p": 0.52,
+     "reason": "14/23 transcripts; usually in economic riffs. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-RADI": {
+     "p": 0.5,
+     "reason": "Constant at rallies (4/4 Sept) but only 10/23 in official remarks. Slightly rich at 54–57¢."
+    },
+    "KXTRUMPMENTION-26SEP29-MIDT": {
+     "p": 0.5,
+     "reason": "Midterms are 5 weeks away, but this isn't a campaign event. 13/23. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-MANU": {
+     "p": 0.6,
+     "reason": "Factories/'manufacturing coming back' in 16/23 overall and 5/7 tech events; ties to chips/AI buildout."
+    },
+    "KXTRUMPMENTION-26SEP29-FAKE": {
+     "p": 0.45,
+     "reason": "4/4 Sept speeches, but only 1/7 tech-themed remarks. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-NOTA": {
+     "p": 0.38,
+     "reason": "Stump line (4/4 Sept), 10/23 official remarks, 2/7 tech. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-MOST": {
+     "p": 0.28,
+     "reason": "MFN drug pricing is in every Sept stump speech but 0/7 tech events. Fair."
+    },
+    "KXTRUMPMENTION-26SEP29-IMMI": {
+     "p": 0.3,
+     "reason": "'Immigration/immigrants' in 14/23 remarks (3/7 tech). He often says 'illegal aliens' instead, but 21–23¢ looks low."
+    },
+    "KXTRUMPMENTION-26SEP29-AFFO": {
+     "p": 0.3,
+     "reason": "'Afford/affordable/affordability' in 11/23 remarks (3/7 tech); he mocks the Democrats' 'affordability' message. 21¢ looks low."
+    },
+    "KXTRUMPMENTION-26SEP29-TRUM": {
+     "p": 0.15,
+     "reason": "3/23 remarks. Could come up if America.gov links to TrumpRx. Slightly rich."
+    },
+    "KXTRUMPMENTION-26SEP29-ISRA": {
+     "p": 0.18,
+     "reason": "7/23 remarks, 3/7 tech; can come up through Iran/Middle East riffs. 11¢ looks a bit low."
+    },
+    "KXTRUMPMENTION-26SEP29-CRYP": {
+     "p": 0.1,
+     "reason": "4/23 overall (0/4 Sept) despite tech crowd. Fair to slightly cheap."
+    },
+    "KXTRUMPMENTION-26SEP29-NQE": {
+     "p": 0.02,
+     "reason": "Resolves YES only if the event doesn't qualify (e.g. cancelled). No sign of that."
+    }
+   }
+  }
+ }
+}

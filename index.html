@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mention Money</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>Mention Money <span class="sub">Best value bets on Kalshi mention markets</span></h1>
+  <div id="meta" class="meta">Loading…</div>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Filter events / words…">
+    <label><input id="onlyAnalyzed" type="checkbox"> Analyzed only</label>
+  </div>
+</header>
+<main>
+  <section id="best" class="best"></section>
+  <section id="events"></section>
+  <section class="notes">
+    <h3>How to read this</h3>
+    <p><b>Price</b> = current Kalshi yes ask (cost to buy YES) / no ask shown as implied YES bid. <b>Est.</b> = my estimated probability the word is said. <b>Edge</b> = estimate minus the price you'd pay on the relevant side, net of taker fee ≈ 0.07·p·(1−p) per contract. Positive edge on YES means buy YES at the ask; on NO means buy NO at the no ask.</p>
+    <p>Estimates are judgment calls from public research, not guarantees. Read-only; no trading. Always check the market's rules text (hover/tap “rules”) — exact-phrase, plural and speaker requirements matter.</p>
+  </section>
+</main>
+<footer>Data: Kalshi public API (read-only). Not financial advice.</footer>
+<script src="app.js"></script>
+</body>
+</html>
