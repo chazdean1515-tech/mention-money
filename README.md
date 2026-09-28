@@ -35,7 +35,7 @@ python3 -m http.server 8080 --bind 127.0.0.1   # then open http://127.0.0.1:8080
 - The estimates are judgment calls based on transcript base rates. They are not advice.
 
 ## Live site & republishing
-Live: https://chazdean1515-tech.github.io/mention-money/ (GitHub Pages, served from `main` branch root; `.nojekyll` disables Jekyll).
+Live: https://mentionmoney.com/ (GitHub Pages custom domain, served from the `main` branch root; `.nojekyll` disables Jekyll). The `CNAME` file at the root holds the domain, and `publish.sh` always commits it. The old address, https://chazdean1515-tech.github.io/mention-money/, redirects to the domain. DNS is at Porkbun: four apex A records to 185.199.108.153–111.153, plus `www` CNAME → `chazdean1515-tech.github.io`.
 
 After a refresh (`python3 fetch.py`, `python3 research/build_analysis.py`), republish with one command:
 ```bash
