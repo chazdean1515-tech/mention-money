@@ -141,6 +141,130 @@ function renderPotd(an) {
   el.hidden = false;
 }
 
+// ---------- Spin the Wheel ----------
+// 8 slices alternating the 4 play types; picks come from analysis.json `wheel_plays` (built in research/build_analysis.py).
+const WHEEL_ORDER = ['BOMB', 'RETIREMENT', 'ROLLS-ROYCE', 'CASH'];
+const WHEEL_LABEL = {'BOMB': 'BOMB', 'RETIREMENT': 'RETIREMENT', 'ROLLS-ROYCE': 'ROLLS-ROYCE', 'CASH': 'CASH'};
+const reduceMotion = () => window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const pickStarted = p => !!(p && p.event_time_et && new Date(p.event_time_et).getTime() <= Date.now());
+
+function wheelSVG(plays) {
+  const R = 172, N = 8, seg = 360 / N, rad = d => (d - 90) * Math.PI / 180;
+  const pt = (r, d) => `${(r * Math.cos(rad(d))).toFixed(2)} ${(r * Math.sin(rad(d))).toFixed(2)}`;
+  let slices = '', labels = '', studs = '';
+  for (let i = 0; i < N; i++) {
+    const a0 = i * seg - seg / 2, a1 = a0 + seg, t = WHEEL_ORDER[i % 4], pl = plays[t];
+    const gold = i % 2 === 0;
+    slices += `<path d="M0 0 L${pt(R, a0)} A${R} ${R} 0 0 1 ${pt(R, a1)} Z" fill="url(#${gold ? 'wg-gold' : 'wg-green'})" stroke="#5a4410" stroke-width="1.5"/>`;
+    const name = WHEEL_LABEL[t];
+    const fs = name.length > 8 ? 12.5 : 16;
+    labels += `<g transform="rotate(${i * seg})">
+      <text x="0" y="-150" text-anchor="middle" dominant-baseline="middle" font-size="23">${pl ? pl.emoji : ''}</text>
+      <text transform="translate(0 -99) rotate(90)" text-anchor="middle" dominant-baseline="middle" font-size="${fs}"${name.length > 8 ? ' textLength="76" lengthAdjust="spacingAndGlyphs"' : ''} class="wl ${gold ? 'on-gold' : 'on-green'}">${name}</text></g>`;
+  }
+  for (let i = 0; i < 16; i++) {
+    const d = i * 22.5 + (i % 2 ? 0 : 0);
+    const [x, y] = pt(186, d).split(' ');
+    studs += i % 2 === 0
+      ? `<circle cx="${x}" cy="${y}" r="5.5" fill="url(#wg-gem)" stroke="#fff6c9" stroke-width="1"/>`
+      : `<circle cx="${x}" cy="${y}" r="4.2" fill="url(#wg-ruby)" stroke="#fff6c9" stroke-width=".8"/>`;
+  }
+  return `<svg viewBox="-200 -200 400 400" class="wheel-svg" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="wg-gold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8a6a1f"/><stop offset=".3" stop-color="#f7e08a"/><stop offset=".5" stop-color="#d4af37"/><stop offset=".7" stop-color="#fff0a8"/><stop offset="1" stop-color="#9c7a22"/></linearGradient>
+      <linearGradient id="wg-green" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0c3d23"/><stop offset=".5" stop-color="#157a43"/><stop offset="1" stop-color="#0a2e1a"/></linearGradient>
+      <linearGradient id="wg-rim" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff6c9"/><stop offset=".25" stop-color="#d4af37"/><stop offset=".5" stop-color="#8a6a1f"/><stop offset=".75" stop-color="#f3d36b"/><stop offset="1" stop-color="#9c7a22"/></linearGradient>
+      <radialGradient id="wg-gem" cx=".35" cy=".35"><stop offset="0" stop-color="#ffffff"/><stop offset=".4" stop-color="#bfefff"/><stop offset="1" stop-color="#3aa8d8"/></radialGradient>
+      <radialGradient id="wg-ruby" cx=".35" cy=".35"><stop offset="0" stop-color="#e8fff1"/><stop offset=".45" stop-color="#3dff9a"/><stop offset="1" stop-color="#0e8a4a"/></radialGradient>
+    </defs>
+    <circle r="197" fill="url(#wg-rim)"/><circle r="176" fill="#3a2c05"/>
+    ${slices}${studs}${labels}
+    <circle r="${R}" fill="none" stroke="#fff6c9" stroke-opacity=".55" stroke-width="1.5"/>
+  </svg>`;
+}
+
+function revealCard(t, play, p) {
+  if (!p) return `<article class="potd-card wheel-card"><div class="potd-top"><span class="potd-badge" aria-hidden="true">${play.emoji}</span><span class="potd-label">${esc(t)}</span></div>
+    <p class="potd-why">This slot's events have already started. New picks arrive with the next data refresh.</p></article>`;
+  const side = p.side === 'NO' ? 'NO' : 'YES', edgeC = Math.round(p.edge * 100);
+  return `<article class="potd-card wheel-card">
+    <div class="potd-shine" aria-hidden="true"></div>
+    <div class="potd-top"><span class="potd-badge" aria-hidden="true">${play.emoji}</span><span class="potd-label">${esc(t)}</span><span class="potd-fire" aria-hidden="true">${play.emoji}</span></div>
+    <div class="wheel-blurb">${esc(play.blurb)}</div>
+    <div class="potd-event">${esc(p.event_title)}</div>
+    <div class="potd-pick"><span class="potd-word">“${esc(p.word)}”</span> <span class="potd-side ${side.toLowerCase()}">BUY ${side}</span></div>
+    <div class="potd-stats four">
+      <div class="potd-stat"><span class="k">Price (${side})</span><span class="v">${pct(p.price)}</span></div>
+      <div class="potd-stat"><span class="k">Our est. (${side})</span><span class="v">${pctP(p.est_side)}</span></div>
+      <div class="potd-stat edge"><span class="k">Edge</span><span class="v">${edgeC > 0 ? '+' : ''}${edgeC}¢</span><span class="s">after ~${Math.round(p.fee * 100)}¢ fee</span></div>
+      <div class="potd-stat"><span class="k">Payout</span><span class="v">${(1 / p.price).toFixed(1)}×</span><span class="s">if it hits</span></div>
+    </div>
+    <div class="potd-when">
+      ${p.event_time_et ? `<span>🎙 Event <b>${fmtET(p.event_time_et)}</b></span>` : ''}
+      <span>⏳ Market closes <b>${fmtET(p.close_time_et)}</b></span>
+      ${p.price_fetched_at_et ? `<span class="mut">price as of ${fmtET(p.price_fetched_at_et)}</span>` : ''}
+    </div>
+    <p class="potd-why">${esc(p.rationale)}</p>
+    ${p.fragile ? `<p class="wheel-warn">⚠ ${esc(p.fragile)}</p>` : ''}
+    <div class="potd-foot">
+      ${p.url ? `<a class="potd-link" href="${esc(p.url)}" target="_blank" rel="noopener">View market on Kalshi →</a>` : ''}
+      <button type="button" class="tip-btn wheel-again">Spin again ↻</button>
+      <span class="potd-disc">Analysis only, not financial advice.</span>
+    </div>
+  </article>`;
+}
+
+function burst(el) {
+  if (reduceMotion()) return;
+  const bits = ['🪙', '💰', '✨', '💵', '💎'];
+  let html = '';
+  for (let i = 0; i < 30; i++) {
+    const a = Math.random() * Math.PI * 2, d = 110 + Math.random() * 170;
+    const style = `--dx:${(Math.cos(a) * d).toFixed(0)}px;--dy:${(Math.sin(a) * d - 60).toFixed(0)}px;--r:${Math.round(Math.random() * 720 - 360)}deg;animation-delay:${(Math.random() * 0.15).toFixed(2)}s`;
+    html += i % 3 === 0 ? `<i class="cf" style="${style};background:${['#ffd23f', '#fff6c9', '#2ecc71', '#d4af37'][i % 4]}"></i>`
+                        : `<span class="cf" style="${style}">${bits[i % bits.length]}</span>`;
+  }
+  el.innerHTML = html;
+  setTimeout(() => { el.innerHTML = ''; }, 1900);
+}
+
+function setupWheel(an) {
+  const sec = document.getElementById('wheel');
+  const raw = (an && an.wheel_plays) || [];
+  const plays = {};
+  // At page load pick the first pick per play whose event hasn't started (same rule as POTD / Best value).
+  raw.forEach(w => { plays[w.type] = {...w, pick: (w.picks || []).find(p => !pickStarted(p)) || null}; });
+  if (!WHEEL_ORDER.some(t => plays[t])) { sec.hidden = true; return; }
+  WHEEL_ORDER.forEach(t => { if (!plays[t]) plays[t] = {type: t, emoji: {'BOMB':'💣','RETIREMENT':'🏖️','ROLLS-ROYCE':'👑','CASH':'💵'}[t], blurb: '', pick: null}; });
+  sec.hidden = false;
+  const btn = document.getElementById('wheel-btn'), rot = document.getElementById('wheel-rot');
+  const out = document.getElementById('wheel-result'), boom = document.getElementById('wheel-burst');
+  rot.innerHTML = wheelSVG(plays);
+  let angle = 0, spinning = false;
+  const spin = () => {
+    if (spinning) return;               // clicks during a spin are ignored
+    spinning = true; btn.classList.add('spinning'); btn.setAttribute('aria-disabled', 'true');
+    const k = Math.floor(Math.random() * 8);                // random landing slice
+    const jitter = (Math.random() - 0.5) * 30;              // stay inside the 45° slice
+    const rm = reduceMotion(), dur = rm ? 400 : 4200 + Math.random() * 1600;
+    const target = ((-k * 45 + jitter) % 360 + 360) % 360;
+    angle += (rm ? 360 : 360 * (5 + Math.floor(Math.random() * 3))) + ((target - angle) % 360 + 360) % 360;
+    rot.style.transitionDuration = dur + 'ms';
+    rot.style.transform = `rotate(${angle}deg)`;
+    setTimeout(() => {
+      const t = WHEEL_ORDER[k % 4], play = plays[t];
+      burst(boom);
+      out.innerHTML = revealCard(WHEEL_LABEL[t], play, play.pick);
+      const again = out.querySelector('.wheel-again');
+      if (again) again.addEventListener('click', () => { btn.focus(); spin(); });
+      spinning = false; btn.classList.remove('spinning'); btn.removeAttribute('aria-disabled');
+      btn.dataset.landed = t;
+    }, dur + 60);
+  };
+  btn.addEventListener('click', spin);
+  btn.addEventListener('keydown', ev => { if (ev.key === 'Enter' || ev.key === ' ' || ev.key === 'Spacebar') { ev.preventDefault(); spin(); } });
+}
+
 // Tip panel (SOL address is static in index.html; copy reads it from the DOM).
 function setupTip() {
   const dlg = document.getElementById('tip');
@@ -168,6 +292,7 @@ setupTip();
 
 load().then(d => {
   renderPotd(d.an);
+  setupWheel(d.an);
   const q = document.getElementById('q'), oa = document.getElementById('onlyAnalyzed');
   const go = () => render(d, q.value, oa.checked);
   q.addEventListener('input', go); oa.addEventListener('change', go); go();

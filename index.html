@@ -21,6 +21,23 @@
 </header>
 <main>
   <section id="potd" class="potd" aria-label="Play of the Day" hidden></section>
+  <section id="wheel" class="wheel-sec" aria-labelledby="wheel-h" hidden>
+    <h2 id="wheel-h" class="wheel-h">Spin the Wheel</h2>
+    <p class="wheel-sub">Free pick reveal. No wallet, no payment, no entry fee. Each slice is one of today's value picks.</p>
+    <div class="wheel-stage">
+      <div class="wheel-pointer" aria-hidden="true"></div>
+      <div id="wheel-btn" class="wheel-btn" role="button" tabindex="0" aria-label="Spin the wheel to reveal a pick" aria-describedby="wheel-hint">
+        <div id="wheel-rot" class="wheel-rot"></div>
+        <div class="wheel-shine" aria-hidden="true"></div>
+        <div class="wheel-hub" aria-hidden="true"><span>SPIN</span></div>
+      </div>
+      <span class="wheel-spark s1" aria-hidden="true">✦</span><span class="wheel-spark s2" aria-hidden="true">✦</span>
+      <span class="wheel-spark s3" aria-hidden="true">✧</span><span class="wheel-spark s4" aria-hidden="true">✦</span>
+      <div id="wheel-burst" class="wheel-burst" aria-hidden="true"></div>
+    </div>
+    <p id="wheel-hint" class="wheel-hint">Tap the wheel to spin</p>
+    <div id="wheel-result" class="wheel-result" aria-live="polite"></div>
+  </section>
   <section id="best" class="best"></section>
   <section id="events"></section>
   <section class="notes">
