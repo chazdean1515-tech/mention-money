@@ -30,6 +30,10 @@ async function load() {
   return {mk, an};
 }
 
+// Same rule as the Play of the Day in research/build_analysis.py: once an event's speaking window has started
+// (analysis event_time_et in the past), its prices are stale for betting, so its picks are not listed.
+const started = ea => !!(ea && ea.event_time_et && new Date(ea.event_time_et).getTime() <= Date.now());
+
 function render({mk, an}, q = '', onlyAnalyzed = false) {
   const A = an.events || {};
   const minEdge = an.min_edge ?? 0.05;
@@ -44,7 +48,8 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
     return (e.title + ' ' + (e.sub_title||'') + ' ' + e.series_title + ' ' + e.markets.map(m => m.word).join(' ')).toLowerCase().includes(ql);
   });
   // analyzed first, then by time
-  evs.sort((a, b) => (!!a.decided - !!b.decided) || (!!A[b.event_ticker] - !!A[a.event_ticker]) || (a.expected_expiration_et || '').localeCompare(b.expected_expiration_et || ''));
+  const done = e => !!e.decided || started(A[e.event_ticker]);
+  evs.sort((a, b) => (done(a) - done(b)) || (!!A[b.event_ticker] - !!A[a.event_ticker]) || (a.expected_expiration_et || '').localeCompare(b.expected_expiration_et || ''));
 
   const best = [];
   const cards = evs.map(e => {
@@ -54,7 +59,7 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
       const w = words[m.ticker] || words[m.word] || null;
       const est = w ? w.p : null;
       const ed = edges(m, est);
-      const hl = !e.decided && ed.edge != null && ed.edge >= minEdge;
+      const hl = !done(e) && ed.edge != null && ed.edge >= minEdge;
       if (hl) best.push({e, m, w, ed});
       return {m, w, est, ed, hl};
     }).sort((a, b) => (b.ed.edge ?? -9) - (a.ed.edge ?? -9) || (b.m.last_price ?? 0) - (a.m.last_price ?? 0));
@@ -74,7 +79,7 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
     const rules = e.markets[0] && e.markets[0].rules_primary ? e.markets[0].rules_primary : '';
     return `<article class="card">
       <div class="hd">
-        <h3>${esc(ea?.title || e.title)} ${e.decided ? '<span class="tag">window closed, awaiting settlement</span>' : ea ? '<span class="tag">analyzed</span>' : '<span class="tag pending">analysis pending</span>'}</h3>
+        <h3>${esc(ea?.title || e.title)} ${e.decided ? '<span class="tag">window closed, awaiting settlement</span>' : started(ea) ? '<span class="tag">event started, picks hidden</span>' : ea ? '<span class="tag">analyzed</span>' : '<span class="tag pending">analysis pending</span>'}</h3>
         <div class="info">${esc(ea?.speaker || e.series_title)} · event ${ea?.event_time_et ? fmtET(ea.event_time_et) : (e.event_date ? e.event_date + ' (date from ticker)' : '—')} · market closes ${fmtET(e.first_close_et)} · prices as of ${fmtET(e.price_fetched_at_et)} · vol ${Math.round(e.total_volume).toLocaleString()} · <span class="mut">${esc(e.event_ticker)}</span></div>
         ${ea?.event_time_note ? `<div class="info">⏱ ${esc(ea.event_time_note)}</div>` : ''}
         ${ea ? `<details class="ctxd"><summary>Context, method & sources</summary>
@@ -101,7 +106,68 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
   document.getElementById('events').innerHTML = cards || '<p class="mut">No events match.</p>';
 }
 
+// Play of the Day: chosen at build time (research/build_analysis.py) and stored in analysis.json.
+function renderPotd(an) {
+  const el = document.getElementById('potd');
+  const p = an && an.play_of_the_day;
+  if (!p || (p.event_time_et && new Date(p.event_time_et).getTime() <= Date.now())) { el.hidden = true; el.innerHTML = ''; return; }
+  const side = p.side === 'NO' ? 'NO' : 'YES';
+  const edgeC = Math.round(p.edge * 100);
+  el.innerHTML = `<article class="potd-card">
+    <div class="potd-shine" aria-hidden="true"></div>
+    <div class="potd-top">
+      <span class="potd-badge" aria-hidden="true">🏆</span>
+      <span class="potd-label">Play of the Day</span>
+      <span class="potd-fire" aria-hidden="true">🔥</span>
+    </div>
+    <div class="potd-event">${esc(p.event_title)}</div>
+    <div class="potd-pick"><span class="potd-word">“${esc(p.word)}”</span> <span class="potd-side ${side.toLowerCase()}">BUY ${side}</span></div>
+    <div class="potd-stats">
+      <div class="potd-stat"><span class="k">Price (${side})</span><span class="v">${pct(p.price)}</span></div>
+      <div class="potd-stat"><span class="k">Our est. (${side})</span><span class="v">${pctP(p.est_side)}</span>${side === 'NO' ? `<span class="s">YES ${pctP(p.est_yes)}</span>` : ''}</div>
+      <div class="potd-stat edge"><span class="k">Edge</span><span class="v">${edgeC > 0 ? '+' : ''}${edgeC}¢</span><span class="s">after ~${Math.round(p.fee * 100)}¢ fee</span></div>
+    </div>
+    <div class="potd-when">
+      ${p.event_time_et ? `<span>🎙 Event <b>${fmtET(p.event_time_et)}</b></span>` : ''}
+      <span>⏳ Market closes <b>${fmtET(p.close_time_et)}</b></span>
+      ${p.price_fetched_at_et ? `<span class="mut">price as of ${fmtET(p.price_fetched_at_et)}</span>` : ''}
+    </div>
+    <p class="potd-why">${esc(p.rationale)}</p>
+    <div class="potd-foot">
+      ${p.url ? `<a class="potd-link" href="${esc(p.url)}" target="_blank" rel="noopener">View market on Kalshi →</a>` : ''}
+      <span class="potd-disc">Analysis only, not financial advice.</span>
+    </div>
+  </article>`;
+  el.hidden = false;
+}
+
+// Tip panel (SOL address is static in index.html; copy reads it from the DOM).
+function setupTip() {
+  const dlg = document.getElementById('tip');
+  if (!dlg) return;
+  const status = document.getElementById('tip-status');
+  const open = () => { status.textContent = ''; if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); };
+  const close = () => { if (dlg.close) dlg.close(); else dlg.removeAttribute('open'); };
+  document.querySelectorAll('[data-tip-open]').forEach(b => b.addEventListener('click', open));
+  dlg.querySelector('[data-tip-close]').addEventListener('click', close);
+  dlg.addEventListener('click', ev => { if (ev.target === dlg) close(); });  // backdrop click
+  document.getElementById('tip-copy').addEventListener('click', async () => {
+    const addr = document.getElementById('sol-addr').textContent.trim();
+    let ok = false;
+    try { await navigator.clipboard.writeText(addr); ok = true; } catch (_) {
+      const ta = document.createElement('textarea'); ta.value = addr; ta.setAttribute('readonly', '');
+      ta.style.position = 'fixed'; ta.style.opacity = '0'; dlg.appendChild(ta); ta.select();
+      try { ok = document.execCommand('copy'); } catch (_) {} ta.remove();
+    }
+    status.textContent = ok ? 'Copied!' : 'Copy failed. Select the address above.';
+    status.classList.toggle('ok', ok);
+    clearTimeout(setupTip.t); setupTip.t = setTimeout(() => { status.textContent = ''; }, 2500);
+  });
+}
+setupTip();
+
 load().then(d => {
+  renderPotd(d.an);
   const q = document.getElementById('q'), oa = document.getElementById('onlyAnalyzed');
   const go = () => render(d, q.value, oa.checked);
   q.addEventListener('input', go); oa.addEventListener('change', go); go();

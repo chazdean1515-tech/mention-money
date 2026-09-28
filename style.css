@@ -71,3 +71,79 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:16px;background
 }
 @media(min-width:641px){.tbl .r-m{display:none}}
 .ctxd summary{padding:6px 0 0}
+/* ---------- Play of the Day hero ---------- */
+.potd{margin:4px 0 26px}
+.potd-card{position:relative;overflow:hidden;border-radius:18px;padding:20px 20px 16px;text-align:center;isolation:isolate;
+  border:3px solid transparent;
+  background:radial-gradient(ellipse at 50% -10%,rgba(255,226,120,.30),transparent 60%) padding-box,
+             linear-gradient(180deg,rgba(18,52,32,.98),rgba(8,22,14,.98)) padding-box,
+             linear-gradient(120deg,#8a6a1f,#f7e08a 18%,#d4af37 34%,#fff6c9 48%,#c9982a 62%,#f3d36b 80%,#9c7a22) border-box;
+  box-shadow:0 0 0 1px rgba(255,230,140,.25),0 10px 30px rgba(0,0,0,.6),0 0 26px rgba(255,200,60,.45);
+  animation:potdPulse 3.2s ease-in-out infinite}
+@keyframes potdPulse{0%,100%{box-shadow:0 0 0 1px rgba(255,230,140,.25),0 10px 30px rgba(0,0,0,.6),0 0 18px rgba(255,200,60,.35)}
+  50%{box-shadow:0 0 0 1px rgba(255,240,170,.5),0 10px 30px rgba(0,0,0,.6),0 0 42px rgba(255,210,63,.75)}}
+.potd-shine{position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(110deg,transparent 35%,rgba(255,240,180,.0) 42%,rgba(255,244,200,.22) 50%,rgba(255,240,180,0) 58%,transparent 65%);
+  transform:translateX(-120%);animation:potdSweep 5.5s ease-in-out infinite}
+@keyframes potdSweep{0%{transform:translateX(-120%)}45%,100%{transform:translateX(120%)}}
+.potd-top{display:flex;justify-content:center;align-items:center;gap:10px}
+.potd-badge,.potd-fire{font-size:30px;line-height:1;filter:drop-shadow(0 0 8px rgba(255,210,63,.8))}
+.potd-badge{display:inline-grid;place-items:center;width:50px;height:50px;border-radius:50%;border:2px solid #d4af37;
+  background:radial-gradient(circle at 35% 30%,#3a2c05,#0a1f12 70%);box-shadow:inset 0 0 10px rgba(212,175,55,.5),0 0 14px rgba(212,175,55,.45)}
+.potd-label{font-family:"Cinzel Decorative",Georgia,serif;font-weight:900;font-size:26px;letter-spacing:1.5px;text-transform:uppercase;
+  background:linear-gradient(100deg,#8a6a1f 0%,#f7e08a 18%,#d4af37 34%,#fff6c9 48%,#c9982a 62%,#f3d36b 80%,#9c7a22 100%);background-size:220% 100%;
+  -webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent;
+  filter:drop-shadow(0 1px 0 #5a4410) drop-shadow(0 2px 3px rgba(0,0,0,.7));animation:shine 7s ease-in-out infinite}
+.potd-event{color:#cfd8cc;font-size:14.5px;margin-top:10px;letter-spacing:.2px}
+.potd-pick{margin-top:6px;display:flex;justify-content:center;align-items:center;gap:12px;flex-wrap:wrap}
+.potd-word{font-size:34px;font-weight:800;color:#fff8e1;text-shadow:0 0 14px rgba(255,210,63,.45),0 2px 3px rgba(0,0,0,.8)}
+.potd-side{font-weight:900;font-size:16px;letter-spacing:1px;padding:5px 14px;border-radius:999px;border:1.5px solid}
+.potd-side.yes{color:#7dffb3;background:#0f3a22;border-color:#2ecc71;box-shadow:0 0 12px rgba(46,204,113,.45)}
+.potd-side.no{color:#ffb0b0;background:#3d1717;border-color:#ff6b6b;box-shadow:0 0 12px rgba(255,107,107,.4)}
+.potd-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:16px auto 12px;max-width:680px}
+.potd-stat{background:rgba(4,14,9,.72);border:1px solid rgba(212,175,55,.45);border-radius:12px;padding:10px 6px;display:flex;flex-direction:column;align-items:center}
+.potd-stat .k{font-size:11.5px;text-transform:uppercase;letter-spacing:1px;color:#c9b67a}
+.potd-stat .v{font-size:40px;font-weight:900;line-height:1.1;color:#fff6c9;font-variant-numeric:tabular-nums;text-shadow:0 0 12px rgba(255,210,63,.35)}
+.potd-stat .s{font-size:11.5px;color:var(--mut)}
+.potd-stat.edge{border-color:#2ecc71;box-shadow:inset 0 0 14px rgba(46,204,113,.25)}
+.potd-stat.edge .v{color:#6dffa6;text-shadow:0 0 14px rgba(46,204,113,.6)}
+.potd-when{display:flex;justify-content:center;flex-wrap:wrap;gap:6px 16px;font-size:13px;color:#d6dccf}
+.potd-why{max-width:720px;margin:12px auto 10px;font-size:14.5px;color:#eef1e8}
+.potd-foot{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:8px 16px}
+.potd-link{display:inline-block;font-weight:700;color:#07140d;text-decoration:none;padding:8px 16px;border-radius:999px;
+  background:linear-gradient(100deg,#c9982a,#f7e08a 40%,#fff6c9 55%,#d4af37);box-shadow:0 2px 10px rgba(212,175,55,.45)}
+.potd-link:hover,.potd-link:focus-visible{filter:brightness(1.1)}
+.potd-disc{font-size:11.5px;color:var(--mut)}
+@media(max-width:640px){
+  .potd-card{padding:16px 12px 14px;border-radius:16px}
+  .potd-label{font-size:19px;letter-spacing:1px}
+  .potd-badge{width:40px;height:40px;font-size:23px}.potd-fire{font-size:23px}
+  .potd-word{font-size:28px}
+  .potd-stats{gap:6px}
+  .potd-stat{padding:8px 2px}.potd-stat .v{font-size:30px}.potd-stat .k{font-size:10px;letter-spacing:.5px}
+  .potd-when{flex-direction:column;gap:2px}
+}
+@media(max-width:360px){.potd-label{font-size:16px}.potd-stat .v{font-size:25px}}
+/* ---------- Tip the House (SOL) ---------- */
+.tip-btn{font:700 13px/1 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;color:#07140d;cursor:pointer;padding:8px 14px;border-radius:999px;border:1px solid #fff0a0;
+  background:linear-gradient(100deg,#c9982a,#f7e08a 40%,#fff6c9 55%,#d4af37);box-shadow:0 0 10px rgba(212,175,55,.45);white-space:nowrap}
+.tip-btn:hover,.tip-btn:focus-visible{filter:brightness(1.1)}
+.foot-tip{margin-top:10px}
+.tip{border:3px solid transparent;border-radius:16px;padding:18px 18px 14px;max-width:min(360px,calc(100vw - 24px));width:100%;color:var(--fg);text-align:center;
+  background:linear-gradient(180deg,#123420,#07140d) padding-box,linear-gradient(120deg,#8a6a1f,#f7e08a 25%,#fff6c9 50%,#d4af37 75%,#9c7a22) border-box;
+  box-shadow:0 0 36px rgba(255,210,63,.5),0 16px 40px rgba(0,0,0,.7)}
+.tip::backdrop{background:rgba(2,8,5,.72)}
+.tip h2{margin:0 0 10px;font-family:"Cinzel Decorative",Georgia,serif;font-weight:900;font-size:22px;color:#f7e08a;text-shadow:0 1px 0 #5a4410,0 2px 4px rgba(0,0,0,.7)}
+.tip-coin{display:inline-grid;place-items:center;width:30px;height:30px;border-radius:50%;border:1.5px solid #d4af37;font-family:sans-serif;font-size:18px;vertical-align:middle}
+.tip-x{position:absolute;top:6px;right:8px;background:none;border:0;color:#f7e08a;font-size:26px;line-height:1;cursor:pointer;padding:4px 8px}
+.tip-qr{display:block;margin:0 auto 10px;width:222px;height:222px;max-width:70vw;max-height:70vw;border-radius:10px;border:2px solid #d4af37;background:#fff8e1}
+.tip-lbl{font-size:11.5px;text-transform:uppercase;letter-spacing:1px;color:#c9b67a}
+.tip-addr{display:block;margin:4px 0 10px;padding:8px;border-radius:8px;background:rgba(0,0,0,.45);border:1px solid rgba(212,175,55,.45);
+  font:600 13.5px/1.35 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;color:#fff6c9;word-break:break-all;user-select:all}
+.tip-copy{font-weight:700;cursor:pointer;padding:8px 18px;border-radius:999px;border:1px solid #2ecc71;background:#0f3a22;color:#7dffb3}
+.tip-copy:hover,.tip-copy:focus-visible{filter:brightness(1.15)}
+.tip-status{display:inline-block;min-width:60px;margin-left:8px;font-size:13px;font-weight:700;color:var(--neg)}
+.tip-status.ok{color:var(--pos)}
+.tip-note{font-size:12px;color:var(--mut);margin:10px 0 0}
+@media(prefers-reduced-motion:reduce){.potd-card,.potd-shine,.potd-label{animation:none}.potd-shine{opacity:0}}
+@media(max-width:640px){header .tip-btn .tl{display:none}header .tip-btn{padding:7px 11px}.controls input[type=search]{min-width:120px}}

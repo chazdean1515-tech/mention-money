@@ -21,6 +21,11 @@ python3 -m http.server 8080 --bind 127.0.0.1   # then open http://127.0.0.1:8080
 /workspace/.venv-pw/bin/python screenshot.py
 ```
 
+## Play of the Day & tips
+- `research/build_analysis.py` also writes `play_of_the_day` into `data/analysis.json`: the largest after-fee edge (≥5¢) among open, analyzed markets whose event hasn't started, with a two-sided quote (bid > 0, spread ≤ 10¢) and some volume. Medium-or-better confidence, non-fragile picks are preferred (tier 1), then any non-fragile pick, then fragile ones. Picks within 2¢ of the top edge go to the soonest event. Fragile flags live in the analysis modules (`"fragile"` on a word, `"fragile_sides"` on an event). The daily fetch + build + publish run refreshes it.
+- "Tip the House ◎ SOL" opens a panel with the Solana address and a local QR code (`assets/sol-qr.svg`, made with segno).
+- `screenshot_potd.py`: screenshots of the hero card and the tip panel, and it checks the copy button.
+
 ## Notes
 - The unauthenticated Kalshi API was throttling hard from this box (most calls got 429), so a full scan of all ~450 Mentions series takes hours. The scan goes in priority order: Trump/press series first, then this week's earnings, then recently updated series, then by volume.
 - Event dates come from the event ticker (e.g. `-26SEP29`). Kalshi's `expected_expiration` is about 2 weeks after the event. Kalshi's ticker date can also differ from the real call date (Carnival: ticker SEP28, call Sep 29; Nike: ticker SEP29, call Oct 1).

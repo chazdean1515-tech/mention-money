@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-09-28T09:51:37-04:00",
+ "updated_at_et": "2026-09-28T16:52:07-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -517,7 +517,8 @@
     },
     "KXTRUMPSAYCOMPANY-26OCT01-ABNB": {
      "p": 0.3,
-     "reason": "0/23 SEL. 75¢ looks very rich unless already said — NO lean (low confidence on month-to-date state)."
+     "reason": "0/23 SEL. 75¢ looks very rich unless already said — NO lean (low confidence on month-to-date state).",
+     "fragile": "Month-to-date state unknown; a 71–75¢ market may mean it was already said."
     },
     "KXTRUMPSAYCOMPANY-26OCT01-AMD": {
      "p": 0.12,
@@ -717,6 +718,9 @@
    "event_time_et": "2026-09-28T14:00:00-04:00",
    "event_time_note": "White House schedule: announcement open to press pool at 2:00 p.m. ET. Topic not officially disclosed as of morning ET.",
    "context": "Short Oval Office announcement (usually tighter than a rally). Press guesswork centers on (a) AI policy after a Sunday dinner with Anthropic CEO Dario Amodei and a Tuesday AI meeting with tech CEOs, and/or (b) a diesel/fuel export restriction after Trump said Sunday he was looking 'very seriously' at a ban. Those two paths load different word sets (AI/China/tariff/nuclear vs oil/gas/Iran). Staples like Biden/fake news are less automatic in a scripted Oval hit. 'Super Intelligence' has ~0 hits in the Jun–Aug corpus — an 81¢ ask is only sane if the speech is explicitly about AGI.",
+   "fragile_sides": {
+    "NO": "NO leans assume a short scripted Oval Office hit; an ad-libbed riff would flip them."
+   },
    "confidence": "Low–medium. Topic unconfirmed; format short; base rates from longer remarks overstate stump staples.",
    "method": "Share of 23 Jun–Aug 2026 govinfo Trump remarks containing the word, adjusted down for a short scripted Oval announcement and for the AI-vs-energy topic fork.",
    "sources": [
@@ -839,6 +843,37 @@
      "reason": "Cancels only if the event doesn't qualify. Schedule looks firm."
     }
    }
+  }
+ },
+ "play_of_the_day": {
+  "event_ticker": "KXEARNINGSMENTIONCCL-26SEP28",
+  "series_ticker": "KXEARNINGSMENTIONCCL",
+  "ticker": "KXEARNINGSMENTIONCCL-26SEP28-TAIL",
+  "event_title": "Carnival (CCL) Q3 FY26 earnings call",
+  "speaker": "Carnival Corp. (CEO Josh Weinstein, CFO David Bernstein, IR Beth Roberts, operator)",
+  "word": "Tailwind",
+  "side": "YES",
+  "price": 0.45,
+  "yes_bid": 0.44,
+  "yes_ask": 0.45,
+  "est_yes": 0.65,
+  "est_side": 0.65,
+  "edge_raw": 0.2,
+  "fee": 0.0173,
+  "edge": 0.1827,
+  "event_time_et": "2026-09-29T10:00:00-04:00",
+  "close_time_et": "2026-12-31T10:00:00-05:00",
+  "price_fetched_at_et": "2026-09-28T09:23:14-04:00",
+  "confidence": "Medium. 5 comparable transcripts. Word choice varies from call to call.",
+  "rationale": "Said 'tailwind(s)' in 4 of 5 recent calls (Weinstein uses it every quarter). Our 65% YES estimate vs a 45¢ YES ask leaves about +18¢ per contract after fees.",
+  "reason": "Said 'tailwind(s)' in 4 of 5 recent calls (Weinstein uses it every quarter). 45¢ looks cheap.",
+  "url": "https://kalshi.com/markets/kxearningsmentionccl",
+  "selection": {
+   "tier": 1,
+   "tier_note": "medium-or-better confidence, not flagged fragile",
+   "candidates": 32,
+   "tied_within_2c": 2,
+   "rule": "max edge after fee; ties within 2¢ go to the soonest event"
   }
  }
 }

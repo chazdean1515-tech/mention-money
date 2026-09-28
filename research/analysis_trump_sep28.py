@@ -11,6 +11,8 @@ DATA = {
               "and a Tuesday AI meeting with tech CEOs, and/or (b) a diesel/fuel export restriction after Trump said Sunday he was looking 'very seriously' at a ban. "
               "Those two paths load different word sets (AI/China/tariff/nuclear vs oil/gas/Iran). Staples like Biden/fake news are less automatic in a scripted Oval hit. "
               "'Super Intelligence' has ~0 hits in the Jun–Aug corpus — an 81¢ ask is only sane if the speech is explicitly about AGI."),
+  # Play-of-the-Day guard: the NO leans below only work if this stays a short, scripted Oval hit.
+  "fragile_sides": {"NO": "NO leans assume a short scripted Oval Office hit; an ad-libbed riff would flip them."},
   "confidence": "Low–medium. Topic unconfirmed; format short; base rates from longer remarks overstate stump staples.",
   "method": ("Share of 23 Jun–Aug 2026 govinfo Trump remarks containing the word, adjusted down for a short scripted Oval announcement and for the AI-vs-energy topic fork."),
   "sources": [

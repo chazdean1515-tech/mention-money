@@ -16,9 +16,11 @@
   <div class="controls">
     <input id="q" type="search" placeholder="Filter events / words…">
     <label><input id="onlyAnalyzed" type="checkbox"> Analyzed only</label>
+    <button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip" aria-label="Tip the House in SOL"><span class="tl">Tip the House </span><span aria-hidden="true">◎</span> SOL</button>
   </div>
 </header>
 <main>
+  <section id="potd" class="potd" aria-label="Play of the Day" hidden></section>
   <section id="best" class="best"></section>
   <section id="events"></section>
   <section class="notes">
@@ -27,7 +29,19 @@
     <p>Estimates are judgment calls from public research, not guarantees. Read-only; no trading. Always check the market's rules text (hover/tap “rules”) — exact-phrase, plural and speaker requirements matter.</p>
   </section>
 </main>
-<footer>Data: Kalshi public API (read-only). Not financial advice.</footer>
+<footer>Data: Kalshi public API (read-only). Not financial advice.
+  <div class="foot-tip"><button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip">Tip the House <span aria-hidden="true">◎</span> SOL</button></div>
+</footer>
+<dialog id="tip" class="tip" aria-labelledby="tip-h">
+  <button type="button" class="tip-x" data-tip-close aria-label="Close">×</button>
+  <h2 id="tip-h"><span class="tip-coin" aria-hidden="true">◎</span> Tip the House</h2>
+  <img class="tip-qr" src="assets/sol-qr.svg" width="222" height="222" alt="QR code for the Solana address below">
+  <div class="tip-lbl">Solana (SOL) address</div>
+  <code id="sol-addr" class="tip-addr">APst4X6cmSQ3KAVBt4ZnQpSNcLH4gVJHDutXK8xhaDmR</code>
+  <button type="button" id="tip-copy" class="tip-copy">Copy address</button>
+  <span id="tip-status" class="tip-status" role="status" aria-live="polite"></span>
+  <p class="tip-note">Donations are optional and support the site. Send SOL only on the Solana network.</p>
+</dialog>
 <script src="app.js"></script>
 </body>
 </html>
