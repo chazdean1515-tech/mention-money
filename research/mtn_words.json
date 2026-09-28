@@ -1,0 +1,16 @@
+{
+ "Snowpack": "\\bsnowpacks?\\b",
+ "Ski School": "\\bski schools?\\b",
+ "Rental": "\\brentals?\\b",
+ "Dining": "\\bdining\\b",
+ "Acquire / Acquired / Acquisition": "\\b(acquire[ds]?|acquisition|acquisitions)\\b",
+ "Gen Z": "\\bgen[- ]?z\\b",
+ "Snowmaking": "\\bsnowmak(e|es|ing)\\b",
+ "Renewal": "\\brenewals?\\b",
+ "Personalized / Personalization": "\\bpersonaliz(e|ed|ation|ations)\\b",
+ "Northeast": "\\bnortheast\\b",
+ "Epic Friend": "\\bepic friends?\\b",
+ "Conversion": "\\bconversions?\\b",
+ "Canada / Canadian": "\\b(canada|canadian|canadians)\\b",
+ "Buddy": "\\bbudd(y|ies)\\b"
+}

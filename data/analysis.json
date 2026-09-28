@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-09-28T07:35:34-04:00",
+ "updated_at_et": "2026-09-28T09:51:37-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -89,6 +89,87 @@
     "KXEARNINGSMENTIONCCL-26SEP28-TARI": {
      "p": 0.12,
      "reason": "1/5 calls (Q2'26, looking back at 2025 tariff volatility). Fair."
+    }
+   }
+  },
+  "KXEARNINGSMENTIONMTN-26SEP28": {
+   "title": "Vail Resorts (MTN) Q4 FY26 / year-end earnings call",
+   "speaker": "Vail Resorts (CEO Rob Katz, CFO Angela Korch, IR Connie Wang, operator)",
+   "event_time_et": "2026-09-28T17:00:00-04:00",
+   "event_time_note": "Vail PR: results after the close Mon Sep 28, call at 5:00 p.m. ET. Kalshi ticker matches the calendar date.",
+   "context": "Year-end call after a weather-challenged FY26 (Rockies snowpack near historic lows in Q2). Standing themes: Epic Friends (rebranded buddy tickets), pass sales/renewals, conversion of ticket buyers to passes, ski school and rental digitization in the My Epic app, snowmaking, Northeast resorts, and occasional Canada/Switzerland geography. Only company representatives count, not analysts. Most Kalshi YES asks sit in the high-70s to 90s — that looks rich versus base rates for several mid-frequency words.",
+   "confidence": "Medium. 4 comparable transcripts; CEO name varies (Rob / Robert / Robert A. Katz) across files. Year-end format usually mirrors Q4 FY25.",
+   "method": "Company-speaker mention counts (Rob/Robert Katz, Angela Korch, Connie Wang, Operator) in FY25 Q4 and FY26 Q1–Q3 transcripts (roic.ai).",
+   "sources": [
+    {
+     "title": "Vail Resorts: FY26 Q4/year-end call Sep 28, 5:00pm ET",
+     "url": "https://ca.finance.yahoo.com/news/vail-resorts-announces-fiscal-2026-200500843.html"
+    },
+    {
+     "title": "Vail Resorts IR",
+     "url": "https://investors.vailresorts.com"
+    },
+    {
+     "title": "Vail transcripts (roic.ai)",
+     "url": "https://www.roic.ai/quote/MTN/transcripts"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONMTN-26SEP28-EPIC": {
+     "p": 0.94,
+     "reason": "'Epic Friend(s)' in 4/4 calls (3–11 mentions). Flagship product. YES lean vs ~79¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-CONV": {
+     "p": 0.9,
+     "reason": "Pass 'conversion' in 4/4 calls. Core KPI. Slight YES lean at ~79¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-SKIS": {
+     "p": 0.78,
+     "reason": "Ski school in 3/4 (digitization theme). Near fair to slight NO at 89¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-SNOWM": {
+     "p": 0.72,
+     "reason": "Snowmaking in 3/4; weather story invites it. Fair at ~79¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-ACQU": {
+     "p": 0.7,
+     "reason": "Acquire/acquisition in 3/4. Slight NO at 89¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-PERS": {
+     "p": 0.68,
+     "reason": "Personalized/personalization in 3/4 (My Epic). Slight NO at ~79¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-NORT": {
+     "p": 0.65,
+     "reason": "Northeast in 3/4. Slight NO at ~78¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-RENE": {
+     "p": 0.72,
+     "reason": "Renewal in 2/4 but Q4 FY25 had 5 mentions (pass season). Fair at ~78¢."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-SNOW": {
+     "p": 0.55,
+     "reason": "Snowpack in 2/4 (Q4 FY25 + bad-weather Q2). 90¢ looks rich. NO lean."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-RENT": {
+     "p": 0.55,
+     "reason": "Rental in 2/4. 89¢ rich. NO lean."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-DINI": {
+     "p": 0.5,
+     "reason": "Dining in 2/4. 89¢ rich. NO lean."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-CANA": {
+     "p": 0.4,
+     "reason": "Canada/Canadian in 1/4 (Q4 geography line). 79¢ rich. NO lean."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-GEN": {
+     "p": 0.35,
+     "reason": "Gen Z in 1/4 (Q2 Epic Passion campaign). May recur in marketing wrap, but 78¢ is rich."
+    },
+    "KXEARNINGSMENTIONMTN-26SEP28-BUDD": {
+     "p": 0.35,
+     "reason": "Buddy in 2/4 when contrasting legacy buddy tickets with Epic Friends; less needed now. 78¢ rich."
     }
    }
   },
@@ -384,6 +465,378 @@
     "KXTRUMPMENTION-26SEP29-NQE": {
      "p": 0.02,
      "reason": "Resolves YES only if the event doesn't qualify (e.g. cancelled). No sign of that."
+    }
+   }
+  },
+  "KXTRUMPSAYCOMPANY-26OCT01": {
+   "title": "Companies Trump will say in September",
+   "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
+   "event_time_et": "2026-09-30T23:59:00-04:00",
+   "event_time_note": "Month-to-date market. Boeing already ~99¢ (treat as said). Remaining catalysts: Mon Oval announcement + Tue Mellon 'Golden Age' (Musk, Jensen Huang, AI/energy panels).",
+   "context": "Jun–Aug SEL base rates (23 remarks): Boeing 3, Tesla 4, Meta 3, Micron 3, ChatGPT/OpenAI 2, Uber 2, JPMorgan 2, IBM 2, SpaceX 1, Oracle 1, Deere 1, Caterpillar 1, Hyundai 1; DoorDash/Airbnb/AMD/TSMC/BlackRock/Paramount/Verizon/Qualcomm/Rigetti/Mastercard/eBay = 0 in SEL (DoorDash 1× elsewhere in 2026 DCPD). Mellon AI showcase lifts SpaceX / Tesla / ChatGPT-OpenAI / Meta; agriculture panel is a thin Deere/Caterpillar hook. I do not have a verified September-to-date said/unsaid tape — prices near 90¢+ (DoorDash, Boeing) are treated as nearly resolved YES; mid-priced names may already be said. Confidence is low on those.",
+   "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+   "method": "Jun–Aug 2026 SEL presence rates + full-2026 DCPD checks for rare names; adjusted for Mellon AI guest list and ~2.5 days left in September.",
+   "sources": [
+    {
+     "title": "govinfo CPD 2026 Trump remarks",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    },
+    {
+     "title": "CBS: Mellon Golden Age guest list (Musk, Huang)",
+     "url": "https://www.cbsnews.com/news/trump-golden-age-event-tech-executives-elon-musk-jensen-huang-ai/"
+    },
+    {
+     "title": "NPR Indicator: Trump trades in DoorDash/Dell/Palantir (Sep 24)",
+     "url": "https://www.npr.org/2026/09/24/nx-s1-5979093/what-doordash-dell-and-palantir-all-have-in-common"
+    }
+   ],
+   "words": {
+    "KXTRUMPSAYCOMPANY-26OCT01-BOEI": {
+     "p": 0.99,
+     "reason": "Market ~99¢; 3/23 SEL. Treat as already said this month."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-DOOR": {
+     "p": 0.92,
+     "reason": "Market ~91¢ after a year of DoorDash politics + Sep 24 NPR piece; treat as nearly resolved. Fair."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-CHAT": {
+     "p": 0.55,
+     "reason": "2/23 SEL; Mellon AI crowd. 67¢ a bit rich → slight NO."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-SPCX": {
+     "p": 0.52,
+     "reason": "1/23 SEL but Musk on the Mellon slate. Fair at ~58¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-TSLA": {
+     "p": 0.48,
+     "reason": "4/23 SEL + Musk. Slight YES vs 37¢ ask."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-META": {
+     "p": 0.4,
+     "reason": "3/23 SEL; AI panel. Fair at ~43¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-ABNB": {
+     "p": 0.3,
+     "reason": "0/23 SEL. 75¢ looks very rich unless already said — NO lean (low confidence on month-to-date state)."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-AMD": {
+     "p": 0.12,
+     "reason": "0/23. Chip talk possible Tue; 22¢ a bit rich."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-TSM": {
+     "p": 0.1,
+     "reason": "0/23. 29¢ rich. NO lean."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-MU": {
+     "p": 0.14,
+     "reason": "3/23 SEL (memory/AI). Fair-to-slight YES at thin asks; watch 19¢ ask."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-ORCL": {
+     "p": 0.14,
+     "reason": "1/23; cloud/AI. Slight YES if ask stays ~9¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-IBM": {
+     "p": 0.12,
+     "reason": "2/23. Slight YES at ~4¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-DE": {
+     "p": 0.1,
+     "reason": "1/23; agriculture panel hook. 18¢ slight NO."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-CAT": {
+     "p": 0.08,
+     "reason": "1/23. Fair-to-slight NO at mid-teens if listed."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-PSKY": {
+     "p": 0.08,
+     "reason": "0/23. 21¢ rich."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-JPM": {
+     "p": 0.08,
+     "reason": "2/23. Fair near 10¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-UBER": {
+     "p": 0.08,
+     "reason": "2/23. Fair near 10¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-QCOM": {
+     "p": 0.08,
+     "reason": "0/23. Fair-to-slight NO at 12¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-HYUN": {
+     "p": 0.06,
+     "reason": "1/23. Fair near 5¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-BLAC": {
+     "p": 0.04,
+     "reason": "0/23. Fair near 8¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-VERI": {
+     "p": 0.03,
+     "reason": "0/23. Fair near 8¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-MA": {
+     "p": 0.04,
+     "reason": "0/23. Fair-to-NO at 15¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-RGTI": {
+     "p": 0.02,
+     "reason": "0/23 quantum name. Fair at 4¢."
+    },
+    "KXTRUMPSAYCOMPANY-26OCT01-EBAY": {
+     "p": 0.02,
+     "reason": "0/23. Fair at low single digits."
+    }
+   }
+  },
+  "KXTRUMPSAYMONTH-26OCT01": {
+   "title": "Selected Trump phrases in September",
+   "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
+   "event_time_et": "2026-09-30T23:59:00-04:00",
+   "event_time_note": "Month-to-date market. Remaining: Mon Oval announcement, Tue Mellon Golden Age, Wed Sep 30.",
+   "context": "Corpus (23 Jun–Aug SEL + broader 2026 DCPD): Cognitive 3/23 SEL (5 all-year); Newscum 0/23 SEL but 3 all-year; Peace in the Middle East 1/23 SEL (9 all-year); UFO/UAP 0; Epstein 0/23 (1 all-year); Peptide 0; Make Iran Great Again 0. None of these are natural fits for a short AI/diesel Oval hit or a tech showcase, except Cognitive (he uses it to attack opponents' 'cognitive' decline) and Peace in the Middle East on a foreign-policy tangent. 17¢ YES on Cognitive/Newscum looks rich for 2.5 days left unless already said this month.",
+   "confidence": "Low. Month-to-date said/unsaid state unknown; phrase markets are jumpy around news spikes (Epstein, Iran).",
+   "method": "SEL + full-2026 DCPD presence; adjusted for short remaining September window and non-rally formats.",
+   "sources": [
+    {
+     "title": "govinfo CPD 2026",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    },
+    {
+     "title": "Daily Mail: Sep 28 Oval announcement topic speculation",
+     "url": "https://www.dailymail.com/news/article-16166419/trump-oval-office-announcement-diesel-ai.html"
+    }
+   ],
+   "words": {
+    "KXTRUMPSAYMONTH-26OCT01-COGN": {
+     "p": 0.1,
+     "reason": "3/23 SEL. Possible in a political aside, not in AI/diesel core. 17¢ slight NO."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-NEWS": {
+     "p": 0.06,
+     "reason": "0/23 SEL, 3 all-year ('Newscum'). 17¢ rich. NO lean."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-PEAC": {
+     "p": 0.08,
+     "reason": "1/23 SEL, 9 all-year. 10¢ roughly fair."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-UFO": {
+     "p": 0.03,
+     "reason": "0 corpus. Fair at 4¢."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-EPST": {
+     "p": 0.04,
+     "reason": "1 all-year; news-driven. Fair at 3¢."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-PEPT": {
+     "p": 0.02,
+     "reason": "0 hits. Fair at 2¢."
+    },
+    "KXTRUMPSAYMONTH-26OCT01-MAKE": {
+     "p": 0.02,
+     "reason": "0 hits for 'Make Iran Great Again'. Fair at 2¢."
+    }
+   }
+  },
+  "KXTRUMPSAYNICKNAME-26OCT01": {
+   "title": "Trump nicknames before October",
+   "speaker": "Donald Trump (any qualifying remarks before Oct 1)",
+   "event_time_et": "2026-09-30T23:59:00-04:00",
+   "event_time_note": "Kalshi window: say the nickname before October. Remaining calendar: late Mon Sep 28 through Tue Sep 29 (Mellon 'Golden Age') and Wed Sep 30. Not a campaign-rally stretch.",
+   "context": "These nicknames almost never appear in official remarks transcripts. In the full 2026 DCPD dump: Piggy 1×, Whack Job 1×, Numbskull 1×; Trainwreck / Low Energy / Tampon Tim / Comrade Kamala / Crazy Bernie / Biden Crime Family / Fat Slob / Egghead / Rocket Man / Little Communist = 0. Remaining speaking slots are a short Oval announcement and a tech/'Golden Age' showcase — poor venues for insult nicknames. Prices in the 1–12¢ YES range look roughly right; a few NO asks (Piggy 89¢, Whack Job 91¢) still leave a thin NO edge if you size for correlated long-shot risk.",
+   "confidence": "Low. Nicknames are rare in the govinfo corpus; we may miss rally/Truth Social usages that Kalshi still counts. Short remaining window.",
+   "method": "Presence counts across Jun–Aug SEL (23) + full 2026 DCPD dump for rare nicknames; adjusted for ~2.5 days left and non-rally formats.",
+   "sources": [
+    {
+     "title": "govinfo Compilation of Presidential Documents 2026",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    },
+    {
+     "title": "CBS: Trump 'Golden Age' Mellon Auditorium event Sep 29",
+     "url": "https://www.cbsnews.com/news/trump-golden-age-event-tech-executives-elon-musk-jensen-huang-ai/"
+    }
+   ],
+   "words": {
+    "KXTRUMPSAYNICKNAME-26OCT01-PIGG": {
+     "p": 0.04,
+     "reason": "1 hit in all-2026 DCPD; remaining events are Oval/tech. Thin NO edge vs 12¢ YES / 89¢ NO."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-WHAC": {
+     "p": 0.03,
+     "reason": "1 all-year hit ('whack/wack job'). Similar NO lean."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-TRAI": {
+     "p": 0.02,
+     "reason": "0 corpus hits. Fair-to-slight NO at 8¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-LOWE": {
+     "p": 0.03,
+     "reason": "0 in 2026 DCPD dump (classic Jeb-era line). Fair at 6¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-LITT": {
+     "p": 0.02,
+     "reason": "0 hits. Fair at 3¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-COMR": {
+     "p": 0.02,
+     "reason": "0 hits; Kamala less central now. Fair at 3¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-TAMP": {
+     "p": 0.01,
+     "reason": "0 hits; Walz-era insult. Fair at 1¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-ROCK": {
+     "p": 0.02,
+     "reason": "0 in 2026 dump (Kim Jong Un era). Fair at 2¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-NUMB": {
+     "p": 0.02,
+     "reason": "1 all-year hit. Fair at 3¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-FAT": {
+     "p": 0.01,
+     "reason": "0 hits. Fair at 2¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-EGGH": {
+     "p": 0.01,
+     "reason": "0 hits. Fair at 2¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-CRAZ": {
+     "p": 0.02,
+     "reason": "0 hits. Fair at 1¢."
+    },
+    "KXTRUMPSAYNICKNAME-26OCT01-BIDE": {
+     "p": 0.03,
+     "reason": "0 exact 'Biden Crime Family' hits in dump; he says Biden often but not this phrase. Fair at 1¢."
+    }
+   }
+  },
+  "KXTRUMPMENTION-26SEP28": {
+   "title": "Trump Oval Office announcement (topic undisclosed)",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-09-28T14:00:00-04:00",
+   "event_time_note": "White House schedule: announcement open to press pool at 2:00 p.m. ET. Topic not officially disclosed as of morning ET.",
+   "context": "Short Oval Office announcement (usually tighter than a rally). Press guesswork centers on (a) AI policy after a Sunday dinner with Anthropic CEO Dario Amodei and a Tuesday AI meeting with tech CEOs, and/or (b) a diesel/fuel export restriction after Trump said Sunday he was looking 'very seriously' at a ban. Those two paths load different word sets (AI/China/tariff/nuclear vs oil/gas/Iran). Staples like Biden/fake news are less automatic in a scripted Oval hit. 'Super Intelligence' has ~0 hits in the Jun–Aug corpus — an 81¢ ask is only sane if the speech is explicitly about AGI.",
+   "confidence": "Low–medium. Topic unconfirmed; format short; base rates from longer remarks overstate stump staples.",
+   "method": "Share of 23 Jun–Aug 2026 govinfo Trump remarks containing the word, adjusted down for a short scripted Oval announcement and for the AI-vs-energy topic fork.",
+   "sources": [
+    {
+     "title": "Daily Mail: mystery Oval announcement 2pm; diesel ban / AI speculation (Sep 28)",
+     "url": "https://www.dailymail.com/news/article-16166419/trump-oval-office-announcement-diesel-ai.html"
+    },
+    {
+     "title": "Newsweek: mystery announcement; Anthropic dinner context",
+     "url": "https://www.newsweek.com/donald-trump-to-make-mystery-announcement-today-what-we-know-12495760"
+    },
+    {
+     "title": "govinfo CPD Trump remarks corpus (Jun–Aug 2026)",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26SEP28-AI": {
+     "p": 0.72,
+     "reason": "17/23 overall; AI is one of the two live topic guesses after the Anthropic dinner. Fair-to-slight NO at 78¢."
+    },
+    "KXTRUMPMENTION-26SEP28-OIL": {
+     "p": 0.7,
+     "reason": "20/23 base rate; diesel/export-ban path is the other live guess. Slight NO at 88¢."
+    },
+    "KXTRUMPMENTION-26SEP28-CHIN": {
+     "p": 0.62,
+     "reason": "16/23; AI-race framing if it's an AI speech. 88¢ looks rich for a short hit."
+    },
+    "KXTRUMPMENTION-26SEP28-TARI": {
+     "p": 0.55,
+     "reason": "18/23 in long remarks; semiconductor-tariff angle only if AI/chips. 84¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-INVE": {
+     "p": 0.55,
+     "reason": "22/23 stump staple ('trillions invested') but less forced in a short Oval policy hit. 63¢ roughly fair."
+    },
+    "KXTRUMPMENTION-26SEP28-IRAN": {
+     "p": 0.45,
+     "reason": "Market is 'Iran (2+ times)'. 20/23 say Iran once in long speeches; twice in a short Oval is harder. 75¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-BIDE": {
+     "p": 0.4,
+     "reason": "20/23 in long remarks; Oval policy announcements often skip the Biden riff. 83¢ rich. NO lean."
+    },
+    "KXTRUMPMENTION-26SEP28-NUCL": {
+     "p": 0.4,
+     "reason": "17/23; nuclear power for AI data centers OR Iran. Uncertain. 68¢ a bit rich."
+    },
+    "KXTRUMPMENTION-26SEP28-SUPE": {
+     "p": 0.22,
+     "reason": "0/23 Jun–Aug hits for 'super intelligence'. Only pays if the AI speech uses that buzzword. 81¢ very rich. NO lean."
+    },
+    "KXTRUMPMENTION-26SEP28-FAKE": {
+     "p": 0.25,
+     "reason": "13/23 in long remarks; uncommon in scripted Oval policy hits. 75¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-STOC": {
+     "p": 0.3,
+     "reason": "14/23 stump line; not core to AI or diesel. 71¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-HOTT": {
+     "p": 0.25,
+     "reason": "'Hottest country' is stump, not Oval policy. 68¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-DEMO": {
+     "p": 0.35,
+     "reason": "18/23 say Democrat(s); still optional here. 74¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-INFL": {
+     "p": 0.4,
+     "reason": "14/23; diesel prices could pull it in. Fair-to-slight NO at 58¢."
+    },
+    "KXTRUMPMENTION-26SEP28-UKRA": {
+     "p": 0.25,
+     "reason": "6/23; not on the AI/diesel shortlist. 52¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-RUSS": {
+     "p": 0.28,
+     "reason": "12/23; same. 50¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-FAVO": {
+     "p": 0.18,
+     "reason": "Most-favored-nation / favored nation 4/23; healthcare track. 48¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-HEAL": {
+     "p": 0.2,
+     "reason": "8/23; not the speculated topic. 44¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-IMMI": {
+     "p": 0.18,
+     "reason": "14/23 in long remarks; unlikely today. 38¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-NATO": {
+     "p": 0.12,
+     "reason": "7/23. 31¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-TRUM": {
+     "p": 0.1,
+     "reason": "TrumpRx 3/23. 32¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-AFFO": {
+     "p": 0.18,
+     "reason": "11/23; fuel prices could trigger 'affordability'. Fair at 22¢."
+    },
+    "KXTRUMPMENTION-26SEP28-FENT": {
+     "p": 0.08,
+     "reason": "5/23. Slightly rich at 19¢."
+    },
+    "KXTRUMPMENTION-26SEP28-GREE": {
+     "p": 0.04,
+     "reason": "0/23 in corpus. 16¢ rich."
+    },
+    "KXTRUMPMENTION-26SEP28-CRYP": {
+     "p": 0.06,
+     "reason": "4/23. Fair at 8¢."
+    },
+    "KXTRUMPMENTION-26SEP28-NQE": {
+     "p": 0.03,
+     "reason": "Cancels only if the event doesn't qualify. Schedule looks firm."
     }
    }
   }
