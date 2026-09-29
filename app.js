@@ -1,3 +1,17 @@
+// Kalshi referral link (single source of truth). Referral links open Kalshi signup and can't deep-link to a
+// market, so market links stay as-is and this is shown as a separate "New to Kalshi?" CTA. Lives in the app
+// template, not in data/*.json, so the daily rebuild (fetch.py / research/build_analysis.py) never touches it.
+const KALSHI_REFERRAL_URL = 'https://kalshi.com/r/7cd20072-8acd-4c35-a907-b6226921c42b';
+const REF_DISCLOSURE = 'Referral link: we may earn a bonus if you sign up and trade. Not financial advice.';
+const refLink = (cls, html) => `<a class="${cls}" href="${KALSHI_REFERRAL_URL}" target="_blank" rel="sponsored noopener" title="${REF_DISCLOSURE}">${html}</a>`;
+// Static referral anchors in index.html carry data-kalshi-ref; fill in the URL and reveal them.
+function setupReferral() {
+  document.querySelectorAll('a[data-kalshi-ref]').forEach(a => {
+    a.href = KALSHI_REFERRAL_URL; a.target = '_blank'; a.rel = 'sponsored noopener'; a.hidden = false;
+  });
+  document.querySelectorAll('[data-kalshi-ref-disc]').forEach(el => { el.textContent = REF_DISCLOSURE; el.hidden = false; });
+}
+
 const FEE = p => 0.07 * p * (1 - p);
 const pct = x => (x == null || isNaN(x)) ? '—' : Math.round(x * 100) + '¢';
 const pctP = x => (x == null || isNaN(x)) ? '—' : Math.round(x * 100) + '%';
@@ -135,8 +149,9 @@ function renderPotd(an) {
     <p class="potd-why">${esc(p.rationale)}</p>
     <div class="potd-foot">
       ${p.url ? `<a class="potd-link" href="${esc(p.url)}" target="_blank" rel="noopener">View market on Kalshi →</a>` : ''}
-      <span class="potd-disc">Analysis only, not financial advice.</span>
+      ${refLink('ref-link', 'New to Kalshi? <b>Sign up with our link</b>')}
     </div>
+    <p class="potd-disc ref-disc">${REF_DISCLOSURE}</p>
   </article>`;
   el.hidden = false;
 }
@@ -208,9 +223,10 @@ function revealCard(t, play, p) {
     ${p.fragile ? `<p class="wheel-warn">⚠ ${esc(p.fragile)}</p>` : ''}
     <div class="potd-foot">
       ${p.url ? `<a class="potd-link" href="${esc(p.url)}" target="_blank" rel="noopener">View market on Kalshi →</a>` : ''}
+      ${refLink('ref-link sm', 'New to Kalshi? <b>Sign up</b>')}
       <button type="button" class="tip-btn wheel-again">Spin again ↻</button>
-      <span class="potd-disc">Analysis only, not financial advice.</span>
     </div>
+    <p class="potd-disc ref-disc">${REF_DISCLOSURE}</p>
   </article>`;
 }
 
@@ -289,6 +305,7 @@ function setupTip() {
   });
 }
 setupTip();
+setupReferral();
 
 load().then(d => {
   renderPotd(d.an);
