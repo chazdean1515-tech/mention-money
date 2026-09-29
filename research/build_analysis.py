@@ -96,11 +96,25 @@ def record(c):
         "url": f"https://kalshi.com/markets/{e['series_ticker'].lower()}" if e.get("series_ticker") else None,
     }
 
+def previous_potd_ticker():
+    """Ticker featured yesterday, so today can pick a different market when one exists."""
+    path = os.path.join(HERE, "..", "data", "last_potd.json")
+    try:
+        prev = json.load(open(path))
+    except (OSError, ValueError):
+        return None
+    prev_day = (prev.get("date") or "")[:10]
+    if prev_day and prev_day < NOW.date().isoformat():
+        return prev.get("ticker")
+    return None
+
 def pick_potd(cands):
     if not cands:
         return None, None
-    best_tier = min(c["tier"] for c in cands)
-    pool = [c for c in cands if c["tier"] == best_tier]
+    skip = previous_potd_ticker()
+    usable = [c for c in cands if c["m"]["ticker"] != skip] or cands
+    best_tier = min(c["tier"] for c in usable)
+    pool = [c for c in usable if c["tier"] == best_tier]
     top = max(c["edge"] for c in pool)
     close = [c for c in pool if c["edge"] >= top - CLOSE_EDGE - 1e-9]
     close.sort(key=lambda c: (c["when"], -c["edge"], c["m"]["ticker"], c["side"]))
@@ -109,8 +123,10 @@ def pick_potd(cands):
                  2: "no medium-confidence pick cleared the bar; best non-fragile pick",
                  3: "only fragile picks cleared the bar"}[best_tier]
     rec = record(c)
-    rec["selection"] = {"tier": best_tier, "tier_note": tier_note, "candidates": len(cands),
-                        "tied_within_2c": len(close), "rule": "max edge after fee; ties within 2¢ go to the soonest event"}
+    rec["selection"] = {"tier": best_tier, "tier_note": tier_note, "candidates": len(usable),
+                        "tied_within_2c": len(close),
+                        "skipped_repeat": skip if skip and skip != c["m"]["ticker"] else None,
+                        "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"}
     return rec, c
 
 # ---------------- Spin the Wheel ----------------
@@ -177,6 +193,9 @@ json.dump(out, open(path, "w"), indent=1, ensure_ascii=False)
 print("wrote", os.path.normpath(path), "events:", list(out["events"]))
 fmt = lambda r: f"{r['word']} {r['side']} @ {round(r['price']*100)}¢, est {r['side']} {r['est_side']:.0%}, edge +{r['edge']*100:.1f}¢, {r['payout_multiple']}x ({r['event_ticker']}{', FRAGILE' if r['fragile'] else ''})"
 potd = out["play_of_the_day"]
+if potd:
+    json.dump({"date": NOW.date().isoformat(), "ticker": potd["ticker"], "word": potd["word"], "side": potd["side"]},
+              open(os.path.join(HERE, "..", "data", "last_potd.json"), "w"), indent=1)
 print("play of the day:", fmt(potd) + f"; {len(cands)} candidates" if potd else "none")
 for w in out["wheel_plays"]:
     print(f"wheel {w['type']:<12}", fmt(w["picks"][0]), "| rule:", w["rule"], "| alts:", ", ".join(f"{a['word']} {a['side']}" for a in w["picks"][1:]))
