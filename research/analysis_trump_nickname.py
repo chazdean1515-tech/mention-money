@@ -5,9 +5,9 @@ DATA = {
   "title": "Trump nicknames before October",
   "speaker": "Donald Trump (any qualifying remarks before Oct 1)",
   "event_time_et": "2026-09-30T23:59:00-04:00",
-  "event_time_note": "Kalshi window: say the nickname before October. Remaining calendar: late Mon Sep 28 through Tue Sep 29 (Mellon 'Golden Age') and Wed Sep 30. Not a campaign-rally stretch.",
+  "event_time_note": "Kalshi window: say the nickname before October (ends Wed Sep 30 11:59pm ET). Remaining: Tue Sep 29 Mellon 'Golden Age' + any Wed remarks. OK/AL rallies are Oct 1–2, after this window closes.",
   "context": ("These nicknames almost never appear in official remarks transcripts. In the full 2026 DCPD dump: Piggy 1×, Whack Job 1×, Numbskull 1×; Trainwreck / Low Energy / Tampon Tim / Comrade Kamala / Crazy Bernie / Biden Crime Family / Fat Slob / Egghead / Rocket Man / Little Communist = 0. "
-              "Remaining speaking slots are a short Oval announcement and a tech/'Golden Age' showcase — poor venues for insult nicknames. Prices in the 1–12¢ YES range look roughly right; a few NO asks (Piggy 89¢, Whack Job 91¢) still leave a thin NO edge if you size for correlated long-shot risk."),
+              "Remaining speaking slots are the tech/'Golden Age' Mellon address and any Wed remarks — poor venues for insult nicknames (OK/AL rallies fall after the window). Prices in the 1–12¢ YES range look roughly right; a few NO asks (Piggy 89¢, Whack Job 91¢) still leave a thin NO edge if you size for correlated long-shot risk."),
   "confidence": "Low. Nicknames are rare in the govinfo corpus; we may miss rally/Truth Social usages that Kalshi still counts. Short remaining window.",
   "method": "Presence counts across Jun–Aug SEL (23) + full 2026 DCPD dump for rare nicknames; adjusted for ~2.5 days left and non-rally formats.",
   "sources": [

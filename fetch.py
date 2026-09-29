@@ -31,10 +31,11 @@ PACE = 1.0
 PRIORITY = [  # high-traffic political/media series, then earnings calls known to report this week
     "KXTRUMPMENTION", "KXTRUMPMENTIONB", "KXTRUMPSAY", "KXDJTRALLY", "KXSECPRESSMENTION",
     "KXLEAVITTMENTION", "KXVANCEMENTION", "KXMTPMENTION",
-    # week of 2026-09-28 earnings (CCL, MTN Mon; MU Wed; NKE, STZ Thu) -- edit as the calendar changes
+    # week of 2026-09-28/29: CCL call Tue 9/29 (ticker SEP28); MU Wed 9/30; NKE Thu 10/1 (ticker SEP29); STZ ~10/5
     "KXEARNINGSMENTIONCCL", "KXMENTIONEARNCCL", "KXEARNINGSMENTIONMTN", "KXEARNINGSMENTIONMU", "KXMENTIONEARNMU",
     "KXEARNINGSMENTIONNKE", "KXMENTIONEARNNKE", "KXEARNINGSMENTIONSTZ",
-    "KXWORLDNEWSMENTION", "KXFTNMENTION", "KXTRUMPSAYNICKNAME", "KXPOWELLMENTION", "KXFEDMENTION",
+    "KXWORLDNEWSMENTION", "KXFTNMENTION", "KXTRUMPSAYNICKNAME", "KXTRUMPSAYCOMPANY", "KXTRUMPSAYMONTH",
+    "KXPOWELLMENTION", "KXFEDMENTION",
 ]
 
 
@@ -175,7 +176,9 @@ def build(series_meta, days, event_titles):
         ed = event_date(et)
         today = now.astimezone(ET).date()
         if ed is not None:
-            if ed < today or ed > (now + timedelta(days=days)).astimezone(ET).date():
+            # Kalshi ticker dates can lag the real speaking time by ~1 day (e.g. CCL ticker SEP28, call Sep 29).
+            # Keep yesterday's ticker dates if markets are still open; drop anything older.
+            if ed < today - timedelta(days=1) or ed > (now + timedelta(days=days)).astimezone(ET).date():
                 continue
         else:
             key = first_close or exp

@@ -1,0 +1,56 @@
+# KXTRUMPSAY-26OCT05: What will Trump say this week? (window through ~Mon Oct 5)
+EVENT = "KXTRUMPSAY-26OCT05"
+P = EVENT + "-"
+DATA = {
+  "title": "Selected Trump phrases this week (through ~Oct 5)",
+  "speaker": "Donald Trump (any qualifying remarks in the week ending ~Oct 5)",
+  "event_time_et": "2026-10-05T09:00:00-04:00",
+  "event_time_note": "Kalshi week window tied to the OCT05 ticker; remaining calendar includes Mellon (Tue), possible Wed remarks, OK rally (Thu), AL rally (Fri).",
+  "context": ("Week market spanning a tech/'Golden Age' address plus two midterm rallies. High-base-rate stump lines "
+              "(Sleepy Joe, Transgender, Ukraine, Save America Act, Landslide, Blockade if Iran/oil stays hot) should clear. "
+              "Long-shots (Make Iran Great Again, Peace in the Middle East, Epstein, UFO, Marijuana, Prediction Market) "
+              "need a specific riff. Month-to-date / week-to-date said-state is unknown — some YES prices may already be sunk."),
+  "confidence": "Low-medium. Week-to-date said/unsaid state unknown; two rallies raise stump-line hit rates.",
+  "method": "Corpus presence (23 Jun–Aug SEL + Sep speeches) adjusted for a week that includes two full midterm rallies.",
+  "sources": [
+    {"title": "GOP: Oklahoma midterm rally Oct 1", "url": "https://events.gop.com/events/midterm-rally-in-ok-president-trump"},
+    {"title": "GOP: Mobile AL midterm rally Oct 2", "url": "https://events.gop.com/events/midterm-rally-in-mobile-alabama-president-trump"},
+    {"title": "govinfo CPD Trump remarks corpus", "url": "https://www.govinfo.gov/app/collection/cpd"},
+  ],
+  "words": {
+    P+"SLEE": {"p": 0.97, "reason": "'Sleepy Joe' is a rally automatic; already ~99¢. Fair."},
+    P+"TRAN": {"p": 0.95, "reason": "Trail staple across two rallies. Fair at 92–94¢."},
+    P+"UKRA": {"p": 0.90, "reason": "Ukraine comes up often in long remarks. Fair at 87–90¢."},
+    P+"LAND": {"p": 0.88, "reason": "'Landslide' midterm brag is common. Fair."},
+    P+"SAVE": {"p": 0.88, "reason": "Save America Act is the midterm bill pitch. Fair."},
+    P+"BLOC": {"p": 0.75, "reason": "'Blockade' if Iran/Hormuz/oil stays in the news. Fair at 82–88¢ — slight NO."},
+    P+"VOTE": {"p": 0.82, "reason": "Voter ID is a midterm integrity riff. Fair."},
+    P+"DIVI": {"p": 0.80, "reason": "Dividend/stimulus stump promise. Fair."},
+    P+"BARA": {"p": 0.75, "reason": "'Barack Hussein Obama' common in long speeches. Fair."},
+    P+"GOLF": {"p": 0.70, "reason": "Golf talk is frequent off-script. Fair at 77–81¢ — slight NO."},
+    P+"RIGG": {"p": 0.65, "reason": "Rigged/stolen election language rises near midterms. Fair."},
+    P+"KAMA": {"p": 0.60, "reason": "Kamala still appears as a foil. Fair."},
+    P+"CUBA": {"p": 0.55, "reason": "Cuba shows up in immigration/foreign-policy riffs. Fair at 64–65¢ — slight NO."},
+    P+"AUTO": {"p": 0.50, "reason": "Autopen is a Biden-legacy attack; hit-or-miss. Fair at 53–55¢."},
+    P+"WHO":  {"p": 0.50, "reason": "Crowd call-and-response; format-dependent. Fair."},
+    P+"MELA": {"p": 0.45, "reason": "Melania mentions are irregular. Fair."},
+    P+"BIBI": {"p": 0.45, "reason": "Bibi/Netanyahu if Middle East block lands. Fair."},
+    P+"CEAS": {"p": 0.55, "reason": "Ceasefire talk if Gaza/Iran news is live. Fair at 62–65¢ — slight NO."},
+    P+"MOON": {"p": 0.40, "reason": "Moon / space riffs occasional (Golden Dome nearby). Fair at 38–41¢."},
+    P+"NOBE": {"p": 0.35, "reason": "Nobel brag is occasional. Fair."},
+    P+"CRYP": {"p": 0.30, "reason": "Crypto less common than 2024–25. Fair at 28–29¢."},
+    P+"ZOHR": {"p": 0.28, "reason": "Zohran/Mamdani is NYC-specific. Fair."},
+    P+"STUP": {"p": 0.35, "reason": "'Stupid question' to reporters — common but not weekly-guaranteed. Fair at 24–25¢ — slight cheap."},
+    P+"URAN": {"p": 0.22, "reason": "Uranium occasional via Iran/nuclear. Fair."},
+    P+"ANTI": {"p": 0.22, "reason": "Antifa occasional culture-war riff. Fair."},
+    P+"THIR": {"p": 0.18, "reason": "Third term talk is rare and radioactive. Fair."},
+    P+"PRED": {"p": 0.12, "reason": "Prediction market self-own is rare. Fair at 9–11¢."},
+    P+"UFO":  {"p": 0.10, "reason": "UFO/UAP rare. Fair."},
+    P+"GOLD": {"p": 0.12, "reason": "Golden Dome occasional. Fair."},
+    P+"MARI": {"p": 0.08, "reason": "Marijuana rare in 2026 corpus. Fair."},
+    P+"EPST": {"p": 0.08, "reason": "Epstein spikes with news; not a weekly staple. Fair at 5–6¢."},
+    P+"PEAC": {"p": 0.10, "reason": "'Peace in the Middle East' phrase is specific. Fair."},
+    P+"SOLE": {"p": 0.12, "reason": "Soleimani occasional Iran riff. Fair."},
+    P+"MAKE": {"p": 0.06, "reason": "'Make Iran Great Again' is a rare bit. Fair at 5–7¢."},
+  },
+}
