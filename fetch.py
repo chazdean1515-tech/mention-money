@@ -176,9 +176,9 @@ def build(series_meta, days, event_titles):
         ed = event_date(et)
         today = now.astimezone(ET).date()
         if ed is not None:
-            # Kalshi ticker dates can lag the real speaking time by ~1 day (e.g. CCL ticker SEP28, call Sep 29).
-            # Keep yesterday's ticker dates if markets are still open; drop anything older.
-            if ed < today - timedelta(days=1) or ed > (now + timedelta(days=days)).astimezone(ET).date():
+            # Kalshi ticker dates can lag the real speaking time by 1–2 days (CCL: SEP28→call Sep 29;
+            # Nike: SEP29→call Oct 1). Keep ticker dates up to 2 days behind today if markets are still open.
+            if ed < today - timedelta(days=2) or ed > (now + timedelta(days=days)).astimezone(ET).date():
                 continue
         else:
             key = first_close or exp

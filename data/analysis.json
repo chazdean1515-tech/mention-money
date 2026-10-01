@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-09-30T10:47:46-04:00",
+ "updated_at_et": "2026-10-01T05:08:08-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -1079,6 +1079,163 @@
     }
    }
   },
+  "KXTRUMPMENTION-26OCT03": {
+   "title": "Trump midterm rally in Vandalia, Ohio",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-03T17:30:00-04:00",
+   "event_time_note": "GOP/Trump 47: doors 3:30 p.m. ET, program 5:30 p.m. ET at Butler-Vandalia Student Activity Center, Vandalia OH.",
+   "context": "Third midterm rally in three days (after Durant OK and Mobile AL). Stumping for Sen. Jon Husted and gov candidate Vivek Ramaswamy. Same long stump base rates: Fake News, Transgender, Sleepy Joe, Oil/Gas, Affordability, Save America Act, healthcare. 'Vance' has an Ohio hook (his old Senate seat / hometown state) so that market is more natural here than on the OK/AL stops. Many OH markets are still wide/illiquid.",
+   "confidence": "Medium. Same rally corpus base rates as OK/AL; third-night fatigue is a small risk.",
+   "method": "Presence rates in 23 Jun–Aug 2026 SEL + 4 Sep-2026 speeches, adjusted UP for a full midterm rally.",
+   "sources": [
+    {
+     "title": "GOP: Midterm Rally in Vandalia, Ohio (Oct 3, 5:30pm ET)",
+     "url": "https://events.gop.com/events/midterm-rally-in-vandalia-ohio-president-donald-j-trump"
+    },
+    {
+     "title": "WCPO: Trump midterm rally Vandalia for Ohio GOP",
+     "url": "https://www.wcpo.com/news/local-news/trump-to-stump-for-ohio-gop-candidates-at-midterm-rally-in-vandalia"
+    },
+    {
+     "title": "govinfo CPD Trump remarks corpus",
+     "url": "https://www.govinfo.gov/app/collection/cpd"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26OCT03-TRAN": {
+     "p": 0.92,
+     "reason": "Trail staple. Fair at 97–98¢ — slight rich."
+    },
+    "KXTRUMPMENTION-26OCT03-FAKE": {
+     "p": 0.92,
+     "reason": "'Fake News' near-automatic at rallies. Fair at 91–92¢."
+    },
+    "KXTRUMPMENTION-26OCT03-SLEE": {
+     "p": 0.9,
+     "reason": "'Sleepy Joe' classic rally closer. Fair at 71–90¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-OIL": {
+     "p": 0.9,
+     "reason": "Oil/gas in 24/27 corpus. Fair at 75–94¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-AFFO": {
+     "p": 0.85,
+     "reason": "Affordability midterm frame. Fair at 88–94¢."
+    },
+    "KXTRUMPMENTION-26OCT03-HEAL": {
+     "p": 0.82,
+     "reason": "Healthcare / TrumpRx block is live. Fair at 78–89¢."
+    },
+    "KXTRUMPMENTION-26OCT03-SAVE": {
+     "p": 0.8,
+     "reason": "'Save America Act' midterm pitch. Fair at 59–88¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-CHIN": {
+     "p": 0.85,
+     "reason": "China in 20/27. Fair at 74–85¢."
+    },
+    "KXTRUMPMENTION-26OCT03-DIVI": {
+     "p": 0.78,
+     "reason": "Dividend/stimulus stump promise. Fair at 79–88¢."
+    },
+    "KXTRUMPMENTION-26OCT03-VANC": {
+     "p": 0.55,
+     "reason": "Vance has an Ohio hook (old seat / home state); more natural here than OK/AL. Fair at 50–65¢."
+    },
+    "KXTRUMPMENTION-26OCT03-ICE": {
+     "p": 0.6,
+     "reason": "ICE / border block. Fair at 61–71¢."
+    },
+    "KXTRUMPMENTION-26OCT03-IRAN": {
+     "p": 0.7,
+     "reason": "Iran (5+ times): 19/27 cleared 5+. Fair at 44–71¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-BARA": {
+     "p": 0.55,
+     "reason": "'Barack Hussein Obama' in 14/27. Fair at 50–67¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-FRAU": {
+     "p": 0.55,
+     "reason": "Fraud talk rises near midterms. Fair at 52–74¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-DEPO": {
+     "p": 0.55,
+     "reason": "Deportation language common on trail. Fair at 41–53¢."
+    },
+    "KXTRUMPMENTION-26OCT03-FENT": {
+     "p": 0.55,
+     "reason": "Fentanyl tied to border/China. Fair-to-slight cheap at 24–33¢."
+    },
+    "KXTRUMPMENTION-26OCT03-TRUMA": {
+     "p": 0.45,
+     "reason": "'Trump Account' in 8/27. Fair at 46–69¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-AI": {
+     "p": 0.5,
+     "reason": "AI less forced at an OH midterm rally. Fair at 36–54¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-AMER": {
+     "p": 0.5,
+     "reason": "'America First' in 8/27. Fair at 38–63¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-SANC": {
+     "p": 0.4,
+     "reason": "Sanctuary in 3/27 official. Fair-to-slight NO at 60–69¢."
+    },
+    "KXTRUMPMENTION-26OCT03-SUPR": {
+     "p": 0.5,
+     "reason": "Supreme Court in 13/27. Fair at 50–68¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-HORM": {
+     "p": 0.4,
+     "reason": "Hormuz when Iran is hot; not every rally. Fair at 38–63¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-RUSS": {
+     "p": 0.42,
+     "reason": "Russia/Ukraine optional. Fair at 44–69¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-CHEA": {
+     "p": 0.48,
+     "reason": "Cheat/cheater in 13/27. Fair at 49–71¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-ISRA": {
+     "p": 0.28,
+     "reason": "Israel optional foreign-policy. Fair at 31–49¢."
+    },
+    "KXTRUMPMENTION-26OCT03-TRUM": {
+     "p": 0.42,
+     "reason": "TrumpRX if healthcare block lands. Fair at 15–35¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-MADE": {
+     "p": 0.4,
+     "reason": "Made in America in 9/27. Fair at 25–51¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-DATA": {
+     "p": 0.2,
+     "reason": "Data center is a tech-event word. Fair at 27–47¢ — slight NO."
+    },
+    "KXTRUMPMENTION-26OCT03-DRIL": {
+     "p": 0.28,
+     "reason": "'Drill baby drill' rare in corpus (2/27). Fair at 16–37¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-FILI": {
+     "p": 0.2,
+     "reason": "Filibuster in 3/27. Fair at 13–44¢ (wide)."
+    },
+    "KXTRUMPMENTION-26OCT03-CEAS": {
+     "p": 0.15,
+     "reason": "Ceasefire uncommon at domestic rallies. Fair at 8–20¢."
+    },
+    "KXTRUMPMENTION-26OCT03-CRYP": {
+     "p": 0.06,
+     "reason": "Crypto rare on the trail. Fair at 1–2¢."
+    },
+    "KXTRUMPMENTION-26OCT03-NQE": {
+     "p": 0.02,
+     "reason": "Publicly scheduled; cancellation unlikely."
+    }
+   }
+  },
   "KXTRUMPMENTION-26OCT01": {
    "title": "Trump midterm rally in Durant, Oklahoma",
    "speaker": "Donald Trump",
@@ -1225,6 +1382,150 @@
     "KXTRUMPMENTION-26OCT01-NQE": {
      "p": 0.02,
      "reason": "Rally is publicly scheduled; cancellation unlikely."
+    }
+   }
+  },
+  "KXTRUMPMENTIONB-26OCT01": {
+   "title": "Trump remarks at Peterbilt Motors (Denton, TX)",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-01T16:00:00-04:00",
+   "event_time_note": "Polymarket/event cards list remarks ~4:00 p.m. ET at Peterbilt Motors, Denton TX; then Durant OK rally same evening.",
+   "context": "Scripted factory visit to tout tariffs on heavy trucks, reshoring, and manufacturing jobs at PACCAR/Peterbilt. White House preview leans hard on tariff / Made in America / investment / jobs language. Shorter and more on-message than a midterm rally, so culture-war and election-integrity riffs (Cheat, Save America Act) are optional add-ons. No plant-speech transcript corpus; estimates are venue/topic priors adjusted down vs. full-rally base rates.",
+   "fragile_sides": {
+    "YES": "YES leans assume he gives a full factory stump (≥10 min), not a 3-minute photo-op greeting."
+   },
+   "confidence": "Low-medium. Factory format + White House theme sheet; no matching transcript corpus.",
+   "method": "Topic priors from White House / Fox Business / KERA / NT Daily previews of the Denton Peterbilt stop.",
+   "sources": [
+    {
+     "title": "Fox Business: Trump Peterbilt Denton manufacturing stop",
+     "url": "https://www.foxbusiness.com/politics/trump-make-surprise-stop-texas-truck-factory-tout-manufacturing"
+    },
+    {
+     "title": "NT Daily: Trump to visit Denton Peterbilt Oct 1",
+     "url": "https://www.ntdaily.com/news/president-donald-trump-set-to-visit-denton/article_2714bc9a-410b-45f6-a2e2-0336c266316c.html"
+    },
+    {
+     "title": "KERA: Trump prepares to tour Peterbilt plant",
+     "url": "https://www.keranews.org/news/2026-09-29/president-trump-prepares-to-tour-peterbilt-plant-in-denton-on-thursday"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTIONB-26OCT01-INVE": {
+     "p": 0.9,
+     "reason": "Investment/jobs is the White House theme for this stop. Fair at 92–94¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-BILL": {
+     "p": 0.88,
+     "reason": "Billion/trillion investment boasts are standard on factory hits. Fair at 88–89¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-TARI": {
+     "p": 0.88,
+     "reason": "25% heavy-truck tariffs are the explicit talking point. Fair at 83–87¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-MANU": {
+     "p": 0.9,
+     "reason": "Manufacturing renaissance is the event's purpose. Fair at 83–86¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-OIL": {
+     "p": 0.75,
+     "reason": "Oil/gas often tags along on energy/economy blocks; less forced than at an OK rally. Fair at 81–86¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CHIN": {
+     "p": 0.7,
+     "reason": "China / trade foil is natural with tariffs. Fair at 76–80¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-MADE": {
+     "p": 0.72,
+     "reason": "'Made in America' fits the plant floor. Fair-to-slight cheap at 54–56¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-HOTT": {
+     "p": 0.55,
+     "reason": "'Hottest' (economy/stock) is a recurring boast; optional. Fair at 68–71¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-NOTA": {
+     "p": 0.55,
+     "reason": "No tax on overtime is a pocketbook line he may drop for workers. Fair at 70–75¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-IRAN": {
+     "p": 0.45,
+     "reason": "Iran optional on a domestic factory hit. Fair-to-slight NO at 70–71¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-BIDE": {
+     "p": 0.55,
+     "reason": "Biden contrast is easy but not required for a manufacturing speech. Fair at 71–75¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-INFL": {
+     "p": 0.55,
+     "reason": "Inflation/prices often pair with tariffs. Fair at 49–50¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-STOC": {
+     "p": 0.5,
+     "reason": "Stock market boast is common; length-dependent. Fair at 62–65¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-DIES": {
+     "p": 0.55,
+     "reason": "Diesel is on-theme at a truck plant; may or may not be named. Fair at 57–61¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-ELEC": {
+     "p": 0.5,
+     "reason": "EV / electric vehicle contrast fits truck manufacturing. Fair at 48–51¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CANA": {
+     "p": 0.45,
+     "reason": "Canada/USMCA sometimes in trade blocks. Fair at 53–55¢ — slight NO."
+    },
+    "KXTRUMPMENTIONB-26OCT01-SAVE": {
+     "p": 0.35,
+     "reason": "Save America Act is more midterm-rally than factory. Fair-to-slight NO at 27–32¢ YES — slight YES lean vs ask."
+    },
+    "KXTRUMPMENTIONB-26OCT01-ID": {
+     "p": 0.3,
+     "reason": "Voter ID is election-integrity, off-theme here. Fair at 34–40¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-MEXI": {
+     "p": 0.4,
+     "reason": "Mexico / nearshoring can come up with truck tariffs. Fair at 31–40¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-ELON": {
+     "p": 0.25,
+     "reason": "Elon/Musk optional; EV contrast might pull it in. Fair at 20–24¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-AI": {
+     "p": 0.22,
+     "reason": "AI less forced at a truck plant. Fair at 18–21¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CHEA": {
+     "p": 0.25,
+     "reason": "Cheat/cheater is rally language. Fair at 26–32¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CALI": {
+     "p": 0.3,
+     "reason": "California foil optional. Fair at 35–39¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-EPA": {
+     "p": 0.35,
+     "reason": "EPA / deregulation fits manufacturing; not guaranteed. Fair-to-slight cheap at 18–19¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-HOAX": {
+     "p": 0.18,
+     "reason": "Hoax is culture-war optional. Fair at 15–16¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CAFE": {
+     "p": 0.2,
+     "reason": "CAFE standards are niche auto-reg; possible on a truck stop. Fair at 6–13¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-NUCL": {
+     "p": 0.22,
+     "reason": "Nuclear is off-theme unless he pivots to energy. Fair at 47–58¢ — NO lean (wide)."
+    },
+    "KXTRUMPMENTIONB-26OCT01-CRYP": {
+     "p": 0.04,
+     "reason": "Crypto rare on factory hits. Fair at 1–2¢."
+    },
+    "KXTRUMPMENTIONB-26OCT01-NQE": {
+     "p": 0.03,
+     "reason": "Publicly scheduled en route to OK rally; cancellation unlikely."
     }
    }
   },
@@ -1521,138 +1822,182 @@
     }
    }
   },
-  "KXVANCEMENTION-26SEP29": {
-   "title": "JD Vance at the MAHA Summit (Waldorf Astoria, DC)",
+  "KXVANCEMENTION-26OCT01": {
+   "title": "JD Vance midterm rally in Lakeland, Florida",
    "speaker": "JD Vance",
-   "event_time_et": "2026-09-29T16:00:00-04:00",
-   "event_time_note": "Summit livestream from 9:00 a.m. ET; Vance + RFK Jr. close the day (afternoon fireside). 4:00 p.m. ET is a placeholder for Vance's speaking window.",
-   "context": "Make America Healthy Again summit: chronic disease, pharma/'food as medicine', obesity, Medicare/Medicaid, GLP-1s, autism (RFK Jr. theme), TrumpRx. Vance co-headlines the closing fireside with RFK Jr., so 'Trump' (3+ times), 'healthcare', and MAHA staples are the load-bearing words. Length unknown — a short scripted hit cuts the long-shot political riffs (Biden/Democrat/Obama). No Vance transcript corpus on hand; estimates are topic priors, not word counts.",
+   "event_time_et": "2026-10-01T11:30:00-04:00",
+   "event_time_note": "GOP/Trump 47: doors 9:30 a.m. ET, program 11:30 a.m. ET at Skylight Hangar A, Sun 'n Fun, Lakeland FL.",
+   "context": "Full midterm rally for Florida turnout — Byron Donalds (gov) is the local headliner Vance is there to boost. Expect Democrat/Biden contrast, working-class branding, tax-on-tips/overtime, and Florida name-checks (DeSantis). Length should be a real stump, not a short fireside, so partisan staples clear more easily than at the Sep 29 MAHA summit. No Vance word-count corpus; these are topic priors only.",
    "fragile_sides": {
-    "YES": "YES leans assume Vance speaks more than a short greeting in the closing fireside; a truncated hit flips them."
+    "YES": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting."
    },
-   "confidence": "Low-medium. Topic priors only; speaking length/format unknown; no Vance base-rate corpus.",
-   "method": "Topic priors from MAHA Summit agenda / Politico preview, adjusted for a closing Vance–RFK fireside (not a full stump speech).",
+   "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
+   "method": "Topic priors from GOP event page + FL Voice / Newsbreak previews (Donalds, midterm turnout frame).",
    "sources": [
     {
-     "title": "MAHA Summit 2026 agenda",
-     "url": "https://www.mahasummit.com/agenda"
+     "title": "GOP: Midterm Rally in Lakeland FL featuring JD Vance (Oct 1, 11:30am ET)",
+     "url": "https://events.gop.com/events/midterm-rally-in-fl-jd-vance"
     },
     {
-     "title": "MAHA Summit livestream (from 9am ET)",
-     "url": "https://www.mahasummit.com/register"
-    },
-    {
-     "title": "Politico: Vance, RFK Jr. headline MAHA Summit (Sep 28)",
-     "url": "https://www.politico.com/news/2026/09/28/vance-rfk-tyson-hines-maha-summit-01095218"
+     "title": "Florida's Voice: Vance to headline Lakeland rally",
+     "url": "https://flvoicenews.com/vance-to-headline-lakeland-rally-as-midterm-elections-approach/"
     }
    ],
    "words": {
-    "KXVANCEMENTION-26SEP29-HEAL": {
+    "KXVANCEMENTION-26OCT01-DEMO": {
+     "p": 0.92,
+     "reason": "Partisan midterm stump; 'Democrat' is near-automatic. Fair at 94–97¢."
+    },
+    "KXVANCEMENTION-26OCT01-BIDE": {
+     "p": 0.88,
+     "reason": "Biden contrast is default Vance/Trump midterm framing. Fair at 87–91¢."
+    },
+    "KXVANCEMENTION-26OCT01-BYRO": {
+     "p": 0.9,
+     "reason": "He's there to boost Byron Donalds; naming the candidate is the point of the trip. Fair at 87–91¢."
+    },
+    "KXVANCEMENTION-26OCT01-TAXO": {
+     "p": 0.85,
+     "reason": "No tax on tips / overtime is a standing Trump–Vance pocketbook line. Fair at 85–88¢."
+    },
+    "KXVANCEMENTION-26OCT01-WORK": {
+     "p": 0.8,
+     "reason": "Working class / middle class is Vance's brand. Fair at 57–59¢ — slight cheap."
+    },
+    "KXVANCEMENTION-26OCT01-ECON": {
      "p": 0.75,
-     "reason": "It's a health summit; 'healthcare' is almost automatic if he speaks more than a greeting."
+     "reason": "Economy/economic is load-bearing on a midterm stump. Fair-to-slight cheap at 50–53¢."
     },
-    "KXVANCEMENTION-26SEP29-CHRO": {
+    "KXVANCEMENTION-26OCT01-ELEC": {
+     "p": 0.72,
+     "reason": "Election / get-out-the-vote is the event's purpose. Fair at 79–89¢."
+    },
+    "KXVANCEMENTION-26OCT01-SOCI": {
      "p": 0.55,
-     "reason": "'Chronic disease' is core MAHA language, but length unknown. 34–35¢ looks a bit cheap."
+     "reason": "Social Security often appears in pocketbook blocks; not guaranteed. Fair-to-slight NO at 77–88¢."
     },
-    "KXVANCEMENTION-26SEP29-MEDI": {
-     "p": 0.7,
-     "reason": "Medicare/Medicaid reform is a standing Vance/RFK talking point. Roughly fair at 75–76¢."
-    },
-    "KXVANCEMENTION-26SEP29-PHAR": {
+    "KXVANCEMENTION-26OCT01-DESA": {
      "p": 0.55,
-     "reason": "Pharma/pharmaceutical is baked into MAHA (drug prices, TrumpRx). Slight cheap vs 26–35¢ if he speaks at length."
+     "reason": "DeSantis name-check is natural in Florida but optional. Fair at 58–70¢."
     },
-    "KXVANCEMENTION-26SEP29-OBES": {
+    "KXVANCEMENTION-26OCT01-FRAU": {
+     "p": 0.5,
+     "reason": "Election/Medicare fraud is a recurring Vance riff. Fair-to-slight NO at 71–76¢."
+    },
+    "KXVANCEMENTION-26OCT01-ILLE": {
+     "p": 0.5,
+     "reason": "'Illegal alien' / border language common on trail; length-dependent. Fair-to-slight NO at 72–87¢."
+    },
+    "KXVANCEMENTION-26OCT01-AFFO": {
      "p": 0.55,
-     "reason": "Obesity is a headline MAHA metric. Fair-to-slight cheap at 51–62¢."
+     "reason": "Affordability midterm frame. Fair at 66–76¢."
     },
-    "KXVANCEMENTION-26SEP29-TRUM": {
-     "p": 0.6,
-     "reason": "Market is Trump (3+ times). Closing with RFK on a Trump admin agenda makes 3+ likely. Fair at 50–60¢."
-    },
-    "KXVANCEMENTION-26SEP29-GLP": {
+    "KXVANCEMENTION-26OCT01-RADI": {
      "p": 0.45,
-     "reason": "GLP-1s are the live drug-policy fight; may or may not be named explicitly. Fair at 36–39¢."
+     "reason": "'Radical Left' is optional culture-war spice. Fair at 40–49¢."
     },
-    "KXVANCEMENTION-26SEP29-TRUMR": {
+    "KXVANCEMENTION-26OCT01-HEAL": {
      "p": 0.4,
-     "reason": "TrumpRX fits the drug-price lane; not guaranteed in a short hit. Fair at 35–38¢."
+     "reason": "Healthcare less forced here than at MAHA; may still appear. Fair at 40–47¢."
     },
-    "KXVANCEMENTION-26SEP29-AFFO": {
+    "KXVANCEMENTION-26OCT01-INFL": {
      "p": 0.45,
-     "reason": "'Affordability' of food/drugs is MAHA framing. Spread is wide."
+     "reason": "Inflation often pairs with economy; not automatic. Fair at 46–62¢."
     },
-    "KXVANCEMENTION-26SEP29-FRAU": {
+    "KXVANCEMENTION-26OCT01-CAMP": {
      "p": 0.4,
-     "reason": "Medicare fraud is a recurring Vance riff; less forced here than on the trail. Fair at 68–76¢."
+     "reason": "2028/campaign can come up but is off-message for a midterm turnout hit. Fair-to-slight NO at 63–75¢."
     },
-    "KXVANCEMENTION-26SEP29-CANC": {
+    "KXVANCEMENTION-26OCT01-MANU": {
+     "p": 0.4,
+     "reason": "Manufacturing fits America First; optional at a FL rally. Fair at 45–60¢."
+    },
+    "KXVANCEMENTION-26OCT01-AMER": {
+     "p": 0.4,
+     "reason": "'American Dream' is Vance-flavored but not required. Fair at 32–44¢."
+    },
+    "KXVANCEMENTION-26OCT01-AMFI": {
      "p": 0.35,
-     "reason": "Cancer often appears in chronic-disease lists. Fair."
+     "reason": "'America First' in  the brand but he often paraphrases. Fair-to-slight cheap at 20–21¢."
     },
-    "KXVANCEMENTION-26SEP29-AUTI": {
+    "KXVANCEMENTION-26OCT01-ICE": {
+     "p": 0.35,
+     "reason": "ICE / border block is optional. Fair-to-slight cheap at 23–25¢."
+    },
+    "KXVANCEMENTION-26OCT01-TARI": {
      "p": 0.3,
-     "reason": "Autism is more RFK Jr. than Vance; possible in a joint chat. Fair-to-slight cheap at 10–21¢."
+     "reason": "Tariffs more natural at a factory hit than a FL turnout rally. Fair-to-slight cheap at 20–21¢."
     },
-    "KXVANCEMENTION-26SEP29-AI": {
-     "p": 0.28,
-     "reason": "AI is not the summit theme; only comes up if he pivots to tech/regulation. 25–39¢ roughly fair."
+    "KXVANCEMENTION-26OCT01-FAKE": {
+     "p": 0.25,
+     "reason": "'Fake News' is more Trump than Vance. Fair at 19–23¢."
     },
-    "KXVANCEMENTION-26SEP29-BIDE": {
-     "p": 0.28,
-     "reason": "Optional political riff in a health-policy fireside. Fair at 21–32¢."
+    "KXVANCEMENTION-26OCT01-OIL": {
+     "p": 0.22,
+     "reason": "Oil/gas less forced in Lakeland than in OK. Fair at 16–26¢."
     },
-    "KXVANCEMENTION-26SEP29-DEMO": {
-     "p": 0.32,
-     "reason": "Same — partisan aside, not required. Fair."
+    "KXVANCEMENTION-26OCT01-CHIN": {
+     "p": 0.3,
+     "reason": "China optional unless he goes into trade. Fair at 18–39¢ (wide)."
     },
-    "KXVANCEMENTION-26SEP29-OBAM": {
-     "p": 0.28,
-     "reason": "Obama/Obamacare only if he goes into ACA history. Fair-to-slight rich."
+    "KXVANCEMENTION-26OCT01-AI": {
+     "p": 0.22,
+     "reason": "AI not the midterm frame. Fair at 16–17¢."
     },
-    "KXVANCEMENTION-26SEP29-CAMP": {
-     "p": 0.08,
-     "reason": "2028/campaign is off-theme for a MAHA policy close. Fair at 4–10¢."
+    "KXVANCEMENTION-26OCT01-CALI": {
+     "p": 0.2,
+     "reason": "California foil is optional. Wide market."
     },
-    "KXVANCEMENTION-26SEP29-NQE": {
-     "p": 0.03,
-     "reason": "Summit is live today; cancellation looks unlikely."
+    "KXVANCEMENTION-26OCT01-ID": {
+     "p": 0.2,
+     "reason": "Voter ID sometimes in election-integrity block. Fair at 21–34¢."
+    },
+    "KXVANCEMENTION-26OCT01-FOOD": {
+     "p": 0.15,
+     "reason": "Food stamp/SNAP is a niche policy aside. Fair at 16–26¢."
+    },
+    "KXVANCEMENTION-26OCT01-MADE": {
+     "p": 0.18,
+     "reason": "'Made in America' more factory than FL rally. Fair-to-slight rich NO at 4–9¢ YES."
+    },
+    "KXVANCEMENTION-26OCT01-NQE": {
+     "p": 0.02,
+     "reason": "Publicly scheduled; cancellation unlikely."
     }
    }
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-  "series_ticker": "KXEARNINGSMENTIONMU",
-  "ticker": "KXEARNINGSMENTIONMU-26SEP30-SMAR",
-  "event_title": "Micron (MU) Q4 FY26 earnings call",
-  "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-  "word": "Smartphone (3+ times)",
-  "side": "YES",
-  "price": 0.05,
-  "yes_bid": 0.03,
-  "yes_ask": 0.05,
-  "est_yes": 0.88,
-  "est_side": 0.88,
-  "edge_raw": 0.83,
-  "fee": 0.0033,
-  "edge": 0.8267,
-  "payout_multiple": 20.0,
-  "event_time_et": "2026-09-30T16:30:00-04:00",
-  "close_time_et": "2026-10-14T10:00:00-04:00",
-  "price_fetched_at_et": "2026-09-30T10:47:34-04:00",
-  "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
+  "event_ticker": "KXTRUMPMENTION-26OCT01",
+  "series_ticker": "KXTRUMPMENTION",
+  "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
+  "event_title": "Trump midterm rally in Durant, Oklahoma",
+  "speaker": "Donald Trump",
+  "word": "Aluminum",
+  "side": "NO",
+  "price": 0.22,
+  "yes_bid": 0.78,
+  "yes_ask": 0.88,
+  "est_yes": 0.18,
+  "est_side": 0.82,
+  "edge_raw": 0.6,
+  "fee": 0.012,
+  "edge": 0.588,
+  "payout_multiple": 4.55,
+  "event_time_et": "2026-10-01T19:00:00-04:00",
+  "close_time_et": "2026-10-15T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+  "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
   "fragile": null,
-  "rationale": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid. Our 88% YES estimate vs a 5¢ YES ask leaves about +83¢ per contract after fees.",
-  "reason": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid.",
-  "url": "https://kalshi.com/markets/kxearningsmentionmu",
+  "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
+  "reason": "Aluminum in 5/27. Illiquid.",
+  "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 78,
+   "candidates": 46,
    "tied_within_2c": 1,
-   "skipped_repeat": null,
+   "skipped_repeat": "KXEARNINGSMENTIONMU-26SEP30-SMAR",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  },
@@ -1665,32 +2010,6 @@
    "same_as_potd": true,
    "picks": [
     {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-SMAR",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Smartphone (3+ times)",
-     "side": "YES",
-     "price": 0.05,
-     "yes_bid": 0.03,
-     "yes_ask": 0.05,
-     "est_yes": 0.88,
-     "est_side": 0.88,
-     "edge_raw": 0.83,
-     "fee": 0.0033,
-     "edge": 0.8267,
-     "payout_multiple": 20.0,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:34-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
-     "fragile": null,
-     "rationale": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid. Our 88% YES estimate vs a 5¢ YES ask leaves about +83¢ per contract after fees.",
-     "reason": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
-    },
-    {
      "event_ticker": "KXTRUMPMENTION-26OCT01",
      "series_ticker": "KXTRUMPMENTION",
      "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
@@ -1698,75 +2017,101 @@
      "speaker": "Donald Trump",
      "word": "Aluminum",
      "side": "NO",
-     "price": 0.18,
-     "yes_bid": 0.82,
-     "yes_ask": 0.83,
+     "price": 0.22,
+     "yes_bid": 0.78,
+     "yes_ask": 0.88,
      "est_yes": 0.18,
      "est_side": 0.82,
-     "edge_raw": 0.64,
-     "fee": 0.0103,
-     "edge": 0.6297,
-     "payout_multiple": 5.56,
+     "edge_raw": 0.6,
+     "fee": 0.012,
+     "edge": 0.588,
+     "payout_multiple": 4.55,
      "event_time_et": "2026-10-01T19:00:00-04:00",
      "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:42:40-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
      "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 18¢ NO ask leaves about +63¢ per contract after fees.",
+     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
      "reason": "Aluminum in 5/27. Illiquid.",
      "url": "https://kalshi.com/markets/kxtrumpmention"
     },
     {
-     "event_ticker": "KXTRUMPSAYCOMPANY-26OCT01",
-     "series_ticker": "KXTRUMPSAYCOMPANY",
-     "ticker": "KXTRUMPSAYCOMPANY-26OCT01-SPCX",
-     "event_title": "Companies Trump will say in September",
-     "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
-     "word": "SpaceX / SPCX",
-     "side": "YES",
-     "price": 0.07,
-     "yes_bid": 0.04,
-     "yes_ask": 0.07,
-     "est_yes": 0.52,
-     "est_side": 0.52,
-     "edge_raw": 0.45,
-     "fee": 0.0046,
-     "edge": 0.4454,
-     "payout_multiple": 14.29,
-     "event_time_et": "2026-09-30T23:59:00-04:00",
-     "close_time_et": "2026-10-01T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:32-04:00",
-     "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+     "event_ticker": "KXTRUMPMENTIONB-26OCT01",
+     "series_ticker": "KXTRUMPMENTIONB",
+     "ticker": "KXTRUMPMENTIONB-26OCT01-IRAN",
+     "event_title": "Trump remarks at Peterbilt Motors (Denton, TX)",
+     "speaker": "Donald Trump",
+     "word": "Iran / Iranian",
+     "side": "NO",
+     "price": 0.3,
+     "yes_bid": 0.7,
+     "yes_ask": 0.71,
+     "est_yes": 0.45,
+     "est_side": 0.55,
+     "edge_raw": 0.25,
+     "fee": 0.0147,
+     "edge": 0.2353,
+     "payout_multiple": 3.33,
+     "event_time_et": "2026-10-01T16:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:52-04:00",
+     "confidence": "Low-medium. Factory format + White House theme sheet; no matching transcript corpus.",
      "fragile": null,
-     "rationale": "1/23 SEL but Musk on the Mellon slate. Our 52% YES estimate vs a 7¢ YES ask leaves about +45¢ per contract after fees.",
-     "reason": "1/23 SEL but Musk on the Mellon slate. Fair at ~58¢.",
-     "url": "https://kalshi.com/markets/kxtrumpsaycompany"
+     "rationale": "Iran optional on a domestic factory hit. Our 45% YES estimate vs a 30¢ NO ask leaves about +24¢ per contract after fees.",
+     "reason": "Iran optional on a domestic factory hit. Fair-to-slight NO at 70–71¢.",
+     "url": "https://kalshi.com/markets/kxtrumpmentionb"
     },
     {
-     "event_ticker": "KXTRUMPSAYCOMPANY-26OCT01",
-     "series_ticker": "KXTRUMPSAYCOMPANY",
-     "ticker": "KXTRUMPSAYCOMPANY-26OCT01-TSLA",
-     "event_title": "Companies Trump will say in September",
-     "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
-     "word": "Tesla / TSLA",
-     "side": "YES",
-     "price": 0.11,
-     "yes_bid": 0.08,
-     "yes_ask": 0.11,
-     "est_yes": 0.48,
-     "est_side": 0.48,
-     "edge_raw": 0.37,
-     "fee": 0.0069,
-     "edge": 0.3631,
-     "payout_multiple": 9.09,
-     "event_time_et": "2026-09-30T23:59:00-04:00",
-     "close_time_et": "2026-10-01T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:31-04:00",
-     "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+     "event_ticker": "KXVANCEMENTION-26OCT01",
+     "series_ticker": "KXVANCEMENTION",
+     "ticker": "KXVANCEMENTION-26OCT01-FRAU",
+     "event_title": "JD Vance midterm rally in Lakeland, Florida",
+     "speaker": "JD Vance",
+     "word": "Fraud",
+     "side": "NO",
+     "price": 0.29,
+     "yes_bid": 0.71,
+     "yes_ask": 0.76,
+     "est_yes": 0.5,
+     "est_side": 0.5,
+     "edge_raw": 0.21,
+     "fee": 0.0144,
+     "edge": 0.1956,
+     "payout_multiple": 3.45,
+     "event_time_et": "2026-10-01T11:30:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
+     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
      "fragile": null,
-     "rationale": "4/23 SEL + Musk. Our 48% YES estimate vs a 11¢ YES ask leaves about +36¢ per contract after fees.",
-     "reason": "4/23 SEL + Musk. Slight YES vs 37¢ ask.",
-     "url": "https://kalshi.com/markets/kxtrumpsaycompany"
+     "rationale": "Election/Medicare fraud is a recurring Vance riff. Our 50% YES estimate vs a 29¢ NO ask leaves about +20¢ per contract after fees.",
+     "reason": "Election/Medicare fraud is a recurring Vance riff. Fair-to-slight NO at 71–76¢.",
+     "url": "https://kalshi.com/markets/kxvancemention"
+    },
+    {
+     "event_ticker": "KXTRUMPMENTION-26OCT02",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT02-DRIL",
+     "event_title": "Trump midterm rally in Mobile, Alabama",
+     "speaker": "Donald Trump",
+     "word": "Drill Baby Drill",
+     "side": "YES",
+     "price": 0.08,
+     "yes_bid": 0.07,
+     "yes_ask": 0.08,
+     "est_yes": 0.28,
+     "est_side": 0.28,
+     "edge_raw": 0.2,
+     "fee": 0.0052,
+     "edge": 0.1948,
+     "payout_multiple": 12.5,
+     "event_time_et": "2026-10-02T19:00:00-04:00",
+     "close_time_et": "2026-10-16T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
+     "fragile": null,
+     "rationale": "'Drill baby drill' rare in corpus (2/27) but energy riffs help. Our 28% YES estimate vs a 8¢ YES ask leaves about +19¢ per contract after fees.",
+     "reason": "'Drill baby drill' rare in corpus (2/27) but energy riffs help. Fair at 10–18¢ — slight cheap.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
     }
    ]
   },
@@ -1778,108 +2123,56 @@
    "same_as_potd": false,
    "picks": [
     {
-     "event_ticker": "KXTRUMPSAYNICKNAME-26OCT01",
-     "series_ticker": "KXTRUMPSAYNICKNAME",
-     "ticker": "KXTRUMPSAYNICKNAME-26OCT01-TRAI",
-     "event_title": "Trump nicknames before October",
-     "speaker": "Donald Trump (any qualifying remarks before Oct 1)",
-     "word": "Trainwreck",
-     "side": "NO",
-     "price": 0.91,
-     "yes_bid": 0.09,
-     "yes_ask": 0.14,
-     "est_yes": 0.02,
-     "est_side": 0.98,
-     "edge_raw": 0.07,
-     "fee": 0.0057,
-     "edge": 0.0643,
-     "payout_multiple": 1.1,
-     "event_time_et": "2026-09-30T23:59:00-04:00",
-     "close_time_et": "2026-10-01T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:09-04:00",
-     "confidence": "Low. Nicknames are rare in the govinfo corpus; we may miss rally/Truth Social usages that Kalshi still counts. Short remaining window.",
-     "fragile": null,
-     "rationale": "0 corpus hits. Our 2% YES estimate vs a 91¢ NO ask leaves about +6¢ per contract after fees.",
-     "reason": "0 corpus hits. Fair-to-slight NO at 8¢.",
-     "url": "https://kalshi.com/markets/kxtrumpsaynickname"
-    },
-    {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-ANTH",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Anthropic",
-     "side": "NO",
-     "price": 0.87,
-     "yes_bid": 0.13,
-     "yes_ask": 0.17,
-     "est_yes": 0.04,
-     "est_side": 0.96,
-     "edge_raw": 0.09,
-     "fee": 0.0079,
-     "edge": 0.0821,
-     "payout_multiple": 1.15,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:45-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
-     "fragile": null,
-     "rationale": "0/5 for Anthropic. NO lean. Illiquid. Our 4% YES estimate vs a 87¢ NO ask leaves about +8¢ per contract after fees.",
-     "reason": "0/5 for Anthropic. NO lean. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
-    },
-    {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-RESE",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Research Lab",
-     "side": "NO",
-     "price": 0.7,
-     "yes_bid": 0.3,
-     "yes_ask": 0.36,
-     "est_yes": 0.05,
-     "est_side": 0.95,
-     "edge_raw": 0.25,
-     "fee": 0.0147,
-     "edge": 0.2353,
-     "payout_multiple": 1.43,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:35-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
-     "fragile": null,
-     "rationale": "0/5 for 'research lab'. NO lean. Illiquid. Our 5% YES estimate vs a 70¢ NO ask leaves about +24¢ per contract after fees.",
-     "reason": "0/5 for 'research lab'. NO lean. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
-    },
-    {
-     "event_ticker": "KXEARNINGSMENTIONSTZ-26OCT05",
-     "series_ticker": "KXEARNINGSMENTIONSTZ",
-     "ticker": "KXEARNINGSMENTIONSTZ-26OCT05-DEPL",
-     "event_title": "Constellation Brands (STZ) Q2 FY27 earnings call",
-     "speaker": "Constellation Brands (CEO Nick Fink, CFO Garth Hankinson, IR, operator)",
-     "word": "Depletion / Depletions",
+     "event_ticker": "KXVANCEMENTION-26OCT01",
+     "series_ticker": "KXVANCEMENTION",
+     "ticker": "KXVANCEMENTION-26OCT01-WORK",
+     "event_title": "JD Vance midterm rally in Lakeland, Florida",
+     "speaker": "JD Vance",
+     "word": "Working Class / Middle Class",
      "side": "YES",
-     "price": 0.81,
-     "yes_bid": 0.78,
-     "yes_ask": 0.81,
-     "est_yes": 0.95,
-     "est_side": 0.95,
-     "edge_raw": 0.14,
-     "fee": 0.0108,
-     "edge": 0.1292,
-     "payout_multiple": 1.23,
-     "event_time_et": null,
-     "close_time_et": "2027-03-31T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:01-04:00",
-     "confidence": "Low-medium. The available transcripts look partial (~3–4k company words), which biases hit rates DOWN.",
-     "fragile": null,
-     "rationale": "'Depletions' is STZ's headline beer metric: 4/4 calls even in partial transcripts. Our 95% YES estimate vs a 81¢ YES ask leaves about +13¢ per contract after fees.",
-     "reason": "'Depletions' is STZ's headline beer metric: 4/4 calls even in partial transcripts.",
-     "url": "https://kalshi.com/markets/kxearningsmentionstz"
+     "price": 0.59,
+     "yes_bid": 0.57,
+     "yes_ask": 0.59,
+     "est_yes": 0.8,
+     "est_side": 0.8,
+     "edge_raw": 0.21,
+     "fee": 0.0169,
+     "edge": 0.1931,
+     "payout_multiple": 1.69,
+     "event_time_et": "2026-10-01T11:30:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
+     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
+     "fragile": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting.",
+     "rationale": "Working class / middle class is Vance's brand. Our 80% YES estimate vs a 59¢ YES ask leaves about +19¢ per contract after fees.",
+     "reason": "Working class / middle class is Vance's brand. Fair at 57–59¢ — slight cheap.",
+     "url": "https://kalshi.com/markets/kxvancemention"
+    },
+    {
+     "event_ticker": "KXVANCEMENTION-26OCT01",
+     "series_ticker": "KXVANCEMENTION",
+     "ticker": "KXVANCEMENTION-26OCT01-ECON",
+     "event_title": "JD Vance midterm rally in Lakeland, Florida",
+     "speaker": "JD Vance",
+     "word": "Economy / Economic",
+     "side": "YES",
+     "price": 0.53,
+     "yes_bid": 0.5,
+     "yes_ask": 0.53,
+     "est_yes": 0.75,
+     "est_side": 0.75,
+     "edge_raw": 0.22,
+     "fee": 0.0174,
+     "edge": 0.2026,
+     "payout_multiple": 1.89,
+     "event_time_et": "2026-10-01T11:30:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
+     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
+     "fragile": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting.",
+     "rationale": "Economy/economic is load-bearing on a midterm stump. Our 75% YES estimate vs a 53¢ YES ask leaves about +20¢ per contract after fees.",
+     "reason": "Economy/economic is load-bearing on a midterm stump. Fair-to-slight cheap at 50–53¢.",
+     "url": "https://kalshi.com/markets/kxvancemention"
     }
    ]
   },
@@ -1891,56 +2184,30 @@
    "same_as_potd": false,
    "picks": [
     {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-NEW",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "New York",
+     "event_ticker": "KXTRUMPMENTION-26OCT01",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT01-DEPO",
+     "event_title": "Trump midterm rally in Durant, Oklahoma",
+     "speaker": "Donald Trump",
+     "word": "Deport / Deported / Deportation",
      "side": "YES",
-     "price": 0.16,
-     "yes_bid": 0.14,
-     "yes_ask": 0.16,
-     "est_yes": 0.85,
-     "est_side": 0.85,
-     "edge_raw": 0.69,
-     "fee": 0.0094,
-     "edge": 0.6806,
-     "payout_multiple": 6.25,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:37-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
+     "price": 0.24,
+     "yes_bid": 0.21,
+     "yes_ask": 0.24,
+     "est_yes": 0.6,
+     "est_side": 0.6,
+     "edge_raw": 0.36,
+     "fee": 0.0128,
+     "edge": 0.3472,
+     "payout_multiple": 4.17,
+     "event_time_et": "2026-10-01T19:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "'New York' (Clay / mega-fab) in 5/5 calls. Illiquid. Our 85% YES estimate vs a 16¢ YES ask leaves about +68¢ per contract after fees.",
-     "reason": "'New York' (Clay / mega-fab) in 5/5 calls. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
-    },
-    {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-SMAR",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Smartphone (3+ times)",
-     "side": "YES",
-     "price": 0.05,
-     "yes_bid": 0.03,
-     "yes_ask": 0.05,
-     "est_yes": 0.88,
-     "est_side": 0.88,
-     "edge_raw": 0.83,
-     "fee": 0.0033,
-     "edge": 0.8267,
-     "payout_multiple": 20.0,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:34-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
-     "fragile": null,
-     "rationale": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid. Our 88% YES estimate vs a 5¢ YES ask leaves about +83¢ per contract after fees.",
-     "reason": "'Smartphone' 4–8× in 5/5 calls, so 3+ is very likely. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
+     "rationale": "Deportation language in 6/27 official; common on the trail. Fair. Our 60% YES estimate vs a 24¢ YES ask leaves about +35¢ per contract after fees.",
+     "reason": "Deportation language in 6/27 official; common on the trail. Fair.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
     },
     {
      "event_ticker": "KXTRUMPMENTION-26OCT01",
@@ -1950,49 +2217,75 @@
      "speaker": "Donald Trump",
      "word": "Aluminum",
      "side": "NO",
-     "price": 0.18,
-     "yes_bid": 0.82,
-     "yes_ask": 0.83,
+     "price": 0.22,
+     "yes_bid": 0.78,
+     "yes_ask": 0.88,
      "est_yes": 0.18,
      "est_side": 0.82,
-     "edge_raw": 0.64,
-     "fee": 0.0103,
-     "edge": 0.6297,
-     "payout_multiple": 5.56,
+     "edge_raw": 0.6,
+     "fee": 0.012,
+     "edge": 0.588,
+     "payout_multiple": 4.55,
      "event_time_et": "2026-10-01T19:00:00-04:00",
      "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:42:40-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
      "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 18¢ NO ask leaves about +63¢ per contract after fees.",
+     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
      "reason": "Aluminum in 5/27. Illiquid.",
      "url": "https://kalshi.com/markets/kxtrumpmention"
     },
     {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-TAIW",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Taiwan",
+     "event_ticker": "KXTRUMPMENTION-26OCT01",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT01-IRAN",
+     "event_title": "Trump midterm rally in Durant, Oklahoma",
+     "speaker": "Donald Trump",
+     "word": "Iran (5+ times)",
      "side": "YES",
-     "price": 0.16,
-     "yes_bid": 0.14,
-     "yes_ask": 0.16,
-     "est_yes": 0.5,
-     "est_side": 0.5,
-     "edge_raw": 0.34,
-     "fee": 0.0094,
-     "edge": 0.3306,
-     "payout_multiple": 6.25,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:33-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
+     "price": 0.41,
+     "yes_bid": 0.39,
+     "yes_ask": 0.41,
+     "est_yes": 0.7,
+     "est_side": 0.7,
+     "edge_raw": 0.29,
+     "fee": 0.0169,
+     "edge": 0.2731,
+     "payout_multiple": 2.44,
+     "event_time_et": "2026-10-01T19:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "'Taiwan' in 3/5 (supply-chain / TSMC angle). Fair. Illiquid. Our 50% YES estimate vs a 16¢ YES ask leaves about +33¢ per contract after fees.",
-     "reason": "'Taiwan' in 3/5 (supply-chain / TSMC angle). Fair. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
+     "rationale": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap. Our 70% YES estimate vs a 41¢ YES ask leaves about +27¢ per contract after fees.",
+     "reason": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
+    },
+    {
+     "event_ticker": "KXTRUMPMENTION-26OCT01",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT01-FENT",
+     "event_title": "Trump midterm rally in Durant, Oklahoma",
+     "speaker": "Donald Trump",
+     "word": "Fentanyl",
+     "side": "YES",
+     "price": 0.39,
+     "yes_bid": 0.36,
+     "yes_ask": 0.39,
+     "est_yes": 0.65,
+     "est_side": 0.65,
+     "edge_raw": 0.26,
+     "fee": 0.0167,
+     "edge": 0.2433,
+     "payout_multiple": 2.56,
+     "event_time_et": "2026-10-01T19:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
+     "fragile": null,
+     "rationale": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Our 65% YES estimate vs a 39¢ YES ask leaves about +24¢ per contract after fees.",
+     "reason": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Fair at 54–69¢.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
     }
    ]
   },
@@ -2006,106 +2299,106 @@
     {
      "event_ticker": "KXTRUMPMENTION-26OCT01",
      "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
+     "ticker": "KXTRUMPMENTION-26OCT01-IRAN",
      "event_title": "Trump midterm rally in Durant, Oklahoma",
      "speaker": "Donald Trump",
-     "word": "Aluminum",
-     "side": "NO",
-     "price": 0.18,
-     "yes_bid": 0.82,
-     "yes_ask": 0.83,
-     "est_yes": 0.18,
-     "est_side": 0.82,
-     "edge_raw": 0.64,
-     "fee": 0.0103,
-     "edge": 0.6297,
-     "payout_multiple": 5.56,
+     "word": "Iran (5+ times)",
+     "side": "YES",
+     "price": 0.41,
+     "yes_bid": 0.39,
+     "yes_ask": 0.41,
+     "est_yes": 0.7,
+     "est_side": 0.7,
+     "edge_raw": 0.29,
+     "fee": 0.0169,
+     "edge": 0.2731,
+     "payout_multiple": 2.44,
      "event_time_et": "2026-10-01T19:00:00-04:00",
      "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:42:40-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
      "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 18¢ NO ask leaves about +63¢ per contract after fees.",
-     "reason": "Aluminum in 5/27. Illiquid.",
+     "rationale": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap. Our 70% YES estimate vs a 41¢ YES ask leaves about +27¢ per contract after fees.",
+     "reason": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap.",
      "url": "https://kalshi.com/markets/kxtrumpmention"
     },
     {
-     "event_ticker": "KXTRUMPSAYCOMPANY-26OCT01",
-     "series_ticker": "KXTRUMPSAYCOMPANY",
-     "ticker": "KXTRUMPSAYCOMPANY-26OCT01-SPCX",
-     "event_title": "Companies Trump will say in September",
-     "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
-     "word": "SpaceX / SPCX",
+     "event_ticker": "KXTRUMPMENTION-26OCT01",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT01-FENT",
+     "event_title": "Trump midterm rally in Durant, Oklahoma",
+     "speaker": "Donald Trump",
+     "word": "Fentanyl",
      "side": "YES",
-     "price": 0.07,
-     "yes_bid": 0.04,
-     "yes_ask": 0.07,
-     "est_yes": 0.52,
-     "est_side": 0.52,
-     "edge_raw": 0.45,
-     "fee": 0.0046,
-     "edge": 0.4454,
-     "payout_multiple": 14.29,
-     "event_time_et": "2026-09-30T23:59:00-04:00",
-     "close_time_et": "2026-10-01T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:32-04:00",
-     "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+     "price": 0.39,
+     "yes_bid": 0.36,
+     "yes_ask": 0.39,
+     "est_yes": 0.65,
+     "est_side": 0.65,
+     "edge_raw": 0.26,
+     "fee": 0.0167,
+     "edge": 0.2433,
+     "payout_multiple": 2.56,
+     "event_time_et": "2026-10-01T19:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
      "fragile": null,
-     "rationale": "1/23 SEL but Musk on the Mellon slate. Our 52% YES estimate vs a 7¢ YES ask leaves about +45¢ per contract after fees.",
-     "reason": "1/23 SEL but Musk on the Mellon slate. Fair at ~58¢.",
-     "url": "https://kalshi.com/markets/kxtrumpsaycompany"
+     "rationale": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Our 65% YES estimate vs a 39¢ YES ask leaves about +24¢ per contract after fees.",
+     "reason": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Fair at 54–69¢.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
     },
     {
-     "event_ticker": "KXTRUMPSAYCOMPANY-26OCT01",
-     "series_ticker": "KXTRUMPSAYCOMPANY",
-     "ticker": "KXTRUMPSAYCOMPANY-26OCT01-TSLA",
-     "event_title": "Companies Trump will say in September",
-     "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
-     "word": "Tesla / TSLA",
-     "side": "YES",
-     "price": 0.11,
-     "yes_bid": 0.08,
-     "yes_ask": 0.11,
-     "est_yes": 0.48,
-     "est_side": 0.48,
-     "edge_raw": 0.37,
-     "fee": 0.0069,
-     "edge": 0.3631,
-     "payout_multiple": 9.09,
-     "event_time_et": "2026-09-30T23:59:00-04:00",
-     "close_time_et": "2026-10-01T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:45:31-04:00",
-     "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+     "event_ticker": "KXTRUMPMENTIONB-26OCT01",
+     "series_ticker": "KXTRUMPMENTIONB",
+     "ticker": "KXTRUMPMENTIONB-26OCT01-IRAN",
+     "event_title": "Trump remarks at Peterbilt Motors (Denton, TX)",
+     "speaker": "Donald Trump",
+     "word": "Iran / Iranian",
+     "side": "NO",
+     "price": 0.3,
+     "yes_bid": 0.7,
+     "yes_ask": 0.71,
+     "est_yes": 0.45,
+     "est_side": 0.55,
+     "edge_raw": 0.25,
+     "fee": 0.0147,
+     "edge": 0.2353,
+     "payout_multiple": 3.33,
+     "event_time_et": "2026-10-01T16:00:00-04:00",
+     "close_time_et": "2026-10-15T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:52-04:00",
+     "confidence": "Low-medium. Factory format + White House theme sheet; no matching transcript corpus.",
      "fragile": null,
-     "rationale": "4/23 SEL + Musk. Our 48% YES estimate vs a 11¢ YES ask leaves about +36¢ per contract after fees.",
-     "reason": "4/23 SEL + Musk. Slight YES vs 37¢ ask.",
-     "url": "https://kalshi.com/markets/kxtrumpsaycompany"
+     "rationale": "Iran optional on a domestic factory hit. Our 45% YES estimate vs a 30¢ NO ask leaves about +24¢ per contract after fees.",
+     "reason": "Iran optional on a domestic factory hit. Fair-to-slight NO at 70–71¢.",
+     "url": "https://kalshi.com/markets/kxtrumpmentionb"
     },
     {
-     "event_ticker": "KXEARNINGSMENTIONMU-26SEP30",
-     "series_ticker": "KXEARNINGSMENTIONMU",
-     "ticker": "KXEARNINGSMENTIONMU-26SEP30-TAIW",
-     "event_title": "Micron (MU) Q4 FY26 earnings call",
-     "speaker": "Micron (CEO Sanjay Mehrotra, CFO Mark Murphy, IR, operator)",
-     "word": "Taiwan",
+     "event_ticker": "KXTRUMPMENTION-26OCT02",
+     "series_ticker": "KXTRUMPMENTION",
+     "ticker": "KXTRUMPMENTION-26OCT02-FENT",
+     "event_title": "Trump midterm rally in Mobile, Alabama",
+     "speaker": "Donald Trump",
+     "word": "Fentanyl",
      "side": "YES",
-     "price": 0.16,
-     "yes_bid": 0.14,
-     "yes_ask": 0.16,
-     "est_yes": 0.5,
-     "est_side": 0.5,
-     "edge_raw": 0.34,
-     "fee": 0.0094,
-     "edge": 0.3306,
-     "payout_multiple": 6.25,
-     "event_time_et": "2026-09-30T16:30:00-04:00",
-     "close_time_et": "2026-10-14T10:00:00-04:00",
-     "price_fetched_at_et": "2026-09-30T10:47:33-04:00",
-     "confidence": "Medium. 5 comparable transcripts; most markets still too wide/illiquid to trade.",
+     "price": 0.31,
+     "yes_bid": 0.3,
+     "yes_ask": 0.31,
+     "est_yes": 0.55,
+     "est_side": 0.55,
+     "edge_raw": 0.24,
+     "fee": 0.015,
+     "edge": 0.225,
+     "payout_multiple": 3.23,
+     "event_time_et": "2026-10-02T19:00:00-04:00",
+     "close_time_et": "2026-10-16T10:00:00-04:00",
+     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
+     "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
      "fragile": null,
-     "rationale": "'Taiwan' in 3/5 (supply-chain / TSMC angle). Fair. Illiquid. Our 50% YES estimate vs a 16¢ YES ask leaves about +33¢ per contract after fees.",
-     "reason": "'Taiwan' in 3/5 (supply-chain / TSMC angle). Fair. Illiquid.",
-     "url": "https://kalshi.com/markets/kxearningsmentionmu"
+     "rationale": "Fentanyl tied to border/China. Our 55% YES estimate vs a 31¢ YES ask leaves about +23¢ per contract after fees.",
+     "reason": "Fentanyl tied to border/China. Fair at 28–38¢ — slight cheap.",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
     }
    ]
   }

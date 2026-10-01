@@ -1,0 +1,55 @@
+# KXTRUMPMENTION-26OCT03: Trump midterm rally, Vandalia OH (Butler-Vandalia SAC), Sat Oct 3 2026.
+EVENT = "KXTRUMPMENTION-26OCT03"
+P = EVENT + "-"
+DATA = {
+  "title": "Trump midterm rally in Vandalia, Ohio",
+  "speaker": "Donald Trump",
+  "event_time_et": "2026-10-03T17:30:00-04:00",
+  "event_time_note": "GOP/Trump 47: doors 3:30 p.m. ET, program 5:30 p.m. ET at Butler-Vandalia Student Activity Center, Vandalia OH.",
+  "context": ("Third midterm rally in three days (after Durant OK and Mobile AL). Stumping for Sen. Jon Husted and gov candidate "
+              "Vivek Ramaswamy. Same long stump base rates: Fake News, Transgender, Sleepy Joe, Oil/Gas, Affordability, "
+              "Save America Act, healthcare. 'Vance' has an Ohio hook (his old Senate seat / hometown state) so that market "
+              "is more natural here than on the OK/AL stops. Many OH markets are still wide/illiquid."),
+  "confidence": "Medium. Same rally corpus base rates as OK/AL; third-night fatigue is a small risk.",
+  "method": "Presence rates in 23 Jun–Aug 2026 SEL + 4 Sep-2026 speeches, adjusted UP for a full midterm rally.",
+  "sources": [
+    {"title": "GOP: Midterm Rally in Vandalia, Ohio (Oct 3, 5:30pm ET)", "url": "https://events.gop.com/events/midterm-rally-in-vandalia-ohio-president-donald-j-trump"},
+    {"title": "WCPO: Trump midterm rally Vandalia for Ohio GOP", "url": "https://www.wcpo.com/news/local-news/trump-to-stump-for-ohio-gop-candidates-at-midterm-rally-in-vandalia"},
+    {"title": "govinfo CPD Trump remarks corpus", "url": "https://www.govinfo.gov/app/collection/cpd"},
+  ],
+  "words": {
+    P+"TRAN": {"p": 0.92, "reason": "Trail staple. Fair at 97–98¢ — slight rich."},
+    P+"FAKE": {"p": 0.92, "reason": "'Fake News' near-automatic at rallies. Fair at 91–92¢."},
+    P+"SLEE": {"p": 0.90, "reason": "'Sleepy Joe' classic rally closer. Fair at 71–90¢ (wide)."},
+    P+"OIL":  {"p": 0.90, "reason": "Oil/gas in 24/27 corpus. Fair at 75–94¢ (wide)."},
+    P+"AFFO": {"p": 0.85, "reason": "Affordability midterm frame. Fair at 88–94¢."},
+    P+"HEAL": {"p": 0.82, "reason": "Healthcare / TrumpRx block is live. Fair at 78–89¢."},
+    P+"SAVE": {"p": 0.80, "reason": "'Save America Act' midterm pitch. Fair at 59–88¢ (wide)."},
+    P+"CHIN": {"p": 0.85, "reason": "China in 20/27. Fair at 74–85¢."},
+    P+"DIVI": {"p": 0.78, "reason": "Dividend/stimulus stump promise. Fair at 79–88¢."},
+    P+"VANC": {"p": 0.55, "reason": "Vance has an Ohio hook (old seat / home state); more natural here than OK/AL. Fair at 50–65¢."},
+    P+"ICE":  {"p": 0.60, "reason": "ICE / border block. Fair at 61–71¢."},
+    P+"IRAN": {"p": 0.70, "reason": "Iran (5+ times): 19/27 cleared 5+. Fair at 44–71¢ (wide)."},
+    P+"BARA": {"p": 0.55, "reason": "'Barack Hussein Obama' in 14/27. Fair at 50–67¢ (wide)."},
+    P+"FRAU": {"p": 0.55, "reason": "Fraud talk rises near midterms. Fair at 52–74¢ (wide)."},
+    P+"DEPO": {"p": 0.55, "reason": "Deportation language common on trail. Fair at 41–53¢."},
+    P+"FENT": {"p": 0.55, "reason": "Fentanyl tied to border/China. Fair-to-slight cheap at 24–33¢."},
+    P+"TRUMA": {"p": 0.45, "reason": "'Trump Account' in 8/27. Fair at 46–69¢ (wide)."},
+    P+"AI":   {"p": 0.50, "reason": "AI less forced at an OH midterm rally. Fair at 36–54¢ (wide)."},
+    P+"AMER": {"p": 0.50, "reason": "'America First' in 8/27. Fair at 38–63¢ (wide)."},
+    P+"SANC": {"p": 0.40, "reason": "Sanctuary in 3/27 official. Fair-to-slight NO at 60–69¢."},
+    P+"SUPR": {"p": 0.50, "reason": "Supreme Court in 13/27. Fair at 50–68¢ (wide)."},
+    P+"HORM": {"p": 0.40, "reason": "Hormuz when Iran is hot; not every rally. Fair at 38–63¢ (wide)."},
+    P+"RUSS": {"p": 0.42, "reason": "Russia/Ukraine optional. Fair at 44–69¢ (wide)."},
+    P+"CHEA": {"p": 0.48, "reason": "Cheat/cheater in 13/27. Fair at 49–71¢ (wide)."},
+    P+"ISRA": {"p": 0.28, "reason": "Israel optional foreign-policy. Fair at 31–49¢."},
+    P+"TRUM": {"p": 0.42, "reason": "TrumpRX if healthcare block lands. Fair at 15–35¢ (wide)."},
+    P+"MADE": {"p": 0.40, "reason": "Made in America in 9/27. Fair at 25–51¢ (wide)."},
+    P+"DATA": {"p": 0.20, "reason": "Data center is a tech-event word. Fair at 27–47¢ — slight NO."},
+    P+"DRIL": {"p": 0.28, "reason": "'Drill baby drill' rare in corpus (2/27). Fair at 16–37¢ (wide)."},
+    P+"FILI": {"p": 0.20, "reason": "Filibuster in 3/27. Fair at 13–44¢ (wide)."},
+    P+"CEAS": {"p": 0.15, "reason": "Ceasefire uncommon at domestic rallies. Fair at 8–20¢."},
+    P+"CRYP": {"p": 0.06, "reason": "Crypto rare on the trail. Fair at 1–2¢."},
+    P+"NQE":  {"p": 0.02, "reason": "Publicly scheduled; cancellation unlikely."},
+  },
+}

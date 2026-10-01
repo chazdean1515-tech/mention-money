@@ -1,42 +1,53 @@
-# KXVANCEMENTION-26SEP29: JD Vance at MAHA Summit, Waldorf Astoria DC, Tue Sep 29 2026.
-EVENT = "KXVANCEMENTION-26SEP29"
+# KXVANCEMENTION-26OCT01: JD Vance midterm rally, Lakeland FL (Sun 'n Fun), Thu Oct 1 2026.
+# No Vance transcript corpus on hand — topic priors for a full midterm stump, not word counts.
+EVENT = "KXVANCEMENTION-26OCT01"
 P = EVENT + "-"
 DATA = {
-  "title": "JD Vance at the MAHA Summit (Waldorf Astoria, DC)",
+  "title": "JD Vance midterm rally in Lakeland, Florida",
   "speaker": "JD Vance",
-  "event_time_et": "2026-09-29T16:00:00-04:00",
-  "event_time_note": "Summit livestream from 9:00 a.m. ET; Vance + RFK Jr. close the day (afternoon fireside). 4:00 p.m. ET is a placeholder for Vance's speaking window.",
-  "context": ("Make America Healthy Again summit: chronic disease, pharma/'food as medicine', obesity, Medicare/Medicaid, "
-              "GLP-1s, autism (RFK Jr. theme), TrumpRx. Vance co-headlines the closing fireside with RFK Jr., so 'Trump' "
-              "(3+ times), 'healthcare', and MAHA staples are the load-bearing words. Length unknown — a short scripted "
-              "hit cuts the long-shot political riffs (Biden/Democrat/Obama). No Vance transcript corpus on hand; "
-              "estimates are topic priors, not word counts."),
-  "fragile_sides": {"YES": "YES leans assume Vance speaks more than a short greeting in the closing fireside; a truncated hit flips them."},
-  "confidence": "Low-medium. Topic priors only; speaking length/format unknown; no Vance base-rate corpus.",
-  "method": "Topic priors from MAHA Summit agenda / Politico preview, adjusted for a closing Vance–RFK fireside (not a full stump speech).",
+  "event_time_et": "2026-10-01T11:30:00-04:00",
+  "event_time_note": "GOP/Trump 47: doors 9:30 a.m. ET, program 11:30 a.m. ET at Skylight Hangar A, Sun 'n Fun, Lakeland FL.",
+  "context": ("Full midterm rally for Florida turnout — Byron Donalds (gov) is the local headliner Vance is there to boost. "
+              "Expect Democrat/Biden contrast, working-class branding, tax-on-tips/overtime, and Florida name-checks (DeSantis). "
+              "Length should be a real stump, not a short fireside, so partisan staples clear more easily than at the Sep 29 MAHA summit. "
+              "No Vance word-count corpus; these are topic priors only."),
+  "fragile_sides": {"YES": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting."},
+  "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
+  "method": "Topic priors from GOP event page + FL Voice / Newsbreak previews (Donalds, midterm turnout frame).",
   "sources": [
-    {"title": "MAHA Summit 2026 agenda", "url": "https://www.mahasummit.com/agenda"},
-    {"title": "MAHA Summit livestream (from 9am ET)", "url": "https://www.mahasummit.com/register"},
-    {"title": "Politico: Vance, RFK Jr. headline MAHA Summit (Sep 28)", "url": "https://www.politico.com/news/2026/09/28/vance-rfk-tyson-hines-maha-summit-01095218"},
+    {"title": "GOP: Midterm Rally in Lakeland FL featuring JD Vance (Oct 1, 11:30am ET)", "url": "https://events.gop.com/events/midterm-rally-in-fl-jd-vance"},
+    {"title": "Florida's Voice: Vance to headline Lakeland rally", "url": "https://flvoicenews.com/vance-to-headline-lakeland-rally-as-midterm-elections-approach/"},
   ],
   "words": {
-    P+"HEAL": {"p": 0.75, "reason": "It's a health summit; 'healthcare' is almost automatic if he speaks more than a greeting."},
-    P+"CHRO": {"p": 0.55, "reason": "'Chronic disease' is core MAHA language, but length unknown. 34–35¢ looks a bit cheap."},
-    P+"MEDI": {"p": 0.70, "reason": "Medicare/Medicaid reform is a standing Vance/RFK talking point. Roughly fair at 75–76¢."},
-    P+"PHAR": {"p": 0.55, "reason": "Pharma/pharmaceutical is baked into MAHA (drug prices, TrumpRx). Slight cheap vs 26–35¢ if he speaks at length."},
-    P+"OBES": {"p": 0.55, "reason": "Obesity is a headline MAHA metric. Fair-to-slight cheap at 51–62¢."},
-    P+"TRUM": {"p": 0.60, "reason": "Market is Trump (3+ times). Closing with RFK on a Trump admin agenda makes 3+ likely. Fair at 50–60¢."},
-    P+"GLP":  {"p": 0.45, "reason": "GLP-1s are the live drug-policy fight; may or may not be named explicitly. Fair at 36–39¢."},
-    P+"TRUMR": {"p": 0.40, "reason": "TrumpRX fits the drug-price lane; not guaranteed in a short hit. Fair at 35–38¢."},
-    P+"AFFO": {"p": 0.45, "reason": "'Affordability' of food/drugs is MAHA framing. Spread is wide."},
-    P+"FRAU": {"p": 0.40, "reason": "Medicare fraud is a recurring Vance riff; less forced here than on the trail. Fair at 68–76¢."},
-    P+"CANC": {"p": 0.35, "reason": "Cancer often appears in chronic-disease lists. Fair."},
-    P+"AUTI": {"p": 0.30, "reason": "Autism is more RFK Jr. than Vance; possible in a joint chat. Fair-to-slight cheap at 10–21¢."},
-    P+"AI":   {"p": 0.28, "reason": "AI is not the summit theme; only comes up if he pivots to tech/regulation. 25–39¢ roughly fair."},
-    P+"BIDE": {"p": 0.28, "reason": "Optional political riff in a health-policy fireside. Fair at 21–32¢."},
-    P+"DEMO": {"p": 0.32, "reason": "Same — partisan aside, not required. Fair."},
-    P+"OBAM": {"p": 0.28, "reason": "Obama/Obamacare only if he goes into ACA history. Fair-to-slight rich."},
-    P+"CAMP": {"p": 0.08, "reason": "2028/campaign is off-theme for a MAHA policy close. Fair at 4–10¢."},
-    P+"NQE":  {"p": 0.03, "reason": "Summit is live today; cancellation looks unlikely."},
+    P+"DEMO": {"p": 0.92, "reason": "Partisan midterm stump; 'Democrat' is near-automatic. Fair at 94–97¢."},
+    P+"BIDE": {"p": 0.88, "reason": "Biden contrast is default Vance/Trump midterm framing. Fair at 87–91¢."},
+    P+"BYRO": {"p": 0.90, "reason": "He's there to boost Byron Donalds; naming the candidate is the point of the trip. Fair at 87–91¢."},
+    P+"TAXO": {"p": 0.85, "reason": "No tax on tips / overtime is a standing Trump–Vance pocketbook line. Fair at 85–88¢."},
+    P+"WORK": {"p": 0.80, "reason": "Working class / middle class is Vance's brand. Fair at 57–59¢ — slight cheap."},
+    P+"ECON": {"p": 0.75, "reason": "Economy/economic is load-bearing on a midterm stump. Fair-to-slight cheap at 50–53¢."},
+    P+"ELEC": {"p": 0.72, "reason": "Election / get-out-the-vote is the event's purpose. Fair at 79–89¢."},
+    P+"SOCI": {"p": 0.55, "reason": "Social Security often appears in pocketbook blocks; not guaranteed. Fair-to-slight NO at 77–88¢."},
+    P+"DESA": {"p": 0.55, "reason": "DeSantis name-check is natural in Florida but optional. Fair at 58–70¢."},
+    P+"FRAU": {"p": 0.50, "reason": "Election/Medicare fraud is a recurring Vance riff. Fair-to-slight NO at 71–76¢."},
+    P+"ILLE": {"p": 0.50, "reason": "'Illegal alien' / border language common on trail; length-dependent. Fair-to-slight NO at 72–87¢."},
+    P+"AFFO": {"p": 0.55, "reason": "Affordability midterm frame. Fair at 66–76¢."},
+    P+"RADI": {"p": 0.45, "reason": "'Radical Left' is optional culture-war spice. Fair at 40–49¢."},
+    P+"HEAL": {"p": 0.40, "reason": "Healthcare less forced here than at MAHA; may still appear. Fair at 40–47¢."},
+    P+"INFL": {"p": 0.45, "reason": "Inflation often pairs with economy; not automatic. Fair at 46–62¢."},
+    P+"CAMP": {"p": 0.40, "reason": "2028/campaign can come up but is off-message for a midterm turnout hit. Fair-to-slight NO at 63–75¢."},
+    P+"MANU": {"p": 0.40, "reason": "Manufacturing fits America First; optional at a FL rally. Fair at 45–60¢."},
+    P+"AMER": {"p": 0.40, "reason": "'American Dream' is Vance-flavored but not required. Fair at 32–44¢."},
+    P+"AMFI": {"p": 0.35, "reason": "'America First' in  the brand but he often paraphrases. Fair-to-slight cheap at 20–21¢."},
+    P+"ICE":  {"p": 0.35, "reason": "ICE / border block is optional. Fair-to-slight cheap at 23–25¢."},
+    P+"TARI": {"p": 0.30, "reason": "Tariffs more natural at a factory hit than a FL turnout rally. Fair-to-slight cheap at 20–21¢."},
+    P+"FAKE": {"p": 0.25, "reason": "'Fake News' is more Trump than Vance. Fair at 19–23¢."},
+    P+"OIL":  {"p": 0.22, "reason": "Oil/gas less forced in Lakeland than in OK. Fair at 16–26¢."},
+    P+"CHIN": {"p": 0.30, "reason": "China optional unless he goes into trade. Fair at 18–39¢ (wide)."},
+    P+"AI":   {"p": 0.22, "reason": "AI not the midterm frame. Fair at 16–17¢."},
+    P+"CALI": {"p": 0.20, "reason": "California foil is optional. Wide market."},
+    P+"ID":   {"p": 0.20, "reason": "Voter ID sometimes in election-integrity block. Fair at 21–34¢."},
+    P+"FOOD": {"p": 0.15, "reason": "Food stamp/SNAP is a niche policy aside. Fair at 16–26¢."},
+    P+"MADE": {"p": 0.18, "reason": "'Made in America' more factory than FL rally. Fair-to-slight rich NO at 4–9¢ YES."},
+    P+"NQE":  {"p": 0.02, "reason": "Publicly scheduled; cancellation unlikely."},
   },
 }
