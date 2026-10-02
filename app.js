@@ -49,13 +49,6 @@ async function load() {
 const started = ea => !!(ea && ea.event_time_et && new Date(ea.event_time_et).getTime() <= Date.now());
 const etDate = value => value ? new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'}).format(new Date(value)) : '';
 const todayET = etDate(Date.now());
-const historyLabel = w => {
-  const h = w && w.history;
-  if (!h || h.count == null) return 'Historical count unavailable';
-  return `Historical hit rate: ${h.count}/${h.total}`;
-};
-const historySource = w => w && w.history && w.history.source ? w.history.source : 'No historical source recorded';
-
 function render({mk, an}, q = '', onlyAnalyzed = false) {
   const A = an.events || {};
   const minEdge = an.min_edge ?? 0.05;
@@ -86,9 +79,8 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
 
     const tr = rows.map(({m, w}) => `
       <div class="word-row">
-        <b>${esc(m.word)}</b>
-        ${w ? `<span class="history">${esc(historyLabel(w))}</span><span class="history-src">${esc(historySource(w))}</span>` : '<span class="history">Historical count unavailable</span>'}
-        ${w && w.reason ? `<span class="r-m">${esc(w.reason)}</span>` : ''}
+        <h4>${esc(m.word)}</h4>
+        <p>${esc((w && (w.prose || w.reason)) || 'No transcript read for this word yet.')}</p>
       </div>`).join('');
 
     const src = ea && ea.sources ? ea.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title || s.url)}</a>`).join(' · ') : '';
