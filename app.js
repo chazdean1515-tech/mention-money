@@ -76,7 +76,6 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
   const done = e => !!e.decided || started(A[e.event_ticker]);
   evs.sort((a, b) => (done(a) - done(b)) || (!!A[b.event_ticker] - !!A[a.event_ticker]) || (a.expected_expiration_et || '').localeCompare(b.expected_expiration_et || ''));
 
-  const best = [];
   const cards = evs.map(e => {
     const ea = A[e.event_ticker];
     const words = (ea && ea.words) || {};
@@ -85,7 +84,6 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
       const est = w ? w.p : null;
       const ed = edges(m, est);
       const hl = !done(e) && ed.edge != null && ed.edge >= minEdge;
-      if (hl) best.push({e, m, w, ed});
       return {m, w, est, ed, hl};
     }).sort((a, b) => (b.ed.edge ?? -9) - (a.ed.edge ?? -9) || (b.m.last_price ?? 0) - (a.m.last_price ?? 0));
 
@@ -120,14 +118,6 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
     </article>`;
   }).join('');
 
-  best.sort((a, b) => b.ed.edge - a.ed.edge);
-  document.getElementById('best').innerHTML = `<h2>Best value (edge ≥ ${Math.round(minEdge*100)}¢ after fee)</h2>` +
-    (best.length ? `<div class="bv">${best.slice(0, 10).map(({e, m, w, ed}) => `
-      <div class="bvi"><div class="top"><span class="w">${esc(m.word)} <span class="pill ${ed.side.toLowerCase()}">BUY ${ed.side}</span></span>
-      <span class="pos">+${Math.round(ed.edge*100)}¢</span></div>
-      <div class="ev">${esc(A[e.event_ticker]?.title || e.title)} · ${A[e.event_ticker]?.event_time_et ? fmtET(A[e.event_ticker].event_time_et) : (e.event_date ? e.event_date + ' (date TBC)' : 'date TBC')}</div>
-      <div>Pay ${pct(ed.price)} · est. YES ${pctP(w.p)} · yes bid/ask ${pct(m.yes_bid)}/${pct(m.yes_ask)}</div>
-      <div class="ev">${esc(w.reason)}</div></div>`).join('')}</div>` : '<div class="mut">No bets clear the threshold right now.</div>');
   document.getElementById('events').innerHTML = cards || '<p class="mut">No events match.</p>';
 }
 
