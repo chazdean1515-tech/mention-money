@@ -105,15 +105,28 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
 }
 
 // Play of the Day: chosen at build time (research/build_analysis.py) and stored in analysis.json.
-function renderTicker(an) {
-  const events = Object.values((an && an.events) || {})
-    .filter(e => e.event_time_et && etDate(e.event_time_et) === todayET)
-    .sort((a, b) => new Date(a.event_time_et) - new Date(b.event_time_et));
+function renderTicker(mk, an) {
+  const A = (an && an.events) || {};
+  const events = (mk.events || []).filter(e => {
+    const ea = A[e.event_ticker];
+    return ea && ea.event_time_et && etDate(ea.event_time_et) === todayET;
+  }).sort((a, b) => new Date(A[a.event_ticker].event_time_et) - new Date(A[b.event_ticker].event_time_et));
   const el = document.getElementById('today-ticker');
   if (!el || !events.length) { if (el) el.hidden = true; return; }
-  const items = events.map(e => `<span class="ticker-item"><b>${fmtET(e.event_time_et)}</b>  ${esc(e.title || e.speaker || 'Event')}</span>`).join('');
-  const loop = items.repeat(6);
-  el.innerHTML = `<span class="ticker-label">TODAY</span><span class="ticker-track">${loop}</span>`;
+  const clock = iso => new Date(iso).toLocaleTimeString('en-US', {timeZone:'America/New_York', hour:'numeric', minute:'2-digit'});
+  const bits = [];
+  events.forEach(e => {
+    const ea = A[e.event_ticker];
+    bits.push(`<span class="tick mark"><b>${esc(clock(ea.event_time_et))} ET</b> ${esc(ea.title || e.title || 'Event')}</span>`);
+    e.markets.slice().sort((a, b) => a.word.localeCompare(b.word)).forEach(m => {
+      const px = m.last_price != null ? Math.round(m.last_price * 100) : (m.yes_bid != null && m.yes_ask != null ? Math.round(((m.yes_bid + m.yes_ask) / 2) * 100) : null);
+      const cls = px == null ? 'mark' : (px >= 50 ? 'up' : 'down');
+      bits.push(`<span class="tick ${cls}"><b>${esc(m.word).toUpperCase()}</b>${px == null ? '' : `<span class="px">${px}</span>`}</span>`);
+    });
+  });
+  const seq = bits.join('<span class="tick mark sep">●</span>');
+  const seconds = Math.max(22, bits.length * 2.4);
+  el.innerHTML = `<span class="ticker-label">MM</span><div class="ticker-window"><div class="ticker-track" style="animation-duration:${seconds}s"><span class="ticker-seq">${seq}</span><span class="ticker-seq" aria-hidden="true">${seq}</span></div></div>`;
   el.hidden = false;
 }
 
@@ -179,7 +192,7 @@ setupTip();
 setupReferral();
 
 load().then(d => {
-  renderTicker(d.an);
+  renderTicker(d.mk, d.an);
   renderPotd(d.an);
   const q = document.getElementById('q'), oa = document.getElementById('onlyAnalyzed');
   const go = () => render(d, q.value, oa.checked);
