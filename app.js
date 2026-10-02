@@ -81,22 +81,15 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
     const words = (ea && ea.words) || {};
     const rows = e.markets.map(m => {
       const w = words[m.ticker] || words[m.word] || null;
-      const est = w ? w.p : null;
-      const ed = edges(m, est);
-      const hl = !done(e) && ed.edge != null && ed.edge >= minEdge;
-      return {m, w, est, ed, hl};
-    }).sort((a, b) => (b.ed.edge ?? -9) - (a.ed.edge ?? -9) || (b.m.last_price ?? 0) - (a.m.last_price ?? 0));
+      return {m, w};
+    }).sort((a, b) => a.m.word.localeCompare(b.m.word));
 
-    const tr = rows.map(({m, w, est, ed, hl}) => `
-      <tr class="${hl ? 'hl' : ''}">
-        <td class="word"><b>${esc(m.word)}</b>${w ? `<span class="history">${esc(historyLabel(w))}</span><span class="history-src">${esc(historySource(w))}</span>` : '<span class="history">Historical count unavailable</span>'}${w && w.reason ? `<span class="r-m">${esc(w.reason)}</span>` : ''}</td>
-        <td title="yes bid / yes ask">${pct(m.yes_bid)}/${pct(m.yes_ask)}</td>
-        <td class="hide-m">${pct(m.last_price)}</td>
-        <td class="hide-m">${m.volume != null ? Math.round(m.volume).toLocaleString() : '—'}</td>
-        <td class="history-col">${w ? esc(historyLabel(w).replace('Historical hit rate: ', '')) : '—'}</td>
-        <td class="${ed.edge == null ? 'mut' : ed.edge > 0 ? 'pos' : 'neg'}">${ed.edge == null ? '—' : `${ed.side} ${ed.edge > 0 ? '+' : ''}${Math.round(ed.edge * 100)}¢`}</td>
-        <td class="reason">${w ? esc(w.reason) : ''}</td>
-      </tr>`).join('');
+    const tr = rows.map(({m, w}) => `
+      <div class="word-row">
+        <b>${esc(m.word)}</b>
+        ${w ? `<span class="history">${esc(historyLabel(w))}</span><span class="history-src">${esc(historySource(w))}</span>` : '<span class="history">Historical count unavailable</span>'}
+        ${w && w.reason ? `<span class="r-m">${esc(w.reason)}</span>` : ''}
+      </div>`).join('');
 
     const src = ea && ea.sources ? ea.sources.map(s => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.title || s.url)}</a>`).join(' · ') : '';
     const rules = e.markets[0] && e.markets[0].rules_primary ? e.markets[0].rules_primary : '';
@@ -111,9 +104,7 @@ function render({mk, an}, q = '', onlyAnalyzed = false) {
           ${src ? `<div class="src">Sources: ${src}</div>` : ''}</div>` : ''}
         ${ea?.confidence ? `<div class="info">Confidence: ${esc(ea.confidence)}</div>` : ''}
       </div>
-      <div class="scroll"><table class="tbl">
-        <thead><tr><th class="word">Word</th><th>Bid/Ask</th><th class="hide-m">Last</th><th class="hide-m">Vol</th><th>History</th><th>Edge</th><th class="reason">Reason</th></tr></thead>
-        <tbody>${tr}</tbody></table></div>
+      <div class="word-list">${tr}</div>
       ${rules ? `<details><summary>rules (first market)</summary><div class="rules">${esc(rules)}\n\n${esc(e.markets[0].rules_secondary || '')}</div></details>` : ''}
     </article>`;
   }).join('');

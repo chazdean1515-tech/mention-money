@@ -146,3 +146,6 @@ footer{color:var(--mut);font-size:12px;text-align:center;padding:16px;background
 @media(max-width:640px){header .ref-btn .tl{display:none}header .ref-btn{padding:7px 11px}}
 /* phones: keep the sticky header on one control row; the Play of the Day and footer carry the referral CTA */
 @media(max-width:480px){header .ref-btn{display:none}}
+
+.word-list{display:flex;flex-direction:column;gap:14px;padding:4px 2px 8px}
+.word-row{display:flex;flex-direction:column;gap:2px}
