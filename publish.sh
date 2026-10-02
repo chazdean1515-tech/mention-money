@@ -7,8 +7,10 @@ cd "$(dirname "$0")"
 for f in data/markets.json data/analysis.json; do
   python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || { echo "invalid JSON: $f" >&2; exit 1; }
 done
-git add CNAME data/markets.json data/analysis.json data/last_potd.json index.html app.js style.css README.md fetch.py screenshot.py screenshot_potd.py screenshot_wheel.py publish.sh .gitignore .nojekyll research/ assets/
+git add CNAME data/markets.json data/analysis.json data/last_potd.json index.html app.js style.css README.md fetch.py screenshot.py screenshot_potd.py publish.sh .gitignore .nojekyll research/ assets/
 git add screenshots/*.png 2>/dev/null || true
+# Stage intentional removals of the retired checker and its screenshots.
+git add -u screenshot_wheel.py screenshots/live-wheel.png screenshots/wheel-desktop.png screenshots/wheel-mobile-result.png screenshots/wheel-mobile.png screenshots/wheel-result.png 2>/dev/null || true
 if git diff --cached --quiet; then
   echo "Nothing changed; nothing to publish."
   exit 0

@@ -41,14 +41,17 @@ def strip_prices(text):
     return " ".join(keep) if keep else text.strip()
 
 def eligible_candidates(mk, events):
-    """Every (market, side) that passes the shared filters. Used by the Play of the Day and the wheel."""
+    """Every (market, side) that passes the shared filters. Used by the Play of the Day."""
     cands = []
     for e in mk.get("events", []):
         ea = events.get(e["event_ticker"])
         if not ea or e.get("decided"):
             continue
         ev_time = ts(ea.get("event_time_et"))
-        if ev_time and ev_time <= NOW:  # speaking window already started/over: stale prices, not a live bet
+        # The published board is for today's real event date only; ticker dates can differ.
+        if not ev_time or ev_time.date() != NOW.date():
+            continue
+        if ev_time <= NOW:  # speaking window already started/over: stale prices, not a live bet
             continue
         fragile_sides = ea.get("fragile_sides", {})
         for m in e["markets"]:
@@ -76,7 +79,7 @@ def eligible_candidates(mk, events):
     return cands
 
 def record(c):
-    """Card-ready dict for one candidate (shared by the Play of the Day and the wheel)."""
+    """Card-ready dict for one candidate (used by the Play of the Day)."""
     e, ea, m, w = c["e"], c["ea"], c["m"], c["w"]
     reason = strip_prices(w.get("reason", ""))
     rationale = (f"{reason} Our {round(w['p']*100)}% YES estimate vs a {round(c['ask']*100)}¢ {c['side']} ask "
@@ -129,57 +132,6 @@ def pick_potd(cands):
                         "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"}
     return rec, c
 
-# ---------------- Spin the Wheel ----------------
-# Four play types, each maps to one pick from the same eligible pool. Non-fragile picks always rank ahead of fragile ones.
-# Each play stores a primary pick plus ranked alternates, so the page can skip a pick whose event has started since the build.
-BOMB_MAX_PRICE, RETIRE_MIN_P, CASH_WINDOW_H = 0.30, 0.75, 48
-N_ALTS = 3
-
-def ranked(pool, key):
-    """Sort non-fragile first, then by `key` (a tuple where smaller is better), then ticker/side so the order is stable."""
-    return sorted(pool, key=lambda c: (bool(c["fragile"]),) + key(c) + c["key"])
-
-def wheel(cands, potd_c):
-    soon_cut = NOW.timestamp() + CASH_WINDOW_H * 3600
-    soon = [c for c in cands if c["when"] and c["when"].timestamp() <= soon_cut]
-    if soon:
-        cash_pool, cash_rule = soon, f"best edge among picks whose event starts within {CASH_WINDOW_H}h"
-    else:
-        first = min((c["when"] for c in cands if c["when"]), default=None)
-        cash_pool = [c for c in cands if c["when"] == first] or cands
-        cash_rule = f"no event within {CASH_WINDOW_H}h, so the best edge on the soonest event"
-    long = [c for c in cands if c["ask"] <= BOMB_MAX_PRICE]
-    safe = [c for c in cands if c["pe"] >= RETIRE_MIN_P]
-    prem = [c for c in cands if c["conf"] >= 3]
-    specs = {  # type: (ranked list, rule text)
-        "BOMB": (ranked(long, lambda c: (-c["edge"],)), f"biggest edge with price ≤ {round(BOMB_MAX_PRICE*100)}¢") if long
-                else (ranked(cands, lambda c: (c["ask"], -c["edge"])), "no pick at ≤ 30¢, so the cheapest eligible pick"),
-        "RETIREMENT": (ranked(safe, lambda c: (-c["pe"], -c["edge"])), f"highest win probability for our side (≥ {round(RETIRE_MIN_P*100)}%)") if safe
-                else (ranked(cands, lambda c: (-c["pe"], -c["edge"])), "nothing at ≥ 75%, so the highest win probability"),
-        "ROLLS-ROYCE": (ranked(prem, lambda c: (-c["edge"],)), "biggest edge among Medium-or-better confidence picks") if prem
-                else (ranked(cands, lambda c: (-c["edge"],)), "no Medium-confidence pick, so the biggest edge overall"),
-        "CASH": (ranked(cash_pool, lambda c: (-c["edge"],)), cash_rule),
-    }
-    meta = {"BOMB": ("💣", "Long shot: a cheap side with real edge and a big payout multiple."),
-            "RETIREMENT": ("🏖️", "Safest pick: the highest estimated chance of winning, with edge still ≥ 5¢."),
-            "ROLLS-ROYCE": ("👑", "Premium pick: the biggest edge with Medium-or-better confidence."),
-            "CASH": ("💵", "Quickest money: best edge on an event happening soonest.")}
-    potd_key = potd_c["key"] if potd_c else None
-    out, taken = [], set()
-    # Assign the narrowest categories first so they get their best pick; ROLLS-ROYCE skips the POTD if it can.
-    for t in ("ROLLS-ROYCE", "BOMB", "RETIREMENT", "CASH"):
-        lst, rule = specs[t]
-        block = taken | ({potd_key} if t == "ROLLS-ROYCE" and potd_key else set())
-        primary = ([c for c in lst if c["key"] not in block] or [c for c in lst if c["key"] not in taken] or lst)[0]
-        alts = [c for c in lst if c is not primary and c["key"] not in taken][:N_ALTS]
-        taken.add(primary["key"])
-        emoji, blurb = meta[t]
-        out.append({"type": t, "emoji": emoji, "blurb": blurb, "rule": rule,
-                    "same_as_potd": primary["key"] == potd_key,
-                    "picks": [record(primary)] + [record(c) for c in alts]})
-    order = ["BOMB", "RETIREMENT", "ROLLS-ROYCE", "CASH"]
-    return sorted(out, key=lambda x: order.index(x["type"]))
-
 mk_path = os.path.join(HERE, "..", "data", "markets.json")
 try:
     mk = json.load(open(mk_path))
@@ -187,7 +139,6 @@ except (OSError, ValueError):
     mk = {}
 cands = eligible_candidates(mk, out["events"])
 out["play_of_the_day"], potd_c = pick_potd(cands)
-out["wheel_plays"] = wheel(cands, potd_c) if cands else []
 path = os.path.join(HERE, "..", "data", "analysis.json")
 json.dump(out, open(path, "w"), indent=1, ensure_ascii=False)
 print("wrote", os.path.normpath(path), "events:", list(out["events"]))
@@ -197,5 +148,3 @@ if potd:
     json.dump({"date": NOW.date().isoformat(), "ticker": potd["ticker"], "word": potd["word"], "side": potd["side"]},
               open(os.path.join(HERE, "..", "data", "last_potd.json"), "w"), indent=1)
 print("play of the day:", fmt(potd) + f"; {len(cands)} candidates" if potd else "none")
-for w in out["wheel_plays"]:
-    print(f"wheel {w['type']:<12}", fmt(w["picks"][0]), "| rule:", w["rule"], "| alts:", ", ".join(f"{a['word']} {a['side']}" for a in w["picks"][1:]))

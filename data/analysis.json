@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-01T05:08:08-04:00",
+ "updated_at_et": "2026-10-02T06:24:32-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -562,7 +562,7 @@
    "speaker": "Donald Trump",
    "event_time_et": "2026-10-02T19:00:00-04:00",
    "event_time_note": "GOP/Trump 47: program begins 6:00 p.m. Central (7:00 p.m. ET) at USA Mitchell Center, Mobile AL.",
-   "context": "Second midterm rally in two nights (after Durant OK). Expect the same long stump: Fake News, Transgender, Sleepy Joe, Oil/Gas, Save America Act, Affordability, healthcare/TrumpRx. Alabama is a deep-red room, so culture-war and election-integrity riffs run hot; foreign-policy blocks (Hormuz, Israel, Russia/Ukraine) are optional add-ons. 'Space Force' has a Gulf-Coast / military flavor that can land here. Correlated YES staples.",
+   "context": "What: a Trump 47 Committee midterm rally featuring President Donald J. Trump. Who: Trump is the scheduled speaker, with the event organizer and local reporting framing it as a GOP turnout stop. Where: the Mitchell Center, 5950 Old Shell Rd, on the University of South Alabama campus in Mobile, Alabama. When: Friday, Oct. 2, 2026; the official listing says the program begins at 6:00 p.m. Central, or 7:00 p.m. ET (doors at 2:00 p.m. Central). About: Alabama Public Radio reports the stop is part of a 32-day midterm campaign push, intended to support Tommy Tuberville's Alabama governor campaign and nearby Florida Panhandle Republican efforts. Same-week hooks: AP reporting identifies cost of living, the economy, gas prices, the Iran war and concerns about AI data centers as live campaign issues; the official listing publishes no speech agenda. Those hooks can shift which optional words appear, while the recent Oklahoma rally is a comparable but separate event. The University of South Alabama says the RNC rented the venue and that Homecoming/weather and Secret Service road closures affect the campus schedule, not the rally's published start time.",
    "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
    "method": "Presence rates in 23 Jun–Aug 2026 SEL + 4 Sep-2026 speeches, adjusted UP for a full midterm rally.",
    "sources": [
@@ -575,140 +575,313 @@
      "url": "https://weartv.com/news/local/president-trump-coming-to-mobile-on-oct-2-for-rally-at-usas-mitchell-center"
     },
     {
+     "title": "Alabama Public Radio / Associated Press: Mobile stop and midterm campaign context (Oct. 1)",
+     "url": "https://www.apr.org/news/2026-10-01/president-trump-heads-to-mobile-to-try-to-shore-up-the-gop-before-the-mid-terms"
+    },
+    {
+     "title": "University of South Alabama: presidential visit logistics and venue status (Oct. 1)",
+     "url": "https://www.southalabama.edu/departments/publicrelations/presidential-visit.html"
+    },
+    {
      "title": "govinfo CPD Trump remarks corpus",
      "url": "https://www.govinfo.gov/app/collection/cpd"
     }
    ],
    "words": {
     "KXTRUMPMENTION-26OCT02-TRAN": {
+     "history": {
+      "count": 15,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.92,
      "reason": "Trail staple; 15/27 official docs. Fair at 90–91¢."
     },
     "KXTRUMPMENTION-26OCT02-FAKE": {
+     "history": {
+      "count": 17,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.92,
      "reason": "'Fake News' near-automatic at rallies (17/27 corpus). Fair."
     },
     "KXTRUMPMENTION-26OCT02-OIL": {
+     "history": {
+      "count": 24,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.92,
      "reason": "Oil/gas in 24/27. Fair at 90–94¢."
     },
     "KXTRUMPMENTION-26OCT02-SLEE": {
+     "history": {
+      "count": 17,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.9,
      "reason": "'Sleepy Joe' in 17/27; classic rally closer. Fair at 82–91¢."
     },
     "KXTRUMPMENTION-26OCT02-SAVE": {
+     "history": {
+      "count": 16,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.85,
      "reason": "'Save America Act' is the midterm bill pitch. Fair at 81–91¢."
     },
     "KXTRUMPMENTION-26OCT02-HEAL": {
+     "history": {
+      "count": 12,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.85,
      "reason": "Healthcare block is live on the trail. Fair at 88–90¢."
     },
     "KXTRUMPMENTION-26OCT02-CHIN": {
+     "history": {
+      "count": 20,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.88,
      "reason": "China in 20/27. Fair."
     },
     "KXTRUMPMENTION-26OCT02-AFFO": {
+     "history": {
+      "count": 14,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.85,
      "reason": "Affordability midterm frame. Fair at 76–83¢."
     },
     "KXTRUMPMENTION-26OCT02-DIVI": {
+     "history": {
+      "count": 3,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.8,
      "reason": "Dividend/stimulus stump promise. Fair."
     },
     "KXTRUMPMENTION-26OCT02-IRAN": {
+     "history": {
+      "count": 19,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.72,
      "reason": "Iran (5+ times): 19/27 cleared 5+. Fair at 59–65¢."
     },
     "KXTRUMPMENTION-26OCT02-SUPR": {
+     "history": {
+      "count": 13,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.55,
      "reason": "Supreme Court in 13/27. Fair at 64–75¢ — slight NO lean."
     },
     "KXTRUMPMENTION-26OCT02-BARA": {
+     "history": {
+      "count": 14,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.58,
      "reason": "'Barack Hussein Obama' in 14/27. Fair."
     },
     "KXTRUMPMENTION-26OCT02-SPAC": {
+     "history": {
+      "count": 6,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.45,
      "reason": "'Space Force' in 6/27; Gulf military crowd can pull it in. Fair at 55–62¢ — slight NO."
     },
     "KXTRUMPMENTION-26OCT02-HORM": {
+     "history": {
+      "count": 16,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.42,
      "reason": "Hormuz in 16/27 when Iran is hot; not every rally. Fair at 45–56¢."
     },
     "KXTRUMPMENTION-26OCT02-AMER": {
+     "history": {
+      "count": 8,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.5,
      "reason": "'America First' in 8/27. Fair."
     },
     "KXTRUMPMENTION-26OCT02-FRAU": {
+     "history": {
+      "count": 9,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.55,
      "reason": "Fraud talk rises near midterms. Fair."
     },
     "KXTRUMPMENTION-26OCT02-ICE": {
+     "history": {
+      "count": 8,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.6,
      "reason": "ICE / border block. Fair."
     },
     "KXTRUMPMENTION-26OCT02-DEPO": {
+     "history": {
+      "count": 6,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.55,
      "reason": "Deportation language common on trail. Fair at 31–41¢ — slight cheap."
     },
     "KXTRUMPMENTION-26OCT02-FENT": {
+     "history": {
+      "count": 7,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.55,
      "reason": "Fentanyl tied to border/China. Fair at 28–38¢ — slight cheap."
     },
     "KXTRUMPMENTION-26OCT02-TRUMA": {
+     "history": {
+      "count": 8,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.45,
      "reason": "'Trump Account' in 8/27. Fair at 34–40¢."
     },
     "KXTRUMPMENTION-26OCT02-AI": {
+     "history": {
+      "count": 19,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.5,
      "reason": "AI less forced at an AL midterm rally than at a tech event. Fair at 38–47¢."
     },
     "KXTRUMPMENTION-26OCT02-RUSS": {
+     "history": {
+      "count": 16,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.42,
      "reason": "Russia/Ukraine optional here. Fair at 40–45¢."
     },
     "KXTRUMPMENTION-26OCT02-TRUM": {
+     "history": {
+      "count": 4,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.42,
      "reason": "TrumpRX if healthcare block lands. Fair."
     },
     "KXTRUMPMENTION-26OCT02-CHEA": {
+     "history": {
+      "count": 13,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.48,
      "reason": "Cheat/cheater in 13/27. Fair."
     },
     "KXTRUMPMENTION-26OCT02-SANC": {
+     "history": {
+      "count": 3,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.4,
      "reason": "Sanctuary in 3/27 official. Fair-to-slight NO at 46–64¢."
     },
     "KXTRUMPMENTION-26OCT02-MADE": {
+     "history": {
+      "count": 9,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.4,
      "reason": "Made in America in 9/27. Fair at 27–38¢."
     },
     "KXTRUMPMENTION-26OCT02-ISRA": {
+     "history": {
+      "count": 8,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.28,
      "reason": "Israel in 8/27; foreign-policy optional. Fair at 17–25¢."
     },
     "KXTRUMPMENTION-26OCT02-DATA": {
+     "history": {
+      "count": 5,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.2,
      "reason": "Data center is a tech-event word. Fair at 14–25¢."
     },
     "KXTRUMPMENTION-26OCT02-FILI": {
+     "history": {
+      "count": 3,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.22,
      "reason": "Filibuster in 3/27. Fair at 16–21¢."
     },
     "KXTRUMPMENTION-26OCT02-DRIL": {
+     "history": {
+      "count": 0,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.28,
      "reason": "'Drill baby drill' rare in corpus (2/27) but energy riffs help. Fair at 10–18¢ — slight cheap."
     },
     "KXTRUMPMENTION-26OCT02-CEAS": {
+     "history": {
+      "count": 1,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.15,
      "reason": "Ceasefire uncommon at domestic rallies. Fair at 8–11¢."
     },
     "KXTRUMPMENTION-26OCT02-CRYP": {
+     "history": {
+      "count": 3,
+      "total": 27,
+      "source": "Trump-only comparable transcript corpus: 27 transcripts (23 govinfo CPD Jun–Aug 2026 + 4 Sep 2026 files); exact listed word/phrase match, presence per transcript."
+     },
      "p": 0.06,
      "reason": "Crypto rare on the trail. Fair at 1–2¢."
     },
     "KXTRUMPMENTION-26OCT02-NQE": {
+     "history": {
+      "count": null,
+      "total": null,
+      "source": "No event transcript or applicable speech count; settlement condition only."
+     },
      "p": 0.02,
      "reason": "Publicly scheduled; cancellation unlikely."
     }
@@ -1968,439 +2141,37 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT01",
+  "event_ticker": "KXTRUMPMENTION-26OCT02",
   "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
-  "event_title": "Trump midterm rally in Durant, Oklahoma",
+  "ticker": "KXTRUMPMENTION-26OCT02-CHEA",
+  "event_title": "Trump midterm rally in Mobile, Alabama",
   "speaker": "Donald Trump",
-  "word": "Aluminum",
+  "word": "Cheat / Cheater / Cheating",
   "side": "NO",
-  "price": 0.22,
-  "yes_bid": 0.78,
-  "yes_ask": 0.88,
-  "est_yes": 0.18,
-  "est_side": 0.82,
-  "edge_raw": 0.6,
-  "fee": 0.012,
-  "edge": 0.588,
-  "payout_multiple": 4.55,
-  "event_time_et": "2026-10-01T19:00:00-04:00",
-  "close_time_et": "2026-10-15T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-  "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
+  "price": 0.18,
+  "yes_bid": 0.82,
+  "yes_ask": 0.85,
+  "est_yes": 0.48,
+  "est_side": 0.52,
+  "edge_raw": 0.34,
+  "fee": 0.0103,
+  "edge": 0.3297,
+  "payout_multiple": 5.56,
+  "event_time_et": "2026-10-02T19:00:00-04:00",
+  "close_time_et": "2026-10-16T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-02T06:20:42-04:00",
+  "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
   "fragile": null,
-  "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
-  "reason": "Aluminum in 5/27. Illiquid.",
+  "rationale": "Cheat/cheater in 13/27. Fair. Our 48% YES estimate vs a 18¢ NO ask leaves about +33¢ per contract after fees.",
+  "reason": "Cheat/cheater in 13/27. Fair.",
   "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 46,
-   "tied_within_2c": 1,
-   "skipped_repeat": "KXEARNINGSMENTIONMU-26SEP30-SMAR",
+   "candidates": 20,
+   "tied_within_2c": 2,
+   "skipped_repeat": "KXTRUMPMENTION-26OCT01-ALUM",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
- },
- "wheel_plays": [
-  {
-   "type": "BOMB",
-   "emoji": "💣",
-   "blurb": "Long shot: a cheap side with real edge and a big payout multiple.",
-   "rule": "biggest edge with price ≤ 30¢",
-   "same_as_potd": true,
-   "picks": [
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Aluminum",
-     "side": "NO",
-     "price": 0.22,
-     "yes_bid": 0.78,
-     "yes_ask": 0.88,
-     "est_yes": 0.18,
-     "est_side": 0.82,
-     "edge_raw": 0.6,
-     "fee": 0.012,
-     "edge": 0.588,
-     "payout_multiple": 4.55,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
-     "reason": "Aluminum in 5/27. Illiquid.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTIONB-26OCT01",
-     "series_ticker": "KXTRUMPMENTIONB",
-     "ticker": "KXTRUMPMENTIONB-26OCT01-IRAN",
-     "event_title": "Trump remarks at Peterbilt Motors (Denton, TX)",
-     "speaker": "Donald Trump",
-     "word": "Iran / Iranian",
-     "side": "NO",
-     "price": 0.3,
-     "yes_bid": 0.7,
-     "yes_ask": 0.71,
-     "est_yes": 0.45,
-     "est_side": 0.55,
-     "edge_raw": 0.25,
-     "fee": 0.0147,
-     "edge": 0.2353,
-     "payout_multiple": 3.33,
-     "event_time_et": "2026-10-01T16:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:52-04:00",
-     "confidence": "Low-medium. Factory format + White House theme sheet; no matching transcript corpus.",
-     "fragile": null,
-     "rationale": "Iran optional on a domestic factory hit. Our 45% YES estimate vs a 30¢ NO ask leaves about +24¢ per contract after fees.",
-     "reason": "Iran optional on a domestic factory hit. Fair-to-slight NO at 70–71¢.",
-     "url": "https://kalshi.com/markets/kxtrumpmentionb"
-    },
-    {
-     "event_ticker": "KXVANCEMENTION-26OCT01",
-     "series_ticker": "KXVANCEMENTION",
-     "ticker": "KXVANCEMENTION-26OCT01-FRAU",
-     "event_title": "JD Vance midterm rally in Lakeland, Florida",
-     "speaker": "JD Vance",
-     "word": "Fraud",
-     "side": "NO",
-     "price": 0.29,
-     "yes_bid": 0.71,
-     "yes_ask": 0.76,
-     "est_yes": 0.5,
-     "est_side": 0.5,
-     "edge_raw": 0.21,
-     "fee": 0.0144,
-     "edge": 0.1956,
-     "payout_multiple": 3.45,
-     "event_time_et": "2026-10-01T11:30:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
-     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
-     "fragile": null,
-     "rationale": "Election/Medicare fraud is a recurring Vance riff. Our 50% YES estimate vs a 29¢ NO ask leaves about +20¢ per contract after fees.",
-     "reason": "Election/Medicare fraud is a recurring Vance riff. Fair-to-slight NO at 71–76¢.",
-     "url": "https://kalshi.com/markets/kxvancemention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT02",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT02-DRIL",
-     "event_title": "Trump midterm rally in Mobile, Alabama",
-     "speaker": "Donald Trump",
-     "word": "Drill Baby Drill",
-     "side": "YES",
-     "price": 0.08,
-     "yes_bid": 0.07,
-     "yes_ask": 0.08,
-     "est_yes": 0.28,
-     "est_side": 0.28,
-     "edge_raw": 0.2,
-     "fee": 0.0052,
-     "edge": 0.1948,
-     "payout_multiple": 12.5,
-     "event_time_et": "2026-10-02T19:00:00-04:00",
-     "close_time_et": "2026-10-16T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
-     "fragile": null,
-     "rationale": "'Drill baby drill' rare in corpus (2/27) but energy riffs help. Our 28% YES estimate vs a 8¢ YES ask leaves about +19¢ per contract after fees.",
-     "reason": "'Drill baby drill' rare in corpus (2/27) but energy riffs help. Fair at 10–18¢ — slight cheap.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    }
-   ]
-  },
-  {
-   "type": "RETIREMENT",
-   "emoji": "🏖️",
-   "blurb": "Safest pick: the highest estimated chance of winning, with edge still ≥ 5¢.",
-   "rule": "highest win probability for our side (≥ 75%)",
-   "same_as_potd": false,
-   "picks": [
-    {
-     "event_ticker": "KXVANCEMENTION-26OCT01",
-     "series_ticker": "KXVANCEMENTION",
-     "ticker": "KXVANCEMENTION-26OCT01-WORK",
-     "event_title": "JD Vance midterm rally in Lakeland, Florida",
-     "speaker": "JD Vance",
-     "word": "Working Class / Middle Class",
-     "side": "YES",
-     "price": 0.59,
-     "yes_bid": 0.57,
-     "yes_ask": 0.59,
-     "est_yes": 0.8,
-     "est_side": 0.8,
-     "edge_raw": 0.21,
-     "fee": 0.0169,
-     "edge": 0.1931,
-     "payout_multiple": 1.69,
-     "event_time_et": "2026-10-01T11:30:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
-     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
-     "fragile": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting.",
-     "rationale": "Working class / middle class is Vance's brand. Our 80% YES estimate vs a 59¢ YES ask leaves about +19¢ per contract after fees.",
-     "reason": "Working class / middle class is Vance's brand. Fair at 57–59¢ — slight cheap.",
-     "url": "https://kalshi.com/markets/kxvancemention"
-    },
-    {
-     "event_ticker": "KXVANCEMENTION-26OCT01",
-     "series_ticker": "KXVANCEMENTION",
-     "ticker": "KXVANCEMENTION-26OCT01-ECON",
-     "event_title": "JD Vance midterm rally in Lakeland, Florida",
-     "speaker": "JD Vance",
-     "word": "Economy / Economic",
-     "side": "YES",
-     "price": 0.53,
-     "yes_bid": 0.5,
-     "yes_ask": 0.53,
-     "est_yes": 0.75,
-     "est_side": 0.75,
-     "edge_raw": 0.22,
-     "fee": 0.0174,
-     "edge": 0.2026,
-     "payout_multiple": 1.89,
-     "event_time_et": "2026-10-01T11:30:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:04:03-04:00",
-     "confidence": "Low-medium. Topic priors only; no Vance base-rate corpus.",
-     "fragile": "YES leans assume a full midterm stump (≥15 min), not a truncated greeting.",
-     "rationale": "Economy/economic is load-bearing on a midterm stump. Our 75% YES estimate vs a 53¢ YES ask leaves about +20¢ per contract after fees.",
-     "reason": "Economy/economic is load-bearing on a midterm stump. Fair-to-slight cheap at 50–53¢.",
-     "url": "https://kalshi.com/markets/kxvancemention"
-    }
-   ]
-  },
-  {
-   "type": "ROLLS-ROYCE",
-   "emoji": "👑",
-   "blurb": "Premium pick: the biggest edge with Medium-or-better confidence.",
-   "rule": "biggest edge among Medium-or-better confidence picks",
-   "same_as_potd": false,
-   "picks": [
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-DEPO",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Deport / Deported / Deportation",
-     "side": "YES",
-     "price": 0.24,
-     "yes_bid": 0.21,
-     "yes_ask": 0.24,
-     "est_yes": 0.6,
-     "est_side": 0.6,
-     "edge_raw": 0.36,
-     "fee": 0.0128,
-     "edge": 0.3472,
-     "payout_multiple": 4.17,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Deportation language in 6/27 official; common on the trail. Fair. Our 60% YES estimate vs a 24¢ YES ask leaves about +35¢ per contract after fees.",
-     "reason": "Deportation language in 6/27 official; common on the trail. Fair.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-ALUM",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Aluminum",
-     "side": "NO",
-     "price": 0.22,
-     "yes_bid": 0.78,
-     "yes_ask": 0.88,
-     "est_yes": 0.18,
-     "est_side": 0.82,
-     "edge_raw": 0.6,
-     "fee": 0.012,
-     "edge": 0.588,
-     "payout_multiple": 4.55,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Aluminum in 5/27. Illiquid. Our 18% YES estimate vs a 22¢ NO ask leaves about +59¢ per contract after fees.",
-     "reason": "Aluminum in 5/27. Illiquid.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-IRAN",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Iran (5+ times)",
-     "side": "YES",
-     "price": 0.41,
-     "yes_bid": 0.39,
-     "yes_ask": 0.41,
-     "est_yes": 0.7,
-     "est_side": 0.7,
-     "edge_raw": 0.29,
-     "fee": 0.0169,
-     "edge": 0.2731,
-     "payout_multiple": 2.44,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap. Our 70% YES estimate vs a 41¢ YES ask leaves about +27¢ per contract after fees.",
-     "reason": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-FENT",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Fentanyl",
-     "side": "YES",
-     "price": 0.39,
-     "yes_bid": 0.36,
-     "yes_ask": 0.39,
-     "est_yes": 0.65,
-     "est_side": 0.65,
-     "edge_raw": 0.26,
-     "fee": 0.0167,
-     "edge": 0.2433,
-     "payout_multiple": 2.56,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Our 65% YES estimate vs a 39¢ YES ask leaves about +24¢ per contract after fees.",
-     "reason": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Fair at 54–69¢.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    }
-   ]
-  },
-  {
-   "type": "CASH",
-   "emoji": "💵",
-   "blurb": "Quickest money: best edge on an event happening soonest.",
-   "rule": "best edge among picks whose event starts within 48h",
-   "same_as_potd": false,
-   "picks": [
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-IRAN",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Iran (5+ times)",
-     "side": "YES",
-     "price": 0.41,
-     "yes_bid": 0.39,
-     "yes_ask": 0.41,
-     "est_yes": 0.7,
-     "est_side": 0.7,
-     "edge_raw": 0.29,
-     "fee": 0.0169,
-     "edge": 0.2731,
-     "payout_multiple": 2.44,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap. Our 70% YES estimate vs a 41¢ YES ask leaves about +27¢ per contract after fees.",
-     "reason": "Market is Iran (5+ times): 19/27 hit 5+. Rallies often clear it. Fair-to-slight cheap.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT01",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT01-FENT",
-     "event_title": "Trump midterm rally in Durant, Oklahoma",
-     "speaker": "Donald Trump",
-     "word": "Fentanyl",
-     "side": "YES",
-     "price": 0.39,
-     "yes_bid": 0.36,
-     "yes_ask": 0.39,
-     "est_yes": 0.65,
-     "est_side": 0.65,
-     "edge_raw": 0.26,
-     "fee": 0.0167,
-     "edge": 0.2433,
-     "payout_multiple": 2.56,
-     "event_time_et": "2026-10-01T19:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Rally format is the high-base-rate setting; individual long-shots still noisy.",
-     "fragile": null,
-     "rationale": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Our 65% YES estimate vs a 39¢ YES ask leaves about +24¢ per contract after fees.",
-     "reason": "Fentanyl in 7/27 official docs but a rally staple tied to border/China. Fair at 54–69¢.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTIONB-26OCT01",
-     "series_ticker": "KXTRUMPMENTIONB",
-     "ticker": "KXTRUMPMENTIONB-26OCT01-IRAN",
-     "event_title": "Trump remarks at Peterbilt Motors (Denton, TX)",
-     "speaker": "Donald Trump",
-     "word": "Iran / Iranian",
-     "side": "NO",
-     "price": 0.3,
-     "yes_bid": 0.7,
-     "yes_ask": 0.71,
-     "est_yes": 0.45,
-     "est_side": 0.55,
-     "edge_raw": 0.25,
-     "fee": 0.0147,
-     "edge": 0.2353,
-     "payout_multiple": 3.33,
-     "event_time_et": "2026-10-01T16:00:00-04:00",
-     "close_time_et": "2026-10-15T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:52-04:00",
-     "confidence": "Low-medium. Factory format + White House theme sheet; no matching transcript corpus.",
-     "fragile": null,
-     "rationale": "Iran optional on a domestic factory hit. Our 45% YES estimate vs a 30¢ NO ask leaves about +24¢ per contract after fees.",
-     "reason": "Iran optional on a domestic factory hit. Fair-to-slight NO at 70–71¢.",
-     "url": "https://kalshi.com/markets/kxtrumpmentionb"
-    },
-    {
-     "event_ticker": "KXTRUMPMENTION-26OCT02",
-     "series_ticker": "KXTRUMPMENTION",
-     "ticker": "KXTRUMPMENTION-26OCT02-FENT",
-     "event_title": "Trump midterm rally in Mobile, Alabama",
-     "speaker": "Donald Trump",
-     "word": "Fentanyl",
-     "side": "YES",
-     "price": 0.31,
-     "yes_bid": 0.3,
-     "yes_ask": 0.31,
-     "est_yes": 0.55,
-     "est_side": 0.55,
-     "edge_raw": 0.24,
-     "fee": 0.015,
-     "edge": 0.225,
-     "payout_multiple": 3.23,
-     "event_time_et": "2026-10-02T19:00:00-04:00",
-     "close_time_et": "2026-10-16T10:00:00-04:00",
-     "price_fetched_at_et": "2026-10-01T05:03:51-04:00",
-     "confidence": "Medium. Same rally base rates as Oklahoma; back-to-back schedule makes a shortened speech a real (small) risk.",
-     "fragile": null,
-     "rationale": "Fentanyl tied to border/China. Our 55% YES estimate vs a 31¢ YES ask leaves about +23¢ per contract after fees.",
-     "reason": "Fentanyl tied to border/China. Fair at 28–38¢ — slight cheap.",
-     "url": "https://kalshi.com/markets/kxtrumpmention"
-    }
-   ]
-  }
- ]
+ }
 }
