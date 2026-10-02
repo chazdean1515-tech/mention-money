@@ -111,8 +111,9 @@ function renderTicker(an) {
     .sort((a, b) => new Date(a.event_time_et) - new Date(b.event_time_et));
   const el = document.getElementById('today-ticker');
   if (!el || !events.length) { if (el) el.hidden = true; return; }
-  el.innerHTML = `<span class="ticker-label">TODAY · ET</span><span class="ticker-track">${events.map(e =>
-    `<span class="ticker-item"><b>${fmtET(e.event_time_et)}</b> · ${esc(e.title || e.speaker || 'Event')}</span>`).join('')}</span>`;
+  const items = events.map(e => `<span class="ticker-item"><b>${fmtET(e.event_time_et)}</b>  ${esc(e.title || e.speaker || 'Event')}</span>`).join('');
+  const loop = items.repeat(6);
+  el.innerHTML = `<span class="ticker-label">TODAY</span><span class="ticker-track">${loop}</span>`;
   el.hidden = false;
 }
 
