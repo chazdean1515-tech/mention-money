@@ -23,6 +23,7 @@ from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
 
 BASE = "https://api.elections.kalshi.com/trade-api/v2"
+SEARCH = "https://api.elections.kalshi.com/v1/search/series"
 ET = ZoneInfo("America/New_York")
 HERE = os.path.dirname(os.path.abspath(__file__))
 DATA = os.path.join(HERE, "data")
@@ -120,6 +121,64 @@ def scan_series(ticker, deadline):
     return mkts
 
 
+
+def get_abs(url, deadline=None):
+    """Same retry behavior as get(), for a full URL (the public search API)."""
+    attempt = 0
+    while True:
+        if deadline and time.time() > deadline:
+            raise TimeoutError("budget exhausted")
+        try:
+            req = urllib.request.Request(url, headers={"Accept": "application/json", "User-Agent": "mentions-app/0.1 (read-only)"})
+            with urllib.request.urlopen(req, timeout=30) as r:
+                body = json.load(r)
+            time.sleep(PACE)
+            return body
+        except urllib.error.HTTPError as e:
+            if e.code == 429 or e.code >= 500:
+                attempt += 1
+                if attempt > 8:
+                    raise RuntimeError(f"gave up after {attempt} retries: {url}")
+                time.sleep(min(20, 4 + 2 * attempt))
+                continue
+            raise
+        except (urllib.error.URLError, TimeoutError, OSError):
+            attempt += 1
+            if attempt > 8:
+                raise
+            time.sleep(5)
+
+
+def scan_event(event_ticker, deadline):
+    mkts, cursor = [], ""
+    while True:
+        d = get("/markets", {"event_ticker": event_ticker, "status": "open", "limit": 1000, "cursor": cursor}, deadline)
+        fetched = now_et().isoformat(timespec="seconds")
+        mkts += [slim(m, fetched) for m in d.get("markets", [])]
+        cursor = d.get("cursor")
+        if not cursor or not d.get("markets"):
+            break
+    return mkts
+
+
+def open_mention_events(deadline):
+    """One search call returns each open Mentions series with its current event ticker.
+    The daily board uses this instead of walking all ~450 series."""
+    d = get_abs(SEARCH + "?status=open&category=Mentions&order_by=trending&page_size=200", deadline)
+    out = []
+    for e in d.get("current_page") or []:
+        et = e.get("event_ticker")
+        st = e.get("series_ticker")
+        if et and st:
+            out.append({
+                "event_ticker": et,
+                "series_ticker": st,
+                "title": e.get("event_title") or e.get("series_title"),
+                "sub_title": e.get("event_subtitle") or "",
+            })
+    return out
+
+
 def cache_path(t):
     return os.path.join(CACHE, f"{t}.json")
 
@@ -213,12 +272,15 @@ def main():
     ap.add_argument("--max-age", type=float, default=60, help="skip series cached within N minutes")
     ap.add_argument("--only", default="", help="comma-separated series tickers to (re)fetch")
     ap.add_argument("--build-only", action="store_true")
+    ap.add_argument("--today", action="store_true",
+                    help="fast path: only mention events whose ticker date is today or up to 2 days behind")
     a = ap.parse_args()
     os.makedirs(CACHE, exist_ok=True)
     deadline = time.time() + a.budget
 
     sfile = os.path.join(DATA, "series.json")
-    if a.build_only and os.path.exists(sfile):
+    # --today must not walk the catalog. Reuse the cached series list; one search call finds today's events.
+    if (a.build_only or a.today) and os.path.exists(sfile):
         series = json.load(open(sfile))
     else:
         series = get("/series", {"category": "Mentions", "include_volume": "true"}).get("series", [])
@@ -226,7 +288,52 @@ def main():
     meta = {s["ticker"]: s for s in series}
     print(f"{len(series)} Mentions series", file=sys.stderr)
 
-    if not a.build_only:
+    if a.today:
+        a.days = 0  # ticker date today, or up to 2 days behind; never tomorrow
+    if not a.build_only and a.today:
+        today = now_et().date()
+        lo, hi = today - timedelta(days=2), today
+        found = {}
+        for e in open_mention_events(deadline):
+            ed = event_date(e["event_ticker"])
+            if ed and lo <= ed <= hi:
+                found[e["event_ticker"]] = e
+        # Search shows one event per series. Pull sibling events in the same window.
+        for series in sorted({e["series_ticker"] for e in found.values()}):
+            try:
+                evs = get("/events", {"series_ticker": series, "status": "open", "limit": 200}, deadline).get("events", [])
+            except Exception as ex:
+                print(f"  WARN events {series}: {ex}", file=sys.stderr)
+                continue
+            for ev in evs:
+                et = ev.get("event_ticker")
+                ed = event_date(et or "")
+                if et and ed and lo <= ed <= hi and et not in found:
+                    found[et] = {"event_ticker": et, "series_ticker": series,
+                                 "title": ev.get("title"), "sub_title": ev.get("sub_title") or ""}
+        print(f"today window {lo}..{hi}: {len(found)} events", file=sys.stderr)
+        by_series = {}
+        for e in found.values():
+            by_series.setdefault(e["series_ticker"], []).append(e["event_ticker"])
+        for series, tickers in by_series.items():
+            mk = []
+            for et in tickers:
+                try:
+                    got = scan_event(et, deadline)
+                except Exception as ex:
+                    print(f"  WARN {et}: {ex}", file=sys.stderr)
+                    continue
+                print(f"  {et}: {len(got)} open markets", file=sys.stderr, flush=True)
+                mk.extend(got)
+            if mk:
+                save_json(cache_path(series), {"series_ticker": series, "fetched_at_et": now_et().isoformat(timespec="seconds"), "markets": mk})
+        tfile = os.path.join(DATA, "event_titles.json")
+        titles = json.load(open(tfile)) if os.path.exists(tfile) else {}
+        for e in found.values():
+            if e.get("title"):
+                titles[e["event_ticker"]] = {"title": e.get("title"), "sub_title": e.get("sub_title") or ""}
+        save_json(tfile, titles)
+    elif not a.build_only:
         if a.only:
             order = [t.strip() for t in a.only.split(",") if t.strip()]
         else:

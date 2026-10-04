@@ -1,8 +1,130 @@
 {
- "updated_at_et": "2026-10-03T07:15:26-04:00",
+ "updated_at_et": "2026-10-04T06:57:44-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
+  "KXBERNIEMENTION-26OCT04": {
+   "title": "Bernie Sanders Fighting Oligarchy rally in Bakersfield",
+   "speaker": "Bernie Sanders",
+   "event_time_et": "2026-10-04T21:00:00-04:00",
+   "event_time_note": "Friends of Bernie Sanders: doors 4:00 p.m. Pacific, speaking program 6:00 p.m. Pacific (9:00 p.m. ET), Harvey Auditorium, Bakersfield High School, 1241 G St.",
+   "context": "What: 'Fighting Oligarchy: Where We Go From Here,' a Sanders campaign stop, not the Saturday San Francisco 'Ballots Over Billionaires' rally. Who: Bernie Sanders, with special guest Randy Villegas, the Democrat running in CA-22 against Rep. David Valadao. Where: Harvey Auditorium at Bakersfield High School. When: Sunday, Oct. 4, 2026, program 6:00 p.m. Pacific / 9:00 p.m. ET. About: he is in California for Proposition 40, a one-time 5% tax on wealth above $1 billion aimed mostly at healthcare, and to boost Villegas. Los Angeles is a separate Monday stop. No transcript corpus of Sanders speeches is on file. Saturday's still-open Kalshi prices are not a transcript.",
+   "confidence": "Low-medium. No transcript corpus; topic priors from the event listing and the Prop 40 campaign only.",
+   "method": "No counted corpus and no hit rates. Judgment from the Bakersfield listing, the billionaire-tax campaign, and the CA-22 race. Slash markets pay on either word. Billionaire needs three says. Trump needs five says. 'Bernie' counts only if he says his own name.",
+   "sources": [
+    {
+     "title": "Friends of Bernie Sanders: Bakersfield, Oct. 4, doors 4 p.m. PT, program 6 p.m. PT",
+     "url": "https://act.berniesanders.com/signup/rsvp-oligarchy-bakersfield-ca/"
+    },
+    {
+     "title": "KBAK: Sanders and Villegas at Bakersfield High, program 6 p.m.",
+     "url": "https://bakersfieldnow.com/news/local/bernie-sanders-to-speak-at-bakersfield-high-school-on-oct-4-with-randy-villegas"
+    },
+    {
+     "title": "Fresno Bee: Sunday Bakersfield stop is Prop 40; Saturday was San Francisco",
+     "url": "https://www.fresnobee.com/news/politics-government/article317472599.html"
+    },
+    {
+     "title": "KCRA: Sanders on the billionaire tax and why Newsom and Becerra oppose it",
+     "url": "https://www.kcra.com/article/bernie-sanders-california-visit-billionaire-tax-proposal/73962773"
+    }
+   ],
+   "words": {
+    "KXBERNIEMENTION-26OCT04-BILL": {
+     "p": 0.93,
+     "reason": "No corpus. The stop is a billionaire-wealth-tax rally, and the contract needs the word three times. That is the speech. Fair at 92–96¢."
+    },
+    "KXBERNIEMENTION-26OCT04-WORK": {
+     "p": 0.9,
+     "reason": "No corpus. Working class or middle class is his ordinary contrast with billionaires. Fair at 90–91¢."
+    },
+    "KXBERNIEMENTION-26OCT04-TAXB": {
+     "p": 0.84,
+     "reason": "No corpus. Tax break for the rich is how he frames a wealth tax. Fair-to-slight cheap versus a wide 81–90¢."
+    },
+    "KXBERNIEMENTION-26OCT04-ELON": {
+     "p": 0.88,
+     "reason": "No corpus. Elon or Musk is his usual oligarch example, including on this California tax fight. Fair at 91–92¢."
+    },
+    "KXBERNIEMENTION-26OCT04-TRUM": {
+     "p": 0.86,
+     "reason": "No corpus. Five says of Trump is normal at a full Sanders rally and not guaranteed in a shortened program. Wide 73–85¢."
+    },
+    "KXBERNIEMENTION-26OCT04-OIL": {
+     "p": 0.7,
+     "reason": "No corpus. Oil, gas, or gasoline comes up when he ties energy prices to billionaires, and it is not required for a tax-and-healthcare stop. Fair at 70–74¢."
+    },
+    "KXBERNIEMENTION-26OCT04-SSEC": {
+     "p": 0.74,
+     "reason": "No corpus. Social Security is a stump staple and can be skipped if he stays on Prop 40 and Villegas. Fair versus 72–79¢."
+    },
+    "KXBERNIEMENTION-26OCT04-ZOHR": {
+     "p": 0.32,
+     "fragile": true,
+     "reason": "No corpus. Zohran/Mamdani is a national ally, not a Bakersfield guest. The listed program is Villegas and the California tax. One name-check flips it, so the NO is fragile."
+    },
+    "KXBERNIEMENTION-26OCT04-SOCI": {
+     "p": 0.6,
+     "reason": "No corpus. He has long said democratic socialism, but he does not say socialist/socialism at every stop. Wide market."
+    },
+    "KXBERNIEMENTION-26OCT04-CORR": {
+     "p": 0.62,
+     "reason": "No corpus. Corrupt/corruption fits an oligarchy speech and is not required. Fair at 56–64¢."
+    },
+    "KXBERNIEMENTION-26OCT04-ROBO": {
+     "p": 0.45,
+     "reason": "No corpus. Robot/robotics is a newer Sanders riff, not the Prop 40 ask. Wide market."
+    },
+    "KXBERNIEMENTION-26OCT04-ZILL": {
+     "p": 0.58,
+     "reason": "No corpus. Zillionaire is a word he uses, and there is no count of how often. Wide 55–69¢."
+    },
+    "KXBERNIEMENTION-26OCT04-ISRA": {
+     "p": 0.4,
+     "reason": "No corpus. Israel or Netanyahu is optional at a domestic tax rally and can crowd out the California ask. Fair-to-slight NO at 47–52¢."
+    },
+    "KXBERNIEMENTION-26OCT04-CLIM": {
+     "p": 0.48,
+     "reason": "No corpus. Climate is not the same as 'save the planet' or fossil-fuel talk, which would not pay. Fair at 45–55¢."
+    },
+    "KXBERNIEMENTION-26OCT04-INFL": {
+     "p": 0.46,
+     "reason": "No corpus. Inflation is optional next to the wealth-tax argument. Fair at 47–53¢."
+    },
+    "KXBERNIEMENTION-26OCT04-FARM": {
+     "p": 0.58,
+     "reason": "No corpus. Bakersfield and CA-22 are farm country, so farm/farmer is plausible and uncounted. Wide 37–57¢."
+    },
+    "KXBERNIEMENTION-26OCT04-TRIL": {
+     "p": 0.38,
+     "reason": "No corpus. Trillionaire is a rarer flourish than billionaire. Fair-to-slight NO at 41–42¢."
+    },
+    "KXBERNIEMENTION-26OCT04-BERN": {
+     "p": 0.3,
+     "reason": "No corpus. He usually says 'I,' not his own name. A 36–40¢ YES is a little rich."
+    },
+    "KXBERNIEMENTION-26OCT04-IMMI": {
+     "p": 0.36,
+     "reason": "No corpus. Immigrant/immigration matters in CA-22, but his listed message is the tax and healthcare, not the border. Slightly cheap at 26–27¢ if he wanders; not a count."
+    },
+    "KXBERNIEMENTION-26OCT04-CHAT": {
+     "p": 0.2,
+     "reason": "No corpus. ChatGPT or OpenAI is off this stop unless he detours into tech oligarchs by product name. Fair versus 17–27¢."
+    },
+    "KXBERNIEMENTION-26OCT04-EPST": {
+     "p": 0.06,
+     "reason": "No corpus. Epstein is not this rally. Fair at 2–6¢."
+    },
+    "KXBERNIEMENTION-26OCT04-NUCL": {
+     "p": 0.08,
+     "reason": "No corpus. Nuclear is not the Bakersfield ask. Fair at 4–8¢."
+    },
+    "KXBERNIEMENTION-26OCT04-NQE": {
+     "p": 0.03,
+     "reason": "The campaign and local news both list the Sunday program. No transcript count; cancellation looks unlikely."
+    }
+   }
+  },
   "KXEARNINGSMENTIONCCL-26SEP28": {
    "title": "Carnival (CCL) Q3 FY26 earnings call",
    "speaker": "Carnival Corp. (CEO Josh Weinstein, CFO David Bernstein, IR Beth Roberts, operator)",
@@ -89,6 +211,275 @@
     "KXEARNINGSMENTIONCCL-26SEP28-TARI": {
      "p": 0.12,
      "reason": "1/5 calls (Q2'26, looking back at 2025 tariff volatility). Fair."
+    }
+   }
+  },
+  "KXFNSMENTION-26OCT04": {
+   "title": "Todd Blanche on Fox News Sunday",
+   "speaker": "Todd Blanche",
+   "event_time_et": "2026-10-04T09:00:00-04:00",
+   "event_time_note": "Fox News Sunday airs live at 9:00 a.m. ET on the FOX broadcast network (Wikipedia; FOX 5 DC lists 9:00 a.m.). Some local stations delay it. Fox News Channel re-airs it at 2:00 p.m. ET.",
+   "context": "What: FOX News Sunday with Shannon Bream. Who: Attorney General Todd Blanche, booked with Justice Samuel Alito on the Supreme Court's new term (Fox promo and Politico's Sunday listings). Where: the Fox News Sunday set. When: Sunday, Oct. 4, 2026, live at 9:00 a.m. ET. About: the promo is the Court's term, not a rally. Separate from that booking, Blanche told CBS on Sept. 14 that mail voting has a greater 'potential for fraud' than 'in-person voting with ID,' and on Sept. 30 he announced Minnesota voter-fraud indictments and said 'voter fraud' at that press conference. No transcript corpus, so none of those appearances is a hit rate.",
+   "confidence": "Low-medium. No transcript corpus; judgment from the booking plus two sourced appearances.",
+   "method": "No counted corpus. Probabilities are topic judgment. Quoted words below are from reported remarks, not a transcript tally. Slash markets pay on either word. 'Illegal Alien' is that phrase, not 'illegally' or 'illegal immigrant.' Trump (3+ times) needs three says.",
+   "fragile_sides": {
+    "YES": "Several YES cases need an exact phrase he has not been quoted using."
+   },
+   "sources": [
+    {
+     "title": "Fox: Coming Up on Fox News Sunday, Oct. 4, 2026 (Blanche and Alito)",
+     "url": "https://www.foxnews.com/video/6406176458112"
+    },
+    {
+     "title": "Wikipedia: Fox News Sunday airs live at 9:00 a.m. ET",
+     "url": "https://en.wikipedia.org/wiki/Fox_News_Sunday"
+    },
+    {
+     "title": "CBS: Blanche on mail ballots, fraud, and ID (Sept. 14, 2026)",
+     "url": "https://www.cbsnews.com/news/blanche-defends-mail-ballot-changes-election-practices-probed/"
+    },
+    {
+     "title": "Fox: Blanche announces Minnesota voter-fraud charges (Sept. 30, 2026)",
+     "url": "https://www.foxnews.com/politics/blanche-announces-charges-against-10-permanent-residents-accused-minnesota-voter-fraud"
+    }
+   ],
+   "words": {
+    "KXFNSMENTION-26OCT04-SUPR": {
+     "p": 0.86,
+     "reason": "No corpus. The Fox promo says he is there with Justice Alito on the Court's new term, and the Court just left his mail-ballot rule blocked. Fair at 85–91¢."
+    },
+    "KXFNSMENTION-26OCT04-MIDT": {
+     "p": 0.7,
+     "reason": "No corpus. Midterm or election fits a voting-rule interview, but the promo is the Court, not a campaign hit. Wide 70–81¢."
+    },
+    "KXFNSMENTION-26OCT04-MINN": {
+     "p": 0.72,
+     "reason": "No corpus. He announced Minnesota voter-fraud charges on Sept. 30, so the state is live, but this segment may stay on the Court. Roughly fair at 74–78¢."
+    },
+    "KXFNSMENTION-26OCT04-TRUM": {
+     "p": 0.5,
+     "reason": "No corpus. He works for Trump, but three says in one Sunday answer is not automatic. Wide and thin volume."
+    },
+    "KXFNSMENTION-26OCT04-FRAU": {
+     "p": 0.72,
+     "reason": "No hit count. He used 'fraud' with CBS on Sept. 14 and 'voter fraud' at the Sept. 30 press conference. A Court-term interview may not go there. Still short of 72% at 62–64¢."
+    },
+    "KXFNSMENTION-26OCT04-DEMO": {
+     "p": 0.45,
+     "reason": "No corpus. Democrat is optional in a legal interview. Fair-to-slight NO at 50–57¢."
+    },
+    "KXFNSMENTION-26OCT04-FBI": {
+     "p": 0.4,
+     "reason": "No corpus and no recent Blanche quote using FBI in the sources read. Wide market."
+    },
+    "KXFNSMENTION-26OCT04-ILLE": {
+     "p": 0.28,
+     "fragile": true,
+     "reason": "No corpus. The contract is the phrase 'illegal alien.' Quoted remarks say 'here illegally'; the Fox writeup says 'illegal immigrants,' which does not by itself pay. Wide market."
+    },
+    "KXFNSMENTION-26OCT04-ID": {
+     "p": 0.32,
+     "reason": "No corpus. On Sept. 14 he contrasted mail voting with 'in-person voting with ID,' so the word has a real hook and is not a count. Fair versus 21–27¢."
+    },
+    "KXFNSMENTION-26OCT04-AI": {
+     "p": 0.1,
+     "reason": "No corpus. AI is off the Court-and-voting booking. Fair-to-slight NO versus 14–23¢."
+    },
+    "KXFNSMENTION-26OCT04-ICE": {
+     "p": 0.3,
+     "reason": "No corpus. ICE is in the Minnesota judicial fight he complained about, but he may not name the agency. Fair versus 17–27¢."
+    },
+    "KXFNSMENTION-26OCT04-CHIN": {
+     "p": 0.1,
+     "reason": "No corpus. China is not this booking. Wide market."
+    },
+    "KXFNSMENTION-26OCT04-WEAP": {
+     "p": 0.22,
+     "reason": "No corpus. Weaponize/weaponization is a DOJ talking point he has not been quoted on in the sources read. Wide market."
+    },
+    "KXFNSMENTION-26OCT04-TERR": {
+     "p": 0.12,
+     "reason": "No corpus. Terrorist/terrorism is not the Sunday promo. Fair versus 10–18¢."
+    },
+    "KXFNSMENTION-26OCT04-FENT": {
+     "p": 0.08,
+     "reason": "No corpus. Fentanyl is not this booking. Wide market."
+    },
+    "KXFNSMENTION-26OCT04-EPST": {
+     "p": 0.06,
+     "reason": "No corpus. Epstein is a tail word here. Fair versus 1–8¢."
+    },
+    "KXFNSMENTION-26OCT04-NQE": {
+     "p": 0.03,
+     "reason": "Fox posted the Oct. 4 promo with Blanche. No transcript count; cancellation looks unlikely."
+    }
+   }
+  },
+  "KXFTNMENTION-26OCT04": {
+   "title": "Chris Wright on Face the Nation",
+   "speaker": "Chris Wright",
+   "event_time_et": "2026-10-04T10:30:00-04:00",
+   "event_time_note": "CBS: Face the Nation airs at 10:30 a.m. ET on Oct. 4. The Paramount+ / CBSNews.com stream is 12:30 p.m. ET. Wright is a booked guest, not the whole hour.",
+   "context": "What: CBS Face the Nation with Margaret Brennan. Who: Energy Secretary Chris Wright, listed by CBS on Oct. 2 with Sen. Mark Kelly, Brett McGurk, Iowa nominee Zach Lahn, and CBS correspondents. Where: the Face the Nation set (Washington). When: Sunday, Oct. 4, 2026, 10:30 a.m. ET. About: Iran was still saying that morning that Hormuz stays closed until its conditions are met. Wright's recent hits have been that war and the oil flow, not a campaign speech. No Face the Nation transcript exists yet for today.",
+   "confidence": "Medium. Two full transcripts of his own words, both during this Hormuz crisis; not a large corpus.",
+   "method": "Presence counted only in Wright's answers in two full transcripts: CBS Face the Nation, May 10, 2026, and CNBC Squawk Box from Caracas, Sept. 2, 2026. A slash market hits if either word appears. Trump (3+ times) needs three says of Trump. Quoted lines from other days are not added to the 2-transcript denominator.",
+   "sources": [
+    {
+     "title": "CBS: Face the Nation guests for Oct. 4, 2026 (airs 10:30 a.m. ET)",
+     "url": "https://www.cbsnews.com/news/face-the-nation-guests-10-04-2026/"
+    },
+    {
+     "title": "CBS transcript: Wright on Face the Nation, May 10, 2026",
+     "url": "https://www.cbsnews.com/news/chris-wright-energy-secretary-face-the-nation-transcript-05-10-2026/"
+    },
+    {
+     "title": "CNBC transcript: Wright on Squawk Box, Sept. 2, 2026",
+     "url": "https://www.cnbc.com/2026/09/02/cnbc-transcript-us-energy-secretary-chris-wright-speaks-with-cnbcs-brian-sullivan-on-squawk-box-today.html"
+    },
+    {
+     "title": "Iran International: Hormuz still closed pending Iran's conditions (Oct. 4)",
+     "url": "https://www.iranintl.com/en/202610040986"
+    }
+   ],
+   "words": {
+    "KXFTNMENTION-26OCT04-OIL": {
+     "history": {
+      "count": 2,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.94,
+     "reason": "Oil or gas is in 2/2 full transcripts. Fair at 93–95¢."
+    },
+    "KXFTNMENTION-26OCT04-IRAN": {
+     "history": {
+      "count": 2,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.9,
+     "reason": "Iran/Iranian is in 2/2. This booking is the same war. Fair at 84–87¢."
+    },
+    "KXFTNMENTION-26OCT04-EURO": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.7,
+     "reason": "Europe/European is 0/2 in the transcripts counted. He does say Europe in other 2026 settings (EU energy rules, pipelines), so it is not a never-word, but 76–85¢ is a little rich if Brennan stays on Hormuz."
+    },
+    "KXFTNMENTION-26OCT04-HORM": {
+     "history": {
+      "count": 2,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.88,
+     "reason": "Hormuz is in 2/2 full transcripts, and Iran was still conditioning a reopening on Sunday morning. The 68–77¢ YES is short of that."
+    },
+    "KXFTNMENTION-26OCT04-CHIN": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.55,
+     "reason": "China/Russia is 0/2 in Wright's own words in the transcripts counted (the host said both on Sept. 2). A May 15 CNBC excerpt quotes him saying China; that interview is not in the denominator. Spread is too wide to trade off this."
+    },
+    "KXFTNMENTION-26OCT04-NUCL": {
+     "history": {
+      "count": 2,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.84,
+     "reason": "Nuclear is in 2/2, including the Iranian program. Fair-to-cheap versus a wide 64–75¢."
+    },
+    "KXFTNMENTION-26OCT04-TRUM": {
+     "history": {
+      "count": 1,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.48,
+     "reason": "Trump three times: 6 says on Sept. 2, but only 1 say in the May 10 Face the Nation interview. A short Sunday hit often misses 3. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-DEMO": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.18,
+     "reason": "Democrat is 0/2. He said 'opposition party' on May 10, which does not count. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-ELEC": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.25,
+     "reason": "Election is 0/2. A midterm question could draw it, but it is not his subject. Fair versus 26–29¢."
+    },
+    "KXFTNMENTION-26OCT04-VENE": {
+     "history": {
+      "count": 1,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.42,
+     "reason": "Venezuela is 1/2, and that hit was the Sept. 2 interview taped in Caracas. Today's booking is Hormuz, not a Venezuela deal. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-AFFO": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.22,
+     "reason": "Afford/affordable/affordability is 0/2. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-CALI": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.18,
+     "reason": "California is 0/2. No California hook on this guest list beyond other interviewees. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-DATA": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.16,
+     "reason": "Data center is 0/2. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-AI": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.12,
+     "reason": "AI / artificial intelligence is 0/2. Wide market."
+    },
+    "KXFTNMENTION-26OCT04-STOC": {
+     "history": {
+      "count": 0,
+      "total": 2,
+      "source": "Chris Wright only: 2 full transcripts (CBS Face the Nation May 10, 2026; CNBC Squawk Box Sept 2, 2026). Exact listed word, plural, or possessive."
+     },
+     "p": 0.2,
+     "reason": "Stockpile is 0/2. On Sept. 2 he discussed the Strategic Petroleum Reserve and swaps, not the word stockpile. Fair versus 13–21¢."
+    },
+    "KXFTNMENTION-26OCT04-NQE": {
+     "p": 0.03,
+     "reason": "CBS published the guest list. No transcript count; cancellation looks unlikely."
     }
    }
   },
@@ -2174,36 +2565,36 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT03",
-  "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT03-CHEA",
-  "event_title": "Trump midterm rally in Vandalia, Ohio",
-  "speaker": "Donald Trump",
-  "word": "Cheat / Cheater / Cheating",
-  "side": "NO",
-  "price": 0.14,
-  "yes_bid": 0.86,
-  "yes_ask": 0.88,
-  "est_yes": 0.48,
-  "est_side": 0.52,
-  "edge_raw": 0.38,
-  "fee": 0.0084,
-  "edge": 0.3716,
-  "payout_multiple": 7.14,
-  "event_time_et": "2026-10-03T17:30:00-04:00",
-  "close_time_et": "2026-10-17T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-03T07:15:14-04:00",
-  "confidence": "Medium. Same rally corpus base rates as OK/AL; third-night fatigue is a small risk.",
+  "event_ticker": "KXFTNMENTION-26OCT04",
+  "series_ticker": "KXFTNMENTION",
+  "ticker": "KXFTNMENTION-26OCT04-HORM",
+  "event_title": "Chris Wright on Face the Nation",
+  "speaker": "Chris Wright",
+  "word": "Hormuz",
+  "side": "YES",
+  "price": 0.77,
+  "yes_bid": 0.68,
+  "yes_ask": 0.77,
+  "est_yes": 0.88,
+  "est_side": 0.88,
+  "edge_raw": 0.11,
+  "fee": 0.0124,
+  "edge": 0.0976,
+  "payout_multiple": 1.3,
+  "event_time_et": "2026-10-04T10:30:00-04:00",
+  "close_time_et": "2026-10-18T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-04T06:54:39-04:00",
+  "confidence": "Medium. Two full transcripts of his own words, both during this Hormuz crisis; not a large corpus.",
   "fragile": null,
-  "rationale": "Cheat/cheater in 13/27. Our 48% YES estimate vs a 14¢ NO ask leaves about +37¢ per contract after fees.",
-  "reason": "Cheat/cheater in 13/27. Fair at 49–71¢ (wide).",
-  "url": "https://kalshi.com/markets/kxtrumpmention",
+  "rationale": "Hormuz is in 2/2 full transcripts, and Iran was still conditioning a reopening on Sunday morning. Our 88% YES estimate vs a 77¢ YES ask leaves about +10¢ per contract after fees.",
+  "reason": "Hormuz is in 2/2 full transcripts, and Iran was still conditioning a reopening on Sunday morning. The 68–77¢ YES is short of that.",
+  "url": "https://kalshi.com/markets/kxftnmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 24,
-   "tied_within_2c": 3,
-   "skipped_repeat": "KXTRUMPMENTION-26OCT02-CHEA",
+   "candidates": 5,
+   "tied_within_2c": 1,
+   "skipped_repeat": "KXTRUMPMENTION-26OCT03-CHEA",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  }
