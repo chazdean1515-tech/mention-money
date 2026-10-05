@@ -4,14 +4,15 @@ P = EVENT + "-"
 DATA = {
   "title": "Constellation Brands (STZ) Q2 FY27 earnings call",
   "speaker": "Constellation Brands (CEO Nick Fink, CFO Garth Hankinson, IR, operator)",
-  "event_time_et": None,
-  "event_time_note": "Date not confirmed: Kalshi's ticker says Oct 5, one earnings calendar says Thu Oct 1 pre-market. Check STZ IR.",
+  "event_time_et": "2026-10-07T08:00:00-04:00",
+  "event_time_note": "Constellation Brands IR (Sep 10, 2026): results Tue Oct 6 after the close, conference call Wed Oct 7 at 8:00 a.m. ET. Kalshi's Oct 5 ticker date is not the call date.",
   "context": ("Beer-driven story (Modelo Especial, Pacifico, Corona). 'Depletions' is their core beer KPI and comes up every call. "
               "Wine divestiture talk has faded (0 wine mentions in the July call). Aluminum/tariff costs came up during tariff quarters. "
               "Spreads are wide (5–7¢), so edges must clear the spread too."),
   "confidence": "Low-medium. The available transcripts look partial (~3–4k company words), which biases hit rates DOWN.",
   "method": "Company-speaker counts in 4 calls (Oct 2025, Jan 2026, Apr 2026, Jul 2026) from roic.ai / Earnings Whispers.",
   "sources": [
+    {"title": "Constellation Brands IR: Q2 FY27 results Oct 6, call Oct 7 at 8:00 a.m. ET", "url": "https://ir.cbrands.com/news-events/press-releases/detail/345/constellation-brands-to-report-second-quarter-fiscal-2027-financial-results-on-october-6-2026-after-market-close-and-host-conference-call-on-october-7-2026-at-8-00-am-et"},
     {"title": "STZ Q1 FY27 transcript (Earnings Whispers)", "url": "https://beta.earningswhispers.com/transcript/STZ/Q12027"},
     {"title": "STZ transcripts (roic.ai)", "url": "https://www.roic.ai/quote/STZ/transcripts"},
     {"title": "Earnings calendar week of Sep 28 2026", "url": "https://fffinstill.com/earnings-calendar/week/2026-09-28"},

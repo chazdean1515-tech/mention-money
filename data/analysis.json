@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-04T06:57:44-04:00",
+ "updated_at_et": "2026-10-05T05:19:24-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -125,6 +125,119 @@
     }
    }
   },
+  "KXBERNIEMENTION-26OCT05": {
+   "title": "Bernie Sanders Ballots Over Billionaires rally in Los Angeles",
+   "speaker": "Bernie Sanders",
+   "event_time_et": "2026-10-05T22:00:00-04:00",
+   "event_time_note": "Friends of Bernie Sanders: doors 5:00 p.m. PT, speaking program 7:00 p.m. PT (10:00 p.m. ET), The Novo, 800 W Olympic Blvd. Guests Ro Khanna and Jane Kim.",
+   "context": "Third California stop in three days for Proposition 40, the one-time 5% tax on billionaire wealth. Saturday San Francisco used the same 'Ballots Over Billionaires' name. Across SF and Bakersfield: Tax Break, Elon/Musk, Billionaire (3+), Trump (5+), Oil/Gas, and Working/Middle Class hit 2 of 2. Bernie, Social Security, Trillionaire, Nuclear, ChatGPT, and Epstein went 0 of 2. Note today's 'Working Class' market does not accept 'middle class', and 'Billionaire' now needs 5 says, not 3.",
+   "confidence": "Low-medium. Two same-tour speeches settled this weekend; no full transcript count.",
+   "method": "Presence in the SF (Oct 3) and Bakersfield (Oct 4) Kalshi settlements, with summer Sanders events as a tiebreak.",
+   "sources": [
+    {
+     "title": "Friends of Bernie Sanders: Los Angeles, Oct. 5, program 7 p.m. PT at The Novo",
+     "url": "https://act.berniesanders.com/signup/rsvp-ballots-over-billionaires-la/"
+    },
+    {
+     "title": "POLITICO: Sanders' late push for the California billionaire tax",
+     "url": "https://www.politico.com/news/2026/10/03/bernie-sanders-billionaire-tax-san-francisco-rally-01105995"
+    },
+    {
+     "title": "Kalshi settlements: KXBERNIEMENTION-26OCT03 / 26OCT04",
+     "url": "https://kalshi.com/markets/kxberniemention"
+    }
+   ],
+   "words": {
+    "KXBERNIEMENTION-26OCT05-TAXB": {
+     "p": 0.92,
+     "reason": "2 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-ELON": {
+     "p": 0.94,
+     "reason": "2 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-BILL": {
+     "p": 0.95,
+     "reason": "The rally is named for billionaires and 3+ hit 2 of 2; 5+ is a higher bar but normal for this speech. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-TRUM": {
+     "p": 0.88,
+     "reason": "5+ hit 2 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-AI": {
+     "p": 0.85,
+     "reason": "Hit in San Francisco (not listed in Bakersfield). Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-WORK": {
+     "p": 0.86,
+     "reason": "'Working class' alone; middle class does not count here. Working/Middle hit 2 of 2, and 'working class' alone hit at his Aug 29 rally. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-OIL": {
+     "p": 0.8,
+     "reason": "2 of 2 this weekend. Fair to slightly rich."
+    },
+    "KXBERNIEMENTION-26OCT05-CORR": {
+     "p": 0.6,
+     "reason": "1 of 2 this weekend (Bakersfield yes, SF no). Fair to slightly rich."
+    },
+    "KXBERNIEMENTION-26OCT05-CLIM": {
+     "p": 0.25,
+     "reason": "0 of 2 this weekend (Bakersfield sitting at 1¢). Spread too wide to call."
+    },
+    "KXBERNIEMENTION-26OCT05-SOCI": {
+     "p": 0.45,
+     "reason": "1 of 2 this weekend (SF yes, Bakersfield no). Wide market."
+    },
+    "KXBERNIEMENTION-26OCT05-ISRA": {
+     "p": 0.45,
+     "reason": "1 of 2 this weekend (Bakersfield yes). Wide market."
+    },
+    "KXBERNIEMENTION-26OCT05-ROBO": {
+     "p": 0.45,
+     "reason": "1 of 2 this weekend (Bakersfield yes). Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-ZILL": {
+     "p": 0.52,
+     "reason": "1 of 2 this weekend (SF yes), also hit Aug 29. Fair to slightly cheap; low confidence."
+    },
+    "KXBERNIEMENTION-26OCT05-DATA": {
+     "p": 0.12,
+     "reason": "0 of 1 this weekend. Wide market."
+    },
+    "KXBERNIEMENTION-26OCT05-IMMI": {
+     "p": 0.45,
+     "reason": "1 of 2 this weekend (Bakersfield yes); Los Angeles makes immigration enforcement more likely. Wide market."
+    },
+    "KXBERNIEMENTION-26OCT05-BERN": {
+     "p": 0.1,
+     "reason": "He has to say his own name. 0 of 2 this weekend and 0 of 3 at earlier settled events listed here. A 22–23¢ YES looks rich."
+    },
+    "KXBERNIEMENTION-26OCT05-SSEC": {
+     "p": 0.18,
+     "reason": "0 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-TRIL": {
+     "p": 0.06,
+     "reason": "0 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-NUCL": {
+     "p": 0.04,
+     "reason": "0 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-CHAT": {
+     "p": 0.04,
+     "reason": "0 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-EPST": {
+     "p": 0.04,
+     "reason": "0 of 2 this weekend. Fair."
+    },
+    "KXBERNIEMENTION-26OCT05-NQE": {
+     "p": 0.02,
+     "reason": "Publicly listed by the campaign; cancellation unlikely."
+    }
+   }
+  },
   "KXEARNINGSMENTIONCCL-26SEP28": {
    "title": "Carnival (CCL) Q3 FY26 earnings call",
    "speaker": "Carnival Corp. (CEO Josh Weinstein, CFO David Bernstein, IR Beth Roberts, operator)",
@@ -211,6 +324,87 @@
     "KXEARNINGSMENTIONCCL-26SEP28-TARI": {
      "p": 0.12,
      "reason": "1/5 calls (Q2'26, looking back at 2025 tariff volatility). Fair."
+    }
+   }
+  },
+  "KXFOXNEWSMENTION-26OCT05": {
+   "title": "Abdul El-Sayed on The Story with Martha MacCallum",
+   "speaker": "Abdul El-Sayed",
+   "event_time_et": "2026-10-05T15:00:00-04:00",
+   "event_time_note": "The Story airs weekdays 3:00–4:00 p.m. ET; the interview's slot inside the hour was not published. Board uses the show start.",
+   "context": "El-Sayed is the Democratic Senate nominee in Michigan against Mike Rogers, a physician running on health costs. Fox hosts spent last week attacking his health platform as a MAHA copycat. A cable interview runs a few minutes, so optional words need the host to raise them. No transcript count.",
+   "confidence": "Low. No corpus; short interview; estimates sit close to the market.",
+   "method": "Judgment only: his campaign themes and last week's Fox coverage. No hit rates.",
+   "sources": [
+    {
+     "title": "Fox News: The Five on El-Sayed's health platform (Oct 2)",
+     "url": "https://www.foxnews.com/video/6406140158112"
+    },
+    {
+     "title": "Fox News: Mike Rogers on El-Sayed (Hannity, Oct 3)",
+     "url": "https://www.foxnews.com/video/6406147186112"
+    }
+   ],
+   "words": {
+    "KXFOXNEWSMENTION-26OCT05-TRUM": {
+     "p": 0.85,
+     "reason": "No corpus. A Democrat on Fox almost always names Trump. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-HEAL": {
+     "p": 0.82,
+     "reason": "No corpus. His platform is health costs and the Fox attacks were about it. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-AFFO": {
+     "p": 0.78,
+     "reason": "No corpus. Affordability is the Democratic midterm frame. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-BILL": {
+     "p": 0.58,
+     "reason": "No corpus. Sanders-wing populist, so billionaires are likely but not required in a short hit. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-IRAN": {
+     "p": 0.58,
+     "reason": "No corpus. Depends on the host raising this week's Iran news. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-ISRA": {
+     "p": 0.52,
+     "reason": "No corpus. Gaza and Israel come up for him, host-dependent. Wide market."
+    },
+    "KXFOXNEWSMENTION-26OCT05-TARI": {
+     "p": 0.55,
+     "reason": "No corpus. Michigan autos make tariffs natural. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-AIPA": {
+     "p": 0.3,
+     "reason": "No corpus. Only if asked about primary spending. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-DATA": {
+     "p": 0.22,
+     "reason": "No corpus. Michigan data-center fights exist but are not his lead. Wide market."
+    },
+    "KXFOXNEWSMENTION-26OCT05-AI": {
+     "p": 0.28,
+     "reason": "No corpus. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-CORR": {
+     "p": 0.28,
+     "reason": "No corpus. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-ELON": {
+     "p": 0.15,
+     "reason": "No corpus. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-IMMI": {
+     "p": 0.25,
+     "reason": "No corpus. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-FILI": {
+     "p": 0.06,
+     "reason": "No corpus. Fair."
+    },
+    "KXFOXNEWSMENTION-26OCT05-NQE": {
+     "p": 0.04,
+     "reason": "Booked cable hits get bumped sometimes; no sign of that."
     }
    }
   },
@@ -483,6 +677,91 @@
     }
    }
   },
+  "KXKHANNAMENTION-26OCT05": {
+   "title": "Ro Khanna at the Ballots Over Billionaires rally in Los Angeles",
+   "speaker": "Ro Khanna",
+   "event_time_et": "2026-10-05T22:00:00-04:00",
+   "event_time_note": "Same Sanders rally: doors 5:00 p.m. PT, program 7:00 p.m. PT (10:00 p.m. ET) at The Novo. Khanna is a listed guest and likely speaks before Sanders.",
+   "context": "Khanna opened for Sanders in San Francisco on Saturday. There he hit Working/Middle Class, Bernie/Sanders, Trump, Healthcare, and Billionaire, and missed Affordability, Corruption, Oil/Gas, Wealth Tax, Iran, AI, Data Center, China, and Epstein. A warm-up speech is short, so optional words rarely land.",
+   "confidence": "Low-medium. One same-format speech settled, plus one TV interview.",
+   "method": "Presence in the SF rally settlement, with Meet the Press (Sep 27) as a weak tiebreak for issue words.",
+   "sources": [
+    {
+     "title": "Friends of Bernie Sanders: LA rally with special guests Ro Khanna and Jane Kim",
+     "url": "https://act.berniesanders.com/signup/rsvp-ballots-over-billionaires-la/"
+    },
+    {
+     "title": "Kalshi settlements: KXKHANNAMENTION-26OCT03 / 26SEP27",
+     "url": "https://kalshi.com/markets/kxkhannamention"
+    }
+   ],
+   "words": {
+    "KXKHANNAMENTION-26OCT05-BILL": {
+     "p": 0.95,
+     "reason": "Hit at SF and on Meet the Press. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-BERN": {
+     "p": 0.93,
+     "reason": "Hit at SF; he is warming up Sanders' crowd. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-TRUM": {
+     "p": 0.9,
+     "reason": "Hit at SF and Meet the Press. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-HEAL": {
+     "p": 0.85,
+     "reason": "Hit at SF (missed on Meet the Press). Prop 40 money goes mostly to healthcare. Fair to slightly rich."
+    },
+    "KXKHANNAMENTION-26OCT05-WORK": {
+     "p": 0.85,
+     "reason": "Hit at SF. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-AFFO": {
+     "p": 0.35,
+     "reason": "Missed at SF and on Meet the Press. The 57–68¢ quote looks rich, but the spread is too wide to call."
+    },
+    "KXKHANNAMENTION-26OCT05-OIL": {
+     "p": 0.3,
+     "reason": "Missed at SF (hit on Meet the Press). Spread too wide."
+    },
+    "KXKHANNAMENTION-26OCT05-MIDT": {
+     "p": 0.2,
+     "reason": "Not counted at SF. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-WEAL": {
+     "p": 0.2,
+     "reason": "Missed at SF; he calls it the billionaire tax. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-CORR": {
+     "p": 0.18,
+     "reason": "Missed at SF and on Meet the Press. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-EPST": {
+     "p": 0.12,
+     "reason": "Missed at SF and on Meet the Press. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-IRAN": {
+     "p": 0.12,
+     "reason": "Missed at SF. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-AI": {
+     "p": 0.22,
+     "reason": "Missed at SF (hit on Meet the Press). Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-DATA": {
+     "p": 0.1,
+     "reason": "Missed at SF and on Meet the Press. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-CHIN": {
+     "p": 0.1,
+     "reason": "Missed at SF. Fair."
+    },
+    "KXKHANNAMENTION-26OCT05-NQE": {
+     "p": 0.03,
+     "reason": "He is a listed guest; a no-show is the main risk."
+    }
+   }
+  },
   "KXEARNINGSMENTIONMTN-26SEP28": {
    "title": "Vail Resorts (MTN) Q4 FY26 / year-end earnings call",
    "speaker": "Vail Resorts (CEO Rob Katz, CFO Angela Korch, IR Connie Wang, operator)",
@@ -741,12 +1020,16 @@
   "KXEARNINGSMENTIONSTZ-26OCT05": {
    "title": "Constellation Brands (STZ) Q2 FY27 earnings call",
    "speaker": "Constellation Brands (CEO Nick Fink, CFO Garth Hankinson, IR, operator)",
-   "event_time_et": null,
-   "event_time_note": "Date not confirmed: Kalshi's ticker says Oct 5, one earnings calendar says Thu Oct 1 pre-market. Check STZ IR.",
+   "event_time_et": "2026-10-07T08:00:00-04:00",
+   "event_time_note": "Constellation Brands IR (Sep 10, 2026): results Tue Oct 6 after the close, conference call Wed Oct 7 at 8:00 a.m. ET. Kalshi's Oct 5 ticker date is not the call date.",
    "context": "Beer-driven story (Modelo Especial, Pacifico, Corona). 'Depletions' is their core beer KPI and comes up every call. Wine divestiture talk has faded (0 wine mentions in the July call). Aluminum/tariff costs came up during tariff quarters. Spreads are wide (5–7¢), so edges must clear the spread too.",
    "confidence": "Low-medium. The available transcripts look partial (~3–4k company words), which biases hit rates DOWN.",
    "method": "Company-speaker counts in 4 calls (Oct 2025, Jan 2026, Apr 2026, Jul 2026) from roic.ai / Earnings Whispers.",
    "sources": [
+    {
+     "title": "Constellation Brands IR: Q2 FY27 results Oct 6, call Oct 7 at 8:00 a.m. ET",
+     "url": "https://ir.cbrands.com/news-events/press-releases/detail/345/constellation-brands-to-report-second-quarter-fiscal-2027-financial-results-on-october-6-2026-after-market-close-and-host-conference-call-on-october-7-2026-at-8-00-am-et"
+    },
     {
      "title": "STZ Q1 FY27 transcript (Earnings Whispers)",
      "url": "https://beta.earningswhispers.com/transcript/STZ/Q12027"
@@ -1600,6 +1883,172 @@
     "KXTRUMPSAYMONTH-26OCT01-MAKE": {
      "p": 0.02,
      "reason": "0 hits for 'Make Iran Great Again'. Fair at 2¢."
+    }
+   }
+  },
+  "KXTRUMPMENTION-26OCT05": {
+   "title": "Trump midterm rally in Grand Island, Nebraska",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-05T19:00:00-04:00",
+   "event_time_note": "GOP/Trump 47 and local press: doors 2:30 p.m. CT, program 4:30 p.m. CT, Trump speaks at 6:00 p.m. CT (7:00 p.m. ET), Pinnacle Bank Expo Center at Fonner Park, Grand Island.",
+   "context": "Fourth midterm rally in five days (Durant OK, Mobile AL, Vandalia OH). He is there mainly for Sen. Pete Ricketts against independent Dan Osborn. The venue is the Nebraska State Fair grounds in farm country, so farm talk is natural and corn/ethanol is plausible. The last three rallies used the same stump: Oil/Gas, Fake News, Transgender, Dividend, Healthcare, Fraud, Save America Act, Barack Hussein Obama, Cheat, and Made in America all hit 3 of 3. TrumpRx, Trump Account, Deport, Fentanyl, Hormuz, Israel, Ceasefire, Filibuster, and Crypto went 0 of 3.",
+   "confidence": "Medium. Three same-format rallies this week, all settled, plus a 27-speech summer corpus.",
+   "method": "Presence in the last 3 settled midterm rallies (OK, AL, OH), weighted over the 27-speech Jun-Sep corpus; Nebraska adjustments only for farm/corn and data centers.",
+   "sources": [
+    {
+     "title": "GOP: Midterm Rally in Grand Island, Nebraska (program 4:30 p.m. CT)",
+     "url": "https://events.gop.com/events/midterm-rally-in-grand-island-nebraska-president-donald-j-trump"
+    },
+    {
+     "title": "Central Nebraska Today: Trump speaks at 6 p.m. Oct. 5 at Fonner Park",
+     "url": "https://www.centralnebraskatoday.com/2026/09/29/president-trump-will-speak-in-g-i-at-6-p-m-monday-oct-5-at-pinnacle-bank-expo-center-at-fonner-park/"
+    },
+    {
+     "title": "NTV: Trump in Grand Island, campaigning for Ricketts vs. Osborn",
+     "url": "https://nebraska.tv/news/local/confirmed-president-trump-is-headed-to-grand-island"
+    },
+    {
+     "title": "Kalshi settlements: KXTRUMPMENTION-26OCT01 / 26OCT02 / 26OCT03",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26OCT05-OIL": {
+     "p": 0.95,
+     "reason": "3 of 3 this week and 24/27 in the corpus. Fair at the top of the board."
+    },
+    "KXTRUMPMENTION-26OCT05-FAKE": {
+     "p": 0.95,
+     "reason": "3 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-TRAN": {
+     "p": 0.94,
+     "reason": "3 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-DIVI": {
+     "p": 0.9,
+     "reason": "3 of 3 this week; the dividend/stimulus promise is in the current stump. Fair to slightly rich."
+    },
+    "KXTRUMPMENTION-26OCT05-HEAL": {
+     "p": 0.92,
+     "reason": "3 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-FRAU": {
+     "p": 0.9,
+     "reason": "3 of 3 this week. Fair to slightly rich."
+    },
+    "KXTRUMPMENTION-26OCT05-SAVE": {
+     "p": 0.88,
+     "reason": "3 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-FARM": {
+     "p": 0.93,
+     "reason": "Not a market at the last three stops. A rally on the State Fair grounds in farm country almost always gets a farmer riff. Slightly cheap, not enough to clear fees."
+    },
+    "KXTRUMPMENTION-26OCT05-BARA": {
+     "p": 0.85,
+     "reason": "3 of 3 this week, though only 14/27 over the summer. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-CHEA": {
+     "p": 0.85,
+     "reason": "3 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-AFFO": {
+     "p": 0.78,
+     "reason": "2 of 3 this week (missed in Durant). Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-MADE": {
+     "p": 0.8,
+     "reason": "3 of 3 this week, 9/27 over the summer. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-CHIN": {
+     "p": 0.85,
+     "reason": "2 of 3 this week, 20/27 corpus; farm-state crowds get the China-buys-our-crops line. Slightly cheap."
+    },
+    "KXTRUMPMENTION-26OCT05-SLEE": {
+     "p": 0.7,
+     "reason": "1 of 2 this week (said in Vandalia, not Mobile). Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-CORN": {
+     "p": 0.72,
+     "reason": "No counted base rate. Nebraska is corn and ethanol country, which makes it plausible, not certain. Fair to slightly cheap."
+    },
+    "KXTRUMPMENTION-26OCT05-ICE": {
+     "p": 0.62,
+     "reason": "2 of 3 this week (not Mobile). Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-DATA": {
+     "p": 0.45,
+     "fragile": true,
+     "reason": "1 of 3 this week (Vandalia only), 5/27 corpus. The 62–63¢ price looks rich on the count. Fragile: Nebraska has real data-center build-outs, so one local riff flips it."
+    },
+    "KXTRUMPMENTION-26OCT05-IRAN": {
+     "p": 0.6,
+     "reason": "Iran 5+ times hit 2 of 3 this week (missed in Vandalia). Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-SUPR": {
+     "p": 0.55,
+     "reason": "2 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-AI": {
+     "p": 0.45,
+     "reason": "1 of 3 this week (Vandalia only). A 55–60¢ YES looks a little rich."
+    },
+    "KXTRUMPMENTION-26OCT05-AMER": {
+     "p": 0.35,
+     "reason": "1 of 3 this week (Mobile only). Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-RUSS": {
+     "p": 0.55,
+     "reason": "2 of 3 this week (Mobile, Vandalia). The 37–45¢ price looks a bit low on that count."
+    },
+    "KXTRUMPMENTION-26OCT05-SANC": {
+     "p": 0.25,
+     "reason": "1 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-ISRA": {
+     "p": 0.15,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-HORM": {
+     "p": 0.1,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-DRIL": {
+     "p": 0.15,
+     "reason": "1 of 3 this week (Durant, an oil state). Nebraska is not. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-TRUMA": {
+     "p": 0.08,
+     "reason": "0 of 2 where listed this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-DEPO": {
+     "p": 0.08,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-TRUM": {
+     "p": 0.06,
+     "reason": "TrumpRx 0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-FENT": {
+     "p": 0.06,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-FILI": {
+     "p": 0.04,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-CEAS": {
+     "p": 0.04,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-CRYP": {
+     "p": 0.02,
+     "reason": "0 of 3 this week. Fair."
+    },
+    "KXTRUMPMENTION-26OCT05-NQE": {
+     "p": 0.01,
+     "reason": "Publicly scheduled with staging already up on Oct 4; cancellation unlikely."
     }
    }
   },
@@ -2565,36 +3014,36 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXFTNMENTION-26OCT04",
-  "series_ticker": "KXFTNMENTION",
-  "ticker": "KXFTNMENTION-26OCT04-HORM",
-  "event_title": "Chris Wright on Face the Nation",
-  "speaker": "Chris Wright",
-  "word": "Hormuz",
-  "side": "YES",
-  "price": 0.77,
-  "yes_bid": 0.68,
-  "yes_ask": 0.77,
-  "est_yes": 0.88,
-  "est_side": 0.88,
-  "edge_raw": 0.11,
-  "fee": 0.0124,
-  "edge": 0.0976,
-  "payout_multiple": 1.3,
-  "event_time_et": "2026-10-04T10:30:00-04:00",
-  "close_time_et": "2026-10-18T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-04T06:54:39-04:00",
-  "confidence": "Medium. Two full transcripts of his own words, both during this Hormuz crisis; not a large corpus.",
+  "event_ticker": "KXTRUMPMENTION-26OCT05",
+  "series_ticker": "KXTRUMPMENTION",
+  "ticker": "KXTRUMPMENTION-26OCT05-AI",
+  "event_title": "Trump midterm rally in Grand Island, Nebraska",
+  "speaker": "Donald Trump",
+  "word": "AI / Artificial Intelligence",
+  "side": "NO",
+  "price": 0.45,
+  "yes_bid": 0.55,
+  "yes_ask": 0.6,
+  "est_yes": 0.45,
+  "est_side": 0.55,
+  "edge_raw": 0.1,
+  "fee": 0.0173,
+  "edge": 0.0827,
+  "payout_multiple": 2.22,
+  "event_time_et": "2026-10-05T19:00:00-04:00",
+  "close_time_et": "2026-10-19T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-05T05:13:14-04:00",
+  "confidence": "Medium. Three same-format rallies this week, all settled, plus a 27-speech summer corpus.",
   "fragile": null,
-  "rationale": "Hormuz is in 2/2 full transcripts, and Iran was still conditioning a reopening on Sunday morning. Our 88% YES estimate vs a 77¢ YES ask leaves about +10¢ per contract after fees.",
-  "reason": "Hormuz is in 2/2 full transcripts, and Iran was still conditioning a reopening on Sunday morning. The 68–77¢ YES is short of that.",
-  "url": "https://kalshi.com/markets/kxftnmention",
+  "rationale": "1 of 3 this week (Vandalia only). Our 45% YES estimate vs a 45¢ NO ask leaves about +8¢ per contract after fees.",
+  "reason": "1 of 3 this week (Vandalia only). A 55–60¢ YES looks a little rich.",
+  "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
    "candidates": 5,
-   "tied_within_2c": 1,
-   "skipped_repeat": "KXTRUMPMENTION-26OCT03-CHEA",
+   "tied_within_2c": 2,
+   "skipped_repeat": "KXFTNMENTION-26OCT04-HORM",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  }
