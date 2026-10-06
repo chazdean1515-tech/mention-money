@@ -215,10 +215,13 @@ def event_date(event_ticker):
 def build(series_meta, days, event_titles):
     now = datetime.now(timezone.utc)
     horizon = now + timedelta(days=days)
-    by_event, scanned, oldest = {}, 0, None
+    # Count cache files separately from the series list. An earlier build reported
+    # series_scanned/series_total as 103/16: scanned was every cache file, and the
+    # total was a short series list (the --today path reuses data/series.json).
+    by_event, cached_series, oldest = {}, set(), None
     for path in glob.glob(os.path.join(CACHE, "*.json")):
         c = json.load(open(path))
-        scanned += 1
+        cached_series.add(c.get("series_ticker") or os.path.splitext(os.path.basename(path))[0])
         oldest = min(oldest or c["fetched_at_et"], c["fetched_at_et"])
         s = series_meta.get(c["series_ticker"], {"ticker": c["series_ticker"], "title": c["series_ticker"]})
         for m in c["markets"]:
@@ -262,7 +265,7 @@ def build(series_meta, days, event_titles):
             "markets": sorted(mkts, key=lambda m: -(m["last_price"] or 0)),
         })
     events.sort(key=lambda e: (e["event_date"] or "9999", -e["total_volume"]))
-    return events, scanned, oldest
+    return events, cached_series, oldest
 
 
 def main():
@@ -371,7 +374,7 @@ def main():
     # event titles (cached; one call per new in-window event)
     tfile = os.path.join(DATA, "event_titles.json")
     titles = json.load(open(tfile)) if os.path.exists(tfile) else {}
-    events, scanned, oldest = build(meta, a.days, titles)
+    events, cached_series, oldest = build(meta, a.days, titles)
     if not a.build_only:
         for e in events:
             if e["event_ticker"] in titles:
@@ -382,22 +385,28 @@ def main():
             except Exception as ex:
                 print(f"  WARN title {e['event_ticker']}: {ex}", file=sys.stderr)
         save_json(tfile, titles)
-        events, scanned, oldest = build(meta, a.days, titles)
+        events, cached_series, oldest = build(meta, a.days, titles)
 
+    snapshot_series = {e["series_ticker"] for e in events}
     out = {
         "fetched_at_et": now_et().isoformat(timespec="seconds"),
         "oldest_price_et": oldest,
         "source": BASE,
         "horizon_days": a.days,
-        "series_total": len(series),
-        "series_scanned": scanned,
+        # series_in_snapshot is the count to show. series_catalog_count is only the
+        # length of the series list this run used, which can be partial. Do not print
+        # those two numbers as a scanned/total fraction.
+        "series_in_snapshot": len(snapshot_series),
+        "series_catalog_count": len(series),
+        "series_cache_files": len(cached_series),
         "event_count": len(events),
         "market_count": sum(len(e["markets"]) for e in events),
         "events": events,
     }
     save_json(os.path.join(DATA, "markets.json"), out)
     print(f"wrote data/markets.json: {out['event_count']} events, {out['market_count']} markets "
-          f"(series scanned {scanned}/{len(series)})", file=sys.stderr)
+          f"({out['series_in_snapshot']} series in snapshot, {out['series_cache_files']} cache files, "
+          f"series list {out['series_catalog_count']})", file=sys.stderr)
 
 
 if __name__ == "__main__":

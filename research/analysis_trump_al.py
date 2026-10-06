@@ -75,7 +75,7 @@ DATA = {
     P+"RUSS": {
              "history": H(16),"p": 0.42, "reason": "Russia/Ukraine optional here. Fair at 40–45¢."},
     P+"TRUM": {
-             "history": H(4),"p": 0.42, "reason": "TrumpRX if healthcare block lands. Fair."},
+             "history": H(4),"p": 0.42, "reason": "TrumpRx if healthcare block lands. Fair."},
     P+"CHEA": {
              "history": H(13),"p": 0.48, "reason": "Cheat/cheater in 13/27. Fair."},
     P+"SANC": {
