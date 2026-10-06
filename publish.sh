@@ -7,8 +7,9 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 build_board.py
-# Custom domain is www (apex redirects). Never let a stale local CNAME push the apex back.
-printf 'www.mentionmoney.com' > CNAME
+# Custom domain is the apex (it has the working certificate; www redirects to it).
+# Don't flip this back and forth: every change restarts GitHub's certificate request.
+printf 'mentionmoney.com' > CNAME
 for f in data/markets.json data/analysis.json; do
   python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || { echo "invalid JSON: $f" >&2; exit 1; }
 done

@@ -45,7 +45,7 @@ Live: https://mentionmoney.com/ (GitHub Pages, custom domain).
 
 The old address, https://chazdean1515-tech.github.io/mention-money/, redirects to the domain. DNS is at Porkbun: four apex A records to 185.199.108.153–111.153, plus `www` CNAME → `chazdean1515-tech.github.io`.
 
-**www certificate:** https://www.mentionmoney.com can show a name-mismatch warning because the certificate covers the apex only. That is a GitHub Pages setting, not something this repo can change. In the repo Settings → Pages, remove and re-save the custom domain so GitHub reissues a certificate that includes `www`, then confirm Enforce HTTPS.
+**Custom domain:** `CNAME` is the apex `mentionmoney.com`, which has the valid certificate; GitHub redirects `www` to it. Leave it alone: every domain change restarts GitHub's certificate request, and repeated changes keep the certificate stuck. GitHub adds `www` to the certificate on its own once things settle.
 
 After a refresh (`python3 fetch.py`, `python3 research/build_analysis.py`), republish with one command:
 ```bash
