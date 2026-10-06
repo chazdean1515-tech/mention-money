@@ -157,7 +157,7 @@ out["play_of_the_day"], potd_c = pick_potd(cands)
 path = os.path.join(HERE, "..", "data", "analysis.json")
 json.dump(out, open(path, "w"), indent=1, ensure_ascii=False)
 print("wrote", os.path.normpath(path), "events:", list(out["events"]))
-fmt = lambda r: f"{r['word']} {r['side']} @ {round(r['price']*100)}¢, est {r['side']} {r['est_side']:.0%}, edge +{r['edge']*100:.1f}¢, {r['payout_multiple']}x ({r['event_ticker']}{', FRAGILE' if r['fragile'] else ''})"
+fmt = lambda r: f"{r['word']} {r['side']} @ {round(r['price']*100)}¢, est {r['side']} {r['est_side']:.0%}, edge +{r['edge']*100:.1f}¢ ({r['event_ticker']}{', FRAGILE' if r['fragile'] else ''})"
 potd = out["play_of_the_day"]
 if potd:
     json.dump({"date": NOW.date().isoformat(), "ticker": potd["ticker"], "word": potd["word"], "side": potd["side"]},

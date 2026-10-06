@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-06T05:11:19-04:00",
+ "updated_at_et": "2026-10-06T05:11:36-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -3786,7 +3786,7 @@
    "tier_note": "medium-or-better confidence, not flagged fragile",
    "candidates": 8,
    "tied_within_2c": 2,
-   "skipped_repeat": "KXTRUMPMENTION-26OCT05-AI",
+   "skipped_repeat": null,
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  }
