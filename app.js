@@ -323,6 +323,10 @@ function boot() {
   go();
 }
 
-setupTip();
-setupReferral();
-boot();
+try {
+  setupTip();
+  setupReferral();
+  boot();
+} finally {
+  document.documentElement.classList.remove("booting");
+}
