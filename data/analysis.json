@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-05T05:19:24-04:00",
+ "updated_at_et": "2026-10-06T05:11:19-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -280,6 +280,117 @@
      "p": 0.02,
      "reason": "Publicly listed by the campaign; cancellation unlikely.",
      "prose": "Note on this contract: Publicly listed by the campaign; cancellation unlikely."
+    }
+   }
+  },
+  "KXBOWMANMENTION-26OCT06": {
+   "title": "Bowman keynote at the Community Banking Research Conference (St. Louis Fed)",
+   "speaker": "Michelle Bowman",
+   "event_time_et": "2026-10-06T10:45:00-04:00",
+   "event_time_note": "St. Louis Fed release and agenda: keynote at 9:45 a.m. CT (10:45 a.m. ET), introduced by St. Louis Fed President Alberto Musalem; break at 10:30 a.m. CT. Livestream at communitybanking.org.",
+   "context": "A community-bank audience, so expect the community bank leverage ratio (cut to 8% this year), streamlined merger and de novo reviews, and supervisory transparency. Prepared texts: Leverage Ratio 7 of 12, Merger 6 of 12, Transparency 6 of 12, Cyber 4 of 12, President 4 of 12, AI 3 of 12, Inflation 3 of 12, SVB 3 of 12, Stress Test 2 of 12, Basel III 1 of 12, Crypto 0 of 12. Her two settled Kalshi events hit far more words than the prepared texts did (AI, Inflation, Basel III, Stress Test all hit Oct 1), because Q&A counts. The 45-minute slot leaves room for Q&A, so NO leans that depend on a short scripted speech are flagged fragile.",
+   "fragile_sides": {
+    "NO": "NO leans assume a scripted community-bank speech with little or no Q&A; an open Q&A can bring up almost any topic."
+   },
+   "confidence": "Medium-low. Real text counts, but the Q&A format is unknown.",
+   "method": "Word presence in 12 published Bowman speech texts (federalreserve.gov) plus the 2 settled KXBOWMANMENTION events, weighted toward community-bank speeches.",
+   "sources": [
+    {
+     "title": "St. Louis Fed: 2026 Community Banking Research Conference, Bowman at 9:45 a.m. CT Oct. 6",
+     "url": "https://www.stlouisfed.org/news-releases/2026/09/register-now-for-the-2026-community-banking-research-conference"
+    },
+    {
+     "title": "Conference agenda (communitybanking.org)",
+     "url": "https://www.communitybanking.org/conferences/2026"
+    },
+    {
+     "title": "Bowman, Welcome Remarks, 2025 Community Banking Research Conference",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20251007a.htm"
+    },
+    {
+     "title": "Bowman, Opening Remarks, KC Fed Future of Banking (May 2026)",
+     "url": "https://www.federalreserve.gov/newsevents/speech/bowman20260514a.htm"
+    },
+    {
+     "title": "Kalshi settlements: KXBOWMANMENTION-26SEP18 / 26OCT01",
+     "url": "https://kalshi.com/markets/kxbowmanmention"
+    }
+   ],
+   "words": {
+    "KXBOWMANMENTION-26OCT06-LEVE": {
+     "p": 0.78,
+     "reason": "7 of 12 texts and 6 of 8 community-bank speeches, plus 2 of 2 settled. The CBLR cut is her signature community-bank win. Fair.",
+     "prose": "7 of 12 texts and 6 of 8 community-bank speeches, plus 2 of 2 settled. The CBLR cut is her signature community-bank win. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-TRUM": {
+     "p": 0.85,
+     "reason": "Counts as 'President' too. 4 of 12 texts, and she thanked the host Reserve Bank president in Atlanta and Kansas City; Musalem introduces her today. 1 of 2 settled. Fair.",
+     "prose": "Counts as 'President' too. 4 of 12 texts, and she thanked the host Reserve Bank president in Atlanta and Kansas City; Musalem introduces her today. 1 of 2 settled. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-MERG": {
+     "p": 0.68,
+     "reason": "6 of 12 texts, 5 of 8 community-bank speeches; merger review reform is a standing community-bank theme. Fair.",
+     "prose": "6 of 12 texts, 5 of 8 community-bank speeches; merger review reform is a standing community-bank theme. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-AI": {
+     "p": 0.62,
+     "reason": "Only 3 of 12 texts, but 2 of 2 settled thanks to Q&A. The 78–86¢ price looks rich for a community-bank speech.",
+     "prose": "Only 3 of 12 texts, but 2 of 2 settled thanks to Q&A. The 78–86¢ price looks rich for a community-bank speech."
+    },
+    "KXBOWMANMENTION-26OCT06-TRAN": {
+     "p": 0.55,
+     "reason": "6 of 12 texts and 2 of 2 settled. Fair to slightly cheap.",
+     "prose": "6 of 12 texts and 2 of 2 settled. The price looks fair to slightly cheap."
+    },
+    "KXBOWMANMENTION-26OCT06-CYBE": {
+     "p": 0.4,
+     "reason": "4 of 12 texts (one was a cyber workshop). Fair.",
+     "prose": "4 of 12 texts (one was a cyber workshop). The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-INFL": {
+     "p": 0.4,
+     "reason": "3 of 12 texts; hit on Oct 1 through Q&A. A supervision keynote rarely needs it. The 67–68¢ price looks rich unless there is an economy Q&A.",
+     "prose": "3 of 12 texts; hit on Oct 1 through Q&A. A supervision keynote rarely needs it. The 67–68¢ price looks rich unless there is an economy Q&A."
+    },
+    "KXBOWMANMENTION-26OCT06-BASE": {
+     "p": 0.35,
+     "reason": "1 of 12 texts; 2 of 2 settled at big-bank venues. Less relevant to community banks.",
+     "prose": "Count: 1 of 12 texts; 2 of 2 settled at big-bank venues. Less relevant to community banks."
+    },
+    "KXBOWMANMENTION-26OCT06-STRE": {
+     "p": 0.3,
+     "reason": "2 of 12 texts; 2 of 2 settled. Stress tests are a large-bank topic. Fair to slightly rich.",
+     "prose": "2 of 12 texts; 2 of 2 settled. Stress tests are a large-bank topic. The price looks fair to slightly rich."
+    },
+    "KXBOWMANMENTION-26OCT06-SVB": {
+     "p": 0.2,
+     "reason": "3 of 12 texts; 1 of 2 settled. Fair.",
+     "prose": "3 of 12 texts; 1 of 2 settled. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-BUDG": {
+     "p": 0.15,
+     "reason": "2 of 12 texts; 0 of 1 settled. Fair.",
+     "prose": "2 of 12 texts; 0 of 1 settled. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-PRIV": {
+     "p": 0.1,
+     "reason": "2 of 12 texts; 1 of 2 settled. Fair.",
+     "prose": "2 of 12 texts; 1 of 2 settled. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-CRYP": {
+     "p": 0.08,
+     "reason": "0 of 12 texts; 0 of 2 settled. Fair to slightly rich.",
+     "prose": "0 of 12 texts; 0 of 2 settled. The price looks fair to slightly rich."
+    },
+    "KXBOWMANMENTION-26OCT06-RECE": {
+     "p": 0.05,
+     "reason": "1 of 12 texts; 1 of 2 settled. Fair.",
+     "prose": "1 of 12 texts; 1 of 2 settled. The price looks fair."
+    },
+    "KXBOWMANMENTION-26OCT06-NQE": {
+     "p": 0.02,
+     "reason": "On the published agenda with a livestream.",
+     "prose": "Note on this contract: On the published agenda with a livestream."
     }
    }
   },
@@ -1796,6 +1907,150 @@
      "p": 0.02,
      "reason": "Publicly scheduled; cancellation unlikely.",
      "prose": "This is not a word. It pays only if the Mobile rally is cancelled or fails to qualify. The GOP listing has it at 7:00 p.m. ET at the Mitchell Center. The Durant–Mobile–Ohio run is tight, but a delay that is rescheduled under the rules would not, by itself, make this a yes."
+    }
+   }
+  },
+  "KXTRUMPMENTION-26OCT06": {
+   "title": "Trump remarks at Anduril Industries (Sparrows Point, MD)",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-06T16:00:00-04:00",
+   "event_time_note": "White House schedule and pool guidance: remarks at 4:00 p.m. ET at Tradepoint Atlantic, 1660 Shipyard Road, Sparrows Point MD. Anduril CEO Brian Schimpf and others speak earlier; only Trump's words count.",
+   "context": "Anduril is announcing 'the next chapter' of its defense manufacturing push, widely reported as a drone-boat (autonomous surface vessel) factory at the old Bethlehem Steel shipyard. It comes days after Hegseth stood up an Autonomous Warfare Command. This is a company/factory event like Peterbilt in Denton (Oct 1), where Manufacturing, Made in America, Tariff, China, Biden, Stock Market, Nuclear and Iran all hit and AI, Elon and Crypto did not. Made in America is 5 for 5 where it was listed this month (four rallies plus Peterbilt).",
+   "confidence": "Medium. One same-format factory event plus 12 recent settled Trump events; the defense-specific words have no counted history.",
+   "method": "Presence across the 12 most recent settled KXTRUMPMENTION events and the Peterbilt factory stop, adjusted for the Anduril/shipyard/defense theme.",
+   "sources": [
+    {
+     "title": "White House pool guidance: remarks at Anduril, 4:00 PM EDT, Tradepoint Atlantic",
+     "url": "https://pool.pp.tools/reports/9421"
+    },
+    {
+     "title": "CBS Baltimore: Trump scheduled to visit Tradepoint Atlantic Tuesday",
+     "url": "https://www.cbsnews.com/baltimore/news/trump-scheduled-visit-baltimore-countys-tradepoint-atlantic/"
+    },
+    {
+     "title": "WSJ: Anduril weighs Baltimore shipyard investment to build drone boats",
+     "url": "https://www.wsj.com/business/logistics/anduril-weighs-baltimore-shipyard-investment-to-build-drone-boats-d7ae923d"
+    },
+    {
+     "title": "Kalshi settlements: KXTRUMPMENTION (Sep 17 - Oct 5) and KXTRUMPMENTIONB-26OCT01",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26OCT06-MANU": {
+     "p": 0.95,
+     "reason": "Defense manufacturing is the whole event; hit at Peterbilt. Fair at the top of the board.",
+     "prose": "Defense manufacturing is the whole event; hit at Peterbilt. Fair at the top of the board."
+    },
+    "KXTRUMPMENTION-26OCT06-IRAN": {
+     "p": 0.9,
+     "reason": "2 of 3 where listed in the series plus a hit at Peterbilt, with the Iran war still live. Fair.",
+     "prose": "2 of 3 where listed in the series plus a hit at Peterbilt, with the Iran war still live. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-CHIN": {
+     "p": 0.88,
+     "reason": "8 of 11 recent Trump events plus Peterbilt (9 of 12). China is the natural foil for a defense build-out. Fair.",
+     "prose": "8 of 11 recent Trump events plus Peterbilt (9 of 12). China is the natural foil for a defense build-out. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-PALM": {
+     "p": 0.85,
+     "reason": "No counted history. Trump name-checks hosts, and Luckey is Anduril's founder and public face. Fair, but it needs him to be there or be thanked.",
+     "prose": "No counted history. Trump name-checks hosts, and Luckey is Anduril's founder and public face. Fair, but it needs him to be there or be thanked."
+    },
+    "KXTRUMPMENTION-26OCT06-NUCL": {
+     "p": 0.82,
+     "reason": "3 of 5 in the series plus Peterbilt (4 of 6). Fair.",
+     "prose": "3 of 5 in the series plus Peterbilt (4 of 6). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-NAVY": {
+     "p": 0.82,
+     "reason": "No counted history. The product is drone boats for the Navy at a shipyard. Fair.",
+     "prose": "No counted history. The product is drone boats for the Navy at a shipyard. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-MADE": {
+     "p": 0.82,
+     "reason": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. The 64–67¢ price looks low on that count.",
+     "prose": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. The 64–67¢ price looks low on that count."
+    },
+    "KXTRUMPMENTION-26OCT06-BIDE": {
+     "p": 0.78,
+     "reason": "4 of 8 in the series plus Peterbilt (5 of 9), and he blames Biden for the depleted arsenal often. Fair.",
+     "prose": "4 of 8 in the series plus Peterbilt (5 of 9), and he blames Biden for the depleted arsenal often. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-SHIP": {
+     "p": 0.75,
+     "reason": "No counted history. The venue is a historic shipyard and shipbuilding is a frequent Trump riff. Slightly cheap, not enough to clear fees.",
+     "prose": "No counted history. The venue is a historic shipyard and shipbuilding is a frequent Trump riff. Slightly cheap, not enough to clear fees."
+    },
+    "KXTRUMPMENTION-26OCT06-TARI": {
+     "p": 0.74,
+     "reason": "4 of 8 in the series plus Peterbilt (5 of 9). Less central at a defense event than at a truck plant. Fair to slightly rich.",
+     "prose": "4 of 8 in the series plus Peterbilt (5 of 9). Less central at a defense event than at a truck plant. The price looks fair to slightly rich."
+    },
+    "KXTRUMPMENTION-26OCT06-AI": {
+     "p": 0.7,
+     "reason": "4 of 11 in the series and a miss at Peterbilt, but Anduril is an AI/autonomy company. Fair.",
+     "prose": "4 of 11 in the series and a miss at Peterbilt, but Anduril is an AI/autonomy company. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-SPAC": {
+     "p": 0.7,
+     "reason": "1 of 1 where listed (Mobile). He likes to say he created the Space Force. Fair.",
+     "prose": "1 of 1 where listed (Mobile). He likes to say he created the Space Force. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-RUSS": {
+     "p": 0.65,
+     "reason": "1 of 3 in the series; Russia / Ukraine hit in Grand Island. Fair.",
+     "prose": "1 of 3 in the series; Russia / Ukraine hit in Grand Island. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-SUBM": {
+     "p": 0.62,
+     "reason": "No counted history. Submarines come up in his military riffs. Fair.",
+     "prose": "No counted history. Submarines come up in his military riffs. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-AUTO": {
+     "p": 0.55,
+     "reason": "No counted history. Others will say autonomous; Trump more often says drones. Fair to slightly rich.",
+     "prose": "No counted history. Others will say autonomous; Trump more often says drones. The price looks fair to slightly rich."
+    },
+    "KXTRUMPMENTION-26OCT06-GOLD": {
+     "p": 0.55,
+     "reason": "No counted history. A defense speech is a natural place for Golden Dome. Fair.",
+     "prose": "No counted history. A defense speech is a natural place for Golden Dome. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-NSEC": {
+     "p": 0.55,
+     "reason": "0 of 1 where listed. Fair.",
+     "prose": "0 of 1 where listed. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-ELON": {
+     "p": 0.5,
+     "reason": "Missed at Peterbilt, the only count. Fair.",
+     "prose": "Missed at Peterbilt, the only count. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-STOC": {
+     "p": 0.5,
+     "reason": "1 of 7 in the series plus Peterbilt (2 of 8). The 64–67¢ price looks rich on that count.",
+     "prose": "1 of 7 in the series plus Peterbilt (2 of 8). The 64–67¢ price looks rich on that count."
+    },
+    "KXTRUMPMENTION-26OCT06-UKRA": {
+     "p": 0.4,
+     "reason": "Russia / Ukraine hit in Grand Island; Ukraine alone has no count. Fair.",
+     "prose": "Russia / Ukraine hit in Grand Island; Ukraine alone has no count. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-TAIW": {
+     "p": 0.07,
+     "reason": "0 of 1 where listed. Fair.",
+     "prose": "0 of 1 where listed. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-CRYP": {
+     "p": 0.03,
+     "reason": "Crypto missed at Peterbilt and all four rallies. Fair.",
+     "prose": "Crypto missed at Peterbilt and all four rallies. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT06-NQE": {
+     "p": 0.01,
+     "reason": "On the White House schedule with pool guidance issued; cancellation unlikely.",
+     "prose": "Note on this contract: On the White House schedule with pool guidance issued; cancellation unlikely."
     }
    }
   },
@@ -3503,35 +3758,35 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT05",
+  "event_ticker": "KXTRUMPMENTION-26OCT06",
   "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT05-AI",
-  "event_title": "Trump midterm rally in Grand Island, Nebraska",
+  "ticker": "KXTRUMPMENTION-26OCT06-MADE",
+  "event_title": "Trump remarks at Anduril Industries (Sparrows Point, MD)",
   "speaker": "Donald Trump",
-  "word": "AI / Artificial Intelligence",
-  "side": "NO",
-  "price": 0.45,
-  "yes_bid": 0.55,
-  "yes_ask": 0.6,
-  "est_yes": 0.45,
-  "est_side": 0.55,
-  "edge_raw": 0.1,
-  "fee": 0.0173,
-  "edge": 0.0827,
-  "event_time_et": "2026-10-05T19:00:00-04:00",
-  "close_time_et": "2026-10-19T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-05T05:13:14-04:00",
-  "confidence": "Medium. Three same-format rallies this week, all settled, plus a 27-speech summer corpus.",
+  "word": "Made in America / American Made",
+  "side": "YES",
+  "price": 0.67,
+  "yes_bid": 0.64,
+  "yes_ask": 0.67,
+  "est_yes": 0.82,
+  "est_side": 0.82,
+  "edge_raw": 0.15,
+  "fee": 0.0155,
+  "edge": 0.1345,
+  "event_time_et": "2026-10-06T16:00:00-04:00",
+  "close_time_et": "2026-10-20T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-06T05:11:13-04:00",
+  "confidence": "Medium. One same-format factory event plus 12 recent settled Trump events; the defense-specific words have no counted history.",
   "fragile": null,
-  "rationale": "Count: 1 of 3 this week (Vandalia only). The YES quote in this snapshot looks a little rich against our estimate. Our YES estimate is 45%. In this snapshot the NO ask is 45¢, and the gap after the taker fee is about 8¢ per contract. That is our opinion, not a trade instruction.",
-  "reason": "1 of 3 this week (Vandalia only). A 55–60¢ YES looks a little rich.",
+  "rationale": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. Our YES estimate is 82%. In this snapshot the YES ask is 67¢, and the gap after the taker fee is about 13¢ per contract. That is our opinion, not a trade instruction.",
+  "reason": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. The 64–67¢ price looks low on that count.",
   "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 5,
+   "candidates": 8,
    "tied_within_2c": 2,
-   "skipped_repeat": "KXFTNMENTION-26OCT04-HORM",
+   "skipped_repeat": "KXTRUMPMENTION-26OCT05-AI",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  }
