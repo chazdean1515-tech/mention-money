@@ -43,7 +43,7 @@ DATA = {
     P+"RUSS": {"p": 0.42, "reason": "Russia/Ukraine optional. Fair at 44–69¢ (wide)."},
     P+"CHEA": {"p": 0.48, "reason": "Cheat/cheater in 13/27. Fair at 49–71¢ (wide)."},
     P+"ISRA": {"p": 0.28, "reason": "Israel optional foreign-policy. Fair at 31–49¢."},
-    P+"TRUM": {"p": 0.42, "reason": "TrumpRX if healthcare block lands. Fair at 15–35¢ (wide)."},
+    P+"TRUM": {"p": 0.42, "reason": "TrumpRx if healthcare block lands. Fair at 15–35¢ (wide)."},
     P+"MADE": {"p": 0.40, "reason": "Made in America in 9/27. Fair at 25–51¢ (wide)."},
     P+"DATA": {"p": 0.20, "reason": "Data center is a tech-event word. Fair at 27–47¢ — slight NO."},
     P+"DRIL": {"p": 0.28, "reason": "'Drill baby drill' rare in corpus (2/27). Fair at 16–37¢ (wide)."},

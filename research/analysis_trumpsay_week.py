@@ -5,7 +5,7 @@ DATA = {
   "title": "Selected Trump phrases this week (through ~Oct 5)",
   "speaker": "Donald Trump (any qualifying remarks in the week ending ~Oct 5)",
   "event_time_et": "2026-10-05T09:00:00-04:00",
-  "event_time_note": "Kalshi week window tied to the OCT05 ticker; remaining calendar includes Mellon (Tue), possible Wed remarks, OK rally (Thu), AL rally (Fri).",
+  "event_time_note": "Kalshi week window tied to the OCT05 ticker, through the morning of Oct 5. The calendar for that window included the Mellon address (Tue Sep 29), possible Wednesday remarks, the Oklahoma rally (Thu Oct 1), and the Mobile rally (Fri Oct 2). Those dates had already passed when this snapshot was written.",
   "context": ("Week market spanning a tech/'Golden Age' address plus two midterm rallies. High-base-rate stump lines "
               "(Sleepy Joe, Transgender, Ukraine, Save America Act, Landslide, Blockade if Iran/oil stays hot) should clear. "
               "Long-shots (Make Iran Great Again, Peace in the Middle East, Epstein, UFO, Marijuana, Prediction Market) "
@@ -42,7 +42,7 @@ DATA = {
     P+"ZOHR": {"p": 0.28, "reason": "Zohran/Mamdani is NYC-specific. Fair."},
     P+"STUP": {"p": 0.35, "reason": "'Stupid question' to reporters — common but not weekly-guaranteed. Fair at 24–25¢ — slight cheap."},
     P+"URAN": {"p": 0.22, "reason": "Uranium occasional via Iran/nuclear. Fair."},
-    P+"ANTI": {"p": 0.22, "reason": "Antifa occasional culture-war riff. Fair."},
+    P+"ANTI": {"p": 0.22, "reason": "Antifa is an occasional culture-war riff, not a weekly staple. Fair."},
     P+"THIR": {"p": 0.18, "reason": "Third term talk is rare and radioactive. Fair."},
     P+"PRED": {"p": 0.12, "reason": "Prediction market self-own is rare. Fair at 9–11¢."},
     P+"UFO":  {"p": 0.10, "reason": "UFO/UAP rare. Fair."},

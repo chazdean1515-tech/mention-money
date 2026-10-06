@@ -36,7 +36,7 @@ DATA = {
     P+"FRAU": {"p": 0.55, "reason": "Fraud (voter/Medicare) in 9/27; midterm context helps. Fair."},
     P+"AMER": {"p": 0.50, "reason": "'America First' in 8/27. Fair."},
     P+"SANC": {"p": 0.48, "reason": "'Sanctuary' in 3/27 official; trail-only. Fair at 61–70¢ — slight NO lean."},
-    P+"TRUM": {"p": 0.45, "reason": "TrumpRX in 4/27; healthcare block may pull it in. Fair."},
+    P+"TRUM": {"p": 0.45, "reason": "TrumpRx in 4/27; healthcare block may pull it in. Fair."},
     P+"HORM": {"p": 0.40, "reason": "Hormuz in 16/27 when Iran/oil is hot; not guaranteed every rally. Fair-to-rich."},
     P+"CHEA": {"p": 0.45, "reason": "Cheat/cheater in 13/27. Fair."},
     P+"SUPR": {"p": 0.40, "reason": "Supreme Court in 13/27. Fair."},

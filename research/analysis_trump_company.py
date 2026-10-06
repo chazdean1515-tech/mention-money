@@ -5,12 +5,12 @@ DATA = {
   "title": "Companies Trump will say in September",
   "speaker": "Donald Trump (any qualifying remarks in September before Oct 1)",
   "event_time_et": "2026-09-30T23:59:00-04:00",
-  "event_time_note": "Month-to-date market. Boeing already ~99¢ (treat as said). Remaining catalysts: Mon Oval announcement + Tue Mellon 'Golden Age' (Musk, Jensen Huang, AI/energy panels).",
+  "event_time_note": "September company market. The window ended Wed Sep 30. Boeing was already about 99¢ in the snapshot used here (treated as said). The calendar inside the window was a Monday Oval announcement and the Tuesday Mellon 'Golden Age' address (Musk, Jensen Huang, AI and energy panels).",
   "context": ("Jun–Aug SEL base rates (23 remarks): Boeing 3, Tesla 4, Meta 3, Micron 3, ChatGPT/OpenAI 2, Uber 2, JPMorgan 2, IBM 2, SpaceX 1, Oracle 1, Deere 1, Caterpillar 1, Hyundai 1; "
               "DoorDash/Airbnb/AMD/TSMC/BlackRock/Paramount/Verizon/Qualcomm/Rigetti/Mastercard/eBay = 0 in SEL (DoorDash 1× elsewhere in 2026 DCPD). "
               "Mellon AI showcase lifts SpaceX / Tesla / ChatGPT-OpenAI / Meta; agriculture panel is a thin Deere/Caterpillar hook. "
               "I do not have a verified September-to-date said/unsaid tape — prices near 90¢+ (DoorDash, Boeing) are treated as nearly resolved YES; mid-priced names may already be said. Confidence is low on those."),
-  "confidence": "Low–medium. Solid corpus base rates, but month-to-date resolution state is inferred from prices for the richest names, and the remaining window is short.",
+  "confidence": "Low–medium. Solid corpus base rates, but the month-to-date resolution state is inferred from prices for the richest names, and the September window was short.",
   "method": "Jun–Aug 2026 SEL presence rates + full-2026 DCPD checks for rare names; adjusted for Mellon AI guest list and ~2.5 days left in September.",
   "sources": [
     {"title": "govinfo CPD 2026 Trump remarks", "url": "https://www.govinfo.gov/app/collection/cpd"},

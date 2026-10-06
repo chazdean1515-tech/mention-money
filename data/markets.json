@@ -3,8 +3,7 @@
  "oldest_price_et": "2026-09-28T07:51:25-04:00",
  "source": "https://api.elections.kalshi.com/trade-api/v2",
  "horizon_days": 0,
- "series_total": 16,
- "series_scanned": 103,
+ "series_in_snapshot": 8,
  "event_count": 9,
  "market_count": 157,
  "events": [

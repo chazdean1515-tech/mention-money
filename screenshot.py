@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Capture mobile + desktop screenshots of the locally served app (headless Chromium via Playwright).
-Run with the venv that has playwright:  /workspace/.venv-pw/bin/python screenshot.py [url]"""
+Run with a Python that has Playwright installed: python3 screenshot.py [url]"""
 import sys, os
 from playwright.sync_api import sync_playwright
 URL = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8080/"

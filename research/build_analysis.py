@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Assemble data/analysis.json from per-event analysis modules in this folder (analysis_*.py),
 then pick the deterministic "Play of the Day" from data/markets.json + those estimates."""
-import glob, importlib.util, json, os, re
+import glob, importlib.util, json, os, re, sys
 from datetime import datetime
 from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__))
+if HERE not in sys.path:
+    sys.path.insert(0, HERE)
+from notes import compose_note
 ET = ZoneInfo("America/New_York")
 NOW = datetime.now(ET)
 MIN_EDGE = 0.05
@@ -15,7 +18,18 @@ out = {"updated_at_et": NOW.isoformat(timespec="seconds"),
 for f in sorted(glob.glob(os.path.join(HERE, "analysis_*.py"))):
     spec = importlib.util.spec_from_file_location(os.path.basename(f)[:-3], f)
     mod = importlib.util.module_from_spec(spec); spec.loader.exec_module(mod)
-    out["events"][mod.EVENT] = mod.DATA
+    data = mod.DATA
+    for w in (data.get("words") or {}).values():
+        if not isinstance(w, dict):
+            continue
+        if w.get("reason"):
+            w["reason"] = w["reason"].replace("TrumpRX", "TrumpRx")
+        existing = w.get("prose") or ""
+        if len(existing) >= 160:
+            w["prose"] = existing.replace("TrumpRX", "TrumpRx")
+        else:
+            w["prose"] = compose_note(w.get("reason") or existing)
+    out["events"][mod.EVENT] = data
 
 # ---------------- Play of the Day ----------------
 # Rules (deterministic given markets.json + analysis modules + build time):
@@ -81,9 +95,11 @@ def eligible_candidates(mk, events):
 def record(c):
     """Card-ready dict for one candidate (used by the Play of the Day)."""
     e, ea, m, w = c["e"], c["ea"], c["m"], c["w"]
-    reason = strip_prices(w.get("reason", ""))
-    rationale = (f"{reason} Our {round(w['p']*100)}% YES estimate vs a {round(c['ask']*100)}¢ {c['side']} ask "
-                 f"leaves about +{round(c['edge']*100)}¢ per contract after fees.")
+    reason = compose_note(strip_prices(w.get("reason", "")))
+    rationale = (f"{reason} Our YES estimate is {round(w['p']*100)}%. "
+                 f"In this snapshot the {c['side']} ask is {round(c['ask']*100)}¢, "
+                 f"and the gap after the taker fee is about {round(c['edge']*100)}¢ per contract. "
+                 f"That is our opinion, not a trade instruction.")
     return {
         "event_ticker": e["event_ticker"], "series_ticker": e.get("series_ticker"), "ticker": m["ticker"],
         "event_title": ea.get("title") or e["title"], "speaker": ea.get("speaker"),
@@ -91,7 +107,6 @@ def record(c):
         "price": c["ask"], "yes_bid": m.get("yes_bid"), "yes_ask": m.get("yes_ask"),
         "est_yes": w["p"], "est_side": round(c["pe"], 4),
         "edge_raw": round(c["pe"] - c["ask"], 4), "fee": round(FEE(c["ask"]), 4), "edge": round(c["edge"], 4),
-        "payout_multiple": round(1 / c["ask"], 2),
         "event_time_et": ea.get("event_time_et"), "close_time_et": m.get("close_time_et"),
         "price_fetched_at_et": m.get("price_fetched_at_et") or e.get("price_fetched_at_et"),
         "confidence": ea.get("confidence"), "fragile": c["fragile"] or None,

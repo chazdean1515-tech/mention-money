@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-"""Screenshots of the Play of the Day hero + the Tip the House panel (desktop + mobile), plus a copy-button check.
-Run: /workspace/.venv-pw/bin/python screenshot_potd.py [url]"""
+"""Screenshots of the Play of the Day hero and the support panel (desktop and mobile), plus a copy-button check.
+Run: python3 screenshot_potd.py [url]"""
 import sys, os
 from playwright.sync_api import sync_playwright
 URL = sys.argv[1] if len(sys.argv) > 1 else "http://127.0.0.1:8080/"

@@ -1,0 +1,23 @@
+# GitHub Pages runs Jekyll because this repo does not contain .nojekyll.
+# Pages source stays "Deploy from a branch", branch main, folder / (root).
+# Do not add .nojekyll back: that publishes the tooling files on the domain again.
+title: Mention Money
+url: https://mentionmoney.com
+include:
+  - CNAME
+exclude:
+  - README.md
+  - fetch.py
+  - publish.sh
+  - screenshot.py
+  - screenshot_potd.py
+  - build_board.py
+  - .gitignore
+  - research
+  - screenshots
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - "*.py"
+  - "*.sh"
