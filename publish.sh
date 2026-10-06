@@ -7,6 +7,8 @@ cd "$(dirname "$0")"
 for f in data/markets.json data/analysis.json; do
   python3 -c "import json,sys; json.load(open(sys.argv[1]))" "$f" || { echo "invalid JSON: $f" >&2; exit 1; }
 done
+# Pages primary domain is www. A stale tree must not commit the apex back into CNAME.
+printf '%s\n' 'www.mentionmoney.com' > CNAME
 git add CNAME data/markets.json data/analysis.json data/last_potd.json index.html app.js style.css README.md fetch.py screenshot.py screenshot_potd.py publish.sh .gitignore .nojekyll research/ assets/
 git add screenshots/*.png 2>/dev/null || true
 # Stage intentional removals of the retired checker and its screenshots.
