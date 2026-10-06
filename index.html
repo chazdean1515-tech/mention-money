@@ -3,67 +3,90 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mention Money: Free daily Kalshi Mentions value picks</title>
-<meta name="description" content="Free daily value picks on Kalshi Mentions markets: our probability estimates vs. live prices, with the edge after fees. Research, not financial advice.">
+<title>Mention Money: Daily research on Kalshi Mentions markets</title>
+<meta name="description" content="Daily research on Kalshi Mentions markets. Our probability estimates sit next to snapshot Kalshi prices, with the gap after the taker fee. Opinion, not financial advice. 18+ only.">
 <link rel="canonical" href="https://mentionmoney.com/">
-<!-- Link previews (Open Graph + X). Image source: /workspace/x-profile/src/og.html, rendered by render_og.py -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mentionmoney.com/">
 <meta property="og:site_name" content="Mention Money">
-<meta property="og:title" content="Mention Money: Free daily Kalshi Mentions value picks">
-<meta property="og:description" content="Our probability estimates vs. live Kalshi Mentions prices, with the edge after fees. Play of the Day and today's value picks. Not financial advice.">
-<meta property="og:image" content="https://mentionmoney.com/assets/og-image.png">
-<meta property="og:image:type" content="image/png">
+<meta property="og:title" content="Mention Money: Daily research on Kalshi Mentions markets">
+<meta property="og:description" content="Daily research on Kalshi Mentions markets. Our probability estimates sit next to snapshot Kalshi prices, with the gap after the taker fee. Opinion, not financial advice. 18+ only.">
+<meta property="og:image" content="https://mentionmoney.com/assets/og-image.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Mention Money logo in gold on a dark green background with the tagline Free daily value picks on Kalshi Mentions markets and mentionmoney.com">
+<meta property="og:image:alt" content="Mention Money. Daily research on Kalshi Mentions markets. mentionmoney.com">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@MentionMoneyHQ">
-<meta name="twitter:title" content="Mention Money: Free daily Kalshi Mentions value picks">
-<meta name="twitter:description" content="Our probability estimates vs. live Kalshi Mentions prices, with the edge after fees. Not financial advice.">
-<meta name="twitter:image" content="https://mentionmoney.com/assets/og-image.png">
-<meta name="twitter:image:alt" content="Mention Money logo in gold on a dark green background with the tagline Free daily value picks on Kalshi Mentions markets and mentionmoney.com">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&display=swap">
-<link rel="stylesheet" href="style.css?v=22">
+<meta name="twitter:title" content="Mention Money: Daily research on Kalshi Mentions markets">
+<meta name="twitter:description" content="Daily research on Kalshi Mentions markets. Our probability estimates sit next to snapshot Kalshi prices, with the gap after the taker fee. Opinion, not financial advice.">
+<meta name="twitter:image" content="https://mentionmoney.com/assets/og-image.jpg">
+<meta name="twitter:image:alt" content="Mention Money. Daily research on Kalshi Mentions markets. mentionmoney.com">
+<meta name="theme-color" content="#080d14">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="any">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/cinzel-decorative-900.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/style.css?v=24">
+<script>document.documentElement.classList.add("booting")</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","name":"Mention Money","url":"https://mentionmoney.com/","description":"Daily research on Kalshi Mentions markets.","publisher":{"@type":"Person","name":"Charlie O'Brien","alternateName":"Mention Money","sameAs":"https://x.com/MentionMoneyHQ"}}
+</script>
 </head>
-<body>
+<body data-kalshi-ref="https://kalshi.com/r/7cd20072-8acd-4c35-a907-b6226921c42b">
+<a class="skip" href="#board">Skip to today's board</a>
 <header>
-  <h1><span class="brand"><span class="dollar" aria-hidden="true">$</span><span class="brand-t">Mention Money</span></span> <span class="sub">Best value bets on Kalshi mention markets</span></h1>
-  <div id="meta" class="meta">Loading…</div>
+  <h1><span class="brand"><span class="dollar" aria-hidden="true">$</span><span class="brand-t">Mention Money</span></span> <span class="sub">Daily research on Kalshi Mentions markets</span></h1>
+  <p id="meta" class="meta">Prices as of the latest snapshot.</p>
   <div class="controls">
-    <input id="q" type="search" placeholder="Filter events / words…">
-    <label><input id="onlyAnalyzed" type="checkbox"> Analyzed only</label>
-    <a class="ref-btn" data-kalshi-ref hidden title="Referral link: we may earn a bonus if you sign up and trade. Not financial advice."><span class="tl">New to Kalshi? </span>Sign up <span aria-hidden="true">↗</span></a>
-    <button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip" aria-label="Tip the House in SOL"><span class="tl">Tip the House </span><span aria-hidden="true">◎</span> SOL</button>
+    <label class="visually-hidden" for="q">Filter events or words</label>
+    <input id="q" type="search" placeholder="Filter events or words" autocomplete="off">
+    <label class="chk" for="onlyAnalyzed"><input id="onlyAnalyzed" type="checkbox"> Analyzed only</label>
+    <div class="ref-slot">
+      <a class="ref-btn" id="ref-header" data-kalshi-ref href="https://kalshi.com/r/7cd20072-8acd-4c35-a907-b6226921c42b" aria-describedby="ref-header-disc"><span class="tl">New to Kalshi? </span>Sign up <span aria-hidden="true">↗</span></a>
+      <p id="ref-header-disc" class="ref-disc">18+ only. Availability depends on Kalshi's eligibility rules. You can lose money. Not financial advice. Mention Money earns a bonus if you sign up and trade with this link.</p>
+    </div>
+    <button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip">Support Mention Money</button>
   </div>
 </header>
-<main>
-  <div id="today-ticker" class="today-ticker" aria-label="Today's event start times"></div>
-  <section id="potd" class="potd" aria-label="Play of the Day" hidden></section>
-  <section id="events"></section>
+<main id="board">
+  <p id="stale" class="stale" role="status" hidden></p>
+  <div id="today-ticker" class="today-ticker" hidden></div>
+  <section id="potd" class="potd" hidden></section>
+  <section id="events" aria-label="Today's board"></section>
   <section class="notes">
-    <h3>How to read this</h3>
-    <p>Each word is a heading and one short paragraph: what that contract counts, how often Trump used that wording in the transcripts we checked, and whether Mobile changes it. Plurals and possessives count. A slash means either word. Other inflections do not.</p>
-    <p>The Play of the Day card is separate. Estimates are judgment calls from public transcripts, not guarantees. Read-only; no trading. The rules under each event are the contract, not the paragraph.</p>
+    <h2>How to read this</h2>
+    <p>Each word is a heading, then the snapshot figures, then one short paragraph: what that contract counts, how often the speaker used that wording in the transcripts or settled markets we checked, and whether this event changes that. Plurals and possessives count. A slash means either word. Other inflections do not.</p>
+    <p>Our estimate is a judgment, in percent, that the contract resolves YES. The YES price is the snapshot bid–ask in cents. The gap after the fee is that estimate (or one minus it, on NO) minus the ask, minus about 0.07 × price × (1 − price). “Our lean” is the side where that gap is at least 5¢, the quote is two-sided, and the speaking window has not started. It is an opinion, not an instruction. Once the window has started, the figures stay up as a snapshot and the lean comes down.</p>
+    <p>The featured card is separate. This site is read-only. It does not place trades. The rules under each event are the contract, not the paragraph. Read the “Prices as of” line. If the snapshot is old, the tape is not a live quote.</p>
   </section>
 </main>
-<footer>Data: Kalshi public API (read-only). Not financial advice. Background photos are public-domain official images.
-  <div class="foot-ref"><a class="ref-link" data-kalshi-ref hidden>New to Kalshi? <b>Sign up with our link</b></a>
-    <p class="ref-disc" data-kalshi-ref-disc hidden></p></div>
-  <div class="foot-tip"><button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip">Tip the House <span aria-hidden="true">◎</span> SOL</button></div>
+<footer>
+  <p>Prices and market data come from Kalshi's public API and are a snapshot, not a live feed. Estimates are opinions. 18+ only. You can lose money. Availability depends on Kalshi's eligibility rules. Not financial advice.</p>
+  <nav class="foot-links" aria-label="Site">
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/terms.html">Terms</a>
+    <a href="https://x.com/MentionMoneyHQ" rel="me noopener">@MentionMoneyHQ on X</a>
+  </nav>
+  <div class="foot-ref">
+    <a class="ref-link" data-kalshi-ref href="https://kalshi.com/r/7cd20072-8acd-4c35-a907-b6226921c42b" aria-describedby="ref-foot-disc">New to Kalshi? <b>Sign up with our link</b></a>
+    <p id="ref-foot-disc" class="ref-disc">18+ only. Availability depends on Kalshi's eligibility rules. You can lose money. Not financial advice. Mention Money earns a bonus if you sign up and trade with this link.</p>
+  </div>
+  <div class="foot-tip"><button type="button" class="tip-btn" data-tip-open aria-haspopup="dialog" aria-controls="tip">Support Mention Money</button></div>
 </footer>
 <dialog id="tip" class="tip" aria-labelledby="tip-h">
-  <button type="button" class="tip-x" data-tip-close aria-label="Close">×</button>
-  <h2 id="tip-h"><span class="tip-coin" aria-hidden="true">◎</span> Tip the House</h2>
-  <img class="tip-qr" src="assets/sol-qr.svg" width="222" height="222" alt="QR code for the Solana address below">
+  <button type="button" class="tip-x" data-tip-close><span aria-hidden="true">×</span><span class="visually-hidden">Close</span></button>
+  <h2 id="tip-h"><span class="tip-coin" aria-hidden="true">◎</span> Support Mention Money</h2>
+  <img class="tip-qr" src="/assets/sol-qr.svg" width="222" height="222" alt="QR code for the Solana address below">
   <div class="tip-lbl">Solana (SOL) address</div>
   <code id="sol-addr" class="tip-addr">APst4X6cmSQ3KAVBt4ZnQpSNcLH4gVJHDutXK8xhaDmR</code>
   <button type="button" id="tip-copy" class="tip-copy">Copy address</button>
   <span id="tip-status" class="tip-status" role="status" aria-live="polite"></span>
-  <p class="tip-note">Donations are optional and support the site. Send SOL only on the Solana network.</p>
+  <p class="tip-note">Optional support for the site. Send SOL only on the Solana network. This is not a purchase of advice or a wager.</p>
 </dialog>
-<script src="app.js?v=6"></script>
+<script src="/data/board.js?v=1"></script>
+<script src="/app.js?v=8"></script>
 </body>
 </html>

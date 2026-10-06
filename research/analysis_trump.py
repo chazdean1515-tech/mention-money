@@ -1,5 +1,5 @@
 # Analysis for KXTRUMPMENTION-26SEP29 (Trump "Golden Age" remarks, Mellon Auditorium, Tue Sep 29 2026)
-# Base rates from /workspace/research: 23 Trump remarks transcripts Jun–Aug 2026 (govinfo DCPD) + 4 Sep 2026 transcripts.
+# Base rates from the research folder: 23 Trump remarks transcripts Jun–Aug 2026 (govinfo DCPD) + 4 Sep 2026 transcripts.
 EVENT = "KXTRUMPMENTION-26SEP29"
 P = "KXTRUMPMENTION-26SEP29-"
 DATA = {
