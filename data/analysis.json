@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-06T05:11:36-04:00",
+ "updated_at_et": "2026-10-07T05:15:01-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -280,6 +280,110 @@
      "p": 0.02,
      "reason": "Publicly listed by the campaign; cancellation unlikely.",
      "prose": "Note on this contract: Publicly listed by the campaign; cancellation unlikely."
+    }
+   }
+  },
+  "KXSPECIALREPORTMENTION-26OCT07": {
+   "title": "Jeff Bezos on Special Report with Bret Baier",
+   "speaker": "Jeff Bezos",
+   "event_time_et": "2026-10-07T18:00:00-04:00",
+   "event_time_note": "Fox News press release: Special Report at 6 p.m. ET, anchored from Blue Origin's space complex in Cape Canaveral, on Fox News' 30th anniversary.",
+   "context": "Fox says Bezos will discuss space exploration, AI regulation, the midterm elections, the world economy and other news, with a tour of the campus, mission control and a rocket booster. Only Bezos's own words count, not Baier's. Space words (Blue Origin, Moon, New Glenn) and AI are natural; Washington Post and Elon/Musk depend on whether Baier pushes and Bezos names them.",
+   "fragile_sides": {
+    "NO": "Only Bezos's words count, but an extended interview can stray into any news of the day."
+   },
+   "confidence": "Low-medium. Topic list is official; no Bezos transcript counts.",
+   "method": "Judgment from the announced topics and setting, anchored to market mid-prices.",
+   "sources": [
+    {
+     "title": "Fox News press release: Baier interviews Bezos at Blue Origin, Oct 7 on Special Report",
+     "url": "https://press.foxnews.com/2026/10/05/fox-news-channels-bret-baier-to-present-exclusive-interview-with-jeff-bezos-from-blue-origins-space-complex-in-cape-canaveral-florida-on-wednesday-october-7-on-special-report"
+    },
+    {
+     "title": "Mediaite: Baier lands Bezos interview",
+     "url": "https://www.mediaite.com/media/tv/fox-news-anchor-bret-baier-lands-exclusive-interview-with-jeff-bezos-timed-to-air-on-networks-30th-anniversary/"
+    }
+   ],
+   "words": {
+    "KXSPECIALREPORTMENTION-26OCT07-AI": {
+     "p": 0.93,
+     "reason": "AI regulation is on the announced topic list. Fair.",
+     "prose": "AI regulation is on the announced topic list. The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-MOON": {
+     "p": 0.88,
+     "reason": "Space exploration is the setting; Bezos talks about the Moon often. Fair.",
+     "prose": "Space exploration is the setting; Bezos talks about the Moon often. The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-BLUE": {
+     "p": 0.92,
+     "reason": "Interview is at Blue Origin's complex. Fair to slightly cheap; wide spread.",
+     "prose": "Interview is at Blue Origin's complex. Fair to slightly cheap; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-NASA": {
+     "p": 0.72,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-DATA": {
+     "p": 0.68,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-NEWG": {
+     "p": 0.72,
+     "reason": "The tour includes a rocket booster. Fair.",
+     "prose": "The tour includes a rocket booster. The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-TRUM": {
+     "p": 0.6,
+     "reason": "Midterms are on the topic list, but he may avoid the name. Fair.",
+     "prose": "Midterms are on the topic list, but he may avoid the name. The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-CHIN": {
+     "p": 0.48,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-ARTE": {
+     "p": 0.36,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-SPAC": {
+     "p": 0.26,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-NUCL": {
+     "p": 0.16,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-ROBO": {
+     "p": 0.24,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-ELON": {
+     "p": 0.16,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-WASH": {
+     "p": 0.1,
+     "reason": "He may say 'the Post' instead. Fair; wide spread.",
+     "prose": "He may say 'the Post' instead. Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-TARI": {
+     "p": 0.1,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXSPECIALREPORTMENTION-26OCT07-NQE": {
+     "p": 0.02,
+     "reason": "Announced by Fox News.",
+     "prose": "Note on this contract: Announced by Fox News."
     }
    }
   },
@@ -896,6 +1000,127 @@
     }
    }
   },
+  "KXDEBATEMENTION-26OCT07": {
+   "title": "Iowa U.S. Senate debate (Hinson vs. Turek) on Iowa PBS",
+   "speaker": "Ashley Hinson and Josh Turek",
+   "event_time_et": "2026-10-07T20:00:00-04:00",
+   "event_time_note": "Iowa PBS: 7:00 p.m. CT (8:00 p.m. ET) at the Johnston studios, about an hour, moderated by Kay Henderson with Iowa political reporters. No live audience.",
+   "context": "An hour-long, reporter-led debate for Joni Ernst's open seat. Either candidate saying a word counts. Farm and trade questions are almost certain in Iowa (tariffs, China soybeans, ethanol/E15, the farm bill), and a Democrat in 2026 will push healthcare cuts (Medicaid/Medicare) and abortion. Many markets are thin with wide spreads, so few leans qualify.",
+   "confidence": "Low-medium. No transcript counts; format and Iowa issue set are well known.",
+   "method": "Judgment from the debate format and Iowa issue set, anchored to market mid-prices.",
+   "sources": [
+    {
+     "title": "Iowa PBS: Iowa Press Debates: U.S. Senate, Oct 7 at 7 p.m.",
+     "url": "https://www.iowapbs.org/shows/iowapress/special/14524/iowa-press-debates-us-senate"
+    },
+    {
+     "title": "CBS2 Iowa: Hinson and Turek debate Oct. 7",
+     "url": "https://cbs2iowa.com/news/local/iowa-pbs-sets-oct-7-us-senate-debate-between-hinson-and-turek"
+    }
+   ],
+   "words": {
+    "KXDEBATEMENTION-26OCT07-IRAN": {
+     "p": 0.95,
+     "reason": "Priced as a near-lock; foreign-policy question likely. Fair.",
+     "prose": "Priced as a near-lock; foreign-policy question likely. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-TARI": {
+     "p": 0.94,
+     "reason": "Tariffs are the core Iowa farm-economy question. Fair.",
+     "prose": "Tariffs are the core Iowa farm-economy question. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-BILL": {
+     "p": 0.88,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-BORD": {
+     "p": 0.84,
+     "reason": "Immigration question likely. Fair; thin.",
+     "prose": "Note on this contract: Immigration question likely. Fair; thin."
+    },
+    "KXDEBATEMENTION-26OCT07-SOCI": {
+     "p": 0.84,
+     "reason": "Standard Senate-debate topic. Fair; thin.",
+     "prose": "Note on this contract: Standard Senate-debate topic. Fair; thin."
+    },
+    "KXDEBATEMENTION-26OCT07-CANC": {
+     "p": 0.84,
+     "reason": "Iowa's cancer rate is a live state issue. Fair.",
+     "prose": "Iowa's cancer rate is a live state issue. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-ETHA": {
+     "p": 0.84,
+     "reason": "Ethanol/E15 is a reliable Iowa debate topic. Fair; wide spread.",
+     "prose": "Ethanol/E15 is a reliable Iowa debate topic. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-DATA": {
+     "p": 0.75,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-FARM": {
+     "p": 0.85,
+     "reason": "Exact phrase 'farm bill' is needed; Iowa reporters ask about it. Fair.",
+     "prose": "Exact phrase 'farm bill' is needed; Iowa reporters ask about it. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-CORR": {
+     "p": 0.82,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-AI": {
+     "p": 0.7,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-MEDI": {
+     "p": 0.85,
+     "reason": "Healthcare cuts are the Democrats' main 2026 attack. Fair.",
+     "prose": "Healthcare cuts are the Democrats' main 2026 attack. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-TRUM": {
+     "p": 0.75,
+     "reason": "Contract needs 5+ mentions; an hour on a Trump-era midterm should get there. Fair to slightly cheap; wide spread.",
+     "prose": "Contract needs 5+ mentions; an hour on a Trump-era midterm should get there. Fair to slightly cheap; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-AGEN": {
+     "p": 0.58,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT07-ABOR": {
+     "p": 0.62,
+     "reason": "A Democratic Senate nominee in 2026 usually raises it, and reporters often ask. 53¢ looks a bit cheap.",
+     "prose": "A Democratic Senate nominee in 2026 usually raises it, and reporters often ask. 53¢ looks a bit cheap."
+    },
+    "KXDEBATEMENTION-26OCT07-MINI": {
+     "p": 0.42,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-TERM": {
+     "p": 0.45,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-CRYP": {
+     "p": 0.15,
+     "reason": "Rare in state Senate debates. Fair.",
+     "prose": "Rare in state Senate debates. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT07-CHIN": {
+     "p": 0.86,
+     "reason": "China trade and soybeans are natural in Iowa. Cheap, but the market has not traded.",
+     "prose": "China trade and soybeans are natural in Iowa. Cheap, but the market has not traded."
+    },
+    "KXDEBATEMENTION-26OCT07-NQE": {
+     "p": 0.01,
+     "reason": "Scheduled live broadcast.",
+     "prose": "Note on this contract: Scheduled live broadcast."
+    }
+   }
+  },
   "KXKHANNAMENTION-26OCT05": {
    "title": "Ro Khanna at the Ballots Over Billionaires rally in Los Angeles",
    "speaker": "Ro Khanna",
@@ -994,6 +1219,88 @@
      "p": 0.03,
      "reason": "He is a listed guest; a no-show is the main risk.",
      "prose": "He is a listed guest; a no-show is the main risk."
+    }
+   }
+  },
+  "KXEARNINGSMENTIONLEVI-26OCT07": {
+   "title": "Levi Strauss & Co. (LEVI) Q3 2026 earnings call",
+   "speaker": "Levi Strauss & Co. (CEO Michelle Gass, CFO Harmit Singh, IR, operator)",
+   "event_time_et": "2026-10-07T17:00:00-04:00",
+   "event_time_note": "Levi Strauss IR: call Wed Oct 7 at 2 p.m. PT / 5 p.m. ET, hosted by Michelle Gass and Harmit Singh.",
+   "context": "Quarter ended Aug 30, 2026. Tariffs and Beyond Yoga are priced as near-locks. No transcript counts were done, so the board treats these as market-anchored notes rather than leans.",
+   "confidence": "Low. No transcript counts.",
+   "method": "Market-anchored; no corpus.",
+   "sources": [
+    {
+     "title": "Levi Strauss & Co. to webcast Q3 2026 call (Oct 7, 2 p.m. PT)",
+     "url": "https://investors.levistrauss.com/news/financial-news/news-details/2026/Levi-Strauss--Co--to-Webcast-Third-Quarter-2026-Earnings-Conference-Call/default.aspx"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONLEVI-26OCT07-TARI": {
+     "p": 0.95,
+     "reason": "Tariff costs are a standing apparel topic. Fair.",
+     "prose": "Tariff costs are a standing apparel topic. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-BEYOY": {
+     "p": 0.95,
+     "reason": "Beyond Yoga is a reported brand. Fair.",
+     "prose": "Beyond Yoga is a reported brand. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-CHIN": {
+     "p": 0.84,
+     "reason": "Sourcing and market commentary. Fair.",
+     "prose": "Sourcing and market commentary. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-GLOW": {
+     "p": 0.66,
+     "reason": "No corpus. Fair; wide spread.",
+     "prose": "Note on this contract: No corpus. Fair; wide spread."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-AI": {
+     "p": 0.74,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-LOOS": {
+     "p": 0.52,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-DOCK": {
+     "p": 0.4,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-NIKE": {
+     "p": 0.3,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-WORL": {
+     "p": 0.28,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-INFL": {
+     "p": 0.27,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-SHAI": {
+     "p": 0.16,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-BEYO": {
+     "p": 0.13,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
+    },
+    "KXEARNINGSMENTIONLEVI-26OCT07-DISN": {
+     "p": 0.03,
+     "reason": "No corpus. Fair.",
+     "prose": "No corpus. The price looks fair."
     }
    }
   },
@@ -1306,6 +1613,10 @@
    "method": "Company-speaker counts in 4 calls (Oct 2025, Jan 2026, Apr 2026, Jul 2026) from roic.ai / Earnings Whispers.",
    "sources": [
     {
+     "title": "Constellation Brands Q2 FY27 results release (Oct 6, 2026)",
+     "url": "https://ir.cbrands.com/news-events/press-releases/detail/346/constellation-brands-reports-second-quarter-fiscal-2027-financial-results"
+    },
+    {
      "title": "Constellation Brands IR: Q2 FY27 results Oct 6, call Oct 7 at 8:00 a.m. ET",
      "url": "https://ir.cbrands.com/news-events/press-releases/detail/345/constellation-brands-to-report-second-quarter-fiscal-2027-financial-results-on-october-6-2026-after-market-close-and-host-conference-call-on-october-7-2026-at-8-00-am-et"
     },
@@ -1344,9 +1655,9 @@
      "prose": "3/4 calls (distributor inventory levels). The price looks fair."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-WINE": {
-     "p": 0.5,
-     "reason": "2/4 calls, 0 in July after the divestiture. Fair to rich.",
-     "prose": "Count: 2/4 calls, 0 in July after the divestiture. Fair to rich."
+     "p": 0.86,
+     "reason": "2/4 calls before, but the Oct 6 release shows Wine & Spirits net sales up 17% with segment profit back, so management has a reason to talk about it. Fair.",
+     "prose": "2/4 calls before, but the Oct 6 release shows Wine & Spirits net sales up 17% with segment profit back, so management has a reason to talk about it. The price looks fair."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-TARI": {
      "p": 0.5,
@@ -1354,9 +1665,9 @@
      "prose": "3/4 calls, 0 in July. The price looks fair."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-VICT": {
-     "p": 0.45,
-     "reason": "Brand (Victoria), 2/4 calls. Fair.",
-     "prose": "Brand (Victoria), 2/4 calls. The price looks fair."
+     "p": 0.62,
+     "reason": "Brand (Victoria), 2/4 earlier calls, and the Oct 6 release names it 3 times. Fair.",
+     "prose": "Brand (Victoria), 2/4 earlier calls, and the Oct 6 release names it 3 times. The price looks fair."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-OIL": {
      "p": 0.5,
@@ -1369,14 +1680,14 @@
      "prose": "2/4 calls. The price looks fair to slightly rich."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-MI": {
-     "p": 0.3,
-     "reason": "0/4 in Earnings Whispers text (1 in one roic copy); tequila is a minor brand. 47–50¢ looks rich (low confidence).",
-     "prose": "0/4 in Earnings Whispers text (1 in one roic copy); tequila is a minor brand. 47–50¢ looks rich (low confidence)."
+     "p": 0.58,
+     "reason": "0/4 in Earnings Whispers text, but the Oct 6 release says Mi CAMPO depletions rose about 51%. Fair (low confidence).",
+     "prose": "0/4 in Earnings Whispers text, but the Oct 6 release says Mi CAMPO depletions rose about 51%. Fair (low confidence)."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-ALUM": {
-     "p": 0.35,
-     "reason": "2/4 calls (aluminum tariffs). Fair.",
-     "prose": "2/4 calls (aluminum tariffs). The price looks fair."
+     "p": 0.22,
+     "reason": "2/4 earlier calls (aluminum tariffs), but the Oct 6 release does not mention aluminum or tariffs. Fair.",
+     "prose": "2/4 earlier calls (aluminum tariffs), but the Oct 6 release does not mention aluminum or tariffs. The price looks fair."
     },
     "KXEARNINGSMENTIONSTZ-26OCT05-DIVI": {
      "p": 0.25,
@@ -3056,6 +3367,171 @@
     }
    }
   },
+  "KXTRUMPMENTIONB-26OCT07": {
+   "title": "Trump Oval Office announcement",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-07T13:00:00-04:00",
+   "event_time_note": "White House daily guidance: 1:00 p.m. ET, THE PRESIDENT makes an Announcement, Oval Office, pool coverage. He leaves for San Antonio afterward.",
+   "context": "The topic is unannounced, so every word depends on what he announces and whether he takes questions. Oval announcements usually run long with a press Q&A, which pulls in Iran, China, Russia, Biden and oil. Markets are thin with wide spreads; estimates stay close to the market.",
+   "fragile_sides": {
+    "YES": "The topic is unknown; a short scripted signing could skip most words.",
+    "NO": "The topic is unknown; a long Q&A can bring up almost anything."
+   },
+   "confidence": "Low. The subject is unannounced.",
+   "method": "Market-anchored, adjusted lightly using the settled Peterbilt remarks on Oct 1 (Investment, Manufacturing, Stock Market, Iran, Nuclear, China, Inflation, Biden, Tariff, Oil all hit).",
+   "sources": [
+    {
+     "title": "White House schedule for Oct 7 (via TradingView/MNI)",
+     "url": "https://www.tradingview.com/news/macenews:2741288df094b:0-wednesday-white-house-schedule-president-trump-makes-an-announcement-at-1p-et-then-travels-to-san-antonio/"
+    },
+    {
+     "title": "Kalshi settlements: KXTRUMPMENTIONB-26OCT01",
+     "url": "https://kalshi.com/markets/kxtrumpmentionb"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTIONB-26OCT07-OIL": {
+     "p": 0.74,
+     "reason": "Hit at Peterbilt; oil and diesel prices are a live White House theme. Fair.",
+     "prose": "Hit at Peterbilt; oil and diesel prices are a live White House theme. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-DEAL": {
+     "p": 0.72,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-NUCL": {
+     "p": 0.7,
+     "reason": "Hit at Peterbilt. Fair.",
+     "prose": "Hit at Peterbilt. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-CHIN": {
+     "p": 0.74,
+     "reason": "Hit at Peterbilt; a Q&A almost always gets there. Fair.",
+     "prose": "Hit at Peterbilt; a Q&A almost always gets there. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-BIDE": {
+     "p": 0.72,
+     "reason": "Hit at Peterbilt. Fair.",
+     "prose": "Hit at Peterbilt. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-RUSS": {
+     "p": 0.66,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-INFL": {
+     "p": 0.66,
+     "reason": "Hit at Peterbilt. Fair; wide spread.",
+     "prose": "Hit at Peterbilt. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-IRAN": {
+     "p": 0.6,
+     "reason": "Contract needs 3+ mentions. Fair.",
+     "prose": "Contract needs 3+ mentions. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-INVE": {
+     "p": 0.64,
+     "reason": "Hit at Peterbilt. Fair.",
+     "prose": "Hit at Peterbilt. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-TARI": {
+     "p": 0.68,
+     "reason": "Hit at Peterbilt. Fair; wide spread.",
+     "prose": "Hit at Peterbilt. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-ISRA": {
+     "p": 0.5,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-MIDT": {
+     "p": 0.36,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-BLOC": {
+     "p": 0.33,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-HOTT": {
+     "p": 0.45,
+     "reason": "Missed at Peterbilt, hit in Mobile. Fair.",
+     "prose": "Missed at Peterbilt, hit in Mobile. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-STEE": {
+     "p": 0.35,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-MANU": {
+     "p": 0.38,
+     "reason": "Hit at Peterbilt (a factory). Fair; wide spread.",
+     "prose": "Hit at Peterbilt (a factory). Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-NEGO": {
+     "p": 0.33,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-SUPE": {
+     "p": 0.35,
+     "reason": "Only likely if the announcement is about AI. Fair.",
+     "prose": "Only likely if the announcement is about AI. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-HEAL": {
+     "p": 0.32,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-AI": {
+     "p": 0.37,
+     "reason": "Missed at Peterbilt. Fair; wide spread.",
+     "prose": "Missed at Peterbilt. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-SUPR": {
+     "p": 0.28,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-STOC": {
+     "p": 0.3,
+     "reason": "Hit at Peterbilt. Fair.",
+     "prose": "Hit at Peterbilt. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-JAPA": {
+     "p": 0.33,
+     "reason": "Topic unknown. Fair; wide spread.",
+     "prose": "Note on this contract: Topic unknown. Fair; wide spread."
+    },
+    "KXTRUMPMENTIONB-26OCT07-AFFO": {
+     "p": 0.21,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-TAIW": {
+     "p": 0.16,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-FENT": {
+     "p": 0.12,
+     "reason": "Topic unknown. Fair.",
+     "prose": "Topic unknown. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-CRYP": {
+     "p": 0.04,
+     "reason": "Missed at Peterbilt. Fair.",
+     "prose": "Missed at Peterbilt. The price looks fair."
+    },
+    "KXTRUMPMENTIONB-26OCT07-NQE": {
+     "p": 0.03,
+     "reason": "On the official schedule with pool coverage.",
+     "prose": "Note on this contract: On the official schedule with pool coverage."
+    }
+   }
+  },
   "KXTRUMPMENTIONB-26OCT01": {
    "title": "Trump remarks at Peterbilt Motors (Denton, TX)",
    "speaker": "Donald Trump",
@@ -3226,6 +3702,233 @@
      "p": 0.03,
      "reason": "Publicly scheduled en route to OK rally; cancellation unlikely.",
      "prose": "Note on this contract: Publicly scheduled en route to OK rally; cancellation unlikely."
+    }
+   }
+  },
+  "KXTRUMPMENTION-26OCT07": {
+   "title": "Trump midterm rally in San Antonio, Texas",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-07T19:00:00-04:00",
+   "event_time_note": "GOP/Trump 47 and the White House schedule: doors 2:30 p.m. CT, program 4:30 p.m. CT, Trump speaks at 6:00 p.m. CT (7:00 p.m. ET), Freeman Coliseum.",
+   "context": "Fifth midterm rally in a week. Ken Paxton (Senate, vs. James Talarico) and Carlos De La Cruz (TX-35) are on the program, so Paxton and Talarico are near-locks. The stump has been steady: Oil/Gas, Fake News, Transgender, Dividend, Healthcare, Fraud, Save America Act, Barack Hussein Obama, Cheat and Made in America hit 4 of 4. Deport, Fentanyl, TrumpRx, Trump Account, Ceasefire, Filibuster and Crypto went 0 of 4 even at rallies where border talk was natural. Texas lifts border, oil and Gulf words a little; a San Antonio crowd could pull a border riff, which is the main risk to the NO leans.",
+   "confidence": "Medium. Four same-format rallies this week, all settled.",
+   "method": "Presence in the 4 settled midterm rallies (OK, AL, OH, NE), with small Texas adjustments for border, oil and Gulf words.",
+   "sources": [
+    {
+     "title": "GOP: Midterm Rally in San Antonio (Trump at 6:00 p.m. CT)",
+     "url": "https://events.gop.com/events/midterm-rally-in-san-antonio-texas-president-donald-j-trump"
+    },
+    {
+     "title": "San Antonio Express-News: Trump rallies with Paxton, De La Cruz",
+     "url": "https://www.expressnews.com/politics/article/donald-trump-san-antonio-rally-ken-paxton-22464430.php"
+    },
+    {
+     "title": "KSAT: Trump to host rally at Freeman Coliseum",
+     "url": "https://www.ksat.com/news/local/2026/10/02/president-trump-to-host-rally-in-san-antonio-on-wednesday/"
+    },
+    {
+     "title": "Kalshi settlements: KXTRUMPMENTION-26OCT01 / 02 / 03 / 05",
+     "url": "https://kalshi.com/markets/kxtrumpmention"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26OCT07-PAXT": {
+     "p": 0.98,
+     "reason": "Paxton is on the program and the rally is for him. Near-lock.",
+     "prose": "Paxton is on the program and the rally is for him. Near-lock."
+    },
+    "KXTRUMPMENTION-26OCT07-TALA": {
+     "p": 0.96,
+     "reason": "Talarico is Paxton's opponent; Trump name-checks or nicknames opponents at candidate rallies. Fair.",
+     "prose": "Talarico is Paxton's opponent; Trump name-checks or nicknames opponents at candidate rallies. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-OIL": {
+     "p": 0.97,
+     "reason": "4 of 4 rallies this week, and Texas is oil country. Fair.",
+     "prose": "4 of 4 rallies this week, and Texas is oil country. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-FAKE": {
+     "p": 0.96,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-TRAN": {
+     "p": 0.96,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-SAVE": {
+     "p": 0.94,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-FRAU": {
+     "p": 0.95,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-DIVI": {
+     "p": 0.95,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-HEAL": {
+     "p": 0.94,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-CHEA": {
+     "p": 0.92,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-BARA": {
+     "p": 0.92,
+     "reason": "4 of 4 this week. Fair.",
+     "prose": "4 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-AFFO": {
+     "p": 0.86,
+     "reason": "3 of 4 (missed in Durant). Fair.",
+     "prose": "3 of 4 (missed in Durant). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-KAMA": {
+     "p": 0.86,
+     "reason": "Offered once this week (NE) and hit. Fair.",
+     "prose": "Offered once this week (NE) and hit. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-ICE": {
+     "p": 0.82,
+     "reason": "3 of 4 this week; a Texas crowd helps. Fair.",
+     "prose": "3 of 4 this week; a Texas crowd helps. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-CHIN": {
+     "p": 0.82,
+     "reason": "3 of 4 this week. Fair.",
+     "prose": "3 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-SLEE": {
+     "p": 0.78,
+     "reason": "3 of 4 (missed in Mobile). Fair.",
+     "prose": "3 of 4 (missed in Mobile). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-MADE": {
+     "p": 0.86,
+     "reason": "4 of 4 this week. Fair to slightly cheap.",
+     "prose": "4 of 4 this week. The price looks fair to slightly cheap."
+    },
+    "KXTRUMPMENTION-26OCT07-RUSS": {
+     "p": 0.74,
+     "reason": "3 of 4 (missed in Durant). Fair.",
+     "prose": "3 of 4 (missed in Durant). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-BLOC": {
+     "p": 0.72,
+     "reason": "Hit in Grand Island and at Anduril, the two times it was offered this week. Fair.",
+     "prose": "Hit in Grand Island and at Anduril, the two times it was offered this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-AI": {
+     "p": 0.6,
+     "reason": "2 of 4 this week (OH, NE yes; OK, AL no). 70¢ looks a bit rich.",
+     "prose": "2 of 4 this week (OH, NE yes; OK, AL no). 70¢ looks a bit rich."
+    },
+    "KXTRUMPMENTION-26OCT07-SUPR": {
+     "p": 0.72,
+     "reason": "3 of 4 (missed in Mobile). Fair.",
+     "prose": "3 of 4 (missed in Mobile). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-GULF": {
+     "p": 0.7,
+     "reason": "Hit in Mobile, the one rally where it was offered; a Texas Gulf state helps. Fair.",
+     "prose": "Hit in Mobile, the one rally where it was offered; a Texas Gulf state helps. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-ISRA": {
+     "p": 0.5,
+     "reason": "1 of 3 rallies where offered (NE yes; AL, OH no). 64¢ looks rich.",
+     "prose": "1 of 3 rallies where offered (NE yes; AL, OH no). 64¢ looks rich."
+    },
+    "KXTRUMPMENTION-26OCT07-HORM": {
+     "p": 0.5,
+     "reason": "2 of 4 this week (OH and AL no; NE yes; OK no). Fair to rich at 60¢.",
+     "prose": "Count: 2 of 4 this week (OH and AL no; NE yes; OK no). Fair to rich at 60¢."
+    },
+    "KXTRUMPMENTION-26OCT07-DATA": {
+     "p": 0.45,
+     "fragile": true,
+     "reason": "1 of 4 this week (OH only). Texas data center buildout could pull it in, so the NO is not a lock. 59¢ looks rich.",
+     "prose": "1 of 4 this week (OH only). Texas data center buildout could pull it in, so the NO is not a lock. 59¢ looks rich."
+    },
+    "KXTRUMPMENTION-26OCT07-IRAN": {
+     "p": 0.5,
+     "reason": "Contract needs 5+ mentions; 2 of 4 this week. Fair.",
+     "prose": "Contract needs 5+ mentions; 2 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-DRIL": {
+     "p": 0.52,
+     "reason": "1 of 4 this week, the one hit was oil-state Oklahoma. Texas oil helps. Fair.",
+     "prose": "1 of 4 this week, the one hit was oil-state Oklahoma. Texas oil helps. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-AMER": {
+     "p": 0.32,
+     "reason": "1 of 4 this week (Mobile). Fair.",
+     "prose": "1 of 4 this week (Mobile). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-DEPO": {
+     "p": 0.2,
+     "fragile": true,
+     "reason": "0 of 4 this week, even in border-heavy riffs. A San Antonio border segment is the risk. 31¢ looks rich.",
+     "prose": "0 of 4 this week, even in border-heavy riffs. A San Antonio border segment is the risk. 31¢ looks rich."
+    },
+    "KXTRUMPMENTION-26OCT07-SANC": {
+     "p": 0.28,
+     "reason": "1 of 4 this week (OH). Fair.",
+     "prose": "1 of 4 this week (OH). The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-FENT": {
+     "p": 0.16,
+     "fragile": true,
+     "reason": "0 of 4 this week. 26¢ looks rich.",
+     "prose": "0 of 4 this week. 26¢ looks rich."
+    },
+    "KXTRUMPMENTION-26OCT07-PALE": {
+     "p": 0.12,
+     "reason": "0 of 1 this week where offered. Fair to rich.",
+     "prose": "Count: 0 of 1 this week where offered. Fair to rich."
+    },
+    "KXTRUMPMENTION-26OCT07-TRUMA": {
+     "p": 0.07,
+     "reason": "0 of 4 this week. Fair.",
+     "prose": "0 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-TRUM": {
+     "p": 0.05,
+     "reason": "TrumpRx 0 of 4 this week. Fair.",
+     "prose": "TrumpRx 0 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-CEAS": {
+     "p": 0.04,
+     "reason": "0 of 4 this week. Fair.",
+     "prose": "0 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-PEAC": {
+     "p": 0.04,
+     "reason": "Not hit this week. Fair.",
+     "prose": "Not hit this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-FILI": {
+     "p": 0.03,
+     "reason": "0 of 4 this week. Fair.",
+     "prose": "0 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-CRYP": {
+     "p": 0.02,
+     "reason": "0 of 4 this week. Fair.",
+     "prose": "0 of 4 this week. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT07-NQE": {
+     "p": 0.01,
+     "reason": "Rally is on the White House schedule; cancellation unlikely.",
+     "prose": "Rally is on the White House schedule; cancellation unlikely."
     }
    }
   },
@@ -3758,34 +4461,34 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT06",
+  "event_ticker": "KXTRUMPMENTION-26OCT07",
   "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT06-MADE",
-  "event_title": "Trump remarks at Anduril Industries (Sparrows Point, MD)",
+  "ticker": "KXTRUMPMENTION-26OCT07-ISRA",
+  "event_title": "Trump midterm rally in San Antonio, Texas",
   "speaker": "Donald Trump",
-  "word": "Made in America / American Made",
-  "side": "YES",
-  "price": 0.67,
-  "yes_bid": 0.64,
-  "yes_ask": 0.67,
-  "est_yes": 0.82,
-  "est_side": 0.82,
-  "edge_raw": 0.15,
-  "fee": 0.0155,
-  "edge": 0.1345,
-  "event_time_et": "2026-10-06T16:00:00-04:00",
-  "close_time_et": "2026-10-20T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-06T05:11:13-04:00",
-  "confidence": "Medium. One same-format factory event plus 12 recent settled Trump events; the defense-specific words have no counted history.",
+  "word": "Israel / Israeli",
+  "side": "NO",
+  "price": 0.37,
+  "yes_bid": 0.63,
+  "yes_ask": 0.64,
+  "est_yes": 0.5,
+  "est_side": 0.5,
+  "edge_raw": 0.13,
+  "fee": 0.0163,
+  "edge": 0.1137,
+  "event_time_et": "2026-10-07T19:00:00-04:00",
+  "close_time_et": "2026-10-21T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-07T05:10:38-04:00",
+  "confidence": "Medium. Four same-format rallies this week, all settled.",
   "fragile": null,
-  "rationale": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. Our YES estimate is 82%. In this snapshot the YES ask is 67¢, and the gap after the taker fee is about 13¢ per contract. That is our opinion, not a trade instruction.",
-  "reason": "5 of 5 where listed this month (Durant, Mobile, Vandalia, Grand Island, and the Peterbilt factory). An American-made weapons announcement fits it. The 64–67¢ price looks low on that count.",
+  "rationale": "Count: 1 of 3 rallies where offered (NE yes; AL, OH no). Our YES estimate is 50%. In this snapshot the NO ask is 37¢, and the gap after the taker fee is about 11¢ per contract. That is our opinion, not a trade instruction.",
+  "reason": "1 of 3 rallies where offered (NE yes; AL, OH no). 64¢ looks rich.",
   "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
    "tier": 1,
    "tier_note": "medium-or-better confidence, not flagged fragile",
    "candidates": 8,
-   "tied_within_2c": 2,
+   "tied_within_2c": 1,
    "skipped_repeat": null,
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
