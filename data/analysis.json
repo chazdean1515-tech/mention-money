@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-07T05:15:01-04:00",
+ "updated_at_et": "2026-10-08T05:06:56-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -1000,6 +1000,132 @@
     }
    }
   },
+  "KXDEBATEMENTION-26OCT08B": {
+   "title": "Georgia U.S. Senate debate (Ossoff vs. Collins)",
+   "speaker": "Jon Ossoff and Mike Collins",
+   "event_time_et": "2026-10-08T19:00:00-04:00",
+   "event_time_note": "Atlanta News First / Gray Media: 7:00 p.m. ET, one hour, at Assembly Atlanta. First televised meeting of the two.",
+   "context": "Either candidate saying a word counts. Ossoff has run for years on anti-corruption (a congressional stock-trading ban), so 'corrupt' is close to a signature word. Collins was the lead House sponsor of the Laken Riley Act and will press immigration (border, deportation). Ossoff will push healthcare cuts (Medicaid/Medicare) and abortion; Georgia's data-center and power-bill fights are a live state issue. Most markets are thin with wide spreads, so few leans qualify.",
+   "confidence": "Low-medium. No transcript count; the candidates' core themes are well known.",
+   "method": "Judgment from each candidate's signature issues, anchored to market mid-prices.",
+   "sources": [
+    {
+     "title": "Atlanta News First: What to watch as Ossoff, Collins debate",
+     "url": "https://www.atlantanewsfirst.com/2026/10/07/control-us-senate-line-what-watch-ossoff-collins-debate-thursday/"
+    },
+    {
+     "title": "WTOC: How to watch the Collins-Ossoff debate",
+     "url": "https://www.wtoc.com/2026/10/05/collins-ossoff-debate-how-watch-wtoc/"
+    }
+   ],
+   "words": {
+    "KXDEBATEMENTION-26OCT08B-MEDI": {
+     "p": 0.9,
+     "reason": "A Democratic incumbent in 2026 will hit healthcare cuts. Fair; wide spread.",
+     "prose": "A Democratic incumbent in 2026 will hit healthcare cuts. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-CORR": {
+     "p": 0.88,
+     "reason": "Anti-corruption and the stock-trading ban are Ossoff's signature theme. YES lean.",
+     "prose": "Anti-corruption and the stock-trading ban are Ossoff's signature theme. YES lean."
+    },
+    "KXDEBATEMENTION-26OCT08B-BORD": {
+     "p": 0.86,
+     "reason": "Collins runs on immigration. Fair; thin.",
+     "prose": "Note on this contract: Collins runs on immigration. Fair; thin."
+    },
+    "KXDEBATEMENTION-26OCT08B-LAKE": {
+     "p": 0.84,
+     "reason": "Collins sponsored the Laken Riley Act and cites it often. YES lean, wide spread.",
+     "prose": "Note on this contract: Collins sponsored the Laken Riley Act and cites it often. YES lean, wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-ABOR": {
+     "p": 0.8,
+     "reason": "Georgia's six-week ban makes this likely. Fair; wide spread.",
+     "prose": "Georgia's six-week ban makes this likely. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-DATA": {
+     "p": 0.74,
+     "reason": "Data centers and Georgia Power bills are a live state fight. Fair; wide spread.",
+     "prose": "Data centers and Georgia Power bills are a live state fight. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-TARI": {
+     "p": 0.72,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-AI": {
+     "p": 0.72,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-CHIN": {
+     "p": 0.7,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-SOCI": {
+     "p": 0.7,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-TRUM": {
+     "p": 0.66,
+     "reason": "Contract needs 5+ mentions; Ossoff will tie Collins to Trump. Fair.",
+     "prose": "Contract needs 5+ mentions; Ossoff will tie Collins to Trump. The price looks fair."
+    },
+    "KXDEBATEMENTION-26OCT08B-DEPO": {
+     "p": 0.7,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-SOCIA": {
+     "p": 0.66,
+     "reason": "Republicans use the socialist label often. Fair; wide spread.",
+     "prose": "Note on this contract: Republicans use the socialist label often. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-BILL": {
+     "p": 0.68,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-ISRA": {
+     "p": 0.58,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-FOST": {
+     "p": 0.55,
+     "reason": "Ossoff has made foster care and child welfare an issue. Fair; no trades yet.",
+     "prose": "Ossoff has made foster care and child welfare an issue. Fair; no trades yet."
+    },
+    "KXDEBATEMENTION-26OCT08B-FILI": {
+     "p": 0.5,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-FENT": {
+     "p": 0.35,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-HARR": {
+     "p": 0.28,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-CRYP": {
+     "p": 0.22,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08B-NQE": {
+     "p": 0.03,
+     "reason": "Scheduled and widely promoted.",
+     "prose": "Note on this contract: Scheduled and widely promoted."
+    }
+   }
+  },
   "KXDEBATEMENTION-26OCT07": {
    "title": "Iowa U.S. Senate debate (Hinson vs. Turek) on Iowa PBS",
    "speaker": "Ashley Hinson and Josh Turek",
@@ -1304,6 +1430,142 @@
     }
    }
   },
+  "KXDEBATEMENTION-26OCT08": {
+   "title": "Michigan U.S. Senate debate (El-Sayed vs. Rogers)",
+   "speaker": "Abdul El-Sayed and Mike Rogers",
+   "event_time_et": "2026-10-08T19:00:00-04:00",
+   "event_time_note": "WOOD TV8, Grand Rapids: 7:00 p.m. ET, one hour, moderated by Rick Albin with viewer questions from Amber Krycka. A second debate is Oct 21 in Detroit.",
+   "context": "Either candidate saying a word counts. El-Sayed, a Sanders-backed physician, runs on health costs (Medicare for All), billionaires and unions; Rogers, a former House Intelligence chair, will call him a socialist and push foreign policy, energy and China. Michigan autos make tariffs and unions near-certain; Israel and AIPAC were big in the Democratic primary. Most markets are thin with wide spreads, so few leans qualify.",
+   "confidence": "Low-medium. No transcript count; the candidates' core themes are well known.",
+   "method": "Judgment from each candidate's signature issues, anchored to market mid-prices.",
+   "sources": [
+    {
+     "title": "WOOD TV8: El-Sayed and Rogers to debate Oct. 8",
+     "url": "https://www.woodtv.com/news/elections/u-s-senate-candidates-el-sayed-rogers-to-debate-at-wood-tv8/"
+    },
+    {
+     "title": "MLive: Debate week for Michigan governor and Senate candidates",
+     "url": "https://www.mlive.com/politics/2026/10/its-debate-week-for-michigan-governor-us-senate-candidates-heres-how-to-watch.html"
+    }
+   ],
+   "words": {
+    "KXDEBATEMENTION-26OCT08-MEDI": {
+     "p": 0.93,
+     "reason": "Health costs are El-Sayed's core platform. Fair; wide spread.",
+     "prose": "Health costs are El-Sayed's core platform. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-TARI": {
+     "p": 0.9,
+     "reason": "Autos and tariffs are the Michigan economy question. Fair; wide spread.",
+     "prose": "Autos and tariffs are the Michigan economy question. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-SOCI": {
+     "p": 0.88,
+     "reason": "Rogers's main line on El-Sayed. Fair; wide spread.",
+     "prose": "Note on this contract: Rogers's main line on El-Sayed. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-BILL": {
+     "p": 0.88,
+     "reason": "A staple of El-Sayed's stump speech. Fair; wide spread.",
+     "prose": "Note on this contract: A staple of El-Sayed's stump speech. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-DATA": {
+     "p": 0.84,
+     "reason": "Michigan data-center fights are a live issue. Fair; wide spread.",
+     "prose": "Michigan data-center fights are a live issue. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-UNIO": {
+     "p": 0.82,
+     "reason": "UAW state; both candidates court labor. Fair; no trades yet.",
+     "prose": "Note on this contract: UAW state; both candidates court labor. Fair; no trades yet."
+    },
+    "KXDEBATEMENTION-26OCT08-ISRA": {
+     "p": 0.8,
+     "reason": "A big issue in the Democratic primary. Fair; wide spread.",
+     "prose": "Note on this contract: A big issue in the Democratic primary. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-AI": {
+     "p": 0.8,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-AIPA": {
+     "p": 0.76,
+     "reason": "El-Sayed attacks AIPAC spending. Fair; wide spread.",
+     "prose": "Note on this contract: El-Sayed attacks AIPAC spending. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-TRUM": {
+     "p": 0.78,
+     "reason": "Contract needs 5+ mentions. Fair; wide spread.",
+     "prose": "Contract needs 5+ mentions. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-OIL": {
+     "p": 0.78,
+     "reason": "Gas prices and energy are Rogers themes. Fair; wide spread.",
+     "prose": "Gas prices and energy are Rogers themes. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-IRAN": {
+     "p": 0.7,
+     "reason": "Contract needs 3+ mentions; Rogers leans on foreign policy. Fair; wide spread.",
+     "prose": "Contract needs 3+ mentions; Rogers leans on foreign policy. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-ICE": {
+     "p": 0.66,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-ENDO": {
+     "p": 0.58,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-CORR": {
+     "p": 0.6,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-FRAU": {
+     "p": 0.6,
+     "reason": "Fair; no trades yet.",
+     "prose": "Note on this contract: Fair; no trades yet."
+    },
+    "KXDEBATEMENTION-26OCT08-ZOHR": {
+     "p": 0.42,
+     "reason": "Rogers may tie El-Sayed to Mamdani. Fair; wide spread.",
+     "prose": "Rogers may tie El-Sayed to Mamdani. Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-OBAM": {
+     "p": 0.4,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-CLIM": {
+     "p": 0.34,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-BALL": {
+     "p": 0.28,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-ELON": {
+     "p": 0.2,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-FILI": {
+     "p": 0.18,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXDEBATEMENTION-26OCT08-NQE": {
+     "p": 0.03,
+     "reason": "Scheduled and widely promoted.",
+     "prose": "Note on this contract: Scheduled and widely promoted."
+    }
+   }
+  },
   "KXEARNINGSMENTIONMTN-26SEP28": {
    "title": "Vail Resorts (MTN) Q4 FY26 / year-end earnings call",
    "speaker": "Vail Resorts (CEO Rob Katz, CFO Angela Korch, IR Connie Wang, operator)",
@@ -1600,6 +1862,110 @@
      "p": 0.06,
      "reason": "0/3 calls. Slightly rich at 11–12¢.",
      "prose": "Count: 0/3 calls. Slightly rich at 11–12¢."
+    }
+   }
+  },
+  "KXEARNINGSMENTIONPEP-26OCT08": {
+   "title": "PepsiCo Q3 2026 earnings call",
+   "speaker": "PepsiCo management (Ramon Laguarta, Steve Schmitt)",
+   "event_time_et": "2026-10-08T08:15:00-04:00",
+   "event_time_note": "PepsiCo: release, 10-Q and prepared remarks posted around 6:00 a.m. EDT; live Q&A with the CEO and CFO at 8:15 a.m. EDT.",
+   "context": "The test this quarter is whether February's price cuts of up to 15% on Lay's and Doritos bought volume in North American snacks. Volume and affordability are near-certain Q&A topics. Protein, fiber and prebiotic sodas (Poppi) are the product story; Celsius is the energy partner. Because the spoken call is Q&A only, product words depend on what analysts ask.",
+   "fragile_sides": {
+    "YES": "The live call is analyst Q&A only; anything that lives in the written remarks may not be said aloud."
+   },
+   "confidence": "Low-medium. No transcript count this run; estimates sit near the market.",
+   "method": "Judgment from the call format and the Q3 preview themes, anchored to market mid-prices.",
+   "sources": [
+    {
+     "title": "PepsiCo: timing of Q3 2026 results",
+     "url": "https://www.pepsico.com/newsroom/press-releases/2026/pepsico-announces-timing-and-availability-of-third-quarter-2026-financial-results"
+    },
+    {
+     "title": "Pip Theory: PepsiCo Q3 2026 earnings preview",
+     "url": "https://piptheory.com/research/pepsico-q3-2026-earnings-preview-frito-lay-pricing"
+    }
+   ],
+   "words": {
+    "KXEARNINGSMENTIONPEP-26OCT08-VOLU": {
+     "p": 0.97,
+     "reason": "Volume after the price cuts is the main question of the quarter. Fair.",
+     "prose": "Volume after the price cuts is the main question of the quarter. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-AFFO": {
+     "p": 0.92,
+     "reason": "Affordability is how management frames the price cuts. Fair.",
+     "prose": "Affordability is how management frames the price cuts. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-AWAY": {
+     "p": 0.88,
+     "reason": "A standard PepsiCo channel term, but it needs an analyst or answer to go there. Fair.",
+     "prose": "A standard PepsiCo channel term, but it needs an analyst or answer to go there. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-PROT": {
+     "p": 0.7,
+     "reason": "Protein launches are a growth talking point. Fair.",
+     "prose": "Protein launches are a growth talking point. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-TARI": {
+     "p": 0.62,
+     "reason": "Cost questions now lean on oil and packaging more than tariffs. Fair.",
+     "prose": "Cost questions now lean on oil and packaging more than tariffs. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-CELS": {
+     "p": 0.62,
+     "reason": "Energy drinks come up most quarters. Fair.",
+     "prose": "Energy drinks come up most quarters. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-CHIN": {
+     "p": 0.5,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-WORL": {
+     "p": 0.4,
+     "reason": "The quarter covered the World Cup, but Q&A may not revisit it. Fair.",
+     "prose": "The quarter covered the World Cup, but Q&A may not revisit it. The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-FIBE": {
+     "p": 0.36,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-ACQU": {
+     "p": 0.34,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-GLP": {
+     "p": 0.3,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-ARTI": {
+     "p": 0.25,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-PREB": {
+     "p": 0.18,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-AUTO": {
+     "p": 0.08,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-BUBL": {
+     "p": 0.04,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXEARNINGSMENTIONPEP-26OCT08-FOOD": {
+     "p": 0.03,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
     }
    }
   },
@@ -3932,6 +4298,174 @@
     }
    }
   },
+  "KXTRUMPMENTION-26OCT08": {
+   "title": "Trump at the Science: A New Golden Age Summit",
+   "speaker": "Donald Trump",
+   "event_time_et": "2026-10-08T11:00:00-04:00",
+   "event_time_note": "White House event on Thursday; the start time was not public as of 5 a.m. ET. The board uses 11:00 a.m. ET as a conservative cutoff so leans drop off before the event could begin.",
+   "context": "A White House summit on AI-driven science (the Genesis Mission and 'super intelligence'), with more than $1 billion in commitments from AMD, OpenAI, Anthropic and others. Trump presents the National Medal of Science to Elon Musk, Sergey Brin, Jensen Huang and Lisa Su, and the technology medal to Michael Dell and Satya Nadella. Energy Secretary Chris Wright and NASA Administrator Jared Isaacman also speak. Introducing the honorees makes Nvidia, Tesla/SpaceX and chips very likely; everything else depends on how far he ad-libs or whether he takes questions.",
+   "fragile_sides": {
+    "NO": "Trump ad-libs at length at White House events; a Q&A can bring up almost anything."
+   },
+   "confidence": "Low. No transcript count; start time and format unconfirmed.",
+   "method": "Judgment from the announced agenda and honoree list, anchored to the market mid-price.",
+   "sources": [
+    {
+     "title": "CNBC: Trump awarding medals to Musk, Dell, Nadella at science summit",
+     "url": "https://www.cnbc.com/2026/10/07/trump-awarding-medals-to-musk-dell-nadella-at-science-summit.html"
+    },
+    {
+     "title": "Axios: Inside Trump's AI science summit",
+     "url": "https://www.axios.com/2026/10/07/exclusive-inside-trumps-ai-science-summit"
+    },
+    {
+     "title": "Reuters via CNA: Trump to appear at White House science event",
+     "url": "https://www.channelnewsasia.com/business/trump-appear-white-house-science-event-thursday-6440771"
+    }
+   ],
+   "words": {
+    "KXTRUMPMENTION-26OCT08-GOLD": {
+     "p": 0.94,
+     "reason": "It is the summit's name and one of his stock phrases. Fair.",
+     "prose": "It is the summit's name and one of his stock phrases. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-SUPE": {
+     "p": 0.92,
+     "reason": "The summit's stated theme. Fair.",
+     "prose": "The summit's stated theme. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-NVDA": {
+     "p": 0.88,
+     "reason": "He is handing Jensen Huang a medal and usually names the company. Slight YES lean.",
+     "prose": "He is handing Jensen Huang a medal and usually names the company. Slight YES lean."
+    },
+    "KXTRUMPMENTION-26OCT08-TESL": {
+     "p": 0.84,
+     "reason": "Introducing Musk almost always brings up Tesla or SpaceX. YES lean, but check the spread.",
+     "prose": "Note on this contract: Introducing Musk almost always brings up Tesla or SpaceX. YES lean, but check the spread."
+    },
+    "KXTRUMPMENTION-26OCT08-CHIP": {
+     "p": 0.84,
+     "reason": "Huang and Lisa Su are honorees; chips are a regular Trump riff. Fair; wide spread.",
+     "prose": "Huang and Lisa Su are honorees; chips are a regular Trump riff. Fair; wide spread."
+    },
+    "KXTRUMPMENTION-26OCT08-GENE": {
+     "p": 0.78,
+     "reason": "The Genesis Mission commitments are the headline announcement, if he reads the script. Fair.",
+     "prose": "The Genesis Mission commitments are the headline announcement, if he reads the script. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-DATA": {
+     "p": 0.76,
+     "reason": "He brings up data centers and power plants at most AI events. Fair.",
+     "prose": "He brings up data centers and power plants at most AI events. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-BIDE": {
+     "p": 0.62,
+     "reason": "Biden comes up in most Trump remarks, less often at award ceremonies. Small YES lean.",
+     "prose": "Biden comes up in most Trump remarks, less often at award ceremonies. Small YES lean."
+    },
+    "KXTRUMPMENTION-26OCT08-TARI": {
+     "p": 0.62,
+     "reason": "Chip tariffs are a natural digression. Fair.",
+     "prose": "Chip tariffs are a natural digression. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-NUCL": {
+     "p": 0.64,
+     "reason": "Chris Wright speaks; nuclear power for AI is a common line. Fair; wide spread.",
+     "prose": "Chris Wright speaks; nuclear power for AI is a common line. Fair; wide spread."
+    },
+    "KXTRUMPMENTION-26OCT08-IRAN": {
+     "p": 0.62,
+     "reason": "Needs a foreign-policy aside or questions. Fair.",
+     "prose": "Needs a foreign-policy aside or questions. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-MANU": {
+     "p": 0.58,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-OAI": {
+     "p": 0.52,
+     "reason": "OpenAI is among the announced commitments, but he may say Sam Altman instead. Fair.",
+     "prose": "OpenAI is among the announced commitments, but he may say Sam Altman instead. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-ROBO": {
+     "p": 0.52,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXTRUMPMENTION-26OCT08-QUAN": {
+     "p": 0.52,
+     "reason": "Fair; wide spread.",
+     "prose": "Note on this contract: Fair; wide spread."
+    },
+    "KXTRUMPMENTION-26OCT08-SPAC": {
+     "p": 0.52,
+     "reason": "A favorite brag, and Isaacman is on the bill. Fair.",
+     "prose": "A favorite brag, and Isaacman is on the bill. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-MOON": {
+     "p": 0.55,
+     "reason": "NASA is on the bill. Fair; wide spread.",
+     "prose": "NASA is on the bill. Fair; wide spread."
+    },
+    "KXTRUMPMENTION-26OCT08-NOBE": {
+     "p": 0.5,
+     "reason": "Medal talk invites a Nobel comparison or his Peace Prize complaint. Fair.",
+     "prose": "Medal talk invites a Nobel comparison or his Peace Prize complaint. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-MARS": {
+     "p": 0.44,
+     "reason": "Musk tends to pull Mars in. Fair.",
+     "prose": "Musk tends to pull Mars in. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-CHIN": {
+     "p": 0.44,
+     "reason": "Contract needs 3+ mentions. Fair.",
+     "prose": "Contract needs 3+ mentions. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-NATI": {
+     "p": 0.42,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-MADE": {
+     "p": 0.4,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-CANC": {
+     "p": 0.4,
+     "reason": "Curing cancer is a stock AI-science line. Fair.",
+     "prose": "Curing cancer is a stock AI-science line. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-AUTO": {
+     "p": 0.25,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-SACK": {
+     "p": 0.22,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-VACC": {
+     "p": 0.12,
+     "reason": "Fair.",
+     "prose": "The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-CRYP": {
+     "p": 0.03,
+     "reason": "Off topic. Fair.",
+     "prose": "Off topic. The price looks fair."
+    },
+    "KXTRUMPMENTION-26OCT08-NQE": {
+     "p": 0.02,
+     "reason": "Widely reported with Trump attending.",
+     "prose": "Note on this contract: Widely reported with Trump attending."
+    }
+   }
+  },
   "KXTRUMPMENTION-26SEP28": {
    "title": "Trump Oval Office announcement (topic undisclosed)",
    "speaker": "Donald Trump",
@@ -4461,35 +4995,35 @@
   }
  },
  "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT07",
+  "event_ticker": "KXTRUMPMENTION-26OCT08",
   "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT07-ISRA",
-  "event_title": "Trump midterm rally in San Antonio, Texas",
+  "ticker": "KXTRUMPMENTION-26OCT08-TESL",
+  "event_title": "Trump at the Science: A New Golden Age Summit",
   "speaker": "Donald Trump",
-  "word": "Israel / Israeli",
-  "side": "NO",
-  "price": 0.37,
-  "yes_bid": 0.63,
-  "yes_ask": 0.64,
-  "est_yes": 0.5,
-  "est_side": 0.5,
-  "edge_raw": 0.13,
-  "fee": 0.0163,
-  "edge": 0.1137,
-  "event_time_et": "2026-10-07T19:00:00-04:00",
-  "close_time_et": "2026-10-21T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-07T05:10:38-04:00",
-  "confidence": "Medium. Four same-format rallies this week, all settled.",
+  "word": "Tesla / SpaceX",
+  "side": "YES",
+  "price": 0.74,
+  "yes_bid": 0.67,
+  "yes_ask": 0.74,
+  "est_yes": 0.84,
+  "est_side": 0.84,
+  "edge_raw": 0.1,
+  "fee": 0.0135,
+  "edge": 0.0865,
+  "event_time_et": "2026-10-08T11:00:00-04:00",
+  "close_time_et": "2026-10-22T10:00:00-04:00",
+  "price_fetched_at_et": "2026-10-08T05:04:33-04:00",
+  "confidence": "Low. No transcript count; start time and format unconfirmed.",
   "fragile": null,
-  "rationale": "Count: 1 of 3 rallies where offered (NE yes; AL, OH no). Our YES estimate is 50%. In this snapshot the NO ask is 37¢, and the gap after the taker fee is about 11¢ per contract. That is our opinion, not a trade instruction.",
-  "reason": "1 of 3 rallies where offered (NE yes; AL, OH no). 64¢ looks rich.",
+  "rationale": "Note on this contract: Introducing Musk almost always brings up Tesla or SpaceX. YES lean, but check the spread. Our YES estimate is 84%. In this snapshot the YES ask is 74¢, and the gap after the taker fee is about 9¢ per contract. That is our opinion, not a trade instruction.",
+  "reason": "Introducing Musk almost always brings up Tesla or SpaceX. YES lean, but check the spread.",
   "url": "https://kalshi.com/markets/kxtrumpmention",
   "selection": {
-   "tier": 1,
-   "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 8,
-   "tied_within_2c": 1,
-   "skipped_repeat": null,
+   "tier": 2,
+   "tier_note": "no medium-confidence pick cleared the bar; best non-fragile pick",
+   "candidates": 4,
+   "tied_within_2c": 2,
+   "skipped_repeat": "KXTRUMPMENTION-26OCT07-ISRA",
    "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
   }
  }
