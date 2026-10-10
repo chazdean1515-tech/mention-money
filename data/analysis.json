@@ -1,5 +1,5 @@
 {
- "updated_at_et": "2026-10-09T05:06:34-04:00",
+ "updated_at_et": "2026-10-10T05:10:41-04:00",
  "min_edge": 0.05,
  "fee_model": "Kalshi taker fee ≈ ceil(0.07·C·p·(1−p)) dollars; edge = est − price − 0.07·p·(1−p) per contract",
  "events": {
@@ -5470,37 +5470,5 @@
    }
   }
  },
- "play_of_the_day": {
-  "event_ticker": "KXTRUMPMENTION-26OCT09",
-  "series_ticker": "KXTRUMPMENTION",
-  "ticker": "KXTRUMPMENTION-26OCT09-ZOHR",
-  "event_title": "Trump midterm rally in Syracuse, New York",
-  "speaker": "Donald Trump",
-  "word": "Zohran / Mamdani",
-  "side": "YES",
-  "price": 0.77,
-  "yes_bid": 0.76,
-  "yes_ask": 0.77,
-  "est_yes": 0.86,
-  "est_side": 0.86,
-  "edge_raw": 0.09,
-  "fee": 0.0124,
-  "edge": 0.0776,
-  "event_time_et": "2026-10-09T19:00:00-04:00",
-  "close_time_et": "2026-10-23T10:00:00-04:00",
-  "price_fetched_at_et": "2026-10-09T05:05:13-04:00",
-  "confidence": "Medium. Same rally base rates as the October stops, adjusted for New York hooks.",
-  "fragile": null,
-  "rationale": "A New York rally makes Mamdani one of the most natural foils on the board, and Trump names him often. Slight YES lean. Our YES estimate is 86%. In this snapshot the YES ask is 77¢, and the gap after the taker fee is about 8¢ per contract. That is our opinion, not a trade instruction.",
-  "reason": "A New York rally makes Mamdani one of the most natural foils on the board, and Trump names him often. Slight YES lean.",
-  "url": "https://kalshi.com/markets/kxtrumpmention",
-  "selection": {
-   "tier": 1,
-   "tier_note": "medium-or-better confidence, not flagged fragile",
-   "candidates": 3,
-   "tied_within_2c": 2,
-   "skipped_repeat": "KXTRUMPMENTION-26OCT08-TESL",
-   "rule": "max edge after fee; ties within 2¢ go to the soonest event; skip yesterday's ticker when another pick exists"
-  }
- }
+ "play_of_the_day": null
 }
