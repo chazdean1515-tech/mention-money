@@ -1,0 +1,18 @@
+{
+  "_note": "Referral codes are EMPTY until Charlie signs up for each program. With an empty code the plain link is used (no referral credit). Fill 'code' and set 'ref_url' using {code}, {chain}, {address} placeholders. A slot is only shown if 'enabled' is true and the chain is listed.",
+  "disclosure": "Some trade links may be referral links. If you sign up or trade through them, Mention Money may earn a commission at no extra cost to you. Referral links never affect rankings or the Mention Money Score.",
+  "terminals": [
+    {"id":"gmgn","name":"GMGN","enabled":true,"chains":["solana","base","bsc"],"code":"","url":"https://gmgn.ai/{gchain}/token/{address}","ref_url":"https://gmgn.ai/{gchain}/token/{code}_{address}"},
+    {"id":"photon","name":"Photon","enabled":true,"chains":["solana","base","bsc"],"code":"","url":"https://photon-sol.tinyastro.io/en/lp/{pool}","ref_url":"https://photon-sol.tinyastro.io/@{code}"},
+    {"id":"bullx","name":"BullX","enabled":true,"chains":["solana","base","bsc"],"code":"","url":"https://neo.bullx.io/terminal?chainId={bullx_chain}&address={address}","ref_url":"https://neo.bullx.io/terminal?chainId={bullx_chain}&address={address}&r={code}"},
+    {"id":"axiom","name":"Axiom","enabled":true,"chains":["solana"],"code":"","url":"https://axiom.trade/meme/{pool}","ref_url":"https://axiom.trade/@{code}"},
+    {"id":"bananagun","name":"Banana Gun","enabled":true,"chains":["solana","base","bsc"],"code":"","url":"https://t.me/BananaGunSolana_bot?start={address}","ref_url":"https://t.me/BananaGunSolana_bot?start=ref_{code}_{address}"},
+    {"id":"maestro","name":"Maestro","enabled":true,"chains":["solana","base","bsc"],"code":"","url":"https://t.me/maestro?start={address}","ref_url":"https://t.me/maestro?start={address}-{code}"},
+    {"id":"dexscreener","name":"DexScreener","enabled":true,"chains":["solana","base","bsc","robinhood"],"code":"","url":"https://dexscreener.com/{dschain}/{pool}","ref_url":""}
+  ],
+  "wallets": [
+    {"id":"phantom","name":"Phantom","enabled":false,"code":"","url":"https://phantom.com/","ref_url":""},
+    {"id":"robinhood_wallet","name":"Robinhood Wallet","enabled":false,"code":"","url":"https://robinhood.com/us/en/web3-wallet/","ref_url":""},
+    {"id":"metamask","name":"MetaMask","enabled":false,"code":"","url":"https://metamask.io/","ref_url":""}
+  ]
+}
