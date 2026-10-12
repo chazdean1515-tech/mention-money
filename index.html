@@ -3,31 +3,51 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mention Money: hot meme coins on Solana, Base, BNB Chain and Robinhood Chain</title>
-<meta name="description" content="Daily board of the meme coins trading hottest on Solana, Base, BNB Chain and Robinhood Chain, with 24h volume, price change, liquidity and X mentions.">
+<title>Mention Money: Meme Coin Tracker for Solana, Base, BNB Chain and Robinhood Chain</title>
+<meta name="description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain, with 24h volume, price change, liquidity and contract addresses. Not financial advice. 18+.">
 <link rel="canonical" href="https://mentionmoney.com/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mentionmoney.com/">
+<meta property="og:site_name" content="Mention Money">
+<meta property="og:title" content="Mention Money: Meme Coin Tracker">
+<meta property="og:description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain. Not financial advice.">
+<meta property="og:image" content="https://mentionmoney.com/assets/og-coins.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mention Money Meme Coin Tracker: Solana, Base, BNB Chain, Robinhood Chain. mentionmoney.com">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@MentionMoneyHQ">
+<meta name="twitter:title" content="Mention Money: Meme Coin Tracker">
+<meta name="twitter:description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain. Not financial advice.">
+<meta name="twitter:image" content="https://mentionmoney.com/assets/og-coins.jpg">
+<meta name="twitter:image:alt" content="Mention Money Meme Coin Tracker: Solana, Base, BNB Chain, Robinhood Chain. mentionmoney.com">
+<meta name="theme-color" content="#05060f">
 <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/favicon.ico" sizes="any">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="preload" href="/assets/fonts/cinzel-decorative-900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?v=25">
-<link rel="stylesheet" href="/coins.css?v=1">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;700&amp;display=swap">
-<link rel="stylesheet" href="/neo.css?v=1">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
+<link rel="stylesheet" href="/neo.css?v=2">
+<link rel="stylesheet" href="/coins.css?v=2">
+<script>(function(){var h=location.hash;if(h&&h!=="#board"&&!/^#c-/.test(h)){location.replace("/kalshi/"+h);}})();</script>
 </head>
-<body>
+<body class="coins">
 <header>
   <nav class="topnav" aria-label="Sections"><a href="/" aria-current="page">Meme Coin Tracker</a><a href="/kalshi/">Kalshi Plays</a></nav>
-  <h1><span class="brand"><span class="dollar" aria-hidden="true">$</span><span class="brand-t">Mention Money</span></span> <span class="sub">The meme coins X is talking about and traders are piling into</span></h1>
+  <h1><span class="brand"><span class="dollar" aria-hidden="true">$</span><span class="brand-t">Mention Money</span></span> <span class="sub">Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain</span></h1>
   <p id="meta" class="meta">Loading snapshot…</p>
-  <div class="chain-tabs" id="tabs" role="tablist"></div>
+  <nav class="chain-tabs" id="tabs" aria-label="Jump to chain"></nav>
 </header>
 <main id="board">
-  <p class="risk"><b>High risk.</b> Meme coins are extremely volatile and many go to zero; rug pulls, honeypots and fake volume are common. "Boosted" means a project paid DexScreener for promotion. This board is information, not a recommendation. Not financial advice. Always verify the contract address yourself.</p>
+  <p class="moved">Kalshi Mentions plays and Play of the Day moved to <a href="/kalshi/">/kalshi/</a>.</p>
+  <p class="risk"><b>High risk. Not financial advice.</b> Meme coins are extremely volatile, and you can lose all the money you put in. Many go to zero. Rug pulls, honeypots and fake or wash-traded volume are common. This board shows what's trading, not what to buy. Nothing here is a recommendation or guarantee. 'Boosted' means the project paid DexScreener for promotion. Mention Money gets no payment from any coin listed. Check the contract yourself before trading.</p>
+  <p id="stale" class="stale" role="status" hidden></p>
   <div id="tables"></div>
   <section class="notes">
     <h2>How to read this</h2>
-    <p>Coins are ranked by 24-hour trading volume among each chain's trending pools on GeckoTerminal, after removing majors, stablecoins, wrapped assets and tokens with over $500M FDV or pools older than a year. Liquidity is the USD value in the top pool. Mentions is the count of X posts with the coin's cashtag in the last 24 hours, where we have it.</p>
+    <p>Coins are ranked by 24-hour trading volume among each chain's trending pools on GeckoTerminal. We remove majors, stablecoins, wrapped and tokenized assets, tokens over $500M fully diluted value, pools older than a year, and pools with less than $50K liquidity. Liquidity is the USD value in the top pool. "New" means the pool was created in the last 24 hours. X mention counts are coming soon.</p>
   </section>
 </main>
 <footer>
@@ -36,8 +56,9 @@
     <a href="https://x.com/MentionMoneyHQ" rel="me noopener">@MentionMoneyHQ on X</a>
   </nav>
   <p>Market data: GeckoTerminal and DexScreener public APIs, daily snapshot, not live. Not financial advice.</p>
+  <p>18+ only. Follow the laws where you live; crypto trading may be restricted in your jurisdiction.</p>
 </footer>
-<script src="/data/coins.js?v=1"></script>
-<script src="/coins.js?v=1"></script>
+<script src="/data/coins.js?v=2"></script>
+<script src="/coins.js?v=2"></script>
 </body>
 </html>

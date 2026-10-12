@@ -59,5 +59,9 @@ Contact is https://x.com/MentionMoneyHQ until the domain has an email address. D
 ## Crypto revamp (draft branch)
 - Homepage `/` is the meme coin tracker: `build_coins.py` -> `data/coins.js`, rendered by `coins.js` + `coins.css`.
   Sources: GeckoTerminal trending pools (solana, base, bsc, robinhood) and DexScreener boosts. No keys.
-- X mentions: `data/mentions.json` (`{"SYMBOL": posts_24h, "_source": "..."}`) is merged in if present; otherwise the column shows "—".
+- Filters: majors/stables/wrapped/tokenized assets out, FDV <= $500M, pool < 1 year old, liquidity >= $50K. "New <24h" badge from pool_created_at. `generated_ts` lets the page warn when the snapshot is >26h old.
+- Homepage OG image: `assets/og-coins.jpg` (1200x630). `/kalshi/` keeps `assets/og-image.jpg`. Domain stays the bare apex `mentionmoney.com` (CNAME unchanged).
+- Old homepage hashes (`#potd`, `#events`, event ids) redirect to `/kalshi/` with the same hash. `404.html` links `/` and `/kalshi/`.
+- Theme: `neo.css` (Inter via one Google Fonts request; Cinzel stays for the wordmark), loaded on every page. Copy buttons have a clipboard fallback.
+- X mentions (column shows "Coming soon"): `data/mentions.json` (`{"SYMBOL": posts_24h, "_source": "..."}`) is merged in if present; otherwise the column shows "—".
 - Kalshi board moved to `/kalshi/` (same `app.js`, `data/board.js`, Play of the Day). `publish.sh` runs both builders.

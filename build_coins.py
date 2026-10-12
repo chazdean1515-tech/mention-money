@@ -9,7 +9,7 @@ step (e.g. the agent's X post-count tool, or X API recent counts if X_BEARER_TOK
 Usage: python3 build_coins.py [--per-chain 10]
 """
 import json, os, sys, time, urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 from zoneinfo import ZoneInfo
 HERE = os.path.dirname(os.path.abspath(__file__)); DATA = os.path.join(HERE, "data")
 ET = ZoneInfo("America/New_York")
@@ -18,6 +18,7 @@ CHAINS = [("solana", "Solana", "solana"), ("base", "Base", "base"), ("bsc", "BNB
 SKIP = {"SOL","WSOL","ETH","WETH","CBETH","BNB","WBNB","USDC","USDT","USD1","DAI","FDUSD","USDE","BTC","WBTC","CBBTC","BTCB",
         "AERO","CAKE","JUP","RAY","ORCA","JITOSOL","MSOL","LINK","UNI","VIRTUAL","ZORA","EURC","PYUSD","XAUT","W","ZRO","ICP","XDP","PENGU","TRUMP","HYPE","WLD"}
 import re
+MIN_LIQ = 50_000  # USD in top pool; thinner pools are too easy to fake
 NONMEME = re.compile(r"tokeni[sz]ed|xstock|wrapped|bridged|stock|etf|treasury|usd", re.I)
 STOCK = re.compile(r"^[A-Z]{2,5}[cB]$")  # e.g. NVDAc, SKHYB tokenized equities
 def get(url):
@@ -41,7 +42,7 @@ def main():
         for b in get(u) or []: boosted.add((b.get("chainId"), (b.get("tokenAddress") or "").lower()))
     mpath = os.path.join(DATA, "mentions.json")
     mentions = json.load(open(mpath)) if os.path.exists(mpath) else {}
-    out = {"generated_et": datetime.now(ET).strftime("%Y-%m-%d %H:%M ET"), "chains": [], "mentions_source": mentions.get("_source") if mentions else None}
+    out = {"generated_et": datetime.now(ET).strftime("%Y-%m-%d %H:%M ET"), "generated_ts": int(time.time()), "chains": [], "mentions_source": mentions.get("_source") if mentions else None}
     for net, name, ds in CHAINS:
         seen, rows = set(), []
         for page in (1, 2):
@@ -55,12 +56,15 @@ def main():
                 fdv = f(a.get("fdv_usd")); created = (a.get("pool_created_at") or "")[:10]
                 # meme heuristic: not a known major, FDV under $500M, pool younger than ~1 year
                 if sym.upper() in SKIP or addr.lower() in seen or (fdv or 0) > 5e8 or (created and created < OLD): continue
+                liq = f(a.get("reserve_in_usd"))
+                if (liq or 0) < MIN_LIQ: continue
                 if NONMEME.search(t.get("name") or "") or STOCK.match(sym): continue
                 seen.add(addr.lower())
                 rows.append({"symbol": sym, "name": t.get("name") or sym, "address": addr, "chain": name,
                     "price_usd": f(a.get("base_token_price_usd")), "vol24": f((a.get("volume_usd") or {}).get("h24")),
                     "chg24": f((a.get("price_change_percentage") or {}).get("h24")), "liq": f(a.get("reserve_in_usd")),
                     "fdv": f(a.get("fdv_usd")), "created": (a.get("pool_created_at") or "")[:10],
+                    "is_new": bool(a.get("pool_created_at")) and (datetime.now(timezone.utc) - datetime.fromisoformat(a["pool_created_at"].replace("Z","+00:00"))).total_seconds() < 86400,
                     "boosted": (ds, addr.lower()) in boosted, "mentions": mentions.get(sym.upper()),
                     "url": f"https://dexscreener.com/{ds}/{a.get('address')}"})
         rows.sort(key=lambda r: r["vol24"] or 0, reverse=True)
