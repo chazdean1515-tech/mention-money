@@ -55,3 +55,9 @@ After a refresh (`python3 fetch.py`, `python3 research/build_analysis.py`), repu
 It validates the JSON first, does nothing if nothing changed, and Pages redeploys within a minute or two. Raw API caches (`data/cache/`, `data/series.json`, `data/event_titles.json`), `__pycache__/`, venvs and logs are git-ignored and never published.
 
 Contact is https://x.com/MentionMoneyHQ until the domain has an email address. Do not invent one.
+
+## Crypto revamp (draft branch)
+- Homepage `/` is the meme coin tracker: `build_coins.py` -> `data/coins.js`, rendered by `coins.js` + `coins.css`.
+  Sources: GeckoTerminal trending pools (solana, base, bsc, robinhood) and DexScreener boosts. No keys.
+- X mentions: `data/mentions.json` (`{"SYMBOL": posts_24h, "_source": "..."}`) is merged in if present; otherwise the column shows "—".
+- Kalshi board moved to `/kalshi/` (same `app.js`, `data/board.js`, Play of the Day). `publish.sh` runs both builders.

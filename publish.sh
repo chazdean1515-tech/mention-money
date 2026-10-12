@@ -7,6 +7,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 python3 build_board.py
+python3 build_coins.py || echo "coin refresh failed; keeping previous data/coins.js" >&2
 # Custom domain is the apex (it has the working certificate; www redirects to it).
 # Don't flip this back and forth: every change restarts GitHub's certificate request.
 printf 'mentionmoney.com' > CNAME
@@ -15,8 +16,8 @@ for f in data/markets.json data/analysis.json; do
 done
 python3 -c 'import json; raw=open("data/board.js").read().strip(); assert raw.startswith("window.MM_BOARD=") and raw.endswith(";"); json.loads(raw[len("window.MM_BOARD="):-1])'
 git add CNAME _config.yml robots.txt sitemap.xml favicon.ico apple-touch-icon.png \
-  data/markets.json data/analysis.json data/last_potd.json data/board.js \
-  index.html about.html contact.html privacy.html terms.html 404.html \
+  data/markets.json data/analysis.json data/last_potd.json data/board.js data/coins.js \
+  index.html kalshi/index.html coins.js coins.css build_coins.py about.html contact.html privacy.html terms.html 404.html \
   app.js style.css build_board.py README.md fetch.py screenshot.py screenshot_potd.py publish.sh .gitignore \
   research/ assets/
 git add screenshots/*.png 2>/dev/null || true
