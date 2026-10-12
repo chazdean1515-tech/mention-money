@@ -24,3 +24,36 @@
 .coins .tnote{margin:.5rem 0 0;font-size:.75rem;color:#8fa0d8}
 .coins code{font-size:.8rem}
 @media (max-width:760px){.coins .swipe{display:block}}
+.coins .chain-tabs a.sec{border-style:dashed}
+.coins .board-h{margin:1.25rem 0 0;font-size:1.6rem;background:linear-gradient(90deg,var(--neo-c),var(--neo-p));-webkit-background-clip:text;background-clip:text;color:transparent}
+.coins .mstatus{font-size:.8rem;color:#8fa0d8;margin:.5rem 0}
+.coins .spark{display:block;margin-top:2px;fill:none;stroke-width:1.5}
+.coins .spark.up{stroke:#3dffb0}.coins .spark.dn{stroke:#ff5c8a}.coins .spark.m{stroke:var(--neo-p)}
+.coins .score{display:inline-block;min-width:2.2rem;text-align:center;font-weight:700;font-size:1.05rem;padding:.15rem .4rem;border-radius:8px;background:linear-gradient(135deg,rgba(34,228,255,.18),rgba(168,85,247,.25));box-shadow:0 0 12px rgba(34,228,255,.18)}
+.coins .score.pen{background:rgba(255,92,138,.18);box-shadow:none}
+.coins .kind{display:block;color:#ffd99a;font-size:.65rem}
+.coins .tags{display:block}.coins .tag.flag{background:#b91c3c}.coins .tag.div{background:#334155}.coins .tag.spon{background:#a16207}
+.coins .who{display:block;font-size:.7rem;opacity:.75}
+.coins .star{min-width:44px;min-height:44px;background:none;border:0;color:#ffd166;font-size:1.1rem;cursor:pointer;vertical-align:middle;margin-left:-.6rem}
+.coins td.chips{white-space:normal;min-width:10rem}
+.coins .chip{display:inline-block;font-size:.65rem;border-radius:999px;padding:.05rem .45rem;margin:.1rem .15rem .1rem 0;border:1px solid}
+.coins .chip.ok{color:#3dffb0;border-color:rgba(61,255,176,.4)}.coins .chip.warn{color:#ffd166;border-color:rgba(255,209,102,.4)}.coins .chip.bad{color:#ff5c8a;border-color:rgba(255,92,138,.5)}.coins .chip.unk{color:#8fa0d8;border-color:rgba(143,160,216,.3)}
+.coins .src{font-size:.6rem;color:#6f7aa8;margin-left:.2rem}
+.coins .trade summary{cursor:pointer;min-height:44px;display:flex;align-items:center;color:var(--neo-c)}
+.coins .trade .tl{display:flex;flex-direction:column;gap:.15rem;padding:.25rem 0}
+.coins .trade .tl a{min-height:32px;display:flex;align-items:center}
+.coins .grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,320px),1fr));gap:0 1rem}
+.coins .side{background:var(--glass);border:1px solid var(--edge);border-radius:16px;padding:1rem 1.25rem;margin:1rem 0;min-width:0}
+.coins .side h2{margin:0 0 .25rem;font-size:1.15rem}.coins .side .hint{margin:0 0 .5rem;font-size:.75rem;color:#8fa0d8}
+.coins .side li{margin:.3rem 0}.coins .side .empty{list-style:none;margin-left:-1.2rem;color:#8fa0d8;font-style:italic}
+.coins .cn{font-size:.7rem;color:#8fa0d8;border:1px solid var(--edge);border-radius:6px;padding:0 .3rem}
+.coins .featured{border:1px solid rgba(161,98,7,.6);background:rgba(161,98,7,.12);border-radius:14px;padding:.75rem 1rem}
+.coins .featured small{display:block;color:#8fa0d8}
+.coins .alerts{border-style:dashed}
+.coins .aff{font-size:.8rem;color:#8fa0d8}
+.coins .rep td,.coins .rep th{padding:.4rem .6rem;border-bottom:1px solid rgba(140,160,255,.08);text-align:left;white-space:nowrap}
+@media (max-width:760px){html body.coins header{position:static}}
+.coins .stick{max-width:16rem}.coins .who{white-space:normal}
+@media (max-width:760px){.coins .stick{min-width:7.5rem;max-width:9rem}.coins .who{display:none}.coins .chain td small{white-space:normal}}
+.coins .tags{display:flex;flex-wrap:wrap;gap:.2rem}.coins .tags .tag{white-space:nowrap}
+@media (max-width:760px){.coins .chain td small.who{display:none}}

@@ -25,3 +25,4 @@ logs/
 *.pem
 *.key
 cookies*
+data/x_raw/

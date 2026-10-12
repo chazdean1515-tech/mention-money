@@ -1,0 +1,128 @@
+{
+ "date": "2026-10-12",
+ "ts": 1791820702,
+ "picks": [
+  {
+   "key": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "DOPE",
+   "address": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+   "price_usd": 0.0006820889812755267,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0xb200000000000000000000cfbdf64a8706a94a01",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "BLUECHIP",
+   "address": "0xb200000000000000000000cfbdf64a8706a94a01",
+   "price_usd": 0.00633648483178757,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x30117e4bc17d7b044194b76a38365c53b72f7d49",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "GWEI",
+   "address": "0x30117e4bc17d7b044194b76a38365c53b72f7d49",
+   "price_usd": 0.0207268302310655,
+   "score": 81,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PONS",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "price_usd": 0.293970543908766,
+   "score": 92,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x370dd1181288392843bf52d998eb85c735d91688",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "WISP",
+   "address": "0x370dd1181288392843bf52d998eb85c735d91688",
+   "price_usd": 0.013566969062322,
+   "score": 90,
+   "score_kind": "full"
+  },
+  {
+   "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "CLAUDIA",
+   "address": "2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "price_usd": 0.005267363512699169,
+   "score": 88,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+   "symbol": "DOPE",
+   "chain": "Solana",
+   "m24": 2262
+  },
+  {
+   "key": "solana:Hg5Ja55T5wESq4vyFoiVCMeHXtGyVA69X2UHq8hgpump",
+   "symbol": "baton",
+   "chain": "Solana",
+   "m24": 1657
+  },
+  {
+   "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "symbol": "CLAUDIA",
+   "chain": "Solana",
+   "m24": 1454
+  },
+  {
+   "key": "solana:8ZP5CzbPL1fmP8dn1GEmLd8xw1JdudUF5Dk7EpLxpump",
+   "symbol": "Solamians",
+   "chain": "Solana",
+   "m24": 1439
+  },
+  {
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "symbol": "CASHCAT",
+   "chain": "Robinhood Chain",
+   "m24": 956
+  },
+  {
+   "key": "solana:DzMwArmdzPqcqgvyqAmTxy79XdA9NwK9mMteqWLJpump",
+   "symbol": "Normie",
+   "chain": "Solana",
+   "m24": 943
+  },
+  {
+   "key": "solana:GTBxUiw6wJdmmkCGZgRHLyYxqu1vG4KtRpeox6yDpump",
+   "symbol": "JEANPHIL",
+   "chain": "Solana",
+   "m24": 894
+  },
+  {
+   "key": "robinhood:0x43fc3c8440d85d7df99ecfbc6a267de8327f923b",
+   "symbol": "CLAUDIA",
+   "chain": "Robinhood Chain",
+   "m24": 887
+  },
+  {
+   "key": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+   "symbol": "HOOKR",
+   "chain": "Robinhood Chain",
+   "m24": 634
+  },
+  {
+   "key": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "symbol": "STONK",
+   "chain": "Solana",
+   "m24": 603
+  }
+ ]
+}

@@ -65,3 +65,15 @@ Contact is https://x.com/MentionMoneyHQ until the domain has an email address. D
 - Theme: `neo.css` (Inter via one Google Fonts request; Cinzel stays for the wordmark), loaded on every page. Copy buttons have a clipboard fallback.
 - X mentions (column shows "Coming soon"): `data/mentions.json` (`{"SYMBOL": posts_24h, "_source": "..."}`) is merged in if present; otherwise the column shows "—".
 - Kalshi board moved to `/kalshi/` (same `app.js`, `data/board.js`, Play of the Day). `publish.sh` runs both builders.
+
+## The Mention Board (v2)
+Daily order (the 5 AM routine):
+1. `python3 build_coins.py --stage candidates` → `data/candidates.json` (12 coins per chain) and `data/x_queries.json` (one X query per coin: contract address, plus the cashtag when the ticker is 4+ chars and not a common word).
+2. X collection. Either
+   - agent route (works today): for each query run `x.get_posts_counts_recent` (granularity=hour, start_time from x_queries.json) and `x.search_posts_all` (max_results=100 → the tool returns 25, expansions=author_id, user.fields=public_metrics,created_at,username, post.fields=created_at,author_id, same start_time), save results, and write `data/x_raw/manifest-YYYY-MM-DD.json` = `{coin_key: {"counts": path, "search": path}}`. ~96 reads/day; the shared X access sometimes returns 429, so retry after a minute. `data/x_raw/` is git-ignored.
+   - API route: `X_BEARER_TOKEN=... python3 scripts/ingest_x.py --api` (needs a paid X API plan with counts).
+3. `./publish.sh` runs `scripts/ingest_x.py --manifest ...` if today's manifest exists, then `build_coins.py` (sparklines, RugCheck/GoPlus safety, Score, sections, `data/history/<date>.json`, `reports/<date>.html`), then commits and pushes.
+4. Optional X image: `python3 scripts/top5_card.py /workspace/mm-top5.png` (1200x675, headless Chrome).
+
+Score: see "How the Mention Money Score works" on the page. Missing mention terms are dropped and reweighted; labels: `full`, `no-account-sample`, `volume-only`. Red flags halve the score. Receipts compare each day's picks with today's price; Cooling Off needs yesterday's history file.
+Monetization config: `data/referrals.json` (codes empty until signed up; plain links used), `data/featured.json` (sponsored slot, hidden, never scored). Trade-link URL templates for Photon, Axiom, Banana Gun and Maestro are best guesses; check them when you add codes.

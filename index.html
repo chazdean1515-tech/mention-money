@@ -3,13 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Mention Money: Meme Coin Tracker for Solana, Base, BNB Chain and Robinhood Chain</title>
-<meta name="description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain, with 24h volume, price change, liquidity and contract addresses. Not financial advice. 18+.">
+<title>The Mention Board · Mention Money: meme coins on Solana, Base, BNB Chain and Robinhood Chain</title>
+<meta name="description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain, ranked by the Mention Money Score: X mentions, 24h volume, mention acceleration and liquidity. Not financial advice. 18+.">
 <link rel="canonical" href="https://mentionmoney.com/">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://mentionmoney.com/">
 <meta property="og:site_name" content="Mention Money">
-<meta property="og:title" content="Mention Money: Meme Coin Tracker">
+<meta property="og:title" content="The Mention Board · Mention Money">
 <meta property="og:description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain. Not financial advice.">
 <meta property="og:image" content="https://mentionmoney.com/assets/og-coins.jpg">
 <meta property="og:image:type" content="image/jpeg">
@@ -18,7 +18,7 @@
 <meta property="og:image:alt" content="Mention Money Meme Coin Tracker: Solana, Base, BNB Chain, Robinhood Chain. mentionmoney.com">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@MentionMoneyHQ">
-<meta name="twitter:title" content="Mention Money: Meme Coin Tracker">
+<meta name="twitter:title" content="The Mention Board · Mention Money">
 <meta name="twitter:description" content="Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain. Not financial advice.">
 <meta name="twitter:image" content="https://mentionmoney.com/assets/og-coins.jpg">
 <meta name="twitter:image:alt" content="Mention Money Meme Coin Tracker: Solana, Base, BNB Chain, Robinhood Chain. mentionmoney.com">
@@ -29,36 +29,49 @@
 <link rel="preload" href="/assets/fonts/cinzel-decorative-900.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?v=25">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap">
-<link rel="stylesheet" href="/neo.css?v=2">
-<link rel="stylesheet" href="/coins.css?v=2">
+<link rel="stylesheet" href="/neo.css?v=3">
+<link rel="stylesheet" href="/coins.css?v=3">
 <script>(function(){var h=location.hash;if(h&&h!=="#board"&&!/^#c-/.test(h)){location.replace("/kalshi/"+h);}})();</script>
 </head>
 <body class="coins">
 <header>
-  <nav class="topnav" aria-label="Sections"><a href="/" aria-current="page">Meme Coin Tracker</a><a href="/kalshi/">Kalshi Plays</a></nav>
+  <nav class="topnav" aria-label="Sections"><a href="/" aria-current="page">The Mention Board</a><a href="/reports/">Reports</a><a href="/kalshi/">Kalshi Plays</a></nav>
   <h1><span class="brand"><span class="dollar" aria-hidden="true">$</span><span class="brand-t">Mention Money</span></span> <span class="sub">Daily snapshot of the most-traded meme coins on Solana, Base, BNB Chain and Robinhood Chain</span></h1>
   <p id="meta" class="meta">Loading snapshot…</p>
-  <nav class="chain-tabs" id="tabs" aria-label="Jump to chain"></nav>
+  <nav class="chain-tabs" id="tabs" aria-label="Jump to section"></nav>
 </header>
 <main id="board">
   <p class="moved">Kalshi Mentions plays and Play of the Day moved to <a href="/kalshi/">/kalshi/</a>.</p>
   <p class="risk"><b>High risk. Not financial advice.</b> Meme coins are extremely volatile, and you can lose all the money you put in. Many go to zero. Rug pulls, honeypots and fake or wash-traded volume are common. This board shows what's trading, not what to buy. Nothing here is a recommendation or guarantee. 'Boosted' means the project paid DexScreener for promotion. Mention Money gets no payment from any coin listed. Check the contract yourself before trading.</p>
   <p id="stale" class="stale" role="status" hidden></p>
+  <p id="mstatus" class="mstatus"></p>
+  <section id="featured" class="featured" hidden></section>
+  <h2 class="board-h">The Mention Board</h2>
   <div id="tables"></div>
+  <div class="grid2">
+    <section class="side" id="heating"><h2>Heating Up</h2><p class="hint">Biggest jump in X posts: last full hour vs. the 24h hourly average.</p><ol></ol></section>
+    <section class="side" id="fresh"><h2>Fresh Mints</h2><p class="hint">Pools under 24 hours old that already have X posts.</p><ol></ol></section>
+    <section class="side" id="cooling"><h2>Cooling Off</h2><p class="hint">Yesterday's mention leaders with at least 30% fewer posts today.</p><ol></ol></section>
+    <section class="side" id="watch"><h2>Your Watchlist</h2><p class="hint">Saved in this browser only. No login.</p><ol></ol></section>
+  </div>
+  <section class="side" id="receipts"><h2>Receipts</h2><p class="hint">Each day's top pick per chain, and how its price has moved since. Picks are the highest Score, not advice.</p><div class="tw"><table><thead><tr><th class="stick">Coin</th><th>Picked</th><th>Score then</th><th>Price then</th><th>Price now</th><th>Since pick</th></tr></thead><tbody></tbody></table></div></section>
+  <section class="side alerts"><h2>Get alerts — coming soon</h2><p>Alerts when a coin starts heating up need accounts and a server, which we don't run yet. We aren't collecting emails. Follow <a href="https://x.com/MentionMoneyHQ" rel="me noopener">@MentionMoneyHQ</a> for the launch.</p></section>
   <section class="notes">
-    <h2>How to read this</h2>
-    <p>Coins are ranked by 24-hour trading volume among each chain's trending pools on GeckoTerminal. We remove majors, stablecoins, wrapped and tokenized assets, tokens over $500M fully diluted value, pools older than a year, and pools with less than $50K liquidity. Liquidity is the USD value in the top pool. "New" means the pool was created in the last 24 hours. X mention counts are coming soon.</p>
+    <h2>How the Mention Money Score works</h2>
+    <p>Score is 0–100, a percentile across every coin on the board. It mixes four things, compared within each chain: <b>M</b>, how many distinct X accounts posted the contract address or cashtag in 24 hours, weighted by followers (under 1K = 0.5, 1K–50K = 1, over 50K = 2, skipping new or bot-like accounts; estimated from a sample of up to 25 posts per coin and scaled to the full count); <b>V</b>, 24h volume; <b>A</b>, posts in the last full hour divided by the 24h hourly average (capped at 10); and <b>L</b>, liquidity up to $50K. Raw = (0.40·M + 0.35·V + 0.25·A) × L. When mention data is missing, the missing terms are dropped and the rest reweighted, and the score says "volume-only". A coin with a red flag (top 10 holders over 50%, mint or freeze not renounced, failed honeypot check) has its score halved.</p>
+    <p>"Early or shilled": many mentions, little volume. "Whale-driven": big volume, few mentions. Safety data comes from RugCheck (Solana) and GoPlus (Base, BNB Chain, Robinhood Chain). These checks miss things. We list coins with at least $50K liquidity in pools under a year old, and drop majors, stablecoins and tokenized assets.</p>
   </section>
 </main>
 <footer>
   <nav class="foot-links" aria-label="Site">
-    <a href="/kalshi/">Kalshi Plays</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a>
+    <a href="/reports/">Reports</a><a href="/kalshi/">Kalshi Plays</a><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/privacy.html">Privacy</a><a href="/terms.html">Terms</a>
     <a href="https://x.com/MentionMoneyHQ" rel="me noopener">@MentionMoneyHQ on X</a>
   </nav>
-  <p>Market data: GeckoTerminal and DexScreener public APIs, daily snapshot, not live. Not financial advice.</p>
+  <p>Market data: GeckoTerminal, DexScreener, RugCheck and GoPlus public APIs. X data: post counts and samples from X. Daily snapshot, not live. Not financial advice.</p>
+  <p id="aff" class="aff">Some trade links may be referral links. If you sign up or trade through them, Mention Money may earn a commission at no extra cost to you. Referral links and sponsored placements never affect rankings or the Mention Money Score.</p>
   <p>18+ only. Follow the laws where you live; crypto trading may be restricted in your jurisdiction.</p>
 </footer>
-<script src="/data/coins.js?v=2"></script>
-<script src="/coins.js?v=2"></script>
+<script src="/data/coins.js?v=3"></script>
+<script src="/coins.js?v=3"></script>
 </body>
 </html>
