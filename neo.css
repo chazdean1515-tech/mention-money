@@ -1,0 +1,20 @@
+/* Futuristic theme: dark, neon cyan/purple, glass cards. Loaded after style.css on /, /kalshi/ and docs.
+   Selectors are prefixed with html body to win over style.css without !important. */
+:root{--neo-c:#22e4ff;--neo-p:#a855f7;--neo-bg:#05060f;--glass:rgba(255,255,255,.045);--edge:rgba(140,160,255,.16)}
+html{background:var(--neo-bg)}
+html body{color:#e6ecff;font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;background:radial-gradient(1200px 600px at 10% -10%,rgba(168,85,247,.22),transparent 60%),radial-gradient(1000px 500px at 100% 0,rgba(34,228,255,.16),transparent 60%),var(--neo-bg);background-attachment:fixed}
+html body h1,html body h2,html body h3{letter-spacing:.01em}
+html body .brand-t{background:linear-gradient(90deg,var(--neo-c),var(--neo-p));-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none;filter:drop-shadow(0 0 12px rgba(34,228,255,.35))}
+html body .dollar{color:var(--neo-c);border-color:var(--neo-c);box-shadow:0 0 14px rgba(34,228,255,.5)}
+html body header{backdrop-filter:blur(14px);background:rgba(8,10,25,.7);border-bottom:1px solid var(--edge)}
+html body .topnav{display:flex;gap:1rem;margin-bottom:.25rem;font-weight:600}
+html body .topnav a{display:inline-flex;align-items:center;min-height:44px;color:inherit;opacity:.75;text-decoration:none;border-bottom:2px solid transparent;transition:color .2s,opacity .2s}
+html body .topnav a[aria-current=page]{opacity:1;border-image:linear-gradient(90deg,var(--neo-c),var(--neo-p)) 1;text-shadow:0 0 10px rgba(34,228,255,.6)}
+html body .topnav a:hover{opacity:1;color:var(--neo-c)}
+html body .chain,html body .potd,html body #events>*,html body .notes,html body .doc{background:var(--glass);border:1px solid var(--edge);border-radius:16px;backdrop-filter:blur(10px);box-shadow:0 8px 40px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.05);padding:1rem 1.25rem;margin:1rem 0;animation:neoIn .5s ease both}
+html body .potd{box-shadow:0 0 0 1px rgba(168,85,247,.4),0 0 40px rgba(168,85,247,.25)}
+html body .tip-btn{background:rgba(255,255,255,.04);color:#dfe7ff;border:1px solid var(--edge)}
+html body input[type=search]{background:rgba(255,255,255,.04);border:1px solid var(--edge);color:#e6ecff;border-radius:10px}
+html body a{color:var(--neo-c)}
+@keyframes neoIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){html body *{animation:none;transition:none}}
