@@ -25,6 +25,22 @@ SKIP = {"SOL","WSOL","ETH","WETH","CBETH","BNB","WBNB","USDC","USDT","USD1","DAI
 MIN_LIQ = 50_000; PER_CHAIN = 12
 NONMEME = re.compile(r"tokeni[sz]ed|xstock|wrapped|bridged|stock|etf|treasury|usd", re.I)
 STOCK = re.compile(r"^[A-Z]{2,5}[cB]$")
+# Tokenized stocks / non-meme assets (e.g. $AAPL "Apple Inc." on Base at ~$343).
+CORP = re.compile(r"\b(inc|corp|corporation|incorporated|ltd|plc|llc|class\s+[abc]|common\s+stock|ordinary\s+shares?|adr)\b\.?|\b(n\.v\.|s\.a\.)", re.I)
+EQUITY = {"AAPL","TSLA","NVDA","MSFT","AMZN","GOOGL","GOOG","META","SPY","QQQ","COIN","HOOD","MSTR","NFLX","AMD","INTC","PLTR","AVGO",
+          "ORCL","CRM","ADBE","UBER","ABNB","SHOP","PYPL","SQ","XYZ","DIS","NKE","JPM","BAC","GS","V","MA","WMT","KO","PEP","MCD",
+          "BRK","BRKB","BABA","TSM","ASML","ARM","SMCI","GME","AMC","RDDT","CRCL","GLXY","IBIT","VOO","VTI","IWM","DIA","GLD","SLV",
+          "TLT","ARKK","SOXL","TQQQ","CVNA","SNOW","NET","RBLX","DKNG","SBUX","LLY","UNH","XOM","CVX","BA","F","GM","T","VZ","IBM","QCOM","MU"}
+MEMEWORD = re.compile(r"meme|doge|pepe|cat|dog|inu|frog|moon|wif|bonk|elon|chad|wojak|shib|floki|coin\b|token\b|\bon\s+(sol|base|bnb)", re.I)
+STOCK_PREFIX = "0xb2000000000000000000"  # Base issuer vanity prefix for the stock tokens (also used by some meme launches, so not alone)
+def nonmeme_reason(sym, name, addr, price):
+    sym = (sym or "").strip().lstrip("$").upper(); name = (name or "").strip(); addr = (addr or "").lower()
+    if NONMEME.search(name): return "non-meme keyword in name"
+    if STOCK.match(sym) and ((price or 0) >= 1 or sym[:-1] in EQUITY or name.upper() != sym): return "xStock-style ticker"
+    if CORP.search(name): return "company-style name"
+    if re.sub(r"[^A-Z]", "", sym) in EQUITY and not MEMEWORD.search(name) and ((price or 0) >= 1 or name.upper() != sym): return "equity ticker"
+    if addr.startswith(STOCK_PREFIX) and (price or 0) >= 5 and not MEMEWORD.search(name): return "Base stock-token issuer prefix + share-like price"
+    return None
 
 def get(url, pause=0.0):
     for i in range(4):
@@ -58,7 +74,9 @@ def candidates():
                 sym = (t.get("symbol") or a["name"].split(" / ")[0]).strip(); addr = t.get("address") or tid.split("_", 1)[1]
                 fdv = f(a.get("fdv_usd")); liq = f(a.get("reserve_in_usd")); created = a.get("pool_created_at") or ""
                 if sym.upper() in SKIP or addr.lower() in seen or (fdv or 0) > 5e8 or (created and created[:10] < old): continue
-                if (liq or 0) < MIN_LIQ or NONMEME.search(t.get("name") or "") or STOCK.match(sym): continue
+                if (liq or 0) < MIN_LIQ: continue
+                why = nonmeme_reason(sym, t.get("name"), addr, f(a.get("base_token_price_usd")))
+                if why: print("filtered", net, sym, repr(t.get("name")), addr, "-", why, file=sys.stderr); continue
                 seen.add(addr.lower())
                 age_h = (NOW - datetime.fromisoformat(created.replace("Z", "+00:00"))).total_seconds() / 3600 if created else None
                 rows.append({"key": f"{net}:{addr}", "chain_id": net, "chain": name, "symbol": sym, "name": t.get("name") or sym,
@@ -171,7 +189,7 @@ def main():
     if "--stage" in sys.argv and sys.argv[sys.argv.index("--stage") + 1] == "candidates": return candidates()
     cand = jload(os.path.join(DATA, "candidates.json"))
     if not cand or time.time() - cand["ts"] > 3 * 3600: candidates(); cand = jload(os.path.join(DATA, "candidates.json"))
-    coins = cand["coins"]; gp = {c[0]: c[4] for c in CHAINS}
+    coins = [c for c in cand["coins"] if not nonmeme_reason(c["symbol"], c["name"], c["address"], c["price_usd"])]; gp = {c[0]: c[4] for c in CHAINS}
     boosted = set()
     for u in ("https://api.dexscreener.com/token-boosts/top/v1", "https://api.dexscreener.com/token-boosts/latest/v1"):
         for b in get(u) or []: boosted.add((b.get("chainId"), (b.get("tokenAddress") or "").lower()))
