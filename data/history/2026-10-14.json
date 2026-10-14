@@ -1,0 +1,138 @@
+{
+ "date": "2026-10-14",
+ "ts": 1791969591,
+ "picks": [
+  {
+   "key": "solana:HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "VEIL",
+   "address": "HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump",
+   "price_usd": 0.012933298154593612,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0xb2000000000000000000004c27f6523082f41d01",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "Basecat",
+   "address": "0xb2000000000000000000004c27f6523082f41d01",
+   "price_usd": 0.0147645080826369,
+   "score": 77,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x14f6a94909c407854390aa2d2462a3095d317777",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "\u65fa\u67f4",
+   "address": "0x14f6a94909c407854390aa2d2462a3095d317777",
+   "price_usd": 0.016859701543999,
+   "score": 71,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PONS",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "price_usd": 0.330310145658318,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "solana:3sKaoPryg4KrXubLWtoqF7MznLT7QNqKRxMMkkxTpump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "SEALS",
+   "address": "3sKaoPryg4KrXubLWtoqF7MznLT7QNqKRxMMkkxTpump",
+   "price_usd": 0.0006650991132929667,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xa3cc6b9a798573bb622fef64dd6f2bafdcfff71a",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "Hound",
+   "address": "0xa3cc6b9a798573bb622fef64dd6f2bafdcfff71a",
+   "price_usd": 0.0120088947293409,
+   "score": 83,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x9faf478c3f9b407523a3d12307c0d34739062182",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "IGNITION",
+   "address": "0x9faf478c3f9b407523a3d12307c0d34739062182",
+   "price_usd": 0.00387251544143505,
+   "score": 81,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "solana:3sKaoPryg4KrXubLWtoqF7MznLT7QNqKRxMMkkxTpump",
+   "symbol": "SEALS",
+   "chain": "Solana",
+   "m24": 2041
+  },
+  {
+   "key": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+   "symbol": "DOPE",
+   "chain": "Solana",
+   "m24": 1909
+  },
+  {
+   "key": "solana:HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump",
+   "symbol": "VEIL",
+   "chain": "Solana",
+   "m24": 1885
+  },
+  {
+   "key": "robinhood:0x94641b97010608c3827fb058074889f19868ff33",
+   "symbol": "VRAX",
+   "chain": "Robinhood Chain",
+   "m24": 1779
+  },
+  {
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "symbol": "CASHCAT",
+   "chain": "Robinhood Chain",
+   "m24": 1184
+  },
+  {
+   "key": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+   "symbol": "HOOKR",
+   "chain": "Robinhood Chain",
+   "m24": 978
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "symbol": "PONS",
+   "chain": "Robinhood Chain",
+   "m24": 922
+  },
+  {
+   "key": "robinhood:0x9faf478c3f9b407523a3d12307c0d34739062182",
+   "symbol": "IGNITION",
+   "chain": "Robinhood Chain",
+   "m24": 764
+  },
+  {
+   "key": "solana:98AG3zJUawbvDnpgbDhmxpMKva43vtgPLLPSXqo1pump",
+   "symbol": "HIRE",
+   "chain": "Solana",
+   "m24": 679
+  },
+  {
+   "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "symbol": "CLAUDIA",
+   "chain": "Solana",
+   "m24": 655
+  }
+ ]
+}
