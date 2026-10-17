@@ -1,0 +1,128 @@
+{
+ "date": "2026-10-17",
+ "ts": 1792228649,
+ "picks": [
+  {
+   "key": "solana:rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "PRIME",
+   "address": "rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump",
+   "price_usd": 0.00045054227919852564,
+   "score": 91,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x8b996930fcde8260145fb0c0445db5a9e8293b07",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "Paper",
+   "address": "0x8b996930fcde8260145fb0c0445db5a9e8293b07",
+   "price_usd": 4.99532379559709e-05,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "COLLECT",
+   "address": "0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "price_usd": 0.0224034189927703,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xf9e990ccb47806ac9268922bd21dc9a91c8e8899",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "DOPE",
+   "address": "0xf9e990ccb47806ac9268922bd21dc9a91c8e8899",
+   "price_usd": 0.024218506131391,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "TRUST",
+   "address": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+   "price_usd": 0.0506359774868821,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x5fd9547b0a9a75b8a3b0b60a4714974cfea5e411",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "FOLIO",
+   "address": "0x5fd9547b0a9a75b8a3b0b60a4714974cfea5e411",
+   "price_usd": 0.01270514094124,
+   "score": 89,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+   "symbol": "TRUST",
+   "chain": "Base",
+   "m24": 233298
+  },
+  {
+   "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "symbol": "BASED",
+   "chain": "BNB Chain",
+   "m24": 197323
+  },
+  {
+   "key": "solana:rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump",
+   "symbol": "PRIME",
+   "chain": "Solana",
+   "m24": 195973
+  },
+  {
+   "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "symbol": "CLAUDIA",
+   "chain": "Solana",
+   "m24": 108878
+  },
+  {
+   "key": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
+   "symbol": "STANDARD",
+   "chain": "Robinhood Chain",
+   "m24": 93933
+  },
+  {
+   "key": "base:0x8b996930fcde8260145fb0c0445db5a9e8293b07",
+   "symbol": "Paper",
+   "chain": "Base",
+   "m24": 90532
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 42459
+  },
+  {
+   "key": "bsc:0x7d0443cddfc8e11af105f4fe44dd28c630237777",
+   "symbol": "DAWG",
+   "chain": "BNB Chain",
+   "m24": 41567
+  },
+  {
+   "key": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
+   "symbol": "DOPE",
+   "chain": "Solana",
+   "m24": 25573
+  },
+  {
+   "key": "robinhood:0xf9e990ccb47806ac9268922bd21dc9a91c8e8899",
+   "symbol": "DOPE",
+   "chain": "Robinhood Chain",
+   "m24": 25059
+  }
+ ]
+}
