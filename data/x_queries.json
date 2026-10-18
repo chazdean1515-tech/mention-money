@@ -1,46 +1,21 @@
 {
- "ts": 1792228162,
- "start_time": "2026-10-16T09:09:03Z",
+ "ts": 1792314189,
+ "start_time": "2026-10-17T09:02:49Z",
  "queries": [
   {
-   "key": "solana:8hnMfF4XL717GVwzDmvqjJvULozKW6w7BhHFABjvHje4",
-   "query": "8hnMfF4XL717GVwzDmvqjJvULozKW6w7BhHFABjvHje4 OR $simulator",
-   "symbol": "simulator"
+   "key": "solana:55A3VxMBfzw6uSe64zms5iMPw9k6kx9WzzusbCU6pump",
+   "query": "55A3VxMBfzw6uSe64zms5iMPw9k6kx9WzzusbCU6pump OR $Gato",
+   "symbol": "Gato"
   },
   {
-   "key": "solana:DFMt2FyLpB6ekPNAzVErLXgpSnJ9CRf1VnxBAkTLpump",
-   "query": "DFMt2FyLpB6ekPNAzVErLXgpSnJ9CRf1VnxBAkTLpump",
-   "symbol": "FTR"
+   "key": "solana:3NxfWMHmfQg8NJFW5AG1ti2xACdczWz24e9SKyk1pump",
+   "query": "3NxfWMHmfQg8NJFW5AG1ti2xACdczWz24e9SKyk1pump OR $MINTER",
+   "symbol": "MINTER"
   },
   {
-   "key": "solana:SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
-   "query": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb OR $SPCX",
-   "symbol": "SPCX"
-  },
-  {
-   "key": "solana:2e3zQiA8JWeDjjVeuqzv9X1Q3aqRRaPqL8UYEbxVpump",
-   "query": "2e3zQiA8JWeDjjVeuqzv9X1Q3aqRRaPqL8UYEbxVpump OR $NUBI",
-   "symbol": "NUBI"
-  },
-  {
-   "key": "solana:2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump",
-   "query": "2bCCHQadi4QeHWPKG3w13siCyWWQPgkFtniouTqVpump",
-   "symbol": "1"
-  },
-  {
-   "key": "solana:rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump",
-   "query": "rVWG97Yj6ZbuF9zeQo8TosQG6mUcUeL8BocfHu3pump OR $PRIME",
-   "symbol": "PRIME"
-  },
-  {
-   "key": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
-   "query": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
-   "symbol": "STONK"
-  },
-  {
-   "key": "solana:HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump",
-   "query": "HgTGdc29D5bDMrDvsCLnorxz899VyDj7ZN7FPa6vpump OR $VEIL",
-   "symbol": "VEIL"
+   "key": "solana:AcV6CcpMGFrA1dhRFiCKNiVNje8QE6ZXR9ep9jh7pump",
+   "query": "AcV6CcpMGFrA1dhRFiCKNiVNje8QE6ZXR9ep9jh7pump",
+   "symbol": "TSI"
   },
   {
    "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
@@ -48,9 +23,39 @@
    "symbol": "CLAUDIA"
   },
   {
-   "key": "solana:1htv5Nzfdy44FJWAdTXZoACJW4BWbB2XwZC6SVopurp",
-   "query": "1htv5Nzfdy44FJWAdTXZoACJW4BWbB2XwZC6SVopurp OR $Aloooong",
-   "symbol": "Aloooong"
+   "key": "solana:DrLF1dG1K4U6ggx5BZ6bSwzGcPNVrQwYoTJzRDyZpump",
+   "query": "DrLF1dG1K4U6ggx5BZ6bSwzGcPNVrQwYoTJzRDyZpump OR $YILONGMA",
+   "symbol": "YILONGMA"
+  },
+  {
+   "key": "solana:B2GESkSErPjuCq6n4LcaJP5v2z1kJnw3xHVZnop2sZx",
+   "query": "B2GESkSErPjuCq6n4LcaJP5v2z1kJnw3xHVZnop2sZx OR $ELON",
+   "symbol": "ELON"
+  },
+  {
+   "key": "solana:5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump",
+   "query": "5yC9BM8KUsJTPbWPLfA2N8qH1s9V8DQ3Vcw1G6Jdpump OR $AgenC",
+   "symbol": "AgenC"
+  },
+  {
+   "key": "solana:3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump",
+   "query": "3ZAnpeVBHAvZsySNMXp4g9nYaE1jsx6khgh29VYKpump OR $SUPERCORE",
+   "symbol": "SUPERCORE"
+  },
+  {
+   "key": "solana:6x4Z2dr5DgHUBCKvta8T8GNsFTxJhsBZxNrycWQ8pump",
+   "query": "6x4Z2dr5DgHUBCKvta8T8GNsFTxJhsBZxNrycWQ8pump",
+   "symbol": "hi"
+  },
+  {
+   "key": "solana:2Srf6mhufzWJKZ5nniVXgwamLmDJWXPQBmddJ1MMpump",
+   "query": "2Srf6mhufzWJKZ5nniVXgwamLmDJWXPQBmddJ1MMpump OR $CyberAxe",
+   "symbol": "CyberAxe"
+  },
+  {
+   "key": "solana:5x6QQvpRpd1PsFTTTJe6sJFFSqrA21H1j3GZLmo2pump",
+   "query": "5x6QQvpRpd1PsFTTTJe6sJFFSqrA21H1j3GZLmo2pump",
+   "symbol": "FTR"
   },
   {
    "key": "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump",
@@ -58,13 +63,8 @@
    "symbol": "CATE"
   },
   {
-   "key": "solana:33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump",
-   "query": "33jENUQnjoitkMFpvNJcSHyLAHFWJuHwT6E3E8CNpump OR $DOPE",
-   "symbol": "DOPE"
-  },
-  {
-   "key": "base:0x8b996930fcde8260145fb0c0445db5a9e8293b07",
-   "query": "0x8b996930fcde8260145fb0c0445db5a9e8293b07 OR $Paper",
+   "key": "base:0x85f316e96991e87b9ea960454723160f5ec92b07",
+   "query": "0x85f316e96991e87b9ea960454723160f5ec92b07 OR $Paper",
    "symbol": "Paper"
   },
   {
@@ -73,24 +73,29 @@
    "symbol": "ELSA"
   },
   {
-   "key": "base:0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-   "query": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-   "symbol": "DRV"
-  },
-  {
    "key": "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
    "query": "0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3 OR $TRUST",
    "symbol": "TRUST"
   },
   {
-   "key": "base:0xc52aedec3374422d7510e294cfaa90799595cba3",
-   "query": "0xc52aedec3374422d7510e294cfaa90799595cba3 OR $Surplus",
-   "symbol": "Surplus"
+   "key": "base:0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+   "query": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+   "symbol": "DRV"
   },
   {
-   "key": "base:0xed664536023d8e4b1640c394777d34abaff1df8f",
-   "query": "0xed664536023d8e4b1640c394777d34abaff1df8f",
-   "symbol": "POD"
+   "key": "base:0xfbb75a59193a3525a8825bebe7d4b56899e2f7e1",
+   "query": "0xfbb75a59193a3525a8825bebe7d4b56899e2f7e1",
+   "symbol": "RSC"
+  },
+  {
+   "key": "base:0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95",
+   "query": "0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95",
+   "symbol": "EDEL"
+  },
+  {
+   "key": "base:0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
+   "query": "0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
+   "symbol": "REI"
   },
   {
    "key": "base:0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
@@ -103,14 +108,9 @@
    "symbol": "OVPP"
   },
   {
-   "key": "base:0xff8104251e7761163fac3211ef5583fb3f8583d6",
-   "query": "0xff8104251e7761163fac3211ef5583fb3f8583d6 OR $REPPO",
-   "symbol": "REPPO"
-  },
-  {
-   "key": "base:0x23a2847d772803f9efc64b4277b782b06296fe51",
-   "query": "0x23a2847d772803f9efc64b4277b782b06296fe51",
-   "symbol": "DOT"
+   "key": "base:0xed664536023d8e4b1640c394777d34abaff1df8f",
+   "query": "0xed664536023d8e4b1640c394777d34abaff1df8f",
+   "symbol": "POD"
   },
   {
    "key": "base:0x0cbf291ba052174879d90bf781df1a5f2bc5bb07",
@@ -118,14 +118,24 @@
    "symbol": "boar"
   },
   {
-   "key": "bsc:0xc69b16cf18cea1e5d0bb6a1a9db802097790ddd2",
-   "query": "0xc69b16cf18cea1e5d0bb6a1a9db802097790ddd2 OR $CNPY",
-   "symbol": "CNPY"
+   "key": "base:0xc52aedec3374422d7510e294cfaa90799595cba3",
+   "query": "0xc52aedec3374422d7510e294cfaa90799595cba3 OR $Surplus",
+   "symbol": "Surplus"
   },
   {
    "key": "bsc:0xa991f61940095aea0724ef54077223b048c5cf7b",
    "query": "0xa991f61940095aea0724ef54077223b048c5cf7b",
    "symbol": "DNA"
+  },
+  {
+   "key": "bsc:0x0c69199c1562233640e0db5ce2c399a88eb507c7",
+   "query": "0x0c69199c1562233640e0db5ce2c399a88eb507c7",
+   "symbol": "CYS"
+  },
+  {
+   "key": "bsc:0x277add739c6e0477616948357af9e79fe1ec9b80",
+   "query": "0x277add739c6e0477616948357af9e79fe1ec9b80 OR $AEON",
+   "symbol": "AEON"
   },
   {
    "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
@@ -138,29 +148,29 @@
    "symbol": "COLLECT"
   },
   {
-   "key": "bsc:0x277add739c6e0477616948357af9e79fe1ec9b80",
-   "query": "0x277add739c6e0477616948357af9e79fe1ec9b80 OR $AEON",
-   "symbol": "AEON"
+   "key": "bsc:0xe766023f5a0fa6ce91b9f98d327771437dfca077",
+   "query": "0xe766023f5a0fa6ce91b9f98d327771437dfca077",
+   "symbol": "AGX"
   },
   {
-   "key": "bsc:0x99991c6aabba5a096f24f250b73580f5179b9999",
-   "query": "0x99991c6aabba5a096f24f250b73580f5179b9999",
-   "symbol": "CAP"
+   "key": "bsc:0x4902c5ebc598265ed2212b559b042de8a5eeec3f",
+   "query": "0x4902c5ebc598265ed2212b559b042de8a5eeec3f OR $B13B",
+   "symbol": "B13B"
   },
   {
-   "key": "bsc:0x997a58129890bbda032231a52ed1ddc845fc18e1",
-   "query": "0x997a58129890bbda032231a52ed1ddc845fc18e1 OR $SIREN",
-   "symbol": "SIREN"
+   "key": "bsc:0x255e746abb8d9acac00d6d023e5e63e3b8dfa7cd",
+   "query": "0x255e746abb8d9acac00d6d023e5e63e3b8dfa7cd",
+   "symbol": "IBS"
   },
   {
-   "key": "bsc:0x8c289e4bd6695ef6d948d8c0fd4732fa7d617777",
-   "query": "0x8c289e4bd6695ef6d948d8c0fd4732fa7d617777 OR $Froggie",
-   "symbol": "Froggie"
+   "key": "bsc:0xea17df5cf6d172224892b5477a16acb111182478",
+   "query": "0xea17df5cf6d172224892b5477a16acb111182478 OR $elizaOS",
+   "symbol": "elizaOS"
   },
   {
-   "key": "bsc:0x6907a5986c4950bdaf2f81828ec0737ce787519f",
-   "query": "0x6907a5986c4950bdaf2f81828ec0737ce787519f OR $ZAMA",
-   "symbol": "ZAMA"
+   "key": "bsc:0x904567252d8f48555b7447c67dca23f0372e16be",
+   "query": "0x904567252d8f48555b7447c67dca23f0372e16be OR $KITE",
+   "symbol": "KITE"
   },
   {
    "key": "bsc:0xeccbb861c0dda7efd964010085488b69317e4444",
@@ -173,14 +183,29 @@
    "symbol": "DAWG"
   },
   {
-   "key": "bsc:0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715",
-   "query": "0xd5f6ef5deabe61e6d5cdb49bfb6f156f2c1ca715",
-   "symbol": "ARX"
+   "key": "robinhood:0xcd2c8ca6789ccec87b7358e916878e2a2a57de79",
+   "query": "0xcd2c8ca6789ccec87b7358e916878e2a2a57de79 OR $COVENANT",
+   "symbol": "COVENANT"
   },
   {
-   "key": "robinhood:0x5fd9547b0a9a75b8a3b0b60a4714974cfea5e411",
-   "query": "0x5fd9547b0a9a75b8a3b0b60a4714974cfea5e411 OR $FOLIO",
-   "symbol": "FOLIO"
+   "key": "robinhood:0xa84f3ee3fe9d1a728d896c9c93dba88beb291c1e",
+   "query": "0xa84f3ee3fe9d1a728d896c9c93dba88beb291c1e",
+   "symbol": "TSI"
+  },
+  {
+   "key": "robinhood:0x8af9055b92556601eafad472179036fd41bba7f7",
+   "query": "0x8af9055b92556601eafad472179036fd41bba7f7",
+   "symbol": "hi"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "query": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "symbol": "PONS"
+  },
+  {
+   "key": "robinhood:0x5a75639407d8fcb186fb2cef0ffa50d649a25c00",
+   "query": "0x5a75639407d8fcb186fb2cef0ffa50d649a25c00 OR $BOOMER",
+   "symbol": "BOOMER"
   },
   {
    "key": "robinhood:0xf9e990ccb47806ac9268922bd21dc9a91c8e8899",
@@ -188,9 +213,9 @@
    "symbol": "DOPE"
   },
   {
-   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
-   "query": "0x39dbed3a2bd333467115de45665cc57f813c4571",
-   "symbol": "PONS"
+   "key": "robinhood:0x6589c3039083e2bb3154c65108a15af0aaf11a93",
+   "query": "0x6589c3039083e2bb3154c65108a15af0aaf11a93",
+   "symbol": "ESI"
   },
   {
    "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
@@ -203,39 +228,19 @@
    "symbol": "HOOKR"
   },
   {
-   "key": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
-   "query": "0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5 OR $astro",
-   "symbol": "astro"
-  },
-  {
-   "key": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
-   "query": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
-   "symbol": "AI"
-  },
-  {
-   "key": "robinhood:0x4db7374e966097be94c6680d49156d580f097bbf",
-   "query": "0x4db7374e966097be94c6680d49156d580f097bbf OR $TIBBIR",
-   "symbol": "TIBBIR"
-  },
-  {
-   "key": "robinhood:0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3",
-   "query": "0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3 OR $ORBIO",
-   "symbol": "ORBIO"
-  },
-  {
    "key": "robinhood:0xc9675fe679c7d4e1b94416f66d61c96127eb964a",
    "query": "0xc9675fe679c7d4e1b94416f66d61c96127eb964a OR $GIGATENEV",
    "symbol": "GIGATENEV"
   },
   {
-   "key": "robinhood:0x88ad8ddf1e3898412146a534538d418c6f8a9062",
-   "query": "0x88ad8ddf1e3898412146a534538d418c6f8a9062 OR $STANDARD",
-   "symbol": "STANDARD"
-  },
-  {
    "key": "robinhood:0xb8fa8010833463aac5595b55b9045479239eff79",
    "query": "0xb8fa8010833463aac5595b55b9045479239eff79",
    "symbol": "WTH"
+  },
+  {
+   "key": "robinhood:0xedbf91223639800bcd5756815caf908df3b890be",
+   "query": "0xedbf91223639800bcd5756815caf908df3b890be OR $PRIORS",
+   "symbol": "PRIORS"
   }
  ]
 }
