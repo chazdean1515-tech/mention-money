@@ -13,7 +13,7 @@ def usd(v):
     if v is None: return "—"
     return f"${v/1e6:.2f}M" if v >= 1e6 else f"${v/1e3:.0f}K"
 rows = "".join(f'''<div class="r"><span class="n">{i+1}</span><span class="s">${e(c["symbol"])}</span><span class="ch">{e(c["chain"].replace(" Chain",""))}</span>
-<span class="sc">{c["score"]}</span><span class="v">{usd(c["vol24"])}</span><span class="p {'up' if (c['chg24'] or 0)>=0 else 'dn'}">{(c['chg24'] or 0):+.0f}%</span>
+<span class="sc">{c["score"]}</span><span class="v">{usd(c["vol24"])}</span><span class="p {'up' if (c['chg24'] or 0)>=0 else 'dn'}{' long' if abs(c['chg24'] or 0)>=10000 else ''}">{(c['chg24'] or 0):+.0f}%</span>
 <span class="m">{(c.get("mx") or {}).get("m24","—")}</span></div>''' for i, c in enumerate(coins))
 font = "file://" + os.path.join(HERE, "assets", "fonts", "cinzel-decorative-900.woff2")
 page = f'''<!doctype html><html><head><meta charset="utf-8"><style>
@@ -23,12 +23,12 @@ body{{font-family:Inter,"Noto Sans",system-ui,sans-serif;color:#e6ecff;backgroun
 .top{{display:flex;justify-content:space-between;align-items:baseline}}
 h1{{font-family:C;font-size:54px;margin:0;background:linear-gradient(90deg,#22e4ff,#a855f7);-webkit-background-clip:text;color:transparent}}
 .d{{font-size:22px;color:#9fb0e8}} h2{{font-size:30px;margin:6px 0 18px;font-weight:800}}
-.h,.r{{display:grid;grid-template-columns:50px 260px 170px 110px 170px 120px 1fr;align-items:center}}
+.h,.r{{display:grid;grid-template-columns:50px 240px 160px 110px 170px 170px 1fr;align-items:center}}
 .h{{font-size:16px;letter-spacing:.1em;color:#8fa0d8;text-transform:uppercase;padding:0 18px 6px}}
 .r{{font-size:30px;font-weight:600;background:rgba(255,255,255,.05);border:1px solid rgba(140,160,255,.2);border-radius:16px;padding:12px 18px;margin-bottom:10px}}
 .n{{color:#8fa0d8}} .s{{color:#22e4ff}} .ch{{font-size:20px;color:#b9c6ff}}
 .sc{{background:linear-gradient(135deg,rgba(34,228,255,.25),rgba(168,85,247,.35));border-radius:10px;text-align:center;width:70px}}
-.up{{color:#3dffb0}} .dn{{color:#ff5c8a}} .m{{color:#c4a5ff}}
+.p{{white-space:nowrap;padding-right:12px}} .p.long{{font-size:24px}} .up{{color:#3dffb0}} .dn{{color:#ff5c8a}} .m{{color:#c4a5ff}}
 .f{{position:absolute;bottom:26px;left:64px;right:64px;display:flex;justify-content:space-between;font-size:17px;color:#8fa0d8}}
 </style></head><body><div class="top"><h1>$ Mention Money</h1><span class="d">{e(D["date"])}</span></div>
 <h2>The Mention Board · Top 5 by Mention Money Score</h2>

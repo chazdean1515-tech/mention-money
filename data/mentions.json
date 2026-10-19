@@ -1,5 +1,5 @@
 {
- "ts": 1792401024,
+ "ts": 1792402259,
  "window_start": "2026-10-18T09:05:11Z",
  "source": "X via agent tools (counts + 25-post sample)",
  "note": "Counts are posts matching the contract address or cashtag. Cashtags can collide across coins with the same ticker.",
