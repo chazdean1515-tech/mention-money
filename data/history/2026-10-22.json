@@ -1,0 +1,118 @@
+{
+ "date": "2026-10-22",
+ "ts": 1792660562,
+ "picks": [
+  {
+   "key": "solana:CMo7GfUhSGXuEfnY7qAzv8hhsV2M2P8GpWqmWikhpump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "CYBER",
+   "address": "CMo7GfUhSGXuEfnY7qAzv8hhsV2M2P8GpWqmWikhpump",
+   "price_usd": 0.0003433600432659282,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.271625962012592,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x1d80392d12caaaf9e333bb0bb7f021eacf297fe6",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "pPOLY",
+   "address": "0x1d80392d12caaaf9e333bb0bb7f021eacf297fe6",
+   "price_usd": 15.086663509654,
+   "score": 92,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "DARK",
+   "address": "0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e",
+   "price_usd": 0.00509948181820526,
+   "score": 90,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "ELSA",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "price_usd": 0.0695188612596392,
+   "score": 96,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "robinhood:0xdc45b71d7203c2e8baafc43a19bca0eb993bb54e",
+   "symbol": "DARK",
+   "chain": "Robinhood Chain",
+   "m24": 243451
+  },
+  {
+   "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "symbol": "BASED",
+   "chain": "BNB Chain",
+   "m24": 200831
+  },
+  {
+   "key": "solana:CMo7GfUhSGXuEfnY7qAzv8hhsV2M2P8GpWqmWikhpump",
+   "symbol": "CYBER",
+   "chain": "Solana",
+   "m24": 61694
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 48215
+  },
+  {
+   "key": "solana:CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump",
+   "symbol": "Kimchi",
+   "chain": "Solana",
+   "m24": 39192
+  },
+  {
+   "key": "base:0xb095274743941e953c746f9c228da9c18bb6ec29",
+   "symbol": "LAPTOP",
+   "chain": "Base",
+   "m24": 29560
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "symbol": "AXIS",
+   "chain": "Base",
+   "m24": 26811
+  },
+  {
+   "key": "robinhood:0x5b81efe5e0ba2b31c0ed843b908a2c45fe6e14c5",
+   "symbol": "astro",
+   "chain": "Robinhood Chain",
+   "m24": 21658
+  },
+  {
+   "key": "solana:DvdmEnztCmXwBnAbedD48XVGZJSxq31zNvnyftXdpump",
+   "symbol": "pill",
+   "chain": "Solana",
+   "m24": 20631
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 19942
+  }
+ ]
+}
