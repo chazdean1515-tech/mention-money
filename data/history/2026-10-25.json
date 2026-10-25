@@ -1,0 +1,118 @@
+{
+ "date": "2026-10-25",
+ "ts": 1792919472,
+ "picks": [
+  {
+   "key": "solana:3KpyR7uM657Bbcw64gLHQpJfPYByJEiVhu4ED3cnpump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "MAYA",
+   "address": "3KpyR7uM657Bbcw64gLHQpJfPYByJEiVhu4ED3cnpump",
+   "price_usd": 0.0017785776280667632,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "ELSA",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "price_usd": 0.0710210284907805,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x91152b4ef635403efbae860edd0f8c321d7c035d",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "IRYS",
+   "address": "0x91152b4ef635403efbae860edd0f8c321d7c035d",
+   "price_usd": 0.0355348809343592,
+   "score": 92,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x90e60d2fc14b788abd224404f57b8b209d8fbb07",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "OpenAI",
+   "address": "0x90e60d2fc14b788abd224404f57b8b209d8fbb07",
+   "price_usd": 9.76257524891123e-05,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.256424495745016,
+   "score": 96,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "robinhood:0xea0071a8778fa02c12378e88868255e0e0952be6",
+   "symbol": "SEASON",
+   "chain": "Robinhood Chain",
+   "m24": 494929
+  },
+  {
+   "key": "base:0x6cd905df2ed214b22e0d48ff17cd4200c1c6d8a3",
+   "symbol": "TRUST",
+   "chain": "Base",
+   "m24": 258963
+  },
+  {
+   "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "symbol": "BASED",
+   "chain": "BNB Chain",
+   "m24": 182706
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "symbol": "GANG",
+   "chain": "BNB Chain",
+   "m24": 94690
+  },
+  {
+   "key": "solana:3KpyR7uM657Bbcw64gLHQpJfPYByJEiVhu4ED3cnpump",
+   "symbol": "MAYA",
+   "chain": "Solana",
+   "m24": 71458
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 54647
+  },
+  {
+   "key": "robinhood:0x90e60d2fc14b788abd224404f57b8b209d8fbb07",
+   "symbol": "OpenAI",
+   "chain": "Robinhood Chain",
+   "m24": 28941
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 15964
+  },
+  {
+   "key": "bsc:0x277add739c6e0477616948357af9e79fe1ec9b80",
+   "symbol": "AEON",
+   "chain": "BNB Chain",
+   "m24": 14828
+  },
+  {
+   "key": "solana:C1mBfBoDkwWfd6uTFZp62ARHLjeVp3bDpCDMfMZtPngE",
+   "symbol": "HOOKED",
+   "chain": "Solana",
+   "m24": 12971
+  }
+ ]
+}
