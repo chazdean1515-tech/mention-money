@@ -1,0 +1,138 @@
+{
+ "date": "2026-10-26",
+ "ts": 1793005831,
+ "picks": [
+  {
+   "key": "solana:AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "LAUNCH",
+   "address": "AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
+   "price_usd": 0.0025196708835372025,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0xb05696b8cd42671809b62ffc0843a7eda4e56b07",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "Paper",
+   "address": "0xb05696b8cd42671809b62ffc0843a7eda4e56b07",
+   "price_usd": 7.82766074448606e-05,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x91152b4ef635403efbae860edd0f8c321d7c035d",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "IRYS",
+   "address": "0x91152b4ef635403efbae860edd0f8c321d7c035d",
+   "price_usd": 0.0297192670813556,
+   "score": 77,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xc9675fe679c7d4e1b94416f66d61c96127eb964a",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "GIGATENEV",
+   "address": "0xc9675fe679c7d4e1b94416f66d61c96127eb964a",
+   "price_usd": 0.00134055745531253,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.265041677667666,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PONS",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "price_usd": 0.240765952425041,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "ELSA",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "price_usd": 0.0762967520591649,
+   "score": 92,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "solana:2j5SaS7xy776qCBpyPQbZjyQSAtKiFgrwjfErthnW2ZM",
+   "symbol": "CLAUDIA",
+   "chain": "Solana",
+   "m24": 124984
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "symbol": "GANG",
+   "chain": "BNB Chain",
+   "m24": 107590
+  },
+  {
+   "key": "solana:AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
+   "symbol": "LAUNCH",
+   "chain": "Solana",
+   "m24": 93456
+  },
+  {
+   "key": "base:0xb05696b8cd42671809b62ffc0843a7eda4e56b07",
+   "symbol": "Paper",
+   "chain": "Base",
+   "m24": 82193
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 52907
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 16603
+  },
+  {
+   "key": "robinhood:0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d",
+   "symbol": "WORM",
+   "chain": "Robinhood Chain",
+   "m24": 13273
+  },
+  {
+   "key": "solana:CSocnzcRpgSCr1naKcNTieWZUxb6rABe45j844m7pump",
+   "symbol": "Kimchi",
+   "chain": "Solana",
+   "m24": 12405
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "symbol": "AXIS",
+   "chain": "Base",
+   "m24": 10251
+  },
+  {
+   "key": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
+   "symbol": "Dacity",
+   "chain": "Solana",
+   "m24": 7473
+  }
+ ]
+}
