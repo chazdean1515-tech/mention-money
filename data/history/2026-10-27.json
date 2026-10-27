@@ -1,0 +1,138 @@
+{
+ "date": "2026-10-27",
+ "ts": 1793092446,
+ "picks": [
+  {
+   "key": "solana:51SfaAyrYaR8FpibXT4TXtxEpnZSNoDwYVRojtKupump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "Nothing",
+   "address": "51SfaAyrYaR8FpibXT4TXtxEpnZSNoDwYVRojtKupump",
+   "price_usd": 0.0004262702404850477,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.255987618003564,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "COLLECT",
+   "address": "0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "price_usd": 0.0245493864119066,
+   "score": 83,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "CASHCAT",
+   "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "price_usd": 0.096744604160595,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0xb200000000000000000000585fd80c20af698f01",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "worth",
+   "address": "0xb200000000000000000000585fd80c20af698f01",
+   "price_usd": 0.00126399636729863,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "PLAY",
+   "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "price_usd": 0.0162710743564269,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "ELSA",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "price_usd": 0.0798068341535132,
+   "score": 92,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "base:0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "symbol": "PLAY",
+   "chain": "Base",
+   "m24": 782614
+  },
+  {
+   "key": "solana:51SfaAyrYaR8FpibXT4TXtxEpnZSNoDwYVRojtKupump",
+   "symbol": "Nothing",
+   "chain": "Solana",
+   "m24": 657828
+  },
+  {
+   "key": "base:0xb200000000000000000000585fd80c20af698f01",
+   "symbol": "worth",
+   "chain": "Base",
+   "m24": 247758
+  },
+  {
+   "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "symbol": "BASED",
+   "chain": "BNB Chain",
+   "m24": 189344
+  },
+  {
+   "key": "solana:AhBidGAgv6QbKSWfrSCegGrzFLcBx4E5FNYTKHNQQj6C",
+   "symbol": "LAUNCH",
+   "chain": "Solana",
+   "m24": 115075
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "symbol": "GANG",
+   "chain": "BNB Chain",
+   "m24": 79991
+  },
+  {
+   "key": "solana:9v4airX4Vt45ADFg3QQG9pXX68LkX9Big4GiYEuJpump",
+   "symbol": "CHICO",
+   "chain": "Solana",
+   "m24": 68830
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 54942
+  },
+  {
+   "key": "robinhood:0xd56a6c45941ee8aae31ce6a30bd049e0f7489cbd",
+   "symbol": "RAID",
+   "chain": "Robinhood Chain",
+   "m24": 30983
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 16871
+  }
+ ]
+}
