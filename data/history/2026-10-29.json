@@ -1,0 +1,128 @@
+{
+ "date": "2026-10-29",
+ "ts": 1793265429,
+ "picks": [
+  {
+   "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "GTA6",
+   "address": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "price_usd": 0.014879606650058304,
+   "score": 90,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.138337925750458,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x1f12b85aac097e43aa1555b2881e98a51090e9a6",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "GENIUS",
+   "address": "0x1f12b85aac097e43aa1555b2881e98a51090e9a6",
+   "price_usd": 0.327805297409954,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xd086f891229cd123aadfcae7c4b40150a80fd9d7",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PIZZA",
+   "address": "0xd086f891229cd123aadfcae7c4b40150a80fd9d7",
+   "price_usd": 0.00255929457614241,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0xb200000000000000000000585fd80c20af698f01",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "worth",
+   "address": "0xb200000000000000000000585fd80c20af698f01",
+   "price_usd": 0.00129510654374801,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "ELSA",
+   "address": "0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "price_usd": 0.0760373407272382,
+   "score": 92,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "base:0xb200000000000000000000585fd80c20af698f01",
+   "symbol": "worth",
+   "chain": "Base",
+   "m24": 234117
+  },
+  {
+   "key": "solana:Fp4JkqEcKYKBKhb9iMu9NSDeo71HWgq2q9QtXaaKpump",
+   "symbol": "paws",
+   "chain": "Solana",
+   "m24": 165159
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "symbol": "GANG",
+   "chain": "BNB Chain",
+   "m24": 89754
+  },
+  {
+   "key": "bsc:0x1f12b85aac097e43aa1555b2881e98a51090e9a6",
+   "symbol": "GENIUS",
+   "chain": "BNB Chain",
+   "m24": 60010
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 44458
+  },
+  {
+   "key": "robinhood:0xd086f891229cd123aadfcae7c4b40150a80fd9d7",
+   "symbol": "PIZZA",
+   "chain": "Robinhood Chain",
+   "m24": 44375
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 22091
+  },
+  {
+   "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "symbol": "GTA6",
+   "chain": "Solana",
+   "m24": 14536
+  },
+  {
+   "key": "robinhood:0x15f3385625d7e364c5a6216fbbceadf10fa90e7d",
+   "symbol": "ABYSS",
+   "chain": "Robinhood Chain",
+   "m24": 14248
+  },
+  {
+   "key": "robinhood:0x3ba500f1ababbcf0f0247d06d1c56fd7e6c4c09d",
+   "symbol": "WORM",
+   "chain": "Robinhood Chain",
+   "m24": 13950
+  }
+ ]
+}
