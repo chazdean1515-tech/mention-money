@@ -1,108 +1,261 @@
 {
- "ts": 1793351333,
- "window_start": "2026-10-29T09:04:54Z",
+ "ts": 1793438025,
+ "window_start": "2026-10-30T09:09:16Z",
  "source": "X via agent tools (counts + 25-post sample)",
  "note": "Counts are posts matching the contract address or cashtag. Cashtags can collide across coins with the same ticker.",
  "coins": {
-  "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
-   "query": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz OR $GTA6",
+  "solana:HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump": {
+   "query": "HgxEGTZ1Epb64RrYqcuHkqb1gGWWnF5WcPTCDWzApump OR $iCoin",
    "hourly": [
-    578,
-    726,
-    652,
-    728,
-    920,
-    1001,
-    1000,
-    936,
-    779,
-    711,
-    747,
-    713,
-    601,
-    616,
-    666,
-    654,
-    643,
-    590,
-    656,
-    477,
-    440,
-    477,
-    418,
-    422
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    25,
+    636,
+    343,
+    230,
+    229,
+    63,
+    97,
+    52,
+    71,
+    72,
+    74,
+    33
    ],
-   "m24": 16151,
-   "partial_hour": 40,
+   "m24": 1929,
+   "partial_hour": 17,
    "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 8721.54,
+   "sample_unique": 6,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 6.0,
+   "weighted_accounts": 462.96,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "itsmeravi08",
-     "f": 3114
+     "u": "LookForEntries",
+     "f": 55887
     },
     {
-     "u": "Charles_fx16_",
-     "f": 3053
+     "u": "EAZY_SOL_",
+     "f": 1780
     },
     {
-     "u": "VeritasVauxrnw",
-     "f": 1787
+     "u": "oay6d",
+     "f": 1376
+    }
+   ]
+  },
+  "solana:DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump": {
+   "query": "DDG8rjV3TViCqKRQED2QZq4MEaE1uqXgEiosBNpapump OR $AgenC",
+   "hourly": [
+    58,
+    51,
+    62,
+    55,
+    29,
+    44,
+    112,
+    82,
+    92,
+    121,
+    115,
+    45,
+    41,
+    34,
+    36,
+    77,
+    74,
+    49,
+    63,
+    55,
+    45,
+    32,
+    44,
+    49
+   ],
+   "m24": 1465,
+   "partial_hour": 2,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 14.5,
+   "weighted_accounts": 849.7,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "ashcotXBT",
+     "f": 16966
+    },
+    {
+     "u": "stephenpalmer",
+     "f": 13790
+    },
+    {
+     "u": "Kingmoj3",
+     "f": 2043
     }
    ]
   },
   "solana:npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump": {
    "query": "npz2FhoufQ7pKqhGpaipYWacrAkidyW2yDpVWSvpump OR $DESSA",
    "hourly": [
-    2772,
-    4063,
-    4595,
-    4991,
-    4970,
-    5443,
-    6219,
-    7171,
-    6927,
-    7168,
-    7540,
-    7546,
-    6894,
-    6540,
-    7194,
-    7693,
-    7718,
-    7038,
-    5203,
-    3422,
-    2370,
-    1589,
-    1413,
-    1632
+    2448,
+    3860,
+    5092,
+    5903,
+    5950,
+    5982,
+    5922,
+    6167,
+    5867,
+    5785,
+    5405,
+    5484,
+    5432,
+    5472,
+    6004,
+    6127,
+    8792,
+    7291,
+    5429,
+    4042,
+    3108,
+    1979,
+    1393,
+    1457
    ],
-   "m24": 128111,
-   "partial_hour": 186,
+   "m24": 120391,
+   "partial_hour": 301,
    "sample_posts": 25,
    "sample_unique": 25,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 69179.94,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 14.5,
+   "weighted_accounts": 69826.78,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Saiocote",
-     "f": 2991
+     "u": "TransXConcept",
+     "f": 47937
     },
     {
-     "u": "MirandaTradutor",
-     "f": 2271
+     "u": "artbyvmin",
+     "f": 3977
     },
     {
-     "u": "VminTaekook",
-     "f": 1929
+     "u": "DeniseinHE3qq",
+     "f": 2465
+    }
+   ]
+  },
+  "solana:HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump": {
+   "query": "HvitmAeh6TkToQonoiNwqWcrZsYdYiaSZHP7yMmspump OR $LUMI",
+   "hourly": [
+    587,
+    877,
+    996,
+    9983,
+    9502,
+    4805,
+    3786,
+    3326,
+    2788,
+    2079,
+    1609,
+    1359,
+    1357,
+    1454,
+    1343,
+    1375,
+    2122,
+    2233,
+    2232,
+    2752,
+    3020,
+    1869,
+    1629,
+    1242
+   ],
+   "m24": 64325,
+   "partial_hour": 241,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 5,
+   "weighted_accounts_sample": 12.0,
+   "weighted_accounts": 30876.0,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "badattrading_",
+     "f": 70525
+    },
+    {
+     "u": "villan3ll3",
+     "f": 1685
+    },
+    {
+     "u": "ShonSol74423",
+     "f": 1268
+    }
+   ]
+  },
+  "solana:7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump": {
+   "query": "7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
+   "hourly": [
+    12,
+    12,
+    10,
+    0,
+    21,
+    13,
+    19,
+    19,
+    41,
+    28,
+    30,
+    10,
+    9,
+    13,
+    11,
+    2,
+    4,
+    7,
+    3,
+    2,
+    3,
+    1,
+    17,
+    2
+   ],
+   "m24": 289,
+   "partial_hour": 0,
+   "sample_posts": 24,
+   "sample_unique": 11,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 8.0,
+   "weighted_accounts": 96.33,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "ATHENAFundAnn",
+     "f": 11095
+    },
+    {
+     "u": "almanasrah2",
+     "f": 5671
+    },
+    {
+     "u": "MemeInsight247",
+     "f": 1990
     }
    ]
   },
@@ -110,713 +263,611 @@
    "query": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
    "hourly": [
     5,
-    8,
-    10,
-    13,
-    14,
-    17,
-    20,
-    14,
-    22,
-    9,
-    7,
-    5,
-    7,
-    2,
-    5,
-    4,
-    2,
-    5,
-    6,
     3,
     4,
+    3,
+    9,
+    8,
+    11,
     2,
-    6,
+    5,
+    4,
+    5,
+    3,
+    0,
+    3,
+    1,
+    7,
+    3,
+    5,
+    1,
+    1,
+    3,
+    1,
+    1,
     0
    ],
-   "m24": 190,
+   "m24": 88,
    "partial_hour": 0,
    "sample_posts": 25,
-   "sample_unique": 22,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 15.5,
-   "weighted_accounts": 117.8,
+   "sample_unique": 21,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 16.5,
+   "weighted_accounts": 58.08,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "DGChampCapital",
-     "f": 290914
+     "u": "SatoshiFlipper",
+     "f": 238872
+    },
+    {
+     "u": "HeyItsMeTheDev",
+     "f": 48827
     },
     {
      "u": "RonnieRiches",
-     "f": 34428
+     "f": 34425
+    }
+   ]
+  },
+  "solana:5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump": {
+   "query": "5THtNEGTF1y67eRWvcgz3MomDZePCVx1xdskHHeCpump OR $Saturween",
+   "hourly": [
+    6,
+    1,
+    5,
+    80,
+    25,
+    15,
+    23,
+    20,
+    45,
+    55,
+    64,
+    67,
+    40,
+    14,
+    15,
+    35,
+    24,
+    30,
+    32,
+    112,
+    50,
+    41,
+    61,
+    54
+   ],
+   "m24": 914,
+   "partial_hour": 7,
+   "sample_posts": 25,
+   "sample_unique": 19,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 10.0,
+   "weighted_accounts": 365.6,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "ChartsOfRaini",
+     "f": 7720
     },
     {
-     "u": "TheDazzleNovak",
-     "f": 11300
+     "u": "Inmyplac3",
+     "f": 4192
+    },
+    {
+     "u": "ChachaSlide107",
+     "f": 699
     }
    ]
   },
   "solana:3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump": {
    "query": "3w2TvVmTrtq4kSkoFVrTFQgz6MX7ThzDVrx9r5c3pump",
    "hourly": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    129,
-    251,
-    146,
-    139,
-    34,
-    26,
-    19,
-    12,
-    1,
-    5,
-    11,
-    34,
-    11,
-    42,
-    28,
-    26,
-    3
-   ],
-   "m24": 917,
-   "partial_hour": 0,
-   "sample_posts": 24,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 18.0,
-   "weighted_accounts": 687.75,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "serenaonchain",
-     "f": 115408
-    },
-    {
-     "u": "laoyingkhq",
-     "f": 37123
-    },
-    {
-     "u": "SOLANA_EMPIRE1",
-     "f": 4221
-    }
-   ]
-  },
-  "solana:7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump": {
-   "query": "7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
-   "hourly": [
-    0,
-    1,
-    1,
-    0,
-    0,
-    1,
-    2,
-    1,
-    1,
-    1,
-    1,
-    20,
+    15,
+    39,
     31,
-    36,
-    23,
-    37,
-    14,
-    6,
-    18,
-    16,
-    18,
-    8,
+    15,
+    20,
     10,
-    21
-   ],
-   "m24": 267,
-   "partial_hour": 1,
-   "sample_posts": 25,
-   "sample_unique": 22,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 14.5,
-   "weighted_accounts": 154.86,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Alpha_calls100",
-     "f": 7137
-    },
-    {
-     "u": "clementcollins_",
-     "f": 6146
-    },
-    {
-     "u": "Legend_Britney",
-     "f": 2430
-    }
-   ]
-  },
-  "solana:3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump": {
-   "query": "3ApVr1xphYMpi9dn3rpqU4hwvpmCQDVwxET1rdCDpump OR $HYPERCHAN",
-   "hourly": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
+    25,
+    6,
+    9,
     22,
-    40,
-    18,
+    5,
+    9,
+    15,
+    4,
+    2,
+    6,
+    1,
+    3,
+    2,
+    4,
     1,
     1,
     0,
-    3,
-    16,
-    50,
-    62,
-    38,
-    45,
-    64
+    2
    ],
-   "m24": 361,
-   "partial_hour": 3,
-   "sample_posts": 25,
-   "sample_unique": 13,
-   "sample_skipped_botlike": 4,
-   "weighted_accounts_sample": 6.5,
-   "weighted_accounts": 93.86,
+   "m24": 247,
+   "partial_hour": 0,
+   "sample_posts": 23,
+   "sample_unique": 17,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 10.5,
+   "weighted_accounts": 112.76,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Alpha_calls100",
-     "f": 7137
+     "u": "blueybear5150",
+     "f": 4116
     },
     {
-     "u": "soltoken_realm",
-     "f": 2084
+     "u": "TopSolDegen_",
+     "f": 3526
     },
     {
-     "u": "solCallermike_",
-     "f": 1744
+     "u": "JohnnyG_204",
+     "f": 3119
     }
    ]
   },
-  "solana:GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun": {
-   "query": "GydpvgKppv8a4gGQqAQsyQJxtQN4S6Ym9gKxjnN3mfun OR $SENSE",
+  "solana:HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump": {
+   "query": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump OR $GATO",
    "hourly": [
-    6623,
-    7562,
-    8347,
-    9403,
-    11039,
-    11753,
-    11991,
-    12437,
-    12103,
-    11743,
-    10965,
-    10591,
-    9540,
-    8918,
-    8303,
-    7518,
-    7849,
-    7442,
-    7463,
-    6649,
-    6585,
-    7405,
-    7810,
-    7633
+    1369,
+    1928,
+    2154,
+    2756,
+    2855,
+    3234,
+    3330,
+    3010,
+    2670,
+    2910,
+    2620,
+    2651,
+    2773,
+    2833,
+    2871,
+    2615,
+    2862,
+    3468,
+    2789,
+    2522,
+    2359,
+    1363,
+    1139,
+    1057
    ],
-   "m24": 217672,
-   "partial_hour": 759,
+   "m24": 60138,
+   "partial_hour": 130,
    "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 4,
-   "weighted_accounts_sample": 16.0,
-   "weighted_accounts": 139310.08,
+   "sample_unique": 23,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 10.5,
+   "weighted_accounts": 25257.96,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "somaar___",
-     "f": 32451
+     "u": "marilia20__",
+     "f": 1366
     },
     {
-     "u": "blackcap_eth",
-     "f": 26339
+     "u": "_S2rns",
+     "f": 893
     },
     {
-     "u": "v_3394",
-     "f": 20234
+     "u": "tekitafernandes",
+     "f": 619
+    }
+   ]
+  },
+  "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz": {
+   "query": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz OR $GTA6",
+   "hourly": [
+    430,
+    499,
+    515,
+    570,
+    547,
+    706,
+    612,
+    602,
+    642,
+    662,
+    714,
+    640,
+    556,
+    553,
+    480,
+    445,
+    457,
+    322,
+    328,
+    341,
+    243,
+    267,
+    288,
+    373
+   ],
+   "m24": 11792,
+   "partial_hour": 55,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 14.0,
+   "weighted_accounts": 6603.52,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "pd7_yw",
+     "f": 18022
+    },
+    {
+     "u": "sadcrissy",
+     "f": 15467
+    },
+    {
+     "u": "luci_masa3",
+     "f": 12335
     }
    ]
   },
   "solana:Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump": {
    "query": "Ai66LHZG9MCzg1WKdawwqduVAXpNDUuV8M3uyq5ppump OR $CATE",
    "hourly": [
-    479,
-    437,
-    420,
-    622,
-    839,
-    664,
-    801,
-    982,
-    871,
-    872,
-    813,
-    741,
-    721,
-    618,
+    342,
+    563,
+    718,
+    627,
     537,
-    455,
-    601,
-    432,
-    425,
-    468,
-    509,
-    493,
+    604,
+    612,
+    768,
+    684,
+    836,
+    938,
+    819,
+    733,
+    607,
+    514,
+    714,
+    681,
+    590,
+    549,
+    402,
+    385,
+    462,
     356,
-    384
+    891
    ],
-   "m24": 14540,
-   "partial_hour": 38,
+   "m24": 14932,
+   "partial_hour": 78,
    "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 4,
-   "weighted_accounts_sample": 13.0,
-   "weighted_accounts": 7560.8,
+   "sample_unique": 20,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 11.5,
+   "weighted_accounts": 6868.72,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Rhoollii",
-     "f": 9082
+     "u": "mdotsoll",
+     "f": 3577
     },
     {
-     "u": "AmazingcalmSoul",
-     "f": 4443
+     "u": "AdlibitomVir",
+     "f": 1664
     },
     {
-     "u": "168land",
-     "f": 2208
-    }
-   ]
-  },
-  "solana:8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ": {
-   "query": "8RNUw4N655VSrZKuhGdywhbSMDTrheguFPfxbpE2NZHQ OR $PURR",
-   "hourly": [
-    144,
-    223,
-    327,
-    332,
-    372,
-    427,
-    585,
-    509,
-    357,
-    219,
-    282,
-    271,
-    223,
-    157,
-    207,
-    187,
-    210,
-    214,
-    281,
-    264,
-    169,
-    136,
-    89,
-    145
-   ],
-   "m24": 6330,
-   "partial_hour": 11,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 3418.2,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "kvsbali",
-     "f": 1869
-    },
-    {
-     "u": "apintoreto",
-     "f": 1425
-    },
-    {
-     "u": "EuValefor",
-     "f": 1327
-    }
-   ]
-  },
-  "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump": {
-   "query": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump OR $Dacity",
-   "hourly": [
-    126,
-    153,
-    132,
-    175,
-    168,
-    196,
-    157,
-    138,
-    115,
-    93,
-    111,
-    99,
-    91,
-    105,
-    95,
-    123,
-    111,
-    92,
-    96,
-    87,
-    86,
-    100,
-    87,
-    94
-   ],
-   "m24": 2830,
-   "partial_hour": 11,
-   "sample_posts": 25,
-   "sample_unique": 10,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 6.5,
-   "weighted_accounts": 735.8,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "AmazingcalmSoul",
-     "f": 4443
-    },
-    {
-     "u": "DacitySolOnX",
-     "f": 2692
-    },
-    {
-     "u": "_EmyGFX",
-     "f": 1553
-    }
-   ]
-  },
-  "solana:Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr": {
-   "query": "Bv1a7cEj5aRnJQhMw4kRQqAFesMSd5LwcDnUzq52BMmr OR $FLOAT",
-   "hourly": [
-    289,
-    413,
-    419,
-    412,
-    495,
-    511,
-    420,
-    329,
-    304,
-    401,
-    338,
-    458,
-    412,
-    513,
-    363,
-    375,
-    440,
-    260,
-    228,
-    279,
-    212,
-    266,
-    194,
-    207
-   ],
-   "m24": 8538,
-   "partial_hour": 11,
-   "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 4781.28,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "blkhimbo",
-     "f": 32422
-    },
-    {
-     "u": "jeanniecotter",
-     "f": 27454
-    },
-    {
-     "u": "me_you_45",
-     "f": 25494
+     "u": "pckynpjr",
+     "f": 1519
     }
    ]
   },
   "solana:9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump": {
    "query": "9cRCn9rGT8V2imeM2BaKs13yhMEais3ruM3rPvTGpump OR $ANSEM",
    "hourly": [
-    214,
-    279,
-    250,
-    349,
-    396,
-    348,
-    341,
-    608,
-    648,
-    350,
-    349,
-    347,
-    668,
-    504,
-    517,
-    294,
-    277,
-    376,
-    281,
-    418,
-    452,
-    383,
+    410,
+    402,
+    427,
+    357,
     355,
-    639
+    414,
+    476,
+    419,
+    402,
+    443,
+    364,
+    452,
+    454,
+    314,
+    196,
+    124,
+    130,
+    140,
+    132,
+    142,
+    158,
+    314,
+    339,
+    467
    ],
-   "m24": 9643,
-   "partial_hour": 50,
+   "m24": 7831,
+   "partial_hour": 52,
    "sample_posts": 25,
-   "sample_unique": 19,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 5207.22,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "KaminoCrypto",
-     "f": 28695
-    },
-    {
-     "u": "MemesAICoin",
-     "f": 7696
-    },
-    {
-     "u": "ivvy_szn",
-     "f": 2612
-    }
-   ]
-  },
-  "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea": {
-   "query": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea OR $AXIS",
-   "hourly": [
-    381,
-    438,
-    433,
-    541,
-    647,
-    631,
-    529,
-    513,
-    492,
-    432,
-    430,
-    288,
-    247,
-    318,
-    215,
-    289,
-    256,
-    251,
-    341,
-    307,
-    219,
-    274,
-    368,
-    319
-   ],
-   "m24": 9159,
-   "partial_hour": 33,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 4,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 5129.04,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "JGerrings",
-     "f": 28182
-    },
-    {
-     "u": "LatestNewsAU",
-     "f": 3654
-    },
-    {
-     "u": "antioxidants_OA",
-     "f": 3460
-    }
-   ]
-  },
-  "base:0x44b63af715d5ef02cc3646a6ce96875e11d69e85": {
-   "query": "0x44b63af715d5ef02cc3646a6ce96875e11d69e85 OR $RSGP",
-   "hourly": [
-    17,
-    22,
-    23,
-    12,
-    25,
-    25,
-    184,
-    76,
-    40,
-    34,
-    24,
-    13,
-    10,
-    12,
-    22,
-    24,
-    24,
-    16,
-    29,
-    17,
-    19,
-    12,
-    20,
-    14
-   ],
-   "m24": 714,
-   "partial_hour": 3,
-   "sample_posts": 25,
-   "sample_unique": 25,
+   "sample_unique": 17,
    "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 19.0,
-   "weighted_accounts": 542.64,
+   "weighted_accounts_sample": 11.0,
+   "weighted_accounts": 3445.64,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "KCEX_Official",
-     "f": 136812
+     "u": "Dp520888",
+     "f": 105991
     },
     {
-     "u": "KCEX_Vietnam",
-     "f": 30904
+     "u": "mdotsoll",
+     "f": 3577
     },
     {
-     "u": "Yuyuaneth",
-     "f": 9720
+     "u": "willdxyz",
+     "f": 2113
     }
    ]
   },
   "base:0x29cc30f9d113b356ce408667aa6433589cecbdca": {
    "query": "0x29cc30f9d113b356ce408667aa6433589cecbdca OR $ELSA",
    "hourly": [
-    702,
-    529,
-    733,
-    674,
-    811,
-    808,
-    827,
-    787,
-    818,
-    679,
-    550,
-    608,
-    587,
-    630,
-    724,
-    600,
-    453,
-    512,
-    627,
-    507,
-    420,
-    469,
-    569,
-    726
+    435,
+    719,
+    712,
+    740,
+    750,
+    995,
+    1011,
+    965,
+    1065,
+    934,
+    753,
+    806,
+    908,
+    752,
+    988,
+    1079,
+    1111,
+    1002,
+    696,
+    655,
+    556,
+    573,
+    570,
+    636
    ],
-   "m24": 15350,
-   "partial_hour": 79,
+   "m24": 19411,
+   "partial_hour": 152,
    "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 8289.0,
+   "sample_unique": 25,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 15.5,
+   "weighted_accounts": 12034.82,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "DaddyGrabX",
-     "f": 389073
+     "u": "UgoLagos",
+     "f": 13159
     },
     {
-     "u": "kz8_takahashi",
-     "f": 4458
+     "u": "JonAbbink",
+     "f": 3299
     },
     {
-     "u": "_anjikristine",
-     "f": 3939
+     "u": "VelvetBlade",
+     "f": 3249
     }
    ]
   },
-  "base:0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53": {
-   "query": "0x1a44233fae8d50f1aeb3a5d58dd426ff4814cb53 OR $QUID",
+  "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea": {
+   "query": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea OR $AXIS",
    "hourly": [
-    155,
-    190,
-    198,
-    289,
-    251,
-    205,
-    219,
-    186,
-    238,
-    237,
-    269,
-    226,
-    184,
+    227,
+    284,
+    303,
+    369,
+    381,
+    412,
+    488,
+    416,
+    430,
+    327,
+    317,
+    259,
+    370,
+    297,
+    266,
+    225,
+    277,
+    288,
+    224,
     244,
-    198,
-    106,
-    80,
-    75,
-    83,
-    108,
-    57,
-    135,
-    128,
-    152
+    258,
+    277,
+    321,
+    383
    ],
-   "m24": 4213,
-   "partial_hour": 23,
+   "m24": 7643,
+   "partial_hour": 58,
    "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 5,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 2275.02,
+   "sample_unique": 19,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 10.5,
+   "weighted_accounts": 3210.06,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Pepe__Torres",
-     "f": 31510
+     "u": "FrontPharmacol",
+     "f": 6224
     },
     {
-     "u": "LOVillaJavea",
-     "f": 28891
+     "u": "AshwinBadri2",
+     "f": 6059
     },
     {
-     "u": "CTSI_UK",
-     "f": 10331
+     "u": "nice_investment",
+     "f": 4784
+    }
+   ]
+  },
+  "base:0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083": {
+   "query": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+   "hourly": [
+    4,
+    4,
+    0,
+    0,
+    1,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0
+   ],
+   "m24": 11,
+   "partial_hour": 0,
+   "sample_posts": 7,
+   "sample_unique": 7,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 3.5,
+   "weighted_accounts": 5.5,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "Calvinjared1",
+     "f": 808
+    },
+    {
+     "u": "boban60exmv",
+     "f": 357
+    },
+    {
+     "u": "ItsJustPaul_ok",
+     "f": 135
+    }
+   ]
+  },
+  "base:0xb462a5039a540883508ee37b5cf3999647557ba3": {
+   "query": "0xb462a5039a540883508ee37b5cf3999647557ba3 OR $ATLAS",
+   "hourly": [
+    1037,
+    1032,
+    1397,
+    2088,
+    2179,
+    1698,
+    1382,
+    1433,
+    1431,
+    1215,
+    1276,
+    1271,
+    1231,
+    1158,
+    1175,
+    2323,
+    2298,
+    1642,
+    1769,
+    1187,
+    1385,
+    1111,
+    802,
+    988
+   ],
+   "m24": 34508,
+   "partial_hour": 219,
+   "sample_posts": 25,
+   "sample_unique": 23,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 11.5,
+   "weighted_accounts": 15873.68,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "startuprad_io",
+     "f": 8778
+    },
+    {
+     "u": "y0wo",
+     "f": 4817
+    },
+    {
+     "u": "5TUXOfWaAmWb1Cy",
+     "f": 1461
+    }
+   ]
+  },
+  "base:0x44b63af715d5ef02cc3646a6ce96875e11d69e85": {
+   "query": "0x44b63af715d5ef02cc3646a6ce96875e11d69e85 OR $RSGP",
+   "hourly": [
+    27,
+    18,
+    10,
+    7,
+    14,
+    1,
+    3,
+    15,
+    6,
+    10,
+    8,
+    4,
+    3,
+    9,
+    4,
+    6,
+    3,
+    3,
+    3,
+    4,
+    7,
+    30,
+    16,
+    5
+   ],
+   "m24": 216,
+   "partial_hour": 1,
+   "sample_posts": 25,
+   "sample_unique": 15,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 10.0,
+   "weighted_accounts": 86.4,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "0xStudy",
+     "f": 18045
+    },
+    {
+     "u": "jeansonlau",
+     "f": 2353
+    },
+    {
+     "u": "mfhanw3190",
+     "f": 1605
     }
    ]
   },
@@ -824,311 +875,259 @@
    "query": "0x9eadbe35f3ee3bf3e28180070c429298a1b02f93 OR $LMTS",
    "hourly": [
     0,
+    1,
     0,
     0,
+    1,
+    0,
+    0,
+    1,
+    3,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1,
     0,
     0,
     0,
     2,
     1,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    1,
-    0,
-    0
+    1
    ],
-   "m24": 7,
-   "partial_hour": 1,
-   "sample_posts": 8,
-   "sample_unique": 7,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 5.0,
-   "weighted_accounts": 5.0,
+   "m24": 14,
+   "partial_hour": 0,
+   "sample_posts": 14,
+   "sample_unique": 13,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 10.0,
+   "weighted_accounts": 10.0,
    "scaled": false,
    "top_mentioners": [
     {
-     "u": "milkroaddaily",
-     "f": 105979
+     "u": "SiConiglio",
+     "f": 228426
     },
     {
-     "u": "pvmihalache",
-     "f": 7373
+     "u": "gutsareon",
+     "f": 7636
     },
     {
-     "u": "OverratedTakes",
-     "f": 423
+     "u": "Theblue221205",
+     "f": 6829
     }
    ],
    "first_caller": {
-    "u": "pvmihalache",
-    "at": "2026-10-29T15:00:31.000Z",
-    "url": "https://x.com/pvmihalache/status/2115821084142432727"
+    "u": "hfkgk86778140",
+    "at": "2026-10-30T10:45:13.000Z",
+    "url": "https://x.com/hfkgk86778140/status/2116119225609998725"
    }
   },
   "base:0xb200000000000000000000585fd80c20af698f01": {
    "query": "0xb200000000000000000000585fd80c20af698f01 OR $worth",
    "hourly": [
-    8112,
-    9013,
-    9916,
-    11191,
-    12013,
-    13421,
-    13165,
-    12750,
-    11589,
-    11374,
-    10664,
-    9890,
-    10435,
-    10367,
-    9069,
-    9528,
-    9658,
-    10532,
-    9606,
-    8981,
-    9024,
-    8981,
-    9254,
-    9571
+    7925,
+    10157,
+    11002,
+    12109,
+    12967,
+    13591,
+    13553,
+    13616,
+    13109,
+    13569,
+    12115,
+    11751,
+    10331,
+    9829,
+    9153,
+    8779,
+    8259,
+    8523,
+    8244,
+    7989,
+    8731,
+    8626,
+    9342,
+    9046
    ],
-   "m24": 248104,
-   "partial_hour": 1099,
-   "sample_posts": 24,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 4,
-   "weighted_accounts_sample": 13.0,
-   "weighted_accounts": 134389.67,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Da7_Tech",
-     "f": 12505
-    },
-    {
-     "u": "k_rana30886",
-     "f": 7126
-    },
-    {
-     "u": "polash102030",
-     "f": 5399
-    }
-   ]
-  },
-  "base:0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083": {
-   "query": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
-   "hourly": [
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    5,
-    5,
-    9,
-    5,
-    8,
-    6,
-    4,
-    6,
-    5,
-    6
-   ],
-   "m24": 60,
-   "partial_hour": 0,
-   "sample_posts": 24,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 12.0,
-   "weighted_accounts": 30.0,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "richnickel",
-     "f": 1244
-    },
-    {
-     "u": "soroushh987",
-     "f": 699
-    },
-    {
-     "u": "LaMarinaFashion",
-     "f": 343
-    }
-   ]
-  },
-  "base:0xed664536023d8e4b1640c394777d34abaff1df8f": {
-   "query": "0xed664536023d8e4b1640c394777d34abaff1df8f",
-   "hourly": [
-    1,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0
-   ],
-   "m24": 5,
-   "partial_hour": 0,
-   "sample_posts": 5,
-   "sample_unique": 2,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 1.5,
-   "weighted_accounts": 1.5,
-   "scaled": false,
-   "top_mentioners": [
-    {
-     "u": "TANKZ___",
-     "f": 1644
-    },
-    {
-     "u": "ObligadoHarold",
-     "f": 37
-    }
-   ],
-   "first_caller": {
-    "u": "ObligadoHarold",
-    "at": "2026-10-29T09:24:09.000Z",
-    "url": "https://x.com/ObligadoHarold/status/2115736437140451382"
-   }
-  },
-  "base:0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95": {
-   "query": "0xfb31f85a8367210b2e4ed2360d2da9dc2d2ccc95",
-   "hourly": [
-    1,
-    0,
-    0,
-    1,
-    0,
-    3,
-    2,
-    8,
-    4,
-    3,
-    3,
-    0,
-    2,
-    1,
-    0,
-    1,
-    1,
-    2,
-    0,
-    3,
-    1,
-    0,
-    1,
-    1
-   ],
-   "m24": 38,
-   "partial_hour": 0,
+   "m24": 252316,
+   "partial_hour": 1592,
    "sample_posts": 25,
-   "sample_unique": 19,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 10.5,
-   "weighted_accounts": 15.96,
+   "sample_unique": 25,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 19.5,
+   "weighted_accounts": 196806.48,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "YessahBlessahCC",
-     "f": 4756
+     "u": "ReleGlo",
+     "f": 72920
     },
     {
-     "u": "Danny4582851",
-     "f": 1989
+     "u": "Pejuola_a",
+     "f": 32728
     },
     {
-     "u": "Mayorwhistle10",
-     "f": 1954
+     "u": "TeeFresh225",
+     "f": 11342
     }
    ]
   },
   "base:0x9b5e262cf9bb04869ab40b19af91d2dc85761722": {
    "query": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722 OR $NOCK",
    "hourly": [
-    3,
-    4,
-    51,
-    23,
-    37,
+    13,
     18,
+    25,
+    27,
+    16,
+    11,
+    17,
+    33,
+    65,
+    70,
+    6,
+    34,
     14,
-    22,
     18,
-    16,
-    8,
-    16,
-    9,
     10,
-    40,
-    29,
-    9,
-    11,
-    21,
-    8,
-    11,
-    47,
-    37,
-    17
+    14,
+    14,
+    3,
+    10,
+    38,
+    31,
+    20,
+    30,
+    12
    ],
-   "m24": 479,
+   "m24": 549,
    "partial_hour": 1,
    "sample_posts": 25,
-   "sample_unique": 21,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 268.24,
+   "sample_unique": 23,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 15.0,
+   "weighted_accounts": 329.4,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "CumnockJnrsFC",
-     "f": 9778
+     "u": "ourcryptotalk",
+     "f": 82741
     },
     {
-     "u": "Heisbeemo_",
-     "f": 7026
+     "u": "7horseracing",
+     "f": 44444
     },
     {
-     "u": "GREENOCKJFC",
-     "f": 4248
+     "u": "TSBRACING",
+     "f": 4221
+    }
+   ]
+  },
+  "base:0xff8104251e7761163fac3211ef5583fb3f8583d6": {
+   "query": "0xff8104251e7761163fac3211ef5583fb3f8583d6 OR $REPPO",
+   "hourly": [
+    5,
+    0,
+    2,
+    0,
+    0,
+    4,
+    9,
+    28,
+    33,
+    8,
+    8,
+    7,
+    2,
+    17,
+    4,
+    7,
+    2,
+    4,
+    2,
+    3,
+    4,
+    7,
+    4,
+    1
+   ],
+   "m24": 161,
+   "partial_hour": 2,
+   "sample_posts": 25,
+   "sample_unique": 22,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 12.5,
+   "weighted_accounts": 80.5,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "RationalG",
+     "f": 3596
+    },
+    {
+     "u": "Biti8888",
+     "f": 2115
+    },
+    {
+     "u": "jonbonnerjons69",
+     "f": 1636
+    }
+   ]
+  },
+  "base:0xc52aedec3374422d7510e294cfaa90799595cba3": {
+   "query": "0xc52aedec3374422d7510e294cfaa90799595cba3 OR $Surplus",
+   "hourly": [
+    132,
+    167,
+    184,
+    217,
+    197,
+    258,
+    233,
+    190,
+    229,
+    216,
+    223,
+    240,
+    173,
+    148,
+    113,
+    134,
+    107,
+    128,
+    134,
+    122,
+    158,
+    125,
+    110,
+    142
+   ],
+   "m24": 4080,
+   "partial_hour": 34,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 15.5,
+   "weighted_accounts": 2529.6,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "DisrespectedThe",
+     "f": 669066
+    },
+    {
+     "u": "EddySardou",
+     "f": 20036
+    },
+    {
+     "u": "Eddyballer1",
+     "f": 8006
     }
    ]
   },
@@ -1136,158 +1135,171 @@
    "query": "0x23a2847d772803f9efc64b4277b782b06296fe51",
    "hourly": [
     0,
+    1,
+    1,
+    1,
+    1,
+    2,
     0,
+    9,
+    3,
+    1,
+    1,
+    8,
+    1,
+    9,
+    1,
+    0,
+    1,
     3,
     0,
-    3,
-    3,
+    0,
+    1,
+    1,
+    1,
+    1
+   ],
+   "m24": 47,
+   "partial_hour": 0,
+   "sample_posts": 25,
+   "sample_unique": 13,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 9.0,
+   "weighted_accounts": 16.92,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "altmasterroshi",
+     "f": 6444
+    },
+    {
+     "u": "ShorterThanFic",
+     "f": 5251
+    },
+    {
+     "u": "beastymcbeast",
+     "f": 2920
+    }
+   ]
+  },
+  "base:0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd": {
+   "query": "0x8c0d3adcf8ce094e1ae437557ec90a6374dc9bdd OR $OVPP",
+   "hourly": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    1
+   ],
+   "m24": 4,
+   "partial_hour": 0,
+   "sample_posts": 4,
+   "sample_unique": 4,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 2.0,
+   "weighted_accounts": 2.0,
+   "scaled": false,
+   "top_mentioners": [
+    {
+     "u": "geek_accoun",
+     "f": 628
+    },
+    {
+     "u": "mhamd_kader",
+     "f": 120
+    },
+    {
+     "u": "base_rss",
+     "f": 59
+    }
+   ],
+   "first_caller": {
+    "u": "base_rss",
+    "at": "2026-10-30T16:07:56.000Z",
+    "url": "https://x.com/base_rss/status/2116200437850198517"
+   }
+  },
+  "bsc:0x8c907e0a72c3d55627e853f4ec6a96b0c8771145": {
+   "query": "0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
+   "hourly": [
     4,
-    3,
+    4,
+    2,
+    0,
     1,
-    3,
-    6,
-    5,
-    1,
-    3,
+    0,
     0,
     0,
     1,
-    3,
+    0,
+    0,
+    0,
+    0,
     1,
+    0,
+    0,
+    0,
+    0,
+    0,
     0,
     0,
     0,
     0,
     0
    ],
-   "m24": 40,
+   "m24": 13,
    "partial_hour": 0,
-   "sample_posts": 24,
-   "sample_unique": 12,
+   "sample_posts": 11,
+   "sample_unique": 11,
    "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 9.5,
-   "weighted_accounts": 15.83,
+   "weighted_accounts_sample": 6.5,
+   "weighted_accounts": 7.68,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Studious_Crypto",
-     "f": 9833
+     "u": "ymsnyhor66422",
+     "f": 49603
     },
     {
-     "u": "altmasterroshi",
-     "f": 6447
+     "u": "EMdelosNEGOCIOS",
+     "f": 2121
     },
     {
-     "u": "ShorterThanFic",
-     "f": 5251
-    }
-   ]
-  },
-  "base:0xb2000000000000000000004c27f6523082f41d01": {
-   "query": "0xb2000000000000000000004c27f6523082f41d01 OR $Basecat",
-   "hourly": [
-    36,
-    59,
-    26,
-    22,
-    19,
-    32,
-    5,
-    43,
-    22,
-    27,
-    39,
-    13,
-    24,
-    15,
-    58,
-    32,
-    22,
-    19,
-    13,
-    20,
-    22,
-    5,
-    22,
-    7
-   ],
-   "m24": 602,
-   "partial_hour": 1,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 13.5,
-   "weighted_accounts": 325.08,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Rezas2020",
-     "f": 1129
-    },
-    {
-     "u": "kpu_brebes",
-     "f": 1097
-    },
-    {
-     "u": "Mel_Salazar",
-     "f": 692
-    }
-   ]
-  },
-  "bsc:0x8c907e0a72c3d55627e853f4ec6a96b0c8771145": {
-   "query": "0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
-   "hourly": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0,
-    8,
-    10,
-    8,
-    8,
-    7,
-    10,
-    6,
-    4,
-    6,
-    5
-   ],
-   "m24": 74,
-   "partial_hour": 2,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 12.0,
-   "weighted_accounts": 35.52,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Joseph_Aleny",
-     "f": 623
-    },
-    {
-     "u": "benny53331",
-     "f": 84
-    },
-    {
-     "u": "mrl_jaay",
-     "f": 72
+     "u": "aullelo",
+     "f": 398
     }
    ]
   },
   "bsc:0xa991f61940095aea0724ef54077223b048c5cf7b": {
    "query": "0xa991f61940095aea0724ef54077223b048c5cf7b",
    "hourly": [
+    2,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
     0,
     0,
     0,
@@ -1302,37 +1314,136 @@
     0,
     0,
     0,
-    4,
-    5,
+    0,
+    0
+   ],
+   "m24": 4,
+   "partial_hour": 0,
+   "sample_posts": 4,
+   "sample_unique": 4,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 2.0,
+   "weighted_accounts": 2.0,
+   "scaled": false,
+   "top_mentioners": [
+    {
+     "u": "Martiii__33",
+     "f": 13
+    },
+    {
+     "u": "HanFoxGamerExMo",
+     "f": 8
+    },
+    {
+     "u": "Hardcoregeek3r",
+     "f": 2
+    }
+   ],
+   "first_caller": {
+    "u": "Martiii__33",
+    "at": "2026-10-30T09:30:02.000Z",
+    "url": "https://x.com/Martiii__33/status/2116100305507230101"
+   }
+  },
+  "bsc:0x30117e4bc17d7b044194b76a38365c53b72f7d49": {
+   "query": "0x30117e4bc17d7b044194b76a38365c53b72f7d49 OR $GWEI",
+   "hourly": [
+    7,
     9,
-    9,
-    6,
-    6,
-    9,
+    24,
+    13,
+    18,
+    7,
+    12,
+    11,
+    8,
+    12,
+    8,
+    10,
+    16,
+    15,
     2,
     3,
-    9
+    3,
+    3,
+    4,
+    6,
+    7,
+    10,
+    21,
+    11
    ],
-   "m24": 62,
+   "m24": 240,
    "partial_hour": 1,
    "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 13.0,
-   "weighted_accounts": 32.24,
+   "sample_unique": 15,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 9.0,
+   "weighted_accounts": 86.4,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "ps2paratodos",
-     "f": 12272
+     "u": "Julieannlic",
+     "f": 1900
     },
     {
-     "u": "MasterK6",
-     "f": 1949
+     "u": "beallcrypto",
+     "f": 1805
     },
     {
-     "u": "atik6526",
-     "f": 460
+     "u": "Letsmakeatradex",
+     "f": 1573
+    }
+   ]
+  },
+  "bsc:0x7c907d1ce734b73e9236dcd06cefcb6346857777": {
+   "query": "0x7c907d1ce734b73e9236dcd06cefcb6346857777 OR $SAFU",
+   "hourly": [
+    1304,
+    1486,
+    1553,
+    1449,
+    1295,
+    1225,
+    1433,
+    1217,
+    791,
+    648,
+    516,
+    444,
+    400,
+    362,
+    320,
+    275,
+    317,
+    300,
+    291,
+    325,
+    359,
+    325,
+    362,
+    275
+   ],
+   "m24": 17272,
+   "partial_hour": 64,
+   "sample_posts": 25,
+   "sample_unique": 23,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 17.0,
+   "weighted_accounts": 11744.96,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "KICKDENIM",
+     "f": 75939
+    },
+    {
+     "u": "Bitrats_org",
+     "f": 44669
+    },
+    {
+     "u": "webktsr",
+     "f": 27499
     }
    ]
   },
@@ -1344,13 +1455,13 @@
     0,
     0,
     0,
-    1,
     0,
     0,
     0,
-    1,
     0,
-    1,
+    0,
+    0,
+    0,
     0,
     0,
     0,
@@ -1364,53 +1475,29 @@
     0,
     0
    ],
-   "m24": 3,
+   "m24": 0,
    "partial_hour": 0,
-   "sample_posts": 3,
-   "sample_unique": 3,
+   "sample_posts": 0,
+   "sample_unique": 0,
    "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 2.5,
-   "weighted_accounts": 2.5,
+   "weighted_accounts_sample": 0.0,
+   "weighted_accounts": 0.0,
    "scaled": false,
-   "top_mentioners": [
-    {
-     "u": "bigxeee",
-     "f": 1630
-    },
-    {
-     "u": "Merlon_Tooth",
-     "f": 1029
-    },
-    {
-     "u": "susurrus_btc",
-     "f": 138
-    }
-   ],
-   "first_caller": {
-    "u": "bigxeee",
-    "at": "2026-10-29T14:53:03.000Z",
-    "url": "https://x.com/bigxeee/status/2115819205807477099"
-   }
+   "top_mentioners": []
   },
-  "bsc:0x4902c5ebc598265ed2212b559b042de8a5eeec3f": {
-   "query": "0x4902c5ebc598265ed2212b559b042de8a5eeec3f OR $B13B",
+  "bsc:0x9558a9254890b2a8b057a789f413631b9084f4a3": {
+   "query": "0x9558a9254890b2a8b057a789f413631b9084f4a3",
    "hourly": [
-    0,
-    1,
-    3,
-    0,
-    0,
+    4,
+    4,
+    2,
     0,
     0,
     0,
     2,
-    2,
-    2,
     0,
     0,
-    2,
     0,
-    1,
     0,
     0,
     1,
@@ -1418,191 +1505,39 @@
     0,
     0,
     0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
     0
    ],
-   "m24": 14,
-   "partial_hour": 1,
-   "sample_posts": 10,
-   "sample_unique": 10,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 7.5,
-   "weighted_accounts": 10.5,
+   "m24": 15,
+   "partial_hour": 0,
+   "sample_posts": 13,
+   "sample_unique": 13,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 8.0,
+   "weighted_accounts": 9.23,
    "scaled": true,
    "top_mentioners": [
-    {
-     "u": "TuanNguyen_6789",
-     "f": 74734
-    },
-    {
-     "u": "vmhoangit1408",
-     "f": 17152
-    },
     {
      "u": "CoinWingsAI",
-     "f": 2303
-    }
-   ]
-  },
-  "bsc:0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15": {
-   "query": "0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15 OR $JAGENT",
-   "hourly": [
-    18,
-    41,
-    172,
-    212,
-    290,
-    228,
-    130,
-    113,
-    103,
-    71,
-    70,
-    33,
-    26,
-    29,
-    24,
-    39,
-    75,
-    52,
-    42,
-    33,
-    143,
-    75,
-    102,
-    105
-   ],
-   "m24": 2226,
-   "partial_hour": 11,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 17.0,
-   "weighted_accounts": 1513.68,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "xiaojianjian567",
-     "f": 74467
+     "f": 2308
     },
     {
-     "u": "bibisister0508",
-     "f": 13012
+     "u": "coinwingscn",
+     "f": 1805
     },
     {
-     "u": "FeixiangHu",
-     "f": 3322
-    }
-   ]
-  },
-  "bsc:0xdd806e436dda5588bf54061c11590c77ddc87777": {
-   "query": "0xdd806e436dda5588bf54061c11590c77ddc87777 OR $SAFU",
-   "hourly": [
-    45,
-    55,
-    55,
-    58,
-    42,
-    58,
-    66,
-    36,
-    34,
-    129,
-    116,
-    280,
-    2581,
-    2021,
-    1349,
-    1229,
-    1000,
-    1669,
-    1501,
-    1198,
-    1218,
-    1441,
-    1245,
-    1307
-   ],
-   "m24": 18733,
-   "partial_hour": 193,
-   "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 17.0,
-   "weighted_accounts": 12738.44,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "GusevLife",
-     "f": 77651
-    },
-    {
-     "u": "xgbtc",
-     "f": 36979
-    },
-    {
-     "u": "cryptohdaily",
-     "f": 20993
+     "u": "bigxeee",
+     "f": 1711
     }
    ]
   },
   "bsc:0x99991c6aabba5a096f24f250b73580f5179b9999": {
    "query": "0x99991c6aabba5a096f24f250b73580f5179b9999",
-   "hourly": [
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    1,
-    0,
-    0,
-    0,
-    1,
-    1,
-    1,
-    0,
-    0,
-    1,
-    0,
-    0,
-    1,
-    0
-   ],
-   "m24": 6,
-   "partial_hour": 0,
-   "sample_posts": 6,
-   "sample_unique": 6,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 5.5,
-   "weighted_accounts": 5.5,
-   "scaled": false,
-   "top_mentioners": [
-    {
-     "u": "KTX_Exchange",
-     "f": 212934
-    },
-    {
-     "u": "inucoinbase",
-     "f": 9520
-    },
-    {
-     "u": "BaskanTeknik_K",
-     "f": 6710
-    }
-   ],
-   "first_caller": {
-    "u": "Benokphones",
-    "at": "2026-10-29T19:34:28.000Z",
-    "url": "https://x.com/Benokphones/status/2115890027796349052"
-   }
-  },
-  "bsc:0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0": {
-   "query": "0x3e5d4f8aee0d9b3082d5f6da5d6e225d17ba9ea0",
    "hourly": [
     0,
     0,
@@ -1642,204 +1577,255 @@
   "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3": {
    "query": "0x4b3d30992f003c8167699735f5ab2831b2a087d3 OR $COLLECT",
    "hourly": [
-    1784,
-    1887,
-    2215,
-    2197,
-    2315,
-    2549,
-    2607,
-    2505,
-    2324,
-    2403,
+    1473,
+    1921,
+    2038,
+    2121,
+    2329,
+    2519,
+    2303,
+    2251,
     2052,
-    2043,
-    1822,
-    1626,
-    1335,
-    1192,
-    1122,
-    1014,
-    1007,
-    1145,
-    1291,
-    1505,
-    1545,
-    1804
+    2212,
+    2040,
+    1646,
+    1516,
+    1233,
+    1040,
+    908,
+    848,
+    862,
+    938,
+    1166,
+    1304,
+    1924,
+    1762,
+    1892
    ],
-   "m24": 43289,
-   "partial_hour": 307,
+   "m24": 40298,
+   "partial_hour": 357,
    "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 20.0,
-   "weighted_accounts": 34631.2,
+   "sample_unique": 25,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 18.5,
+   "weighted_accounts": 29820.52,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "sfsbrasil2026",
-     "f": 117071
+     "u": "justinenantale2",
+     "f": 161441
     },
     {
-     "u": "Ayanfe_Baddo",
-     "f": 32615
+     "u": "ummilurve",
+     "f": 7321
     },
     {
-     "u": "Stonecodecom",
-     "f": 20991
+     "u": "__XBOYWIFEX__",
+     "f": 6670
     }
    ]
   },
-  "bsc:0xb0f09ea9ae0515c3551080d4a745c8115aa30e37": {
-   "query": "0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
+  "bsc:0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15": {
+   "query": "0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15 OR $JAGENT",
    "hourly": [
-    0,
-    1,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    0,
-    8,
-    10,
-    8,
-    6,
-    10,
-    6,
-    7,
-    2,
-    9,
-    9
+    139,
+    176,
+    50,
+    128,
+    106,
+    95,
+    147,
+    49,
+    45,
+    51,
+    14,
+    19,
+    22,
+    122,
+    181,
+    43,
+    58,
+    43,
+    57,
+    46,
+    51,
+    91,
+    100,
+    96
    ],
-   "m24": 76,
-   "partial_hour": 1,
+   "m24": 1929,
+   "partial_hour": 16,
    "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 42.56,
+   "sample_unique": 20,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 11.5,
+   "weighted_accounts": 887.34,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "EARTH_5087",
-     "f": 2191
+     "u": "AetheriaFeng",
+     "f": 48137
     },
     {
-     "u": "opming9",
-     "f": 2175
+     "u": "laozhang1982",
+     "f": 17350
     },
     {
-     "u": "Nathan55393243",
-     "f": 1833
+     "u": "Wallet_Journey",
+     "f": 8562
+    }
+   ]
+  },
+  "bsc:0xdd806e436dda5588bf54061c11590c77ddc87777": {
+   "query": "0xdd806e436dda5588bf54061c11590c77ddc87777 OR $SAFU",
+   "hourly": [
+    1306,
+    1489,
+    1552,
+    1437,
+    1281,
+    1218,
+    1425,
+    1215,
+    789,
+    647,
+    515,
+    444,
+    400,
+    360,
+    323,
+    278,
+    312,
+    300,
+    289,
+    319,
+    355,
+    326,
+    365,
+    275
+   ],
+   "m24": 17220,
+   "partial_hour": 65,
+   "sample_posts": 25,
+   "sample_unique": 23,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 16.5,
+   "weighted_accounts": 11365.2,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "KICKDENIM",
+     "f": 75939
+    },
+    {
+     "u": "Bitrats_org",
+     "f": 44669
+    },
+    {
+     "u": "webktsr",
+     "f": 27499
+    }
+   ]
+  },
+  "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d": {
+   "query": "0x1d28d989f9e3ccb8b15d0cec601734514f958e4d OR $BASED",
+   "hourly": [
+    5967,
+    6846,
+    7313,
+    8190,
+    9411,
+    9934,
+    10653,
+    9943,
+    9335,
+    8841,
+    8346,
+    8051,
+    7381,
+    7139,
+    6909,
+    6267,
+    6869,
+    6069,
+    5903,
+    5736,
+    5420,
+    5259,
+    5427,
+    5267
+   ],
+   "m24": 176476,
+   "partial_hour": 1151,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 3,
+   "weighted_accounts_sample": 13.5,
+   "weighted_accounts": 95297.04,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "AdhieuLibby",
+     "f": 19304
+    },
+    {
+     "u": "justibukun",
+     "f": 6252
+    },
+    {
+     "u": "evgmonn",
+     "f": 4921
     }
    ]
   },
   "bsc:0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36": {
    "query": "0xcf3232b85b43bca90e51d38cc06cc8bb8c8a3e36 OR $Beat",
    "hourly": [
-    6126,
-    7014,
-    7616,
-    9320,
-    9739,
-    9457,
-    10017,
-    9476,
-    9724,
-    9461,
-    9491,
-    10837,
-    9416,
-    8431,
-    7696,
-    7248,
-    7145,
-    6890,
-    6539,
-    5653,
-    6111,
-    5880,
-    5732,
-    6473
+    5710,
+    7806,
+    8582,
+    9841,
+    10509,
+    10198,
+    9514,
+    9275,
+    9493,
+    10138,
+    10791,
+    10423,
+    9871,
+    9238,
+    8535,
+    8245,
+    8438,
+    9536,
+    8149,
+    8510,
+    8181,
+    8339,
+    7993,
+    8052
    ],
-   "m24": 191492,
-   "partial_hour": 911,
+   "m24": 215367,
+   "partial_hour": 2035,
    "sample_posts": 25,
    "sample_unique": 25,
-   "sample_skipped_botlike": 4,
+   "sample_skipped_botlike": 3,
    "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 107235.52,
+   "weighted_accounts": 120605.52,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Hottransmommy",
-     "f": 15313
+     "u": "ICCCY",
+     "f": 4865
     },
     {
-     "u": "UglyAssRahRah",
-     "f": 2573
+     "u": "tgill763",
+     "f": 4514
     },
     {
-     "u": "Paapissson",
-     "f": 1892
-    }
-   ]
-  },
-  "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405": {
-   "query": "0x0c6302401aa5325c2e36f170f52c00b1d220b405 OR $GANG",
-   "hourly": [
-    3128,
-    3603,
-    3648,
-    3965,
-    4997,
-    5464,
-    5533,
-    4921,
-    4724,
-    4397,
-    4242,
-    4015,
-    3835,
-    3784,
-    4504,
-    5158,
-    4969,
-    5038,
-    4708,
-    4252,
-    4205,
-    4070,
-    3910,
-    4176
-   ],
-   "m24": 105246,
-   "partial_hour": 827,
-   "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 16.0,
-   "weighted_accounts": 67357.44,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "pakatube",
-     "f": 349428
-    },
-    {
-     "u": "LEEJETJET",
-     "f": 17583
-    },
-    {
-     "u": "hengen_ai",
-     "f": 15458
+     "u": "urbabyesther",
+     "f": 3469
     }
    ]
   },
@@ -1847,356 +1833,254 @@
    "query": "0x39dbed3a2bd333467115de45665cc57f813c4571",
    "hourly": [
     1,
-    19,
     5,
-    5,
+    2,
+    6,
     4,
-    5,
-    4,
-    10,
     1,
+    0,
+    6,
+    0,
     5,
-    2,
+    8,
     3,
-    2,
-    4,
+    0,
     3,
-    2,
+    1,
+    3,
     5,
-    2,
-    2,
-    4,
+    0,
     3,
-    2,
+    1,
     4,
-    4
+    8,
+    3,
+    9
    ],
-   "m24": 101,
+   "m24": 81,
    "partial_hour": 0,
    "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 15.0,
-   "weighted_accounts": 60.6,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 12.5,
+   "weighted_accounts": 40.5,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Bobby_1111888",
-     "f": 51543
+     "u": "rinrin9986xl",
+     "f": 1550
     },
     {
-     "u": "Lgk007",
-     "f": 12242
+     "u": "VeMinrme",
+     "f": 1020
     },
     {
-     "u": "KRL_defi_",
-     "f": 9439
+     "u": "carcossfox5",
+     "f": 874
     }
    ]
   },
   "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4": {
    "query": "0x020bfc650a365f8bb26819deaabf3e21291018b4 OR $CASHCAT",
    "hourly": [
-    38,
-    53,
-    57,
-    70,
-    114,
-    66,
-    64,
-    121,
-    214,
-    123,
-    77,
-    57,
-    211,
-    96,
-    79,
-    62,
-    48,
+    32,
     52,
-    40,
-    48,
-    52,
-    74,
-    51,
-    49
-   ],
-   "m24": 1916,
-   "partial_hour": 6,
-   "sample_posts": 25,
-   "sample_unique": 20,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 1072.96,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Grinnfa",
-     "f": 4155
-    },
-    {
-     "u": "A_2ice_",
-     "f": 3793
-    },
-    {
-     "u": "Murphycode",
-     "f": 2673
-    }
-   ]
-  },
-  "robinhood:0xd086f891229cd123aadfcae7c4b40150a80fd9d7": {
-   "query": "0xd086f891229cd123aadfcae7c4b40150a80fd9d7 OR $PIZZA",
-   "hourly": [
-    1116,
-    1591,
-    1730,
-    2072,
-    2125,
-    2235,
-    2425,
-    2181,
-    2248,
-    2212,
-    2180,
-    2235,
-    2290,
-    4495,
-    6194,
-    5749,
-    5598,
-    4750,
-    3380,
-    2538,
-    1907,
-    1567,
-    1724,
-    1596
-   ],
-   "m24": 66138,
-   "partial_hour": 189,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 19.5,
-   "weighted_accounts": 51587.64,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "livoxll",
-     "f": 232225
-    },
-    {
-     "u": "MenFuns",
-     "f": 94090
-    },
-    {
-     "u": "Debrahj37",
-     "f": 12810
-    }
-   ]
-  },
-  "robinhood:0xacc8de336f5d2366fa7334383d8fab73499f582a": {
-   "query": "0xacc8de336f5d2366fa7334383d8fab73499f582a OR $FOREVER",
-   "hourly": [
-    9655,
-    23119,
-    17769,
-    15758,
-    17694,
-    17163,
-    18290,
-    17438,
-    15162,
-    13565,
-    13444,
-    17121,
-    15167,
-    14683,
-    15264,
-    13183,
-    13794,
-    14263,
-    13428,
-    12487,
-    11907,
-    11788,
-    10970,
-    13049
-   ],
-   "m24": 356161,
-   "partial_hour": 1676,
-   "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 15.5,
-   "weighted_accounts": 220819.82,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "Dina_mkitty",
-     "f": 19037
-    },
-    {
-     "u": "ryu_waccho",
-     "f": 3735
-    },
-    {
-     "u": "Utdkati",
-     "f": 3019
-    }
-   ]
-  },
-  "robinhood:0xe4119a9bfcc86915368502b598bbed4745f7051d": {
-   "query": "0xe4119a9bfcc86915368502b598bbed4745f7051d OR $WOFL",
-   "hourly": [
-    8,
-    27,
-    91,
-    130,
-    79,
-    36,
-    71,
-    111,
-    76,
-    42,
-    27,
-    19,
-    11,
-    12,
-    15,
-    18,
-    26,
-    23,
-    31,
-    18,
-    25,
-    19,
-    33,
-    65
-   ],
-   "m24": 1013,
-   "partial_hour": 5,
-   "sample_posts": 25,
-   "sample_unique": 16,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 10.0,
-   "weighted_accounts": 405.2,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "SamEvarth",
-     "f": 4702
-    },
-    {
-     "u": "Autisto_Eth",
-     "f": 4645
-    },
-    {
-     "u": "princess_alviya",
-     "f": 1290
-    }
-   ]
-  },
-  "robinhood:0xedbf91223639800bcd5756815caf908df3b890be": {
-   "query": "0xedbf91223639800bcd5756815caf908df3b890be OR $PRIORS",
-   "hourly": [
-    50,
-    55,
-    61,
-    38,
-    52,
-    37,
-    62,
-    61,
-    28,
-    36,
-    41,
-    37,
-    23,
-    35,
-    47,
+    89,
+    72,
+    65,
     58,
-    51,
+    49,
+    71,
     43,
+    53,
+    41,
     47,
-    35,
-    42,
+    28,
+    29,
+    29,
+    26,
+    30,
+    21,
     20,
-    18,
-    28
+    17,
+    31,
+    23,
+    40,
+    44
    ],
-   "m24": 1005,
-   "partial_hour": 5,
+   "m24": 1010,
+   "partial_hour": 13,
    "sample_posts": 25,
-   "sample_unique": 25,
+   "sample_unique": 24,
    "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 15.0,
-   "weighted_accounts": 603.0,
+   "weighted_accounts_sample": 21.0,
+   "weighted_accounts": 848.4,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "____abiodun____",
-     "f": 5953
+     "u": "milo_crypt01",
+     "f": 218022
     },
     {
-     "u": "ManarchyXYZ",
-     "f": 3717
+     "u": "The__Solstice",
+     "f": 205591
     },
     {
-     "u": "Promythious",
-     "f": 2727
+     "u": "hailey_cryptoo",
+     "f": 54754
     }
    ]
   },
   "robinhood:0xc9675fe679c7d4e1b94416f66d61c96127eb964a": {
    "query": "0xc9675fe679c7d4e1b94416f66d61c96127eb964a OR $GIGATENEV",
    "hourly": [
-    25,
-    26,
-    15,
-    11,
-    12,
-    7,
     6,
-    15,
-    3,
-    5,
+    24,
+    8,
     4,
-    7,
-    32,
-    2,
-    7,
-    23,
-    10,
-    9,
-    9,
     15,
+    16,
     10,
-    34,
+    5,
+    31,
+    5,
+    15,
+    2,
+    4,
+    6,
     7,
-    21
+    2,
+    14,
+    2,
+    0,
+    5,
+    3,
+    2,
+    4,
+    2
    ],
-   "m24": 315,
-   "partial_hour": 1,
+   "m24": 192,
+   "partial_hour": 2,
    "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 12.5,
-   "weighted_accounts": 157.5,
+   "sample_unique": 19,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 13.5,
+   "weighted_accounts": 103.68,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "Pornable2",
-     "f": 33802
+     "u": "Dexconer",
+     "f": 154718
     },
     {
-     "u": "sonsaniyesporrr",
-     "f": 435
+     "u": "ChinaDegen",
+     "f": 117233
     },
     {
-     "u": "noavelien",
-     "f": 434
+     "u": "VectorOnchain",
+     "f": 2740
+    }
+   ]
+  },
+  "robinhood:0xacc8de336f5d2366fa7334383d8fab73499f582a": {
+   "query": "0xacc8de336f5d2366fa7334383d8fab73499f582a OR $FOREVER",
+   "hourly": [
+    10237,
+    18976,
+    17327,
+    34458,
+    25900,
+    24435,
+    22971,
+    19879,
+    17116,
+    15851,
+    14716,
+    13361,
+    13346,
+    12891,
+    13456,
+    13387,
+    14429,
+    21262,
+    19999,
+    21994,
+    29687,
+    22518,
+    15800,
+    15463
+   ],
+   "m24": 449459,
+   "partial_hour": 3121,
+   "sample_posts": 24,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 13.0,
+   "weighted_accounts": 243456.96,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "Itspublicc",
+     "f": 46575
+    },
+    {
+     "u": "kavalerii",
+     "f": 4738
+    },
+    {
+     "u": "SuhadaYuli62210",
+     "f": 1875
+    }
+   ]
+  },
+  "robinhood:0xe4119a9bfcc86915368502b598bbed4745f7051d": {
+   "query": "0xe4119a9bfcc86915368502b598bbed4745f7051d OR $WOFL",
+   "hourly": [
+    28,
+    61,
+    44,
+    41,
+    35,
+    16,
+    30,
+    42,
+    38,
+    16,
+    23,
+    21,
+    12,
+    7,
+    16,
+    30,
+    21,
+    26,
+    12,
+    19,
+    20,
+    32,
+    11,
+    4
+   ],
+   "m24": 605,
+   "partial_hour": 9,
+   "sample_posts": 25,
+   "sample_unique": 13,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 9.0,
+   "weighted_accounts": 217.8,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "Coachkcrypto",
+     "f": 132241
+    },
+    {
+     "u": "bgdnff",
+     "f": 3109
+    },
+    {
+     "u": "La_Filoxera",
+     "f": 2709
     }
    ]
   },
@@ -2204,254 +2088,356 @@
    "query": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
    "hourly": [
     1,
-    0,
-    3,
-    1,
-    1,
-    4,
-    4,
-    8,
-    7,
-    7,
-    4,
-    18,
-    5,
-    9,
-    9,
-    7,
-    1,
+    6,
     2,
     2,
     1,
+    5,
+    1,
+    6,
+    4,
+    1,
+    2,
+    2,
+    2,
+    0,
     3,
     5,
+    7,
     0,
-    1
+    1,
+    1,
+    3,
+    1,
+    1,
+    6
    ],
-   "m24": 103,
-   "partial_hour": 0,
+   "m24": 63,
+   "partial_hour": 1,
    "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 1,
-   "weighted_accounts_sample": 13.0,
-   "weighted_accounts": 53.56,
+   "sample_unique": 25,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 14.5,
+   "weighted_accounts": 36.54,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "dancrypto",
-     "f": 9414
+     "u": "BluntCap",
+     "f": 30362
     },
     {
-     "u": "PeepRadars",
-     "f": 3901
+     "u": "RexhaRexhaRexha",
+     "f": 15979
     },
     {
-     "u": "CoinWingsAI",
-     "f": 2303
+     "u": "Ocean_4549",
+     "f": 4285
     }
    ]
   },
-  "robinhood:0x56910d4409f3a0c78c64dd8d0545ff0705389870": {
-   "query": "0x56910d4409f3a0c78c64dd8d0545ff0705389870 OR $Index",
+  "robinhood:0x5d6ef090a1461b11c9427ac319260122d1c61e18": {
+   "query": "0x5d6ef090a1461b11c9427ac319260122d1c61e18 OR $ICOIN",
    "hourly": [
-    826,
-    1004,
-    1162,
-    1769,
-    1526,
-    1647,
-    1527,
-    1324,
-    1031,
-    1036,
-    982,
-    963,
-    874,
-    809,
-    742,
-    812,
-    855,
-    807,
-    934,
-    965,
-    928,
-    916,
-    972,
-    940
+    2,
+    0,
+    2,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    20,
+    582,
+    325,
+    217,
+    221,
+    61,
+    93,
+    47,
+    68,
+    69,
+    72,
+    31
    ],
-   "m24": 25351,
-   "partial_hour": 169,
+   "m24": 1811,
+   "partial_hour": 16,
    "sample_posts": 25,
-   "sample_unique": 24,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 14.0,
-   "weighted_accounts": 14196.56,
+   "sample_unique": 6,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 6.0,
+   "weighted_accounts": 434.64,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "GameP2e",
-     "f": 12624
+     "u": "LookForEntries",
+     "f": 55887
     },
     {
-     "u": "rased99880",
-     "f": 3827
+     "u": "EAZY_SOL_",
+     "f": 1780
     },
     {
-     "u": "niuroumiann",
-     "f": 1707
+     "u": "oay6d",
+     "f": 1376
+    }
+   ]
+  },
+  "robinhood:0x30de7ae4c9578d110a97367ede9f7765cdce06ea": {
+   "query": "0x30de7ae4c9578d110a97367ede9f7765cdce06ea OR $PANGEA",
+   "hourly": [
+    46,
+    55,
+    62,
+    57,
+    26,
+    35,
+    31,
+    65,
+    46,
+    72,
+    51,
+    62,
+    44,
+    21,
+    19,
+    14,
+    50,
+    28,
+    39,
+    25,
+    28,
+    20,
+    31,
+    33
+   ],
+   "m24": 960,
+   "partial_hour": 9,
+   "sample_posts": 25,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 15.0,
+   "weighted_accounts": 576.0,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "Doumacrypto",
+     "f": 9983
+    },
+    {
+     "u": "sleeeepinside",
+     "f": 6363
+    },
+    {
+     "u": "hachigatsu_news",
+     "f": 3439
     }
    ]
   },
   "robinhood:0x000050e18ffa3f8f7ad170eb9cef160eb3ed1111": {
    "query": "0x000050e18ffa3f8f7ad170eb9cef160eb3ed1111 OR $TORCH",
    "hourly": [
-    404,
-    226,
-    220,
-    394,
+    250,
+    330,
+    332,
+    365,
+    240,
+    359,
+    280,
+    358,
+    332,
     294,
-    335,
-    283,
-    292,
-    264,
-    260,
-    196,
-    236,
-    253,
-    205,
-    195,
-    179,
-    202,
-    167,
-    179,
-    220,
-    157,
-    133,
-    156,
-    377
+    262,
+    331,
+    213,
+    174,
+    159,
+    177,
+    181,
+    190,
+    155,
+    198,
+    342,
+    294,
+    290,
+    300
    ],
-   "m24": 5827,
-   "partial_hour": 32,
+   "m24": 6406,
+   "partial_hour": 39,
    "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 0,
-   "weighted_accounts_sample": 16.0,
-   "weighted_accounts": 3729.28,
+   "sample_unique": 24,
+   "sample_skipped_botlike": 5,
+   "weighted_accounts_sample": 12.0,
+   "weighted_accounts": 3074.88,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "MDSumon68209331",
-     "f": 30067
+     "u": "coinesper",
+     "f": 33343
     },
     {
-     "u": "BlackTorchAnime",
-     "f": 14958
+     "u": "Hector_Herrick",
+     "f": 28544
     },
     {
-     "u": "RoadSafetyWales",
-     "f": 7348
+     "u": "Sammyblvck1",
+     "f": 1978
     }
    ]
   },
-  "robinhood:0x15f3385625d7e364c5a6216fbbceadf10fa90e7d": {
-   "query": "0x15f3385625d7e364c5a6216fbbceadf10fa90e7d OR $ABYSS",
+  "robinhood:0xe934e36a439c94017b64a3fece66af12099abf50": {
+   "query": "0xe934e36a439c94017b64a3fece66af12099abf50 OR $STONKBROKER",
    "hourly": [
-    438,
-    456,
-    554,
-    763,
-    647,
-    640,
-    579,
-    668,
-    516,
-    439,
-    421,
-    494,
-    568,
-    658,
-    658,
-    767,
-    973,
-    608,
-    493,
-    492,
-    440,
-    584,
-    734,
-    630
-   ],
-   "m24": 14220,
-   "partial_hour": 146,
-   "sample_posts": 25,
-   "sample_unique": 23,
-   "sample_skipped_botlike": 3,
-   "weighted_accounts_sample": 12.5,
-   "weighted_accounts": 7110.0,
-   "scaled": true,
-   "top_mentioners": [
-    {
-     "u": "678Hank",
-     "f": 7856
-    },
-    {
-     "u": "Heiasafari6999",
-     "f": 3969
-    },
-    {
-     "u": "kou2020",
-     "f": 1660
-    }
-   ]
-  },
-  "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c": {
-   "query": "0x18e674231a58c239dc7daedcffe15ec3a24cff5c OR $HOOKR",
-   "hourly": [
-    10,
-    7,
-    9,
-    5,
-    18,
-    5,
     3,
     4,
-    19,
-    15,
-    13,
-    8,
-    4,
-    7,
-    8,
-    12,
-    15,
-    13,
-    12,
-    10,
     9,
+    13,
+    13,
+    12,
     7,
     10,
-    8
+    3,
+    5,
+    2,
+    4,
+    3,
+    7,
+    57,
+    17,
+    10,
+    22,
+    11,
+    15,
+    14,
+    10,
+    8,
+    14
    ],
-   "m24": 231,
-   "partial_hour": 0,
+   "m24": 273,
+   "partial_hour": 1,
    "sample_posts": 25,
-   "sample_unique": 25,
-   "sample_skipped_botlike": 2,
-   "weighted_accounts_sample": 12.0,
-   "weighted_accounts": 110.88,
+   "sample_unique": 17,
+   "sample_skipped_botlike": 0,
+   "weighted_accounts_sample": 14.5,
+   "weighted_accounts": 158.34,
    "scaled": true,
    "top_mentioners": [
     {
-     "u": "EMdelosNEGOCIOS",
-     "f": 2121
+     "u": "EthDeFiance",
+     "f": 8298
     },
     {
-     "u": "gartamar",
-     "f": 408
+     "u": "web3gatsby",
+     "f": 7173
     },
     {
-     "u": "aullelo",
-     "f": 398
+     "u": "agentbye",
+     "f": 6563
+    }
+   ]
+  },
+  "robinhood:0xedbf91223639800bcd5756815caf908df3b890be": {
+   "query": "0xedbf91223639800bcd5756815caf908df3b890be OR $PRIORS",
+   "hourly": [
+    26,
+    32,
+    32,
+    25,
+    33,
+    35,
+    54,
+    64,
+    42,
+    49,
+    61,
+    50,
+    53,
+    42,
+    45,
+    32,
+    26,
+    23,
+    19,
+    23,
+    12,
+    14,
+    23,
+    15
+   ],
+   "m24": 830,
+   "partial_hour": 6,
+   "sample_posts": 25,
+   "sample_unique": 21,
+   "sample_skipped_botlike": 2,
+   "weighted_accounts_sample": 10.0,
+   "weighted_accounts": 332.0,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "TomPlender",
+     "f": 2704
+    },
+    {
+     "u": "kdpisda",
+     "f": 911
+    },
+    {
+     "u": "1MagedLe",
+     "f": 895
+    }
+   ]
+  },
+  "robinhood:0xfce34d21a92069100e3226638140706cf03a266e": {
+   "query": "0xfce34d21a92069100e3226638140706cf03a266e OR $GLDSTN",
+   "hourly": [
+    3,
+    3,
+    2,
+    5,
+    9,
+    1,
+    2,
+    5,
+    3,
+    7,
+    3,
+    16,
+    13,
+    6,
+    5,
+    2,
+    3,
+    0,
+    3,
+    1,
+    2,
+    1,
+    1,
+    2
+   ],
+   "m24": 98,
+   "partial_hour": 0,
+   "sample_posts": 25,
+   "sample_unique": 21,
+   "sample_skipped_botlike": 1,
+   "weighted_accounts_sample": 14.0,
+   "weighted_accounts": 54.88,
+   "scaled": true,
+   "top_mentioners": [
+    {
+     "u": "JapaneseCrypto",
+     "f": 242523
+    },
+    {
+     "u": "100xDarren",
+     "f": 23336
+    },
+    {
+     "u": "MCGlive",
+     "f": 22943
     }
    ]
   }
