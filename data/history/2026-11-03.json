@@ -1,0 +1,138 @@
+{
+ "date": "2026-11-03",
+ "ts": 1793700605,
+ "picks": [
+  {
+   "key": "solana:SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "MAMESUKE",
+   "address": "SCGBBnSwnekytGFHgyeHHxPMiN7xDxsWFGg9JgFSTNK",
+   "price_usd": 0.0011297930353299322,
+   "score": 71,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "PLAY",
+   "address": "0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "price_usd": 0.0127855561533252,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "COLLECT",
+   "address": "0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "price_usd": 0.0238156410830815,
+   "score": 85,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0xacc8de336f5d2366fa7334383d8fab73499f582a",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "FOREVER",
+   "address": "0xacc8de336f5d2366fa7334383d8fab73499f582a",
+   "price_usd": 0.00580977359847183,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AXIS",
+   "address": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "price_usd": 0.134837779800392,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "CASHCAT",
+   "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "price_usd": 0.103894297027124,
+   "score": 94,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x0339f5459fc690ac85f1782e15782a151b4a9e1b",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "WALLET",
+   "address": "0x0339f5459fc690ac85f1782e15782a151b4a9e1b",
+   "price_usd": 0.00783883851227866,
+   "score": 90,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "base:0x853a7c99227499dba9db8c3a02aa691afdebf841",
+   "symbol": "PLAY",
+   "chain": "Base",
+   "m24": 767969
+  },
+  {
+   "key": "robinhood:0xacc8de336f5d2366fa7334383d8fab73499f582a",
+   "symbol": "FOREVER",
+   "chain": "Robinhood Chain",
+   "m24": 401370
+  },
+  {
+   "key": "base:0xb200000000000000000000585fd80c20af698f01",
+   "symbol": "worth",
+   "chain": "Base",
+   "m24": 252978
+  },
+  {
+   "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
+   "symbol": "BASED",
+   "chain": "BNB Chain",
+   "m24": 198265
+  },
+  {
+   "key": "robinhood:0x0339f5459fc690ac85f1782e15782a151b4a9e1b",
+   "symbol": "WALLET",
+   "chain": "Robinhood Chain",
+   "m24": 127135
+  },
+  {
+   "key": "solana:HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "symbol": "GATO",
+   "chain": "Solana",
+   "m24": 63991
+  },
+  {
+   "key": "bsc:0x4b3d30992f003c8167699735f5ab2831b2a087d3",
+   "symbol": "COLLECT",
+   "chain": "BNB Chain",
+   "m24": 42918
+  },
+  {
+   "key": "solana:GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+   "symbol": "WASTED",
+   "chain": "Solana",
+   "m24": 30381
+  },
+  {
+   "key": "base:0x29cc30f9d113b356ce408667aa6433589cecbdca",
+   "symbol": "ELSA",
+   "chain": "Base",
+   "m24": 18356
+  },
+  {
+   "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "symbol": "GTA6",
+   "chain": "Solana",
+   "m24": 15235
+  }
+ ]
+}
