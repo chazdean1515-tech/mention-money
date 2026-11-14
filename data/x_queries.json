@@ -1,31 +1,41 @@
 {
- "ts": 1794564336,
- "start_time": "2026-11-12T10:05:18Z",
+ "ts": 1794650776,
+ "start_time": "2026-11-13T10:05:55Z",
  "queries": [
-  {
-   "key": "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
-   "query": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump OR $FOOD",
-   "symbol": "FOOD"
-  },
   {
    "key": "solana:4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
    "query": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump OR $mihao",
    "symbol": "mihao"
   },
   {
-   "key": "solana:SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb",
-   "query": "SPCXxcqXj6e5dJDVNovHN8744zkbhM2bYudU45BimGb OR $SPCX",
-   "symbol": "SPCX"
+   "key": "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "query": "FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump OR $FOOD",
+   "symbol": "FOOD"
   },
   {
-   "key": "solana:KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
-   "query": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump OR $RAMBO",
-   "symbol": "RAMBO"
+   "key": "solana:7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
+   "query": "7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
+   "symbol": "NIO"
   },
   {
-   "key": "solana:4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump",
-   "query": "4xgqefa5WcdHWKXzqvM9MRJqWYGaHVEUnpUL4Vq5pump OR $HUNG",
-   "symbol": "HUNG"
+   "key": "solana:HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump",
+   "query": "HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump",
+   "symbol": "AMC"
+  },
+  {
+   "key": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "query": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "symbol": "STONK"
+  },
+  {
+   "key": "solana:B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump",
+   "query": "B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump OR $JENSEN",
+   "symbol": "JENSEN"
+  },
+  {
+   "key": "solana:HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "query": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump OR $GATO",
+   "symbol": "GATO"
   },
   {
    "key": "solana:5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
@@ -38,49 +48,39 @@
    "symbol": "CATE"
   },
   {
-   "key": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
-   "query": "6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
-   "symbol": "STONK"
-  },
-  {
    "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
    "query": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz OR $GTA6",
    "symbol": "GTA6"
   },
   {
-   "key": "solana:HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
-   "query": "HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump OR $GATO",
-   "symbol": "GATO"
+   "key": "solana:KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump",
+   "query": "KMifrkYmDdAKtVXAVBEPEQxJ7qP2iLgUcfZjUZipump OR $RAMBO",
+   "symbol": "RAMBO"
   },
   {
-   "key": "solana:nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump",
-   "query": "nxPqZ4F7ux8Vph5NFu25rEP6Kx9Gr1U6Fmj36Rjpump OR $Dacity",
-   "symbol": "Dacity"
+   "key": "solana:GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump",
+   "query": "GexThZHgaswpAQ7Fi8QrHFubjPimUNSYhJiAA7XZpump OR $WASTED",
+   "symbol": "WASTED"
   },
   {
-   "key": "solana:DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump",
-   "query": "DKYcjobF7HPtL9RyQBRdeRQ2iWvizpfbgWwPWNXdpump OR $DacityCoin",
-   "symbol": "DacityCoin"
+   "key": "base:0x304b826a47a5e6cb2766ad9069f670651c9f847d",
+   "query": "0x304b826a47a5e6cb2766ad9069f670651c9f847d",
+   "symbol": "PONS"
   },
   {
-   "key": "base:0xab35c8ec5e51e31a350aba8fbfc9ca132bc05b07",
-   "query": "0xab35c8ec5e51e31a350aba8fbfc9ca132bc05b07 OR $Claude",
+   "key": "base:0x06f9d7c1408872341e3d2c3445698d3d243ddb07",
+   "query": "0x06f9d7c1408872341e3d2c3445698d3d243ddb07 OR $Claude",
    "symbol": "Claude"
   },
   {
-   "key": "base:0x853a7c99227499dba9db8c3a02aa691afdebf841",
-   "query": "0x853a7c99227499dba9db8c3a02aa691afdebf841 OR $PLAY",
-   "symbol": "PLAY"
+   "key": "base:0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+   "query": "0x9d0e8f5b25384c7310cb8c6ae32c8fbeb645d083",
+   "symbol": "DRV"
   },
   {
-   "key": "base:0x14d6c649292c5c9790c5196d1a9ea039307947a1",
-   "query": "0x14d6c649292c5c9790c5196d1a9ea039307947a1 OR $GULD",
-   "symbol": "GULD"
-  },
-  {
-   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
-   "query": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea OR $AXIS",
-   "symbol": "AXIS"
+   "key": "base:0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
+   "query": "0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
+   "symbol": "REI"
   },
   {
    "key": "base:0xed664536023d8e4b1640c394777d34abaff1df8f",
@@ -93,9 +93,19 @@
    "symbol": "RSGP"
   },
   {
-   "key": "base:0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
-   "query": "0x6b2504a03ca4d43d0d73776f6ad46dab2f2a4cfd",
-   "symbol": "REI"
+   "key": "base:0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea",
+   "query": "0x5be75e3b0aff5d1a042a5363ae36acb1d6d755ea OR $AXIS",
+   "symbol": "AXIS"
+  },
+  {
+   "key": "base:0x9b5e262cf9bb04869ab40b19af91d2dc85761722",
+   "query": "0x9b5e262cf9bb04869ab40b19af91d2dc85761722 OR $NOCK",
+   "symbol": "NOCK"
+  },
+  {
+   "key": "base:0x23a2847d772803f9efc64b4277b782b06296fe51",
+   "query": "0x23a2847d772803f9efc64b4277b782b06296fe51",
+   "symbol": "DOT"
   },
   {
    "key": "base:0xb1c3a6ac90e324c4072ad4b2a71c5d9382f9565c",
@@ -103,9 +113,19 @@
    "symbol": "BOOTR"
   },
   {
+   "key": "bsc:0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
+   "query": "0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
+   "symbol": "ZIG"
+  },
+  {
    "key": "bsc:0xa991f61940095aea0724ef54077223b048c5cf7b",
    "query": "0xa991f61940095aea0724ef54077223b048c5cf7b",
    "symbol": "DNA"
+  },
+  {
+   "key": "bsc:0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+   "query": "0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+   "symbol": "TAC"
   },
   {
    "key": "bsc:0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
@@ -118,19 +138,9 @@
    "symbol": "UP"
   },
   {
-   "key": "bsc:0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
-   "query": "0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
-   "symbol": "ZIG"
-  },
-  {
-   "key": "bsc:0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9",
-   "query": "0x0e63b9c287e32a05e6b9ab8ee8df88a2760225a9 OR $PIEVERSE",
-   "symbol": "PIEVERSE"
-  },
-  {
-   "key": "bsc:0x4902c5ebc598265ed2212b559b042de8a5eeec3f",
-   "query": "0x4902c5ebc598265ed2212b559b042de8a5eeec3f OR $B13B",
-   "symbol": "B13B"
+   "key": "bsc:0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
+   "query": "0xb0f09ea9ae0515c3551080d4a745c8115aa30e37",
+   "symbol": "DOS"
   },
   {
    "key": "bsc:0x1d28d989f9e3ccb8b15d0cec601734514f958e4d",
@@ -143,24 +153,24 @@
    "symbol": "COLLECT"
   },
   {
-   "key": "bsc:0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15",
-   "query": "0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15 OR $JAGENT",
-   "symbol": "JAGENT"
-  },
-  {
    "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
    "query": "0x0c6302401aa5325c2e36f170f52c00b1d220b405 OR $GANG",
    "symbol": "GANG"
   },
   {
-   "key": "bsc:0xc69b16cf18cea1e5d0bb6a1a9db802097790ddd2",
-   "query": "0xc69b16cf18cea1e5d0bb6a1a9db802097790ddd2 OR $CNPY",
-   "symbol": "CNPY"
+   "key": "bsc:0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15",
+   "query": "0x8e6442663a4f8c50b6132c68d42a30e7dfe4ae15 OR $JAGENT",
+   "symbol": "JAGENT"
   },
   {
-   "key": "bsc:0x7ab8d02cbb51ff7223fde700eaaa2a91bf750314",
-   "query": "0x7ab8d02cbb51ff7223fde700eaaa2a91bf750314 OR $TART",
-   "symbol": "TART"
+   "key": "bsc:0xea17df5cf6d172224892b5477a16acb111182478",
+   "query": "0xea17df5cf6d172224892b5477a16acb111182478 OR $elizaOS",
+   "symbol": "elizaOS"
+  },
+  {
+   "key": "bsc:0x63dea5acdbe1f27c968907d08610a5f0a0284ba6",
+   "query": "0x63dea5acdbe1f27c968907d08610a5f0a0284ba6",
+   "symbol": "AGC"
   },
   {
    "key": "robinhood:0x0b7c6c138dc75622f4200d157b13fb93e6bd94fa",
@@ -173,9 +183,9 @@
    "symbol": "PONS"
   },
   {
-   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
-   "query": "0x020bfc650a365f8bb26819deaabf3e21291018b4 OR $CASHCAT",
-   "symbol": "CASHCAT"
+   "key": "robinhood:0x6245e67affa44a23077f0ea7f981a8dc743a0c47",
+   "query": "0x6245e67affa44a23077f0ea7f981a8dc743a0c47 OR $FRONG",
+   "symbol": "FRONG"
   },
   {
    "key": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
@@ -183,14 +193,9 @@
    "symbol": "HOOKR"
   },
   {
-   "key": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
-   "query": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
-   "symbol": "AI"
-  },
-  {
-   "key": "robinhood:0xedbf91223639800bcd5756815caf908df3b890be",
-   "query": "0xedbf91223639800bcd5756815caf908df3b890be OR $PRIORS",
-   "symbol": "PRIORS"
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "query": "0x020bfc650a365f8bb26819deaabf3e21291018b4 OR $CASHCAT",
+   "symbol": "CASHCAT"
   },
   {
    "key": "robinhood:0xaa07a0e9209e16ac99708c3ec70159c6ef3128a3",
@@ -198,9 +203,24 @@
    "symbol": "ORBIO"
   },
   {
+   "key": "robinhood:0xedbf91223639800bcd5756815caf908df3b890be",
+   "query": "0xedbf91223639800bcd5756815caf908df3b890be OR $PRIORS",
+   "symbol": "PRIORS"
+  },
+  {
+   "key": "robinhood:0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b",
+   "query": "0x0e0d2c89a5a019fe1cf762e5e33187631dacc21b OR $CHUMP",
+   "symbol": "CHUMP"
+  },
+  {
    "key": "robinhood:0xe8ffd7e24187f72afb08d75b1bb13088a989a791",
    "query": "0xe8ffd7e24187f72afb08d75b1bb13088a989a791 OR $DELTA",
    "symbol": "DELTA"
+  },
+  {
+   "key": "robinhood:0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+   "query": "0x2e8c31162b855a2ffa90f6f8634643ad6f111e18",
+   "symbol": "AI"
   },
   {
    "key": "robinhood:0x4db7374e966097be94c6680d49156d580f097bbf",
@@ -208,19 +228,9 @@
    "symbol": "TIBBIR"
   },
   {
-   "key": "robinhood:0x000050e18ffa3f8f7ad170eb9cef160eb3ed1111",
-   "query": "0x000050e18ffa3f8f7ad170eb9cef160eb3ed1111 OR $TORCH",
-   "symbol": "TORCH"
-  },
-  {
-   "key": "robinhood:0x100765a16f42636bd84ee1e86bc5107b84bcdba3",
-   "query": "0x100765a16f42636bd84ee1e86bc5107b84bcdba3 OR $CHOP",
-   "symbol": "CHOP"
-  },
-  {
-   "key": "robinhood:0xb0007d59fe4050a1636c2fa19038973d16481337",
-   "query": "0xb0007d59fe4050a1636c2fa19038973d16481337 OR $RYFT",
-   "symbol": "RYFT"
+   "key": "robinhood:0x7fe995a80075df3dc8ae11a9b82c7fe4202cd87f",
+   "query": "0x7fe995a80075df3dc8ae11a9b82c7fe4202cd87f",
+   "symbol": "HMM"
   }
  ]
 }

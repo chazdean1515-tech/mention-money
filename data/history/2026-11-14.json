@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-14",
+ "ts": 1794652603,
+ "picks": [
+  {
+   "key": "solana:4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "mihao",
+   "address": "4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "price_usd": 0.017175008133312016,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x23a2847d772803f9efc64b4277b782b06296fe51",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "DOT",
+   "address": "0x23a2847d772803f9efc64b4277b782b06296fe51",
+   "price_usd": 0.00542009908745876,
+   "score": 91,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "TAC",
+   "address": "0xb305e6954e4e0cd021c06ec355681abc8a00dbd7",
+   "price_usd": 0.00121857271150843,
+   "score": 96,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PONS",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "price_usd": 0.129734943396416,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "JCT",
+   "address": "0xea37a8de1de2d9d10772eeb569e28bfa5cb17707",
+   "price_usd": 0.00203098201391725,
+   "score": 93,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "solana:4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "symbol": "mihao",
+   "chain": "Solana",
+   "m24": 2056
+  },
+  {
+   "key": "solana:5qaP7oKUqKffwwo5DaEqDoTtsBLMpdbQTxEkCDaTpump",
+   "symbol": "Max",
+   "chain": "Solana",
+   "m24": 383
+  },
+  {
+   "key": "solana:7SL2VnfYsChvog5oQY9Nmtqu1wceaMiQzWoqoLQpump",
+   "symbol": "NIO",
+   "chain": "Solana",
+   "m24": 275
+  },
+  {
+   "key": "solana:FTu55MyigXns96jz4nTCDDiTCjYJjyrHSceCgG9Upump",
+   "symbol": "FOOD",
+   "chain": "Solana",
+   "m24": 254
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "symbol": "PONS",
+   "chain": "Robinhood Chain",
+   "m24": 177
+  },
+  {
+   "key": "solana:HWya5CpQiQWLnJfJVRDF9o8AHaUPnPMRa3vfQRczpump",
+   "symbol": "AMC",
+   "chain": "Solana",
+   "m24": 174
+  },
+  {
+   "key": "solana:HsprHxBRgiVaQdRf3TnKNuZZtaX9JUSPgMFdAkk6pump",
+   "symbol": "GATO",
+   "chain": "Solana",
+   "m24": 138
+  },
+  {
+   "key": "solana:6GmAFSYs4gk3FDao5FzzySQpPZaWsa4rUJHacpMpUNgx",
+   "symbol": "STONK",
+   "chain": "Solana",
+   "m24": 126
+  },
+  {
+   "key": "robinhood:0x18e674231a58c239dc7daedcffe15ec3a24cff5c",
+   "symbol": "HOOKR",
+   "chain": "Robinhood Chain",
+   "m24": 122
+  },
+  {
+   "key": "solana:B2YpP21vQBESJ2jtnuhPujEUT61KVRxZ2X5gsDcUpump",
+   "symbol": "JENSEN",
+   "chain": "Solana",
+   "m24": 110
+  }
+ ]
+}
