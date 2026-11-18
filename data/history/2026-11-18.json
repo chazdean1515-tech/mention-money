@@ -1,0 +1,128 @@
+{
+ "date": "2026-11-18",
+ "ts": 1794996813,
+ "picks": [
+  {
+   "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "chain_id": "solana",
+   "chain": "Solana",
+   "symbol": "GTA6",
+   "address": "4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "price_usd": 0.01576500537032605,
+   "score": 86,
+   "score_kind": "full"
+  },
+  {
+   "key": "base:0x0947fb7076bfa307796f8fd533055f6016c6cccc",
+   "chain_id": "base",
+   "chain": "Base",
+   "symbol": "AX1",
+   "address": "0x0947fb7076bfa307796f8fd533055f6016c6cccc",
+   "price_usd": 0.00979271191072991,
+   "score": 100,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "ZIG",
+   "address": "0x8c907e0a72c3d55627e853f4ec6a96b0c8771145",
+   "price_usd": 0.0333687391412959,
+   "score": 95,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "PONS",
+   "address": "0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "price_usd": 0.116558615852171,
+   "score": 98,
+   "score_kind": "full"
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "chain_id": "bsc",
+   "chain": "BNB Chain",
+   "symbol": "GANG",
+   "address": "0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "price_usd": 0.00272667418780445,
+   "score": 93,
+   "score_kind": "full"
+  },
+  {
+   "key": "robinhood:0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "chain_id": "robinhood",
+   "chain": "Robinhood Chain",
+   "symbol": "CASHCAT",
+   "address": "0x020bfc650a365f8bb26819deaabf3e21291018b4",
+   "price_usd": 0.0441044991052517,
+   "score": 90,
+   "score_kind": "full"
+  }
+ ],
+ "mention_leaders": [
+  {
+   "key": "solana:4CxjZyMNoF1p6eXHXHv1TWpS2X47CuUmLwtGe18spump",
+   "symbol": "mihao",
+   "chain": "Solana",
+   "m24": 1690
+  },
+  {
+   "key": "solana:4kjruqGHDsSqkMdFfCjV7Vb62HPFhtXyWc2t6JpQzDnz",
+   "symbol": "GTA6",
+   "chain": "Solana",
+   "m24": 813
+  },
+  {
+   "key": "solana:ERiM8NiCanarGEnWMnURAoxTuTvUXZbtJsPTirnHpump",
+   "symbol": "GTAVI",
+   "chain": "Solana",
+   "m24": 583
+  },
+  {
+   "key": "solana:BSsmLA6UN8fzJ8qUkV4KwC5LxR7ab3TaUtcwvAyJpump",
+   "symbol": "JALU",
+   "chain": "Solana",
+   "m24": 327
+  },
+  {
+   "key": "solana:FSkyjfqB26u6c2GSgpACrjbxp9yQAR8rutxprVNppump",
+   "symbol": ":3",
+   "chain": "Solana",
+   "m24": 255
+  },
+  {
+   "key": "solana:HCNhQCu5nrmWhSE3mo7fRU9eGiGLmi2fnE8omgLpump",
+   "symbol": "DCI",
+   "chain": "Solana",
+   "m24": 204
+  },
+  {
+   "key": "solana:6EHTywfoXpDNhL4JGkeYUhiL6mumpmD7j8ByjQaXpump",
+   "symbol": "CSI",
+   "chain": "Solana",
+   "m24": 195
+  },
+  {
+   "key": "robinhood:0x39dbed3a2bd333467115de45665cc57f813c4571",
+   "symbol": "PONS",
+   "chain": "Robinhood Chain",
+   "m24": 183
+  },
+  {
+   "key": "bsc:0x0c6302401aa5325c2e36f170f52c00b1d220b405",
+   "symbol": "GANG",
+   "chain": "BNB Chain",
+   "m24": 129
+  },
+  {
+   "key": "base:0x0947fb7076bfa307796f8fd533055f6016c6cccc",
+   "symbol": "AX1",
+   "chain": "Base",
+   "m24": 122
+  }
+ ]
+}
